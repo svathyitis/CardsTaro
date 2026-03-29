@@ -39,11 +39,14 @@ interface CardItem {
   theme?: string
 }
 
-const PDF_THEMES: Record<string, { bg: string; text: string; accent: string; border: string; muted: string; cardBg: string }> = {
-  light: { bg: '#FDFCFB', text: '#2D2A26', accent: '#8C7A5E', border: '#E0DAD0', muted: '#7A7060', cardBg: '#FFFFFF' },
-  dark: { bg: '#1A1A2E', text: '#E8E4DC', accent: '#C9A96E', border: '#2D2D44', muted: '#9A9488', cardBg: '#16213E' },
-  neon: { bg: '#0A0A0A', text: '#00FFD0', accent: '#FF006E', border: '#00FFD033', muted: '#00FFD088', cardBg: '#111111' },
+const PDF_THEMES: Record<string, { bg: string; text: string; accent: string; border: string; muted: string; cardBg: string; frontBg: string; frontText: string; frontAccent: string; frontBorder: string; backBg: string }> = {
+  light: { bg: '#FDFCFB', text: '#2D2A26', accent: '#8C7A5E', border: '#E0DAD0', muted: '#7A7060', cardBg: '#FFFFFF', frontBg: 'linear-gradient(145deg, #1a1520, #2d1f3d, #1a1520)', frontText: '#E8D5A3', frontAccent: '#C9A96E', frontBorder: 'rgba(201,169,110,0.3)', backBg: '#FDFAF5' },
+  dark: { bg: '#1A1A2E', text: '#E8E4DC', accent: '#C9A96E', border: '#2D2D44', muted: '#9A9488', cardBg: '#16213E', frontBg: 'linear-gradient(145deg, #0a0a1a, #1a1040, #0a0a1a)', frontText: '#C9A96E', frontAccent: '#E8D5A3', frontBorder: 'rgba(201,169,110,0.4)', backBg: '#16213E' },
+  neon: { bg: '#0A0A0A', text: '#00FFD0', accent: '#FF006E', border: '#00FFD033', muted: '#00FFD088', cardBg: '#111111', frontBg: 'linear-gradient(145deg, #050510, #0a0a2a, #050510)', frontText: '#00FFD0', frontAccent: '#FF006E', frontBorder: 'rgba(0,255,208,0.3)', backBg: '#0D0D0D' },
 }
+
+const ROMAN_MAP = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII']
+function pdfRoman(n: number): string { return n <= 22 ? (ROMAN_MAP[n] || String(n)) : String(n) }
 
 function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): string {
   const t = PDF_THEMES[theme] || PDF_THEMES.light
@@ -69,20 +72,56 @@ function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): s
       </div>
     `).join('')
   } else if (activeTab === 'tarot') {
-    contentHtml = cards.map(card => `
-      <div style="border: 1px solid ${t.border}; background: ${t.cardBg}; padding: 28px 32px; margin-bottom: 20px; page-break-inside: avoid; text-align: center;">
-        <div style="border: 2px solid ${t.accent}33; padding: 24px; margin-bottom: 0;">
-          <div style="width: 48px; height: 48px; border: 1px solid ${t.accent}; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; color: ${t.accent}; margin-bottom: 12px;">
-            ${card.week_number ?? '?'}
+    contentHtml = cards.map(card => {
+      const wn = card.week_number ?? 0
+      const roman = pdfRoman(wn)
+      return `
+      <div style="display: flex; gap: 20px; margin-bottom: 28px; page-break-inside: avoid;">
+        <!-- FRONT -->
+        <div style="flex: 1; min-width: 0; aspect-ratio: 2.5/4; background: ${t.frontBg}; border: 1px solid ${t.frontBorder}; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.2);">
+          <!-- Inner border -->
+          <div style="position: absolute; inset: 8px; border: 1px solid ${t.frontAccent}33;"></div>
+          <div style="position: absolute; inset: 12px; border: 1px solid ${t.frontAccent}15;"></div>
+          <!-- Roman numeral -->
+          <p style="color: ${t.frontAccent}88; font-size: 9px; letter-spacing: 5px; margin-bottom: 8px;">${roman}</p>
+          <!-- Diamond -->
+          <div style="width: 8px; height: 8px; border: 1px solid ${t.frontAccent}66; transform: rotate(45deg); margin-bottom: 16px;"></div>
+          <!-- Name -->
+          <h3 style="color: ${t.frontText}; font-size: 16px; font-family: 'Playfair Display', serif; letter-spacing: 4px; text-transform: uppercase; margin: 0; text-shadow: 0 0 15px ${t.frontAccent}33;">${card.tarot_front ?? ''}</h3>
+          <!-- Divider -->
+          <div style="display: flex; align-items: center; gap: 6px; margin: 16px 0;">
+            <div style="width: 20px; height: 1px; background: ${t.frontAccent}44;"></div>
+            <div style="width: 4px; height: 4px; border: 1px solid ${t.frontAccent}55; transform: rotate(45deg);"></div>
+            <div style="width: 20px; height: 1px; background: ${t.frontAccent}44;"></div>
           </div>
-          <h3 style="margin: 8px 0; font-size: 15px; letter-spacing: 3px; color: ${t.text};">${card.tarot_front ?? card.title ?? ''}</h3>
-          <div style="width: 40px; height: 1px; background: ${t.accent}66; margin: 12px auto;"></div>
-          <p style="font-size: 13px; font-style: italic; color: ${t.accent}; margin: 12px 0;">"${card.quote ?? ''}"</p>
-          <div style="width: 40px; height: 1px; background: ${t.border}; margin: 16px auto;"></div>
-          <p style="font-size: 12px; line-height: 1.8; color: ${t.text}; font-weight: 300; text-align: left;">${card.tarot_back ?? ''}</p>
+          <!-- Week -->
+          <p style="color: ${t.frontAccent}55; font-size: 8px; letter-spacing: 4px; text-transform: uppercase;">Week ${wn}</p>
+          <!-- Bottom dots -->
+          <div style="position: absolute; bottom: 16px; display: flex; gap: 4px;">
+            <div style="width: 3px; height: 3px; border-radius: 50%; background: ${t.frontAccent}33;"></div>
+            <div style="width: 4px; height: 4px; border-radius: 50%; background: ${t.frontAccent}55;"></div>
+            <div style="width: 3px; height: 3px; border-radius: 50%; background: ${t.frontAccent}33;"></div>
+          </div>
         </div>
-      </div>
-    `).join('')
+        <!-- BACK -->
+        <div style="flex: 1; min-width: 0; background: ${t.backBg}; border: 1px solid ${t.border}; padding: 20px; display: flex; flex-direction: column; box-shadow: 0 2px 12px rgba(0,0,0,0.1);">
+          <!-- Inner border -->
+          <div style="border: 1px solid ${t.accent}15; padding: 16px; flex: 1; display: flex; flex-direction: column;">
+            <p style="color: ${t.accent}; font-size: 8px; letter-spacing: 4px; text-transform: uppercase; text-align: center; margin-bottom: 4px;">${roman} — Week ${wn}</p>
+            <h4 style="color: ${t.text}; font-size: 13px; font-family: 'Playfair Display', serif; letter-spacing: 2px; text-align: center; margin: 4px 0 8px;">${card.title ?? ''}</h4>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 10px;">
+              <div style="width: 12px; height: 1px; background: ${t.accent}33;"></div>
+              <div style="width: 3px; height: 3px; border: 1px solid ${t.accent}44; transform: rotate(45deg);"></div>
+              <div style="width: 12px; height: 1px; background: ${t.accent}33;"></div>
+            </div>
+            <p style="color: ${t.text}; font-size: 11px; line-height: 1.7; font-weight: 300; flex: 1;">${card.tarot_back ?? ''}</p>
+            ${card.quote ? `<div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid ${t.border};">
+              <p style="color: ${t.accent}; font-size: 10px; font-style: italic; line-height: 1.5;">&ldquo;${card.quote}&rdquo;</p>
+            </div>` : ''}
+          </div>
+        </div>
+      </div>`
+    }).join('')
   } else {
     const withQuotes = cards.filter(c => c.quote && c.quote.trim().length > 0)
     contentHtml = withQuotes.map((card, i) => `
@@ -105,7 +144,10 @@ function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): s
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: ${t.bg}; color: ${t.text}; font-family: 'Inter', sans-serif; padding: 40px; }
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
-    @media print { body { padding: 20px; } }
+    @media print {
+      body { padding: 20px; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+      div[style*="display: flex"] { break-inside: avoid; }
+    }
   </style>
 </head>
 <body>
@@ -163,7 +205,7 @@ export default function Page() {
     content: sheet.content,
     theme: sheet.country,
     quote: sheet.quote,
-    tarot_front: sheet.title,
+    tarot_front: sheet.tarot_front,
     tarot_back: sheet.tarot_back,
   })), [])
 

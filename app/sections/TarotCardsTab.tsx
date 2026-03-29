@@ -2,6 +2,8 @@
 
 import React, { useState, useMemo } from 'react'
 import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent } from '@/components/ui/dialog'
+import { ScrollArea } from '@/components/ui/scroll-area'
 import { Loader2, Shuffle, Download } from 'lucide-react'
 
 interface CardItem {
@@ -23,12 +25,30 @@ interface TarotCardsTabProps {
   onLoadMore?: () => void
 }
 
-export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore }: TarotCardsTabProps) {
+const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII']
+
+function toRoman(n: number): string {
+  if (n <= 22) return ROMAN[n] || String(n)
+  return String(n)
+}
+
+// Decorative SVG corner for tarot card feel
+function CardCorner({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 30 C2 14 14 2 30 2" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.4" />
+      <path d="M6 30 C6 18 18 6 30 6" stroke="currentColor" strokeWidth="0.5" fill="none" opacity="0.25" />
+      <circle cx="4" cy="28" r="1.5" fill="currentColor" opacity="0.3" />
+    </svg>
+  )
+}
+
+export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCardsTabProps) {
   const [weekFilter, setWeekFilter] = useState<number | null>(null)
   const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set())
   const [shuffled, setShuffled] = useState(false)
   const [shuffleKey, setShuffleKey] = useState(0)
-  const [expandedCard, setExpandedCard] = useState<number | null>(null)
+  const [selectedCard, setSelectedCard] = useState<CardItem | null>(null)
 
   const safeCards = Array.isArray(cards) ? cards : []
 
@@ -65,7 +85,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
     return (
       <div className="flex flex-col items-center justify-center py-32 gap-4">
         <Loader2 className="h-6 w-6 animate-spin text-primary" />
-        <p className="text-xs tracking-widest text-muted-foreground uppercase">Loading tarot cards...</p>
+        <p className="text-xs tracking-widest text-muted-foreground uppercase">Shuffling the deck...</p>
       </div>
     )
   }
@@ -73,8 +93,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
   if (safeCards.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-32 gap-4">
-        <p className="text-sm tracking-widest text-muted-foreground">No tarot cards loaded yet.</p>
-        <p className="text-xs text-muted-foreground font-light">Waiting for the agent to retrieve tarot cards...</p>
+        <p className="text-sm tracking-widest text-muted-foreground">The deck is empty.</p>
       </div>
     )
   }
@@ -83,99 +102,159 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
     <div className="relative">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
-          <select value={weekFilter ?? ''} onChange={(e) => setWeekFilter(e.target.value ? Number(e.target.value) : null)} className="h-10 px-4 border border-border bg-card text-foreground text-sm font-light tracking-wider focus:outline-none focus:ring-1 focus:ring-ring">
+          <select
+            value={weekFilter ?? ''}
+            onChange={(e) => setWeekFilter(e.target.value ? Number(e.target.value) : null)}
+            className="h-10 px-4 border border-border bg-card text-foreground text-sm font-light tracking-wider focus:outline-none focus:ring-1 focus:ring-ring"
+          >
             <option value="">All Weeks</option>
             {weekNumbers.map(w => <option key={w} value={w}>Week {w}</option>)}
           </select>
           <Button variant="outline" onClick={handleShuffle} className="rounded-none tracking-widest text-xs font-light gap-2">
-            <Shuffle className="h-3.5 w-3.5" /> Shuffle
+            <Shuffle className="h-3.5 w-3.5" /> Shuffle Deck
           </Button>
         </div>
 
-        <p className="text-xs text-muted-foreground tracking-widest mb-6 uppercase">{filtered.length} tarot card{filtered.length !== 1 ? 's' : ''}</p>
+        <p className="text-xs text-muted-foreground tracking-widest mb-6 uppercase">
+          {filtered.length} card{filtered.length !== 1 ? 's' : ''} in deck
+        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {filtered.map((card, idx) => {
             const isFlipped = flippedCards.has(idx)
-            const isExpanded = expandedCard === idx
+            const weekNum = card?.week_number ?? 0
             return (
               <div key={`${shuffleKey}-${idx}`} className="w-full">
                 <button
                   onClick={() => toggleFlip(idx)}
                   className="w-full"
-                  style={{ perspective: '1000px' }}
+                  style={{ perspective: '1200px' }}
                 >
                   <div
                     className="relative w-full transition-transform duration-700"
                     style={{
                       transformStyle: 'preserve-3d',
                       transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                      minHeight: '480px',
+                      aspectRatio: '2.5/4',
                     }}
                   >
-                    {/* Front */}
+                    {/* ===== FRONT ===== */}
                     <div
-                      className="absolute inset-0 border border-border bg-card p-8 flex flex-col items-center justify-center text-center"
-                      style={{ backfaceVisibility: 'hidden' }}
+                      className="absolute inset-0 flex flex-col items-center justify-center text-center overflow-hidden"
+                      style={{
+                        backfaceVisibility: 'hidden',
+                        background: 'linear-gradient(145deg, #1a1520 0%, #2d1f3d 30%, #1a1520 70%, #0f0a18 100%)',
+                        border: '1px solid rgba(201, 169, 110, 0.3)',
+                        boxShadow: '0 4px 20px rgba(0,0,0,0.3), inset 0 0 60px rgba(201, 169, 110, 0.05)',
+                      }}
                     >
-                      <div className="border-2 border-primary/30 p-8 w-full h-full flex flex-col items-center justify-center gap-5">
-                        <div className="w-14 h-14 border border-primary text-primary flex items-center justify-center text-sm font-light tracking-widest rounded-full">
-                          {card?.week_number ?? '?'}
-                        </div>
-                        <h3 className="text-base font-normal tracking-widest text-foreground leading-relaxed">
-                          {card?.tarot_front ?? card?.title ?? 'Untitled'}
-                        </h3>
-                        <div className="w-10 h-px bg-primary/40 my-1" />
-                        <p className="text-sm font-light text-muted-foreground leading-relaxed">
-                          {card?.quote ?? 'Click to reveal the teaching'}
-                        </p>
-                        <p className="text-xs text-muted-foreground/50 tracking-widest uppercase mt-auto">Click to flip</p>
+                      {/* Corners */}
+                      <CardCorner className="absolute top-1 left-1 text-amber-500/50" />
+                      <CardCorner className="absolute top-1 right-1 text-amber-500/50 -scale-x-100" />
+                      <CardCorner className="absolute bottom-1 left-1 text-amber-500/50 -scale-y-100" />
+                      <CardCorner className="absolute bottom-1 right-1 text-amber-500/50 -scale-x-100 -scale-y-100" />
+
+                      {/* Inner ornate border */}
+                      <div className="absolute inset-3 border border-amber-600/20" />
+                      <div className="absolute inset-5 border border-amber-700/10" />
+
+                      {/* Roman numeral at top */}
+                      <p className="text-amber-400/60 text-[10px] tracking-[6px] uppercase mb-2 font-light">
+                        {toRoman(weekNum)}
+                      </p>
+
+                      {/* Center diamond ornament */}
+                      <div className="w-3 h-3 border border-amber-500/40 rotate-45 mb-4" />
+
+                      {/* Tarot name - short mystical label */}
+                      <h3
+                        className="text-amber-200 text-base sm:text-lg font-serif tracking-[4px] uppercase leading-tight px-4"
+                        style={{ textShadow: '0 0 20px rgba(201, 169, 110, 0.3)' }}
+                      >
+                        {card?.tarot_front ?? 'Unknown'}
+                      </h3>
+
+                      {/* Divider */}
+                      <div className="flex items-center gap-2 my-4">
+                        <div className="w-6 h-px bg-amber-600/30" />
+                        <div className="w-1.5 h-1.5 border border-amber-500/40 rotate-45" />
+                        <div className="w-6 h-px bg-amber-600/30" />
+                      </div>
+
+                      {/* Week indicator */}
+                      <p className="text-amber-500/40 text-[9px] tracking-[5px] uppercase">
+                        Week {weekNum}
+                      </p>
+
+                      {/* Bottom decoration */}
+                      <div className="absolute bottom-6 flex items-center gap-1.5">
+                        <div className="w-1 h-1 rounded-full bg-amber-600/30" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-amber-500/40" />
+                        <div className="w-1 h-1 rounded-full bg-amber-600/30" />
                       </div>
                     </div>
-                    {/* Back */}
+
+                    {/* ===== BACK ===== */}
                     <div
-                      className="absolute inset-0 border border-primary/40 bg-card p-8 flex flex-col items-center justify-start text-center overflow-y-auto"
-                      style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                      className="absolute inset-0 flex flex-col overflow-hidden"
+                      style={{
+                        backfaceVisibility: 'hidden',
+                        transform: 'rotateY(180deg)',
+                        background: 'linear-gradient(145deg, #fdfaf5 0%, #f8f0e3 50%, #fdfaf5 100%)',
+                        border: '1px solid rgba(140, 122, 94, 0.3)',
+                        boxShadow: '0 4px 20px rgba(0,0,0,0.15)',
+                      }}
                     >
-                      <div className="border border-primary/20 p-6 w-full flex flex-col items-center gap-4 bg-secondary/30">
-                        <p className="text-xs tracking-widest text-primary uppercase mb-2">Week {card?.week_number ?? '?'}</p>
-                        <h4 className="text-sm font-medium tracking-widest text-foreground">{card?.title ?? ''}</h4>
-                        <div className="w-8 h-px bg-primary/40" />
-                        <p className="text-sm font-light text-foreground leading-relaxed text-left w-full">
-                          {card?.tarot_back ?? 'No interpretation available'}
-                        </p>
-                        {card?.theme && (
-                          <p className="text-xs tracking-widest text-muted-foreground uppercase mt-4">
-                            {card.theme}
+                      {/* Subtle corners */}
+                      <div className="absolute inset-2 border border-amber-800/10" />
+
+                      <div className="flex flex-col h-full p-4 sm:p-5">
+                        {/* Header */}
+                        <div className="text-center mb-3">
+                          <p className="text-amber-700/60 text-[8px] tracking-[4px] uppercase">
+                            {toRoman(weekNum)} — Week {weekNum}
                           </p>
+                          <h4 className="text-amber-900 text-xs sm:text-sm font-serif tracking-wider mt-1">
+                            {card?.title ?? ''}
+                          </h4>
+                          <div className="flex items-center justify-center gap-1.5 mt-2">
+                            <div className="w-4 h-px bg-amber-700/20" />
+                            <div className="w-1 h-1 border border-amber-700/30 rotate-45" />
+                            <div className="w-4 h-px bg-amber-700/20" />
+                          </div>
+                        </div>
+
+                        {/* Interpretation text */}
+                        <div className="flex-1 overflow-y-auto min-h-0">
+                          <p className="text-amber-950/80 text-[11px] sm:text-xs font-light leading-relaxed">
+                            {card?.tarot_back ?? ''}
+                          </p>
+                        </div>
+
+                        {/* Bottom: quote */}
+                        {card?.quote && (
+                          <div className="mt-2 pt-2 border-t border-amber-800/10">
+                            <p className="text-amber-700/70 text-[9px] sm:text-[10px] italic leading-relaxed line-clamp-2">
+                              &ldquo;{card.quote}&rdquo;
+                            </p>
+                          </div>
                         )}
                       </div>
                     </div>
                   </div>
                 </button>
 
-                {/* Expand button under each card */}
+                {/* Read more */}
                 {isFlipped && (
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
-                      setExpandedCard(isExpanded ? null : idx)
+                      setSelectedCard(card)
                     }}
-                    className="mt-2 w-full text-xs text-primary tracking-widest uppercase font-light py-2 border border-border hover:bg-secondary/50 transition-colors"
+                    className="mt-2 w-full text-[10px] text-amber-700 tracking-widest uppercase font-light py-1.5 border border-amber-200 hover:bg-amber-50 transition-colors"
                   >
-                    {isExpanded ? 'Collapse' : 'Read Full Teaching'}
+                    Read Full Teaching
                   </button>
-                )}
-
-                {/* Expanded full content */}
-                {isExpanded && (
-                  <div className="mt-2 border border-primary/20 bg-card p-6 max-h-[500px] overflow-y-auto">
-                    <p className="text-xs tracking-widest text-primary uppercase mb-3">Week {card?.week_number} — Full Teaching</p>
-                    <h4 className="text-sm font-medium tracking-widest text-foreground mb-4">{card?.title}</h4>
-                    <div className="text-sm font-light text-foreground leading-relaxed whitespace-pre-line">
-                      {card?.content}
-                    </div>
-                  </div>
                 )}
               </div>
             )
@@ -183,19 +262,42 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
         </div>
       </div>
 
-      {hasMore && onLoadMore && (
-        <div className="flex justify-center mt-10 max-w-7xl mx-auto px-6">
-          <button onClick={onLoadMore} disabled={loadingMore} className="px-8 py-3 border border-primary text-primary text-xs tracking-widest uppercase font-light transition-all duration-300 hover:bg-primary hover:text-primary-foreground disabled:opacity-50 flex items-center gap-3">
-            {loadingMore ? (
-              <><Loader2 className="h-4 w-4 animate-spin" /> Loading more...</>
-            ) : (
-              'Load More Cards'
-            )}
-          </button>
-        </div>
-      )}
+      {/* Full teaching dialog */}
+      <Dialog open={!!selectedCard} onOpenChange={(open) => { if (!open) setSelectedCard(null) }}>
+        <DialogContent className="max-w-2xl rounded-none border-border">
+          <div className="flex items-center gap-4 mb-4">
+            <div
+              className="w-12 h-12 flex items-center justify-center text-sm font-serif tracking-widest text-amber-300"
+              style={{
+                background: 'linear-gradient(145deg, #1a1520, #2d1f3d)',
+                border: '1px solid rgba(201, 169, 110, 0.3)',
+              }}
+            >
+              {toRoman(selectedCard?.week_number ?? 0)}
+            </div>
+            <div>
+              <p className="text-xs tracking-widest text-muted-foreground uppercase">
+                {selectedCard?.tarot_front} — Week {selectedCard?.week_number}
+              </p>
+              <h3 className="text-base font-normal tracking-widest text-foreground">
+                {selectedCard?.title}
+              </h3>
+            </div>
+          </div>
+          <ScrollArea className="max-h-[60vh]">
+            <div className="pr-4 text-sm font-light text-foreground leading-relaxed whitespace-pre-line">
+              {selectedCard?.content}
+            </div>
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
 
-      <button onClick={onDownloadPdf} className="fixed bottom-8 right-8 w-14 h-14 bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 z-40 rounded-full" aria-label="Download PDF">
+      {/* Download FAB */}
+      <button
+        onClick={onDownloadPdf}
+        className="fixed bottom-8 right-8 w-14 h-14 bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 z-40 rounded-full"
+        aria-label="Download PDF"
+      >
         <Download className="h-5 w-5" />
       </button>
     </div>

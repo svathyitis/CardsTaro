@@ -9,6 +9,7 @@ export interface KnowledgeSheet {
   country: string
   content: string
   quote: string
+  tarot_front: string
   tarot_back: string
 }
 
@@ -51,7 +52,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Knowledge, love, Brahman is seeing beyond the event, personality, or object.`,
-    tarot_back: `Someone else got angry first and someone else and someone else and on and on like that. When you go beyond an event, only then the truth dawns. One particular event gives you a false notion.`,
+    tarot_front: `The Heart`,
+    tarot_back: `If you take one event and infer anything from one event -- infer knowledge -- it will be erroneous knowledge. Say Nancy gets angry and shouts at someone. You attribute anger to Nancy, but actually it was carried from someone else to her. Someone else got angry first and someone else and someone else and on and on like that.`,
   },
   {
     week_number: 2,
@@ -81,7 +83,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Response from the room: Call Guruji every week and if he doesn't answer the phone then you know you are loved.`,
-    tarot_back: `How have you been?" Stop formal and superficial conversations with the Master and speak with your heart that which is very important and intimate, very deep to your life. Don't just say how much the squash costs, 30 cents or whatever. If you don't feel close to the Master, there's no point in having a Master.`,
+    tarot_front: `The Guide`,
+    tarot_back: `"How are you, where are you going? How have you been?" Stop formal and superficial conversations with the Master and speak with your heart that which is very important and intimate, very deep to your life. Don't just say how much the squash costs, 30 cents or whatever. If you don't feel close to the Master, there's no point in having a Master.`,
   },
   {
     week_number: 3,
@@ -105,7 +108,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you prepare halwa, if sugar is less or ghee is less, water more or less, it can all be adjusted, repaired.`,
-    tarot_back: `If the buttermilk is sour, milk can be added, salt can be added to make it drinkable. But it can never be reversed back to milk. Prabdha karma cannot be changed.`,
+    tarot_front: `The Wheel`,
+    tarot_back: `But once soji is cooked, it cannot be reversed. If the buttermilk is sour, milk can be added, salt can be added to make it drinkable. But it can never be reversed back to milk. Prabdha karma cannot be changed.`,
   },
   {
     week_number: 4,
@@ -133,7 +137,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The whole message of the Gita is to be peaceful yourself and then fight.`,
-    tarot_back: `Trying to end conflict prolongs it. Face the conflict by seeking the comfort of the Self. God is alive in the world and has been putting up with all the ongoing conflicts throughout the ages.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `When you are tired of the games of the world, get into the comforts of the Self. If you are one of the Guru's close ones, you do both simultaneously. Trying to end conflict prolongs it. Face the conflict by seeking the comfort of the Self.`,
   },
   {
     week_number: 5,
@@ -161,7 +166,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And the presence of the Master in one's life will bring fulfillment to all relations.`,
-    tarot_back: `But a place filled with love, filled with joy, cooperation, compassion, and all virtues. The world is much more fun. Looking through the doorway, there is no fear.`,
+    tarot_front: `The Guide`,
+    tarot_back: `But once you have entered the door, then you will see the whole world from the eyes of the Master. In every situation that you face, you will think, "If this situation comes in front of the Master, how would he handle it?" or "How would she handle it?" "If this complication comes in front of the Master, how would he take it?" "If someone blames the Master like this, how would he handle it?" See the world from the eyes of the Master all the time. The world looks much more beautiful; not a nasty place. But a place filled with love, filled with joy, cooperation, compassion, and all virtues.`,
   },
   {
     week_number: 6,
@@ -181,7 +187,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Gray is something which is neither white nor black.`,
-    tarot_back: `And see the gray as a shade of black or white. Honest or dishonest -- accept it. You are not in the gray area.`,
+    tarot_front: `The Veil`,
+    tarot_back: `Put it either as black and accept it or as white and accept it -- whether or not it is black or white. And see the gray as a shade of black or white. Either way you accept it. Honest or dishonest -- accept it.`,
   },
   {
     week_number: 7,
@@ -203,7 +210,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A saint is like a camphor flame that creates light and the fragrance of love.`,
-    tarot_back: `The same fire that supports life in winter, can also destroy. One fire, like a ghee lamp, lights your way and purifies. Another fire made of toxic material creates pollution.`,
+    tarot_front: `The Flame`,
+    tarot_back: `Celebration happens around the bonfire. Grief happens around the fire of cremation. The same fire that supports life in winter, can also destroy. One fire, like a ghee lamp, lights your way and purifies.`,
   },
   {
     week_number: 8,
@@ -237,7 +245,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The nature of vasana is to bother you, or bind you, and wanting to be free is the nature of life.`,
-    tarot_back: `Consider the time and place for vows to be taken. When the mind dwells on useless thoughts, then two things happen. One is that all those old patterns come up and you feel discouraged by them.`,
+    tarot_front: `The Groove`,
+    tarot_back: `A vow should be time bound. This would bring good conduct and save you from being wayward. Consider the time and place for vows to be taken. When the mind dwells on useless thoughts, then two things happen.`,
   },
   {
     week_number: 9,
@@ -271,7 +280,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `An enlightened person says "Don't blame me because it will hurt you." So here you say, don't blame because of compassion.`,
-    tarot_back: `Outside you may resist, but inside if you don't resist, and feel happy, "Oh, good, somebody is there to blame me and take some negative karma," you will feel immediately lighter. How does it feel to you when someone blames you? Do you feel some heaviness?`,
+    tarot_front: `The Echo`,
+    tarot_back: `Do you see what I'm saying? So when someone blames you and you put up resistance in your mind, and you don't react, then you are not allowing them to take the negative karma. Outside you may resist, but inside if you don't resist, and feel happy, "Oh, good, somebody is there to blame me and take some negative karma," you will feel immediately lighter. How does it feel to you when someone blames you?`,
   },
   {
     week_number: 10,
@@ -298,7 +308,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `It is the divinity that is the most attractive; the energy that pulls everything to it.`,
-    tarot_back: `Often people fail to see the spirit behind the attraction and merely hold on to the outer shell. And the moment you try to possess the shell, you will see Krishna has played a trick and you will be left with an empty shell in your hands and tears in your eyes. Be clever like Radha -- don't be tricked by Krishna.`,
+    tarot_front: `The Dawn`,
+    tarot_back: `Any attraction from anywhere is coming only from Krishna. Often people fail to see the spirit behind the attraction and merely hold on to the outer shell. And the moment you try to possess the shell, you will see Krishna has played a trick and you will be left with an empty shell in your hands and tears in your eyes. Be clever like Radha -- don't be tricked by Krishna.`,
   },
   {
     week_number: 11,
@@ -332,7 +343,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `At a particular level of consciousness you will become anasuya.`,
-    tarot_back: `That kind of mind set cannot know the sacred Knowledge. Krishna tells Arjuna that he is giving him the Royal Secret, because he is anasuya. From a distance, even craters cannot be seen.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `When you give a person with this mind set the best, they still find faults. Even with the best possible companion, or the most beautiful painting, they will still find something wrong. That kind of mind set cannot know the sacred Knowledge. Krishna tells Arjuna that he is giving him the Royal Secret, because he is anasuya.`,
   },
   {
     week_number: 12,
@@ -362,7 +374,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The love of the ignorant can be harmful yet even the anger of the Enlightened is not harmful.`,
-    tarot_back: `The love in the mother's ignorance has spoiled the child. The child will never learn the alphabet, never learn to read or write, but the mother says, "Oh, never mind, there are sheep to look after and fields to tend." The mother's love in ignorance has spoiled the child. The anger of the Enlightened is a blessing.`,
+    tarot_front: `The Heart`,
+    tarot_back: `The mother asks the teacher, "Why are you not teaching my child properly? He is so innocent, so lovely." So, what happens -- the child grows up spoiled. The love in the mother's ignorance has spoiled the child. The child will never learn the alphabet, never learn to read or write, but the mother says, "Oh, never mind, there are sheep to look after and fields to tend." The mother's love in ignorance has spoiled the child.`,
   },
   {
     week_number: 13,
@@ -402,7 +415,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The person you call a liar is not a good liar and they are innocent.`,
-    tarot_back: `I thought they were so innocent that they could not even lie properly. If they had not been caught, how would you know they were a liar? you can never know a good liar.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Had they been a good liar, they would not have been caught. I thought they were so innocent that they could not even lie properly. They lie and get caught. If they had not been caught, how would you know they were a liar?`,
   },
   {
     week_number: 14,
@@ -450,7 +464,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Every atom of Big Mind is crammed with Knowledge.`,
-    tarot_back: `You seek until you come to the Master. You walk until you come to the swimming pool. You don't walk or run in the swimming pool -- you swim or float.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Every atom of Big Mind is crammed with Knowledge. Knowing this, you stop seeking. You seek until you come to the Master. You walk until you come to the swimming pool.`,
   },
   {
     week_number: 15,
@@ -474,6 +489,7 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Smiling with all the Existence Is silence!`,
+    tarot_front: `The Stillness`,
     tarot_back: `Smiling with all the Existence Is silence!`,
   },
   {
@@ -502,7 +518,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the small mind wins over, it is misery and when the Big Mind wins, it is joy.`,
-    tarot_back: `Small mind promises joy and leaves your hand empty. Big Mind may bring resistance in the beginning but fills you with joy. The word Guru means great.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `When the small mind wins over, it is misery and when the Big Mind wins, it is joy. Small mind promises joy and leaves your hand empty. Big Mind may bring resistance in the beginning but fills you with joy. The word Guru means great.`,
   },
   {
     week_number: 17,
@@ -532,7 +549,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you think you are too good, you blame the world; then you become sad.`,
-    tarot_back: `The purpose of sorrow is to bring you back to the self. But this is possible only through Knowledge -- awareness. Knowledge or awareness leads sorrow towards the self.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `When you think you are too good, you blame the world; then you become sad. The purpose of sorrow is to bring you back to the self. But this is possible only through Knowledge -- awareness. Knowledge or awareness leads sorrow towards the self.`,
   },
   {
     week_number: 18,
@@ -559,7 +577,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The Advaita Knowledge has been totally misused or used according to one's own fancies and conveniences.`,
-    tarot_back: `Understand this and go ahead in life. You have some restrictions and it is this that allows you freedom. You can choose to focus either on freedom or discipline, and this makes you happy or unhappy.`,
+    tarot_front: `The Sky`,
+    tarot_back: `So it is with the police; they protect the freedom of the individual. Discipline protects freedom. They both go hand in hand. Understand this and go ahead in life.`,
   },
   {
     week_number: 19,
@@ -587,7 +606,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And so it is infinite, for infinity can never be complete.`,
-    tarot_back: `The master does a ceremony called Samavartha, where he tells the disciple that he is ending the discipleship and asking him to behave at par with him, and let the Brahman dynamically manifest. Sakha is a companion in life and death; it never ends. In the path of love there is neither beginning nor end.`,
+    tarot_front: `The Guide`,
+    tarot_back: `Once you cross the water, however nice the boat is, you get off the boat. After twelve years, the disciple completes his studies. The master does a ceremony called Samavartha, where he tells the disciple that he is ending the discipleship and asking him to behave at par with him, and let the Brahman dynamically manifest. Sakha is a companion in life and death; it never ends.`,
   },
   {
     week_number: 20,
@@ -627,7 +647,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the senses are with the Self, that is pleasure (sukha), because the Self is the source of all joy or pleasure.`,
-    tarot_back: `In any pleasant experience, you close your eyes; you smell a nice flower, or you taste or touch something. So sukha is that which takes you to the Self. Dukha is that which takes you away from the Self.`,
+    tarot_front: `The Sun`,
+    tarot_back: `Mud, misery, mind -- they are very close. Self is the nature of joy. In any pleasant experience, you close your eyes; you smell a nice flower, or you taste or touch something. So sukha is that which takes you to the Self.`,
   },
   {
     week_number: 21,
@@ -659,7 +680,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A sceptic is stuck in a paradigm and closes all other possibilities.`,
-    tarot_back: `Scepticism is dispelled by Knowledge. Perception and inference are two means of knowing. In every human being deep inside, there is faith and love.`,
+    tarot_front: `The Scepticism`,
+    tarot_back: `A real scientist can never afford to be a sceptic because scepticism closes down possibilities and does not continue to probe into unknown areas of existence. In short, scepticism is an "I know it all" attitude, and this attitude is unscientific. Scepticism is dispelled by Knowledge. Perception and inference are two means of knowing.`,
   },
   {
     week_number: 22,
@@ -693,7 +715,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you realize everyone is part of your Self, you enjoy the whole world without a sense of craving.`,
-    tarot_back: `You become Ashaucha and you have to get back to Shaucha. Go deeper in to yourself, then real Shaucha happens. Shaucha's benefits are clarity in the intellect, a pleasing mind, focused awareness in the mind, a say over the senses, and therefore eligibility to realize the Self.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `After 10 days of just being with that experience and reading the Gita, being with the Knowledge and pulling themselves back into the Self, then it is called Shaucha. They have purged out the impurities that have come during events. This keeps happening again and again in dealings in life. You become Ashaucha and you have to get back to Shaucha.`,
   },
   {
     week_number: 23,
@@ -719,7 +742,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A repetition without interest or love causes a monotonous state of mind; that is boredom.`,
-    tarot_back: `Whether the practice gives you joy or boredom, it must be continued. Only the practice or abhyasa can annihilate the Mind. Self is Love and Love is always repetitive.`,
+    tarot_front: `The Heart`,
+    tarot_back: `A practice or abhyasa is again a repetition whose purpose is to destroy the boredom and reunite with the Self. In this process the practice itself creates boredom and as you continue, it penetrates the boredom and destroys it once and for all. Whether the practice gives you joy or boredom, it must be continued. Only the practice or abhyasa can annihilate the Mind.`,
   },
   {
     week_number: 24,
@@ -743,7 +767,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Vishnu shakti is maintenance and Shiva shakti is bringing in transformation, filling in life, or destroying.`,
-    tarot_back: `You may create well, but you may not be able to maintain. For example, you may make friends very fast, but it does not last long. There are others who cannot create but are good at maintaining.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `Vishnu shakti is maintenance and Shiva shakti is bringing in transformation, filling in life, or destroying. Some of you have Brahma shakti. You may create well, but you may not be able to maintain. For example, you may make friends very fast, but it does not last long.`,
   },
   {
     week_number: 25,
@@ -789,7 +814,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Say, "Everything is temporary, everything is changing." Speak some Knowledge on the changing nature of the world.`,
-    tarot_back: `This is the way to maintain intimacy. If you attend Satsang you don't get much; but if you don't, you lose a lot. Just to maintain where you are, what you are, you need to attend weekly Satsang.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Dissolving into infinity brings you to the moment. Dissolve into infinity, be in the moment, and look beyond the events. This is the way to maintain intimacy. If you attend Satsang you don't get much; but if you don't, you lose a lot.`,
   },
   {
     week_number: 26,
@@ -819,7 +845,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And when that one finds it, he gives it to everyone.`,
-    tarot_back: `Then Guruji himself went in. He came out with the sweets and gave them to everyone. This is exactly what happens in life.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `He went again and again, three times, and still he could not find them. Then Guruji himself went in. He came out with the sweets and gave them to everyone. This is exactly what happens in life.`,
   },
   {
     week_number: 27,
@@ -851,7 +878,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If the vehicle is in perfect condition, the skill is effective.`,
-    tarot_back: `You can slow down or wait for some time to allow the vehicle to move far away from you. You can use your skill, overtake the vehicle, and forget about it. As in the first case, most of you stick on the events and are miserable, like inhaling fumes throughout your journey.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `You have three options. You can complain, somehow bear with it, and still follow the vehicle. You can slow down or wait for some time to allow the vehicle to move far away from you. You can use your skill, overtake the vehicle, and forget about it.`,
   },
   {
     week_number: 28,
@@ -873,7 +901,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Pure water is like love, Knowledge is like detergent, mind is like cloth, and the body like the washing machine.`,
-    tarot_back: `But instead of detergent, if you use dirt, then you have dirty clothes. Pure water is like love, Knowledge is like detergent, mind is like cloth, and the body like the washing machine. If you put in mud instead of detergent, your clothes become dirtier than before.`,
+    tarot_front: `The Heart`,
+    tarot_back: `But instead of detergent, if you use dirt, then you have dirty clothes. Pure water is like love, Knowledge is like detergent, mind is like cloth, and the body like the washing machine. If you put in mud instead of detergent, your clothes become dirtier than before. You will have to go on putting clothes in the washing machine to get them cleaned.`,
   },
   {
     week_number: 29,
@@ -907,7 +936,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you celebrate every moment, you are the Lord of Creation.`,
-    tarot_back: `How useful were you this past year? Sit for an hour and think about every week, one minute per week, and see the year's growth in less than an hour. With a flower, on New Year's Day, offer the whole year to the Divine.`,
+    tarot_front: `The Dance`,
+    tarot_back: `Review the year while you celebrate. This is your homework. What did you achieve? How useful were you this past year?`,
   },
   {
     week_number: 30,
@@ -973,7 +1003,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And everyone was unusually crazy .`,
-    tarot_back: `And a basket full of chocolates was on the couch . They were in shape of bees today. And they started flying from the Guru's hand.`,
+    tarot_front: `The Dance`,
+    tarot_back: `And a basket full of chocolates was on the couch . They were in shape of bees today. And they started flying from the Guru's hand. losing your identity.`,
   },
   {
     week_number: 31,
@@ -999,7 +1030,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Divine love is the present, yet we are holding onto the paper believing we have already enjoyed the gift.`,
-    tarot_back: `A little chocolate may seep into the mouth, but the covering makes sores in the mouth. The whole world is there for you to enjoy. The wise know how to enjoy the gift inside, while the ignorant get stuck with the paper.`,
+    tarot_front: `The Heart`,
+    tarot_back: `A little chocolate may seep into the mouth, but the covering makes sores in the mouth. The whole world is there for you to enjoy. The wise know how to enjoy the gift inside, while the ignorant get stuck with the paper. Wally told Guruji: I have some property for you to consider as an Ashram in the U.S.`,
   },
   {
     week_number: 32,
@@ -1045,7 +1077,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If Guru is satisfied, then your growth is shunned.`,
-    tarot_back: `If Guru is satisfied, then your growth is shunned. If Guru is unsatisfied, he's away from the Self. If Guru is satisfied, then what can inspire you to grow?`,
+    tarot_front: `The Beacon`,
+    tarot_back: `But how can you satisfy someone who is already satisfied? If Guru is satisfied, then your growth is shunned. If Guru is unsatisfied, he's away from the Self. If Guru is satisfied, then what can inspire you to grow?`,
   },
   {
     week_number: 33,
@@ -1093,7 +1126,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If your prayers are not answered it is because you have never given quality time.`,
-    tarot_back: `You definitely will be rewarded. Here in Hawaii there is a fun-filled course, for you know God Loves Fun. This has been followed with the long-awaited book, Way of Grace.`,
+    tarot_front: `The Lotus`,
+    tarot_back: `Give Satsang and meditation your highest priority. Give prime time to the Divine. You definitely will be rewarded. Here in Hawaii there is a fun-filled course, for you know God Loves Fun.`,
   },
   {
     week_number: 34,
@@ -1135,7 +1169,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There is a place you can come where everything is beautiful.`,
-    tarot_back: `Then wherever you go, you add beauty there. If you are unhappy, even the moon is irritating to you. Sweet things are nauseating, music is disturbing.`,
+    tarot_front: `The Cosmos`,
+    tarot_back: `Don't look here and there. When you come here, then any place is beautiful. Then wherever you go, you add beauty there. If you are unhappy, even the moon is irritating to you.`,
   },
   {
     week_number: 35,
@@ -1181,7 +1216,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Then you are infinitely indebted for your body, for Knowledge, for things you have received, and for your own life.`,
-    tarot_back: `You think you are indebted, but you really are not. It is better to feel totally indebted, because every bit of what you have, doesn't belong to you, including your body. Then you are infinitely indebted for your body, for Knowledge, for things you have received, and for your own life.`,
+    tarot_front: `The Harvest`,
+    tarot_back: `Abundance and indebtedness coexist. You think you are indebted, but you really are not. It is better to feel totally indebted, because every bit of what you have, doesn't belong to you, including your body. Then you are infinitely indebted for your body, for Knowledge, for things you have received, and for your own life.`,
   },
   {
     week_number: 36,
@@ -1215,7 +1251,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Spirit is the valentine of matter and matter is the valentine of the spirit.`,
-    tarot_back: `If you hold onto matter and do not respect the spirit, then matter is not pleased. If you honor the spirit then you will care for the world, and when you care for the world, it will take care of you. I am the valentine of the whole world and I reside in every heart.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `They are made for each other. They uphold each other. If you hold onto matter and do not respect the spirit, then matter is not pleased. If you honor the spirit then you will care for the world, and when you care for the world, it will take care of you.`,
   },
   {
     week_number: 37,
@@ -1253,7 +1290,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The knowledge and faith of science is of "happening." In spirituality, faith is first and Knowledge comes later.`,
-    tarot_back: `And then another knowledge came that they were not good and the faith shifted to organic farming. The same with antibiotics. The knowledge brought faith, the knowledge changed, and then faith changed.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `For example, the knowledge that pesticides and chemical fertilizers are good for plants came through science, and people had faith in it, and all over the world they were used. And then another knowledge came that they were not good and the faith shifted to organic farming. The same with antibiotics. The knowledge brought faith, the knowledge changed, and then faith changed.`,
   },
   {
     week_number: 38,
@@ -1289,7 +1327,8 @@ NEWS FLASH:
 
 Back To Top ^`,
     quote: `So I can never lose respect for anybody, however they may be.`,
-    tarot_back: `And when they do change, you lose respect. You only respect the greatness. I have tremendous respect for each and every one.`,
+    tarot_front: `The Bow`,
+    tarot_back: `But all these change in time. And when they do change, you lose respect. You only respect the greatness. I have tremendous respect for each and every one.`,
   },
   {
     week_number: 39,
@@ -1321,7 +1360,8 @@ We had Satsang in the open air. The sound of the drums and the beat of the heart
 
 Back To Top ^`,
     quote: `All desires are for happiness.`,
-    tarot_back: `But have you thought about the nature of desire? It simply means tomorrow, and not now, isn't it? How can you have desires when you are joyful?`,
+    tarot_front: `The Sun`,
+    tarot_back: `How often does your desire lead you to the goal? But have you thought about the nature of desire? It simply means tomorrow, and not now, isn't it? Joy is never tomorrow.`,
   },
   {
     week_number: 40,
@@ -1365,7 +1405,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Love is the highest strength, yet it makes you absolutely weak.`,
-    tarot_back: `So God/Enlightened One/Nature does not want you to have more faith or love. With too much faith and love, you make God weak. So, it is better for God that you have less faith.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Love is the highest strength, yet it makes you absolutely weak. So God/Enlightened One/Nature does not want you to have more faith or love. With too much faith and love, you make God weak. So, it is better for God that you have less faith.`,
   },
   {
     week_number: 41,
@@ -1397,7 +1438,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A boy asked a question and before Guruji could answer, he was ready with another question.`,
-    tarot_back: `To this Guruji said, "If you hold onto the question how will you receive the answer? Give away the question to me and then you will find that you are in the answer. If your hands are holding onto the question, how will you receive the answer?`,
+    tarot_front: `The Beacon`,
+    tarot_back: `A boy asked a question and before Guruji could answer, he was ready with another question. To this Guruji said, "If you hold onto the question how will you receive the answer? Give away the question to me and then you will find that you are in the answer. If your hands are holding onto the question, how will you receive the answer?`,
   },
   {
     week_number: 42,
@@ -1435,7 +1477,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When there is more joy, the contrast is greater.`,
-    tarot_back: `Do you see what I am saying? It is like a quantum leap. If one jumps across this threshold then there is no fall.`,
+    tarot_front: `The Heart`,
+    tarot_back: `A certain level of maturity is needed to see things as they are and not to blame the path, the self, and the world. Do you see what I am saying? It is like a quantum leap. If one jumps across this threshold then there is no fall.`,
   },
   {
     week_number: 43,
@@ -1471,7 +1514,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When someone is drowning in the ocean of attachments, surrender is the life jacket they can put on and wait for the rescue team.`,
-    tarot_back: `Unfortunately most people do not notice this until it is too late. When someone is drowning in the ocean of attachments, surrender is the life jacket they can put on and wait for the rescue team. Without fighting the attachments, observe the feverish breath and go to the cool place of silence within.`,
+    tarot_front: `The Chain`,
+    tarot_back: `Before you get scattered too much, gather yourself and rid your breath of the feverishness through surrender and sadhana. Unfortunately most people do not notice this until it is too late. When someone is drowning in the ocean of attachments, surrender is the life jacket they can put on and wait for the rescue team. Without fighting the attachments, observe the feverish breath and go to the cool place of silence within.`,
   },
   {
     week_number: 44,
@@ -1525,7 +1569,8 @@ NEWS FLASH:
 
 Back To Top ^`,
     quote: `If you say that you have no one in this world, then you are disowning me.`,
-    tarot_back: `Vivek means knowing that everything is changing. Time and again you have to awaken to this -- that the world, the people, our body, our emotions, are constantly changing. When you experience sorrow, understand that Vivek has been overshadowed.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `And if you disown me then I cannot do anything for you. Vivek means knowing that everything is changing. Time and again you have to awaken to this -- that the world, the people, our body, our emotions, are constantly changing. When you experience sorrow, understand that Vivek has been overshadowed.`,
   },
   {
     week_number: 45,
@@ -1555,7 +1600,8 @@ NEWS FLASH:
 
 Back To Top ^`,
     quote: `What is wrong with the word "brainwashing?" It indicates a clean brain, a clean mind, but it is used in a derogatory manner.`,
-    tarot_back: `It means "that which is new in the town, the most modern." But it is used in the sense of being old. In the course of time, meanings of words change. The word "enthused" comes from the Greek which means "God is with us." Then it came to mean crazy, and now it's changed again.`,
+    tarot_front: `The Voice`,
+    tarot_back: `You have come to reality. It means "that which is new in the town, the most modern." But it is used in the sense of being old. In the course of time, meanings of words change. The word "enthused" comes from the Greek which means "God is with us." Then it came to mean crazy, and now it's changed again.`,
   },
   {
     week_number: 46,
@@ -1593,7 +1639,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All the struggle in the world, whatever it may be, is the bondage of Karma.`,
-    tarot_back: `This understanding will lift you from getting stuck to the events or personalities and help you in your Journey to the Self. Only human life has the ability to be free from Karma. And only a few thousands aim to be free from it.`,
+    tarot_front: `The Wheel`,
+    tarot_back: `All the struggle in the world, whatever it may be, is the bondage of Karma. It cuts across all logic and reasoning. This understanding will lift you from getting stuck to the events or personalities and help you in your Journey to the Self. Only human life has the ability to be free from Karma.`,
   },
   {
     week_number: 47,
@@ -1631,7 +1678,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When they were all at Sumeru Mantap, lightening and thunder surrounded us and everyone was drenched and then they ran to Guruji's kutir.`,
-    tarot_back: `It was a confluence of eight prominent saints of India who in a private meeting honored Guruji in one of their ashrams. Each of these saints gives lectures or Darshan to hundreds of thousands of devotees and they all run their own schools, hospitals and ashrams. Four of them who were just introduced to Guruji followed us for a brief tour of our Ashram.`,
+    tarot_front: `The Heart`,
+    tarot_back: `This keeps your mind swinging between the two extremes and causes love and hatred. With the power of Knowledge and Satsang you can rise above this dilemma. When they were all at Sumeru Mantap, lightening and thunder surrounded us and everyone was drenched and then they ran to Guruji's kutir. Immediately these very popular and formal Sanyasis began to shed their orange garments.`,
   },
   {
     week_number: 48,
@@ -1661,7 +1709,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Since every perception is erroneous, the world is an illusion.`,
-    tarot_back: `Since every perception is erroneous, the world is an illusion. Experiences are all of perception. The experiencer is the only reality.`,
+    tarot_front: `The Mist`,
+    tarot_back: `Since every perception is erroneous, the world is an illusion. Experiences are all of perception. The experiencer is the only reality. Look for the seer, the experiencer, in between experiences.`,
   },
   {
     week_number: 49,
@@ -1713,7 +1762,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All the meditation you do is for the mind.`,
-    tarot_back: `Neither the body nor the mind is the Self. All the yoga you do is for the body. All the meditation you do is for the mind.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `This is an erroneous notion. Neither the body nor the mind is the Self. All the yoga you do is for the body. All the meditation you do is for the mind.`,
   },
   {
     week_number: 50,
@@ -1755,7 +1805,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The Knowledge acquired by a human being cannot be measured or judged by external behavior.`,
-    tarot_back: `Someone may behave as though they have absorbed all the Knowledge but internally they have not. Someone who seems to have not changed at all may have absorbed a lot. Ordinary people would just look at the behavior, but the intelligent looks beyond and is amazed by the play of the consciousness (Brahman).`,
+    tarot_front: `The Scroll`,
+    tarot_back: `The Knowledge acquired by a human being cannot be measured or judged by external behavior. Someone may behave as though they have absorbed all the Knowledge but internally they have not. The reverse is also true. Someone who seems to have not changed at all may have absorbed a lot.`,
   },
   {
     week_number: 51,
@@ -1791,7 +1842,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Somewhere it is nails, somewhere it is nose and tongue but all is a manifestation of a single cell.`,
-    tarot_back: `This is savitarka samadhi. Savitarka samadhi means equanimity with logical awareness. Deep sleep can be jada samadhi (equanimity with inertia).`,
+    tarot_front: `The Threshold`,
+    tarot_back: `Remembering and FEELING that everything is made up of one thing heals the body and mind and balances the doshas in the body (vata, pitta and kapha). This is savitarka samadhi. Savitarka samadhi means equanimity with logical awareness. Deep sleep can be jada samadhi (equanimity with inertia).`,
   },
   {
     week_number: 52,
@@ -1835,7 +1887,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There is no end to learning but there is an end to unlearning.`,
-    tarot_back: `there is no point in talking about what you know and no point in talking about what you don't know! There is no end to learning but there is an end to unlearning. That is when you become totally hollow and empty.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `What is the point in talking about something of which you know nothing. there is no point in talking about what you know and no point in talking about what you don't know! There is no end to learning but there is an end to unlearning. That is when you become totally hollow and empty.`,
   },
   {
     week_number: 53,
@@ -1869,7 +1922,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The way to expand from individual to universal consciousness is to share others's sorrow and joy.`,
-    tarot_back: `When you expand in Knowledge with time, then depression is not possible. Your inner most source is joy. The way to overcome personal misery is to share universal misery!`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Your inner most source is joy. The way to overcome personal misery is to share universal misery! The way to expand personal joy is to share universal joy. Instead of thinking "what about me?" "what can I gain from this world?" think "what can I do for the world?" When everyone comes from the point of contributing to society, you have a Divine society.`,
   },
   {
     week_number: 54,
@@ -1899,7 +1953,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Joy is the realization that there is no vacation from wisdom.`,
-    tarot_back: `Perfection hides; imperfection shows off. The wise will not stay on the surface but will probe into the depth. Things are not blurred; your vision is blurred.`,
+    tarot_front: `The Sun`,
+    tarot_back: `The world appears imperfect on the surface but underneath, all is perfect. Perfection hides; imperfection shows off. The wise will not stay on the surface but will probe into the depth. Things are not blurred; your vision is blurred.`,
   },
   {
     week_number: 55,
@@ -1939,7 +1994,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Only in the state of Being when you are full of love and compassion can you ever be free from all judgements.`,
-    tarot_back: `Yet the world cannot move without judgements. Until you judge something as good or bad, you cannot do any actions. If you see rotten apples in the market, you say, "No good." Good ones you buy.`,
+    tarot_front: `The Arrow`,
+    tarot_back: `Judgements are so subtle that you are not even aware of their existence. Judging or labeling someone as judgmental is also a judgement. Only in the state of Being when you are full of love and compassion can you ever be free from all judgements. Yet the world cannot move without judgements.`,
   },
   {
     week_number: 56,
@@ -1969,7 +2025,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you go underneath the carpet, He will go underneath the floor.`,
-    tarot_back: `Most of your prayers and rituals are just attempts to trick the Divine. You try to give the least and get the maximum out of the Divine and He knows. He's an astute businessman; He will trick you even more.`,
+    tarot_front: `The Thorn`,
+    tarot_back: `Don't be too smart with the Divine and try to fool Him. Most of your prayers and rituals are just attempts to trick the Divine. You try to give the least and get the maximum out of the Divine and He knows. He's an astute businessman; He will trick you even more.`,
   },
   {
     week_number: 57,
@@ -1999,7 +2056,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A little water in the sun will evaporate but the ocean never dries up.`,
-    tarot_back: `One who is irresponsible cannot surrender either. Why is someone irresponsible? They are lazy or fearful or both.`,
+    tarot_front: `The Offering`,
+    tarot_back: `Surrender is saying "Let Thy Will be done" and "Thy Will" for you is to take responsibility for the whole world. It appears to be opposing and conflicting in nature -- in fact they are two sides of the same coin. The more you surrender, the more responsive you become. One who is irresponsible cannot surrender either.`,
   },
   {
     week_number: 58,
@@ -2041,7 +2099,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are totally established, you find the fools come up with wisdom.`,
-    tarot_back: `Don't try to get rid of them! If you are not centered you will have no patience to put up with them. When you are totally established, you find the fools come up with wisdom.`,
+    tarot_front: `The Bow`,
+    tarot_back: `With forbearance or patience and wisdom, skillfully make your way up. If you find fools around you, they are going to make you wiser. The number of fools around you indicates the strength of your centeredness. Don't try to get rid of them!`,
   },
   {
     week_number: 59,
@@ -2081,7 +2140,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The Ashram is radiating so much love that the postman kept polishing the letterbox outside the Ashram for a long time without knowing why.`,
-    tarot_back: `One who does a lot of work will never say he did a lot. When someone says he did a lot of work, that means he can do more. Work does not tire you as much as the doership does.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `And the future is a mix of both. The wise will see the doing in happening and the happening in doing simultaneously. Are you confused now? One who does a lot of work will never say he did a lot.`,
   },
   {
     week_number: 60,
@@ -2127,7 +2187,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are part of the Master, you have every right to be happy.`,
-    tarot_back: `When you go beyond gratefulness, then union happens. You are part of the Master. You are just One Being with a thousand heads and a thousand arms, but with one heart.`,
+    tarot_front: `The Guide`,
+    tarot_back: `You are part of the Master. You are just One Being with a thousand heads and a thousand arms, but with one heart. You have got to be grateful on the path, but you have to transcend gratefulness. Better stop being grateful.`,
   },
   {
     week_number: 61,
@@ -2167,7 +2228,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And meditation is of both and connects both.`,
-    tarot_back: `A mature intellect is devoted. A mature heart is full of knowledge. And meditation matures your intellect as well as your heart.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `And meditation is of both and connects both. A mature intellect is devoted. A mature heart is full of knowledge. And meditation matures your intellect as well as your heart.`,
   },
   {
     week_number: 62,
@@ -2211,7 +2273,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When your intention is to get a boon, then you are in a hurry.`,
-    tarot_back: `When you know you own God, you are not in a hurry to get something out of God. Your hurry to get something throws you off balance and makes you small. Have "eternal wait," infinite patience.`,
+    tarot_front: `The Mountain`,
+    tarot_back: `Infinite patience comes up in him. When you know you own God, you are not in a hurry to get something out of God. Your hurry to get something throws you off balance and makes you small. Have "eternal wait," infinite patience.`,
   },
   {
     week_number: 63,
@@ -2237,7 +2300,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The head that bends in surrender will never have to bend in shame.`,
-    tarot_back: `The head that bends in surrender will never have to bend in shame. Shame accompanies arrogance. See how children are endowed with shyness, that is natural.`,
+    tarot_front: `The Offering`,
+    tarot_back: `The head that bends in surrender will never have to bend in shame. Shame accompanies arrogance. Shyness accompanies Love. See how children are endowed with shyness, that is natural.`,
   },
   {
     week_number: 64,
@@ -2277,7 +2341,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `(Everyone is silent) Your perception, observation, and expression have advanced.`,
-    tarot_back: `Because everybody thinks they are very special in some way or another! Your perception has improved. You see the cause behind every cause, the Divine, and you see the great plan behind every small plan.`,
+    tarot_front: `The Light`,
+    tarot_back: `What makes you ordinary on the path is that you are special! Because everybody thinks they are very special in some way or another! Your perception has improved. You see the cause behind every cause, the Divine, and you see the great plan behind every small plan.`,
   },
   {
     week_number: 65,
@@ -2321,7 +2386,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When there is a total sense of belongingness, real play happens.`,
-    tarot_back: `Normally what happens to you when you lose an argument? You are sad and upset, hurt and angry. But when you lose or win an argument with me you are still happy.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `Winning or losing is irrelevant. Normally what happens to you when you lose an argument? You are sad and upset, hurt and angry. But when you lose or win an argument with me you are still happy.`,
   },
   {
     week_number: 66,
@@ -2349,7 +2415,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If the pot is well baked and strong, then it does not matter whether you put the water into the pot or the pot into the water.`,
-    tarot_back: `If the pot is well baked and strong, then it does not matter whether you put the water into the pot or the pot into the water. During Satsang that evening a devotee presents a beautiful hand crafted pot to Guruji. Another devotee presents a bouquet of roses.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `If you pour water into a half baked pot, the pot becomes wasted and so does the water. If the pot is well baked and strong, then it does not matter whether you put the water into the pot or the pot into the water. During Satsang that evening a devotee presents a beautiful hand crafted pot to Guruji. Another devotee presents a bouquet of roses.`,
   },
   {
     week_number: 67,
@@ -2391,7 +2458,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The ocean becoming the cloud is a secret, but the cloud becoming the ocean is obvious.`,
-    tarot_back: `The ocean becoming the cloud is a secret, but the cloud becoming the ocean is obvious. In the world only a few can notice your inner growth and height, but your outer expressions are apparent. Never brood that people don’t understand you.`,
+    tarot_front: `The Fall`,
+    tarot_back: `You don’t see how the Ocean becomes the Cloud. The ocean becoming the cloud is a secret, but the cloud becoming the ocean is obvious. In the world only a few can notice your inner growth and height, but your outer expressions are apparent. Never brood that people don’t understand you.`,
   },
   {
     week_number: 68,
@@ -2473,7 +2541,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Usually, you give your anger freely and smile rarely as though a smile is costly.`,
-    tarot_back: `In ignorance, anger is cheaper and a smile is costly. In Knowledge, a smile is free like sun, air, and water and anger is extremely expensive like a diamond.`,
+    tarot_front: `The Storm`,
+    tarot_back: `Usually, you give your anger freely and smile rarely as though a smile is costly. In ignorance, anger is cheaper and a smile is costly. In Knowledge, a smile is free like sun, air, and water and anger is extremely expensive like a diamond.`,
   },
   {
     week_number: 69,
@@ -2513,7 +2582,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `This is the dilemma of life: Everyone is looking for perfect balance.`,
-    tarot_back: `Discipline without freedom is suffocating. Orderliness is monotonous and chaos is stressful. We have to make the discipline free and the freedom disciplined.`,
+    tarot_front: `The Scale`,
+    tarot_back: `Freedom without discipline is absolute misery. Discipline without freedom is suffocating. Orderliness is monotonous and chaos is stressful. We have to make the discipline free and the freedom disciplined.`,
   },
   {
     week_number: 70,
@@ -2560,7 +2630,8 @@ Fax 408-626-6801
 
 Back To Top ^`,
     quote: `These are responsible for restoring all earthly and spiritual benefits.`,
-    tarot_back: `At night the entire creation goes to sleep including the ashram night watchman. (Laughter) People working come home at night and they really celebrate, rejoice and pray. Nine nights are precious as they have subtle energy.`,
+    tarot_front: `The Moon`,
+    tarot_back: `Night provides rest and rejuvenation. At night the entire creation goes to sleep including the ashram night watchman. (Laughter) People working come home at night and they really celebrate, rejoice and pray. Nine nights are precious as they have subtle energy.`,
   },
   {
     week_number: 71,
@@ -2592,7 +2663,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `One who has given everything has also given freedom: Honor the freedom first and make good use of all things given to you.`,
-    tarot_back: `Offer all the desires and your sankalpas to the Divine... Effortlessness is the key to the Absolute. Your mind does not belong to you.`,
+    tarot_front: `The Stillness`,
+    tarot_back: `Your sankalpas (intentions) and desires separate you from God. Offer all the desires and your sankalpas to the Divine... then you are divine... Effortlessness is the key to the Absolute.`,
   },
   {
     week_number: 72,
@@ -2622,7 +2694,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And everyone is free to be sincere at any point of time or space.`,
-    tarot_back: `Q: Why do people choose to be sincere only sometimes? A: Because of the illusion that they are going to miss some mundane pleasure. Hankering after pleasure makes them insincere.`,
+    tarot_front: `The Crown`,
+    tarot_back: `And everyone is free to be sincere at any point of time or space. Q: Why do people choose to be sincere only sometimes? A: Because of the illusion that they are going to miss some mundane pleasure. Hankering after pleasure makes them insincere.`,
   },
   {
     week_number: 73,
@@ -2652,7 +2725,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Shiva is called Chandrasekhara which means that mind which is in the Shiva (transcendence) and is always above the peak.`,
-    tarot_back: `One who goes to the peak comes down, but the peak seeks the one who is stationed in the inner space. Shiva is called Chandrasekhara which means that mind which is in the Shiva (transcendence) and is always above the peak. Often people are running after parties and celebrations, but for the one who is not running after them, parties and celebrations follow him.`,
+    tarot_front: `The Hermit`,
+    tarot_back: `One who goes to the peak comes down, but the peak seeks the one who is stationed in the inner space. Shiva is called Chandrasekhara which means that mind which is in the Shiva (transcendence) and is always above the peak. Often people are running after parties and celebrations, but for the one who is not running after them, parties and celebrations follow him. If you are running after parties, loneliness comes to you, but if you are in the solitude of the Self, parties surround you.`,
   },
   {
     week_number: 74,
@@ -2684,7 +2758,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And if you feel a part of me you can only see the Divine in yourself.`,
-    tarot_back: `If you see the Divine in me you cannot but be a part of me and you cannot be away from me. And if you feel a part of me you can only see the Divine in yourself. And if you can see the Divine in yourself, you'll see the Divine in everyone.`,
+    tarot_front: `The Light`,
+    tarot_back: `You are stupid if you don't see the Divine in me. If you see the Divine in me you cannot but be a part of me and you cannot be away from me. And if you feel a part of me you can only see the Divine in yourself. And if you can see the Divine in yourself, you'll see the Divine in everyone.`,
   },
   {
     week_number: 75,
@@ -2718,7 +2793,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When your survival is at stake, you don't complain that nobody loves you.`,
-    tarot_back: `If you have a conflicting environment you tend to seek harmony ... Ask yourself this question: Do you seek harmony in every situation or do you seek to widen the differences and prove your righteousness? When your survival is at stake, you don't complain that nobody loves you.`,
+    tarot_front: `The Heart`,
+    tarot_back: `If you have a conflicting environment you tend to seek harmony ... Have you noticed this? Ask yourself this question: Do you seek harmony in every situation or do you seek to widen the differences and prove your righteousness? When your survival is at stake, you don't complain that nobody loves you.`,
   },
   {
     week_number: 76,
@@ -2752,7 +2828,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The greater the intensity of desire and the later it gets fulfilled, then greater will be the gratitude.`,
-    tarot_back: `The feeling of gratitude is so overwhelming after the fulfillment of desire that it's achievement loses its charm and significance. The son of a farmer in India had a life-long desire to go to England and he prayed deeply for it. Even the news of his trip to England materializing filled him with immense gratitude -- he did not even care whether he went or not.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `For desire to get intense, time and the need for the desire are required. The feeling of gratitude is so overwhelming after the fulfillment of desire that it's achievement loses its charm and significance. The son of a farmer in India had a life-long desire to go to England and he prayed deeply for it. Even the news of his trip to England materializing filled him with immense gratitude -- he did not even care whether he went or not.`,
   },
   {
     week_number: 77,
@@ -2792,7 +2869,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you lack faith, happiness is neither in the inner nor the outer world.`,
-    tarot_back: `Happiness springs forth from faith. Happiness is forgetting the body consciousness. Pain or sorrow is holding on to the body consciousness.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `When you lack faith, happiness is neither in the inner nor the outer world. Happiness springs forth from faith. Happiness is forgetting the body consciousness. Pain or sorrow is holding on to the body consciousness.`,
   },
   {
     week_number: 78,
@@ -2852,7 +2930,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The next time when someone is rude to you, make sure you don't get upset.`,
-    tarot_back: `Then what are the options? The next time when someone is rude to you, make sure you don't get upset. Just give back a broad smile.`,
+    tarot_front: `The Oak`,
+    tarot_back: `None of these will in any way strengthen you. Then what are the options? The next time when someone is rude to you, make sure you don't get upset. Just give back a broad smile.`,
   },
   {
     week_number: 79,
@@ -2888,7 +2967,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are centered, all pleasures come to you anyway, but they are no longer pleasures.`,
-    tarot_back: `The mind that seeks pleasure can never achieve the highest. If you are after pleasure, forget about Satsang. Why are you wasting your time?`,
+    tarot_front: `The Mirror`,
+    tarot_back: `When you are centered, all pleasures come to you anyway, but they are no longer pleasures. They lose their charm. The mind that seeks pleasure can never achieve the highest. If you are after pleasure, forget about Satsang.`,
   },
   {
     week_number: 80,
@@ -2920,7 +3000,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Consciousness has three aspects: "is-ness" - that it is; knowingness/expression - it knows and expresses; and love - it is loving.`,
-    tarot_back: `Consciousness has three aspects: "is-ness" - that it is; knowingness/expression - it knows and expresses; and love - it is loving. This is the secret of the whole universe. Maya is not being aware of the three aspects of consciousness.`,
+    tarot_front: `The Cosmos`,
+    tarot_back: `Consciousness has three aspects: "is-ness" - that it is; knowingness/expression - it knows and expresses; and love - it is loving. This is the secret of the whole universe. Maya is not being aware of the three aspects of consciousness. Ignorance is when one is caught up in the name and form.`,
   },
   {
     week_number: 81,
@@ -2964,7 +3045,8 @@ Guruji's message for Christmas: BE A FOUNTAIN OF LOVE
 
 Back To Top ^`,
     quote: `When you want to depend on yourself for everything, there is nobody else, then it needs a lot of courage.`,
-    tarot_back: `Because even a little fear is detrimental to self-reliance. If you don't have a hundred dollars, you cannot have a thousand dollars. Self-reliance contains surrender.`,
+    tarot_front: `The Offering`,
+    tarot_back: `You simply fool yourself. People who are afraid to surrender fool themselves. Because even a little fear is detrimental to self-reliance. If you don't have a hundred dollars, you cannot have a thousand dollars.`,
   },
   {
     week_number: 82,
@@ -2998,7 +3080,8 @@ Compiled by David Burge, Judy Clark, and Ceci Balmer
 
 Back To Top ^`,
     quote: `When you are living for the sake of the world, the world is fortunate.`,
-    tarot_back: `Whatever the world needs or wants, you are there for that. So the year is fortunate that you are on the earth at this point in time. Let the time celebrate your presence.`,
+    tarot_front: `The Dance`,
+    tarot_back: `Whatever the world needs or wants, you are there for that. So the year is fortunate that you are on the earth at this point in time. Let the time celebrate your presence. You keep smiling as ever.`,
   },
   {
     week_number: 83,
@@ -3028,7 +3111,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The solar plexus is connected with the sun, that's why it is called "solar" plexus.`,
-    tarot_back: `The solar plexus has a profound impact on the central nervous system, optic nerves, stomach, and what we usually call "gut feeling." It is the second brain in your body. Usually the solar plexus is slightly bigger than an almond. Studies have shown that with the practice of yoga, meditation, and Sudarshan Kriya, the solar plexus can become as a large as the size of the palm.`,
+    tarot_front: `The Padmanabha`,
+    tarot_back: `Doing Surya Namaskar ("sun salutation") yoga asana in the early morning is very good. The solar plexus has a profound impact on the central nervous system, optic nerves, stomach, and what we usually call "gut feeling." It is the second brain in your body. Usually the solar plexus is slightly bigger than an almond. Studies have shown that with the practice of yoga, meditation, and Sudarshan Kriya, the solar plexus can become as a large as the size of the palm.`,
   },
   {
     week_number: 84,
@@ -3054,7 +3138,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All the emotional upheavals one undergoes is because one doesn't know Bhakti.`,
-    tarot_back: `So in Bhakti four things are there: fulfillment and nourishment; means of knowing; "tarana" or salvation; and energy. Bhakti is the means of knowing, the right knowledge. When Bhakti is there the doubts don't come.`,
+    tarot_front: `The Veil`,
+    tarot_back: `"I" (ee) stands for shakti. So in Bhakti four things are there: fulfillment and nourishment; means of knowing; "tarana" or salvation; and energy. Bhakti nourishes you. Bhakti is the means of knowing, the right knowledge.`,
   },
   {
     week_number: 85,
@@ -3086,7 +3171,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If the world is at its worst, then it can only get better and you are here to make it better.`,
-    tarot_back: `If the world is at its worst, then it can only get better and you are here to make it better. What happens when you have to do it all by yourself -- no one comes to help? You do everything by yourself?`,
+    tarot_front: `The Wind`,
+    tarot_back: `You can only complain if you don't get the worst. If the world is at its worst, then it can only get better and you are here to make it better. What happens when you have to do it all by yourself -- no one comes to help? You do everything by yourself?`,
   },
   {
     week_number: 86,
@@ -3135,7 +3221,8 @@ Jai Gurudev
 
 Back To Top ^`,
     quote: `Love is the appetizer -- seva is the exercise -- without love and seva, knowledge becomes indigestible.`,
-    tarot_back: `Your inability to do something (break a habit) can cause a pinch; when you are deeply pained by something, then that will rid you of that habit. If you are pained by your shortcomings, then you are sadhak. Pain takes you out of addiction.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Your inability to do something (break a habit) can cause a pinch; when you are deeply pained by something, then that will rid you of that habit. If you are pained by your shortcomings, then you are sadhak. Pain takes you out of addiction. If you are in love with the divine, then you can digest the knowledge.`,
   },
   {
     week_number: 87,
@@ -3157,7 +3244,8 @@ Guruji is in Philadelphia today, New Jersey tomorrow, and Florida on Sunday for 
 
 Back To Top ^`,
     quote: `Unknown Knowledge.`,
-    tarot_back: `Do you recall this from last week's Knowledge sheet?`,
+    tarot_front: `The Scroll`,
+    tarot_back: `This card speaks to the essence of unknown knowledge, inviting you to look within and discover what has always been present.`,
   },
   {
     week_number: 88,
@@ -3179,7 +3267,8 @@ P.S. How many of you work hard? Wai till next week for the answer.
 
 Back To Top ^`,
     quote: `When knowledge is lodged in you as wisdom, it will never leave you.`,
-    tarot_back: `This is the last thing to do and the first thing to do. Keep your heart in a safe place; it is too delicate. Events, small things make strong impressions on it.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Make the Divine your Valentine (your sweet Beloved). This is the last thing to do and the first thing to do. Keep your heart in a safe place; it is too delicate. Events, small things make strong impressions on it.`,
   },
   {
     week_number: 89,
@@ -3209,7 +3298,8 @@ Compiled by Nancy D.
 
 Back To Top ^`,
     quote: `Its reward is for sure and is always more than your doing.`,
-    tarot_back: `Its reward is for sure and is always more than your doing. Your expectation of reward for the seva turns the seva into labor. If you think you have done a lot, you will do very little; if you see you have done a little, then you will do more.`,
+    tarot_front: `The Crown`,
+    tarot_back: `You have done the seva and it has rewarded you immediately. Its reward is for sure and is always more than your doing. Your expectation of reward for the seva turns the seva into labor. If you think you have done a lot, you will do very little; if you see you have done a little, then you will do more.`,
   },
   {
     week_number: 90,
@@ -3235,7 +3325,8 @@ The full moon greeted the Master as he visited the island of Maui in Hawaii for 
 
 Back To Top ^`,
     quote: `Share your problems only with the Divine, not with Tom, Dick, or Harry -- that just increases the problem.`,
-    tarot_back: `By not sharing your joy, it reduces. Share your problems only with the Divine, not with Tom, Dick, or Harry -- that just increases the problem. Share your joy with everybody.`,
+    tarot_front: `The Sun`,
+    tarot_back: `By sharing your misery, it doesn't reduce. By not sharing your joy, it reduces. Share your problems only with the Divine, not with Tom, Dick, or Harry -- that just increases the problem. Share your joy with everybody.`,
   },
   {
     week_number: 91,
@@ -3255,7 +3346,8 @@ Jai Gurudev !
 
 Back To Top ^`,
     quote: `The consciousness which is bliss, innocence, omnipresent, and the bestower of dispassion is Shiva.`,
-    tarot_back: `Like roots and stems and leaves come out of a seed when it is sprouted, all the Angels in your life manifest when you are centered. Angels rejoice in your company, but you have nothing to gain from them. They only come around those who have nothing to gain from them.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Angels are nothing but a ray of your Big Self. They are there to serve you when you are centered. Like roots and stems and leaves come out of a seed when it is sprouted, all the Angels in your life manifest when you are centered. Angels rejoice in your company, but you have nothing to gain from them.`,
   },
   {
     week_number: 92,
@@ -3291,7 +3383,8 @@ Then on to Delhi, the spiritually saturated capital of India, where billboards w
 
 Back To Top ^`,
     quote: `Knowledge of life brings confidence, and knowledge of death makes you fearless and centered.`,
-    tarot_back: `Knowledge of life brings confidence, and knowledge of death makes you fearless and centered. Celebrate while you are alone and when you are with people. Some know to celebrate when they are in a crowd.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Knowledge of life brings confidence, and knowledge of death makes you fearless and centered. Fear of separatedness. Celebrate while you are alone and when you are with people. Some know to celebrate when they are in a crowd.`,
   },
   {
     week_number: 93,
@@ -3319,7 +3412,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Krishna said to Arjuna: One who is unfriendly everywhere (including himself); his consciousness is stable and awareness is established.`,
-    tarot_back: `Your friend sympathizes with you and makes you believe in matter. Your enemy makes you feel helpless and takes you to the spirit. So your enemy is your friend and your friend is your enemy!`,
+    tarot_front: `The Eye`,
+    tarot_back: `Your enemy puts you back in yourself. Your friend sympathizes with you and makes you believe in matter. Your enemy makes you feel helpless and takes you to the spirit. So your enemy is your friend and your friend is your enemy!`,
   },
   {
     week_number: 94,
@@ -3357,7 +3451,8 @@ More than 600 people have gathered for the first Advance Course. The joyful and 
 
 Back To Top ^`,
     quote: `If you are only with simplicity, it makes you lazy and dull.`,
-    tarot_back: `That will make you more skillful. If you are only with simplicity, it makes you lazy and dull. Being only with complexity makes you angry and frustrated.`,
+    tarot_front: `The Dove`,
+    tarot_back: `When you are peaceful attend to the complexity within you. That will make you more skillful. If you are only with simplicity, it makes you lazy and dull. Being only with complexity makes you angry and frustrated.`,
   },
   {
     week_number: 95,
@@ -3393,7 +3488,8 @@ Rishikesh town is resonating with Art of Living Bhajans, and the second advance 
 
 Back To Top ^`,
     quote: `Ego, pride - If you cannot get rid of pride, take pride in owning THE DIVINE.`,
-    tarot_back: `Ego, pride - If you cannot get rid of pride, take pride in owning THE DIVINE. Greed - Be greedy for SATSANG. Craving - Crave for truth.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Be angry about the infinite, about Brahma. Ego, pride - If you cannot get rid of pride, take pride in owning THE DIVINE. Greed - Be greedy for SATSANG. Craving - Crave for truth.`,
   },
   {
     week_number: 96,
@@ -3435,7 +3531,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Because fear is love standing upside down, everything that can be interpreted with Love can also be interpreted with fear.`,
-    tarot_back: `FEAR OF DEATH PRESERVES LIFE. FEAR OF WRONG KEEPS THE RIGHT. FEAR OF SICKNESS BRINGS HYGIENE.`,
+    tarot_front: `The Mask`,
+    tarot_back: `But everywhere in between there is fear. Fear is essential to preserve orderliness in the world. It is a primal instinct. FEAR OF DEATH PRESERVES LIFE.`,
   },
   {
     week_number: 97,
@@ -3465,7 +3562,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you are a taker of happiness, you get misery.`,
-    tarot_back: `So he builds a shelter for physical comforts. In the same way, for spiritual and mental comfort - Satsang is the shelter. One who does not do Satsang is like a wild animal.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `Man needs protection from changing nature. So he builds a shelter for physical comforts. In the same way, for spiritual and mental comfort - Satsang is the shelter. One who does not do Satsang is like a wild animal.`,
   },
   {
     week_number: 98,
@@ -3501,7 +3599,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The Divine Love is like the sky which is limitless, infinite.`,
-    tarot_back: `The Love that comes out of comfort and familiarity grows. But this Love has no thrill, no enthusiasm, joy, or fire to it. For example, you are more comfortable with an old friend who is a familiar person, rather than with a new person.`,
+    tarot_front: `The Heart`,
+    tarot_back: `In this you lose the attraction fast, and boredom sets in, like most love marriages. This love may diminish and bring along with it fear, uncertainty, insecurity, and sadness. The Love that comes out of comfort and familiarity grows. But this Love has no thrill, no enthusiasm, joy, or fire to it.`,
   },
   {
     week_number: 99,
@@ -3529,7 +3628,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And when a person can correct or act, he will never complain.`,
-    tarot_back: `Complaining is the nature of utter ignorance where one does not know the Self. Complaint takes away the Beauty that is inborn in you. And it shows up more on the one who is on this path.`,
+    tarot_front: `The Rose`,
+    tarot_back: `Complaining is a sign of weakness. Complaining is the nature of utter ignorance where one does not know the Self. Complaint takes away the Beauty that is inborn in you. And it shows up more on the one who is on this path.`,
   },
   {
     week_number: 100,
@@ -3565,7 +3665,8 @@ Remember that May 13 is Guruj's 41st Birthday! We should start an annual traditi
 
 Back To Top ^`,
     quote: `When you think bad about yourself you feel low and again you start getting angry and you hate everyone else.`,
-    tarot_back: `Self image whether good or bad causes misery. When you think good about yourself in a very subtle manner you think bad about others. Then anger, jealousy, hatred - everything follows.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Self image whether good or bad causes misery. When you think good about yourself in a very subtle manner you think bad about others. Then anger, jealousy, hatred - everything follows. When you think bad about yourself you feel low and again you start getting angry and you hate everyone else.`,
   },
   {
     week_number: 101,
@@ -3597,7 +3698,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When we are not caught up in this then we are truly and sincerely able to say, "I belong to you." That is when all the cravings and aversions, desires and doubts fall off -- and in a moment the world belongs to you.`,
-    tarot_back: `The sun rises and sets, the grass grows, the river flows, the moon shines and I am here forever! How do you feel if someone praises you? It does something to you, doesn't it?`,
+    tarot_front: `The Veil`,
+    tarot_back: `", "I want this, I like that, I don't like this . The sun rises and sets, the grass grows, the river flows, the moon shines and I am here forever! How do you feel if someone praises you? It does something to you, doesn't it?`,
   },
   {
     week_number: 102,
@@ -3625,7 +3727,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When dedication is not complete, it leads to grumbling and complaints.`,
-    tarot_back: `You have to dedicate and rededicate again and again. Often people take their dedication for granted and then the mind starts demanding or complaining. When dedication is not complete, it leads to grumbling and complaints.`,
+    tarot_front: `The Oath`,
+    tarot_back: `You have to dedicate and rededicate again and again. Often people take their dedication for granted and then the mind starts demanding or complaining. When dedication is not complete, it leads to grumbling and complaints. Total dedication brings enormous enthusiasm, zeal, trust, and challenge, and does not leave any room for ego.`,
   },
   {
     week_number: 103,
@@ -3665,7 +3768,8 @@ Please note the wonderful children and teenager programs that are available for 
 
 Back To Top ^`,
     quote: `All these three (Tapas, Vairagya and surrender) purify your mind and uplift you in joy.`,
-    tarot_back: `- Vairagya means I want nothing and I am nothing. If you are grumbling then these are lacking, because when you accept the situation you cannot grumble; when you take it as Tapa you will not grumble; when you come from a state dispassion ("I don't want anything") you don't grumble; and if you are surrendered you will have no complaints. All these three (Tapas, Vairagya and surrender) purify your mind and uplift you in joy.`,
+    tarot_front: `The Well`,
+    tarot_back: `- Tapas is agreeing with the moment, total acceptance of pleasant or unpleasant situations. - Vairagya means I want nothing and I am nothing. If you are grumbling then these are lacking, because when you accept the situation you cannot grumble; when you take it as Tapa you will not grumble; when you come from a state dispassion ("I don't want anything") you don't grumble; and if you are surrendered you will have no complaints. All these three (Tapas, Vairagya and surrender) purify your mind and uplift you in joy.`,
   },
   {
     week_number: 104,
@@ -3693,7 +3797,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the time is not good, even a friend will behave like a foe.`,
-    tarot_back: `When the time is good, a foe will behave like a friend. When the time is not good, even a friend will behave like a foe. The wiser one believes in Mahakala (the Grand time or Shiva).`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `His faith rests on Kala (time). When the time is good, a foe will behave like a friend. When the time is not good, even a friend will behave like a foe. The wiser one believes in Mahakala (the Grand time or Shiva).`,
   },
   {
     week_number: 105,
@@ -3735,7 +3840,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `According to the degree of their surrender they are installed by the Master.`,
-    tarot_back: `From other stones he makes the steps. Certain stones become the tower of the Temple. Only those stones which are extremely suitable for carving will become the Deity and be installed in the Temple.`,
+    tarot_front: `The Every`,
+    tarot_back: `From certain stones which are good to carve, the sculptor makes the walls and pillars of the Temple. From other stones he makes the steps. Certain stones become the tower of the Temple. Only those stones which are extremely suitable for carving will become the Deity and be installed in the Temple.`,
   },
   {
     week_number: 106,
@@ -3776,7 +3882,8 @@ strength have grown.
 
 Back To Top ^`,
     quote: `Sensitivity is love .Sensitivity is real strength: calmness , endurance ,silence ,non-reactiveness ,confidence ,faith --and a smile.`,
-    tarot_back: `Those who are sensitive to others but not to themselves often end up feeling Poor me. Some conclude it's better not to be sensitive ,because sensitivity brings pain. They shut off .But mind you , if you are not sensitive, you will lose all the finer things in life, too--intuition, beauty and ecstasy of love.`,
+    tarot_front: `The Oak`,
+    tarot_back: `Some people are sensitive to themselves but insensitive to others . Those who are sensitive to others but not to themselves often end up feeling Poor me. Some conclude it's better not to be sensitive ,because sensitivity brings pain. They shut off .But mind you , if you are not sensitive, you will lose all the finer things in life, too--intuition, beauty and ecstasy of love.`,
   },
   {
     week_number: 107,
@@ -3822,7 +3929,8 @@ If you want to send an email to Guruji or Bhanu, please send it to tejasvi@giasb
 
 Back To Top ^`,
     quote: `When you love an object it becomes life.`,
-    tarot_back: `When you attach emotion, the whole creation becomes personal. When you remove the emotion, even people become objects. Violence is removing the emotion.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Even a stone has a face; even the sun laughs. When you attach emotion, the whole creation becomes personal. When you remove the emotion, even people become objects. Violence is removing the emotion.`,
   },
   {
     week_number: 108,
@@ -3864,7 +3972,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Worldly thought brings pleasure only as memory, whereas Divine thought comes as Reality.`,
-    tarot_back: `Worldly thought leads to indulgence, which brings you down from pleasure to disappointment and dejection. Divine thought takes you up from pleasure to Bliss, Intelligence, and progress in life. Worldly thought brings pleasure only as memory, whereas Divine thought comes as Reality.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Whether you encourage a worldly thought or a Divine thought, they both bring you pleasure. Worldly thought leads to indulgence, which brings you down from pleasure to disappointment and dejection. Divine thought takes you up from pleasure to Bliss, Intelligence, and progress in life. Worldly thought brings pleasure only as memory, whereas Divine thought comes as Reality.`,
   },
   {
     week_number: 109,
@@ -3902,7 +4011,8 @@ Ronnie Newman again needs your community's help for more research relating healt
 
 Back To Top ^`,
     quote: `When someone doubts your love, they start questioning you and demanding explanations for all your actions.`,
-    tarot_back: `Your nature is to shed the burden, and so you don't feel comfortable. When you question the reason behind an action, you are asking for justice for yourself. You are creating a distance when you ask for justice.`,
+    tarot_front: `The Heart`,
+    tarot_back: `To explain everything you do is a burden. Your nature is to shed the burden, and so you don't feel comfortable. When you question the reason behind an action, you are asking for justice for yourself. You are creating a distance when you ask for justice.`,
   },
   {
     week_number: 110,
@@ -3930,7 +4040,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you name love, for example, brother, sister, mother, father, guru, you are making it into a relationship.`,
-    tarot_back: `If you name love, for example, brother, sister, mother, father, guru, you are making it into a relationship. Relationship restricts love. What is your relationship to yourself?`,
+    tarot_front: `The Heart`,
+    tarot_back: `There is love between you and me. If you name love, for example, brother, sister, mother, father, guru, you are making it into a relationship. Relationship restricts love. DonÒ´ give it a name.`,
   },
   {
     week_number: 111,
@@ -3970,7 +4081,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The Guru is your very SELF and your SELF is the very life in every being.`,
-    tarot_back: `This is the cause of greed, fear, jealousy, and lack of contentment. On this Guru Purnima wake up and realize that the Lord of the Universe is very personal to you. Your personal Guru is the Guru of the whole world.`,
+    tarot_front: `The Guide`,
+    tarot_back: `This is the cause of greed, fear, jealousy, and lack of contentment. On this Guru Purnima wake up and realize that the Lord of the Universe is very personal to you. Your personal Guru is the Guru of the whole world. The Guru is your very SELF and your SELF is the very life in every being.`,
   },
   {
     week_number: 112,
@@ -4004,7 +4116,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `If they don't respect you, you are not obliged to answer their questions and you can drop all the formalities.`,
-    tarot_back: `Either you will be naturally smiling or frowning. When people love and respect you, you are obliged to return their courtesies because you don't want to hurt them. When they don't respect or love you, they will not be hurt by your actions and expressions.`,
+    tarot_front: `The Bow`,
+    tarot_back: `If they don't respect you, you are not obliged to answer their questions and you can drop all the formalities. Either you will be naturally smiling or frowning. So you will be complete. When people love and respect you, you are obliged to return their courtesies because you don't want to hurt them.`,
   },
   {
     week_number: 113,
@@ -4046,7 +4159,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Zeal, enthusiasm, strength and joy are all connected to sacrifice.`,
-    tarot_back: `It takes you to a higher pedestal. Often people think sacrifice makes life dull and joyless. In fact, it is the sacrifice which makes life worth living.`,
+    tarot_front: `The Altar`,
+    tarot_back: `Sacrifice gives you the quantum leap. It takes you to a higher pedestal. Often people think sacrifice makes life dull and joyless. In fact, it is the sacrifice which makes life worth living.`,
   },
   {
     week_number: 114,
@@ -4074,7 +4188,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you are not awake, then even the most precious knowledge does not make any sense.`,
-    tarot_back: `When there is a storm you need to shut your windows, otherwise you will get wet. When it is hot and suffocating inside, you need to open your windows. Your senses are like the windows.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Sri Sri: Awareness depends upon your ability to shut your windows. When there is a storm you need to shut your windows, otherwise you will get wet. When it is hot and suffocating inside, you need to open your windows. Your senses are like the windows.`,
   },
   {
     week_number: 115,
@@ -4105,7 +4220,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Your bondage to the knowledge, to the master, to the truth, To The Self, All Saves You.`,
-    tarot_back: `Your bondage to the knowledge, to the master, to the truth, To The Self, All Saves You. A Rope Can Be Tied To Either Protect Or Strangle You. The Small Mind And Mundane Things can strangle you.`,
+    tarot_front: `The Guide`,
+    tarot_back: `A bondage that protects you. Your bondage to the knowledge, to the master, to the truth, To The Self, All Saves You. A Rope Can Be Tied To Either Protect Or Strangle You. The Small Mind And Mundane Things can strangle you.`,
   },
   {
     week_number: 116,
@@ -4151,7 +4267,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `An unintelligent man, in spite of having all the information, cannot be creative.`,
-    tarot_back: `But a beaver synthesizes, it brings all the wood together and builds a dam. Birds also synthesize such as the Weaver birds. A human being both analyzes and synthesizes.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `You Give Them a garland for example, and they tear it to pieces and throw it all over the place. A monkey can only divide, or analyze. But a beaver synthesizes, it brings all the wood together and builds a dam. Birds also synthesize such as the Weaver birds.`,
   },
   {
     week_number: 117,
@@ -4177,7 +4294,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `For example, if you have taken the Karnataka Express to Bangalore, then there is no need to ask at every station "Where is the train going?".`,
-    tarot_back: `When you know somebody is taking care of you, what is the need to ask any question? For example, if you have taken the Karnataka Express to Bangalore, then there is no need to ask at every station "Where is the train going?". When there is someone to take care of your desire, then why go to an astrologer?`,
+    tarot_front: `The Anchor`,
+    tarot_back: `Sri Sri : If you have faith in God or yourself or your family and friends then questions cannot arise. When you know somebody is taking care of you, what is the need to ask any question? For example, if you have taken the Karnataka Express to Bangalore, then there is no need to ask at every station "Where is the train going?". When there is someone to take care of your desire, then why go to an astrologer?`,
   },
   {
     week_number: 118,
@@ -4233,7 +4351,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `the experiences are on the circumference and they keep on changing.`,
-    tarot_back: `Similarly, if you are unhappy, ask Who is unhappy? If you think you know something, ask Who knows it? If you think you are enlightened, ask Who is enlightened?`,
+    tarot_front: `The Eye`,
+    tarot_back: `of frustration, ask Who is frustrated? Similarly, if you are unhappy, ask Who is unhappy? If you think you know something, ask Who knows it? If you think you are enlightened, ask Who is enlightened?`,
   },
   {
     week_number: 119,
@@ -4289,7 +4408,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A glimpse of Divine love makes you so complete and over rules all the relative pleasures.`,
-    tarot_back: `It takes you away from the object and turns you towards your body and mind. Energy is the second insight. A bolt of energy brings you back to your Self.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Pain is the first insight. It takes you away from the object and turns you towards your body and mind. Energy is the second insight. A bolt of energy brings you back to your Self.`,
   },
   {
     week_number: 120,
@@ -4343,7 +4463,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The more you give, the more strength will be given to you.`,
-    tarot_back: `Next week's knowledge sheet will be written and spoken by those whose name starts with the letter "A" and this will continue in alphabetical order. Take a commitment for a seva project. The more you give, the more strength will be given to you.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `Take a commitment for a seva project. The more you give, the more strength will be given to you. Dissolving the name is awareness. Dissolving the form is meditation.`,
   },
   {
     week_number: 121,
@@ -4385,7 +4506,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Always putting truth and service before pleasure.`,
-    tarot_back: `Being non-judgmental and open-minded. Some people would like to learn but their judgmental attitude and close-mindedness does not allow them to learn. Total commitment and one-pointedness to the path one has chosen.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Many people acknowledge that they do not know, but they are not ready to learn. Being non-judgmental and open-minded. Some people would like to learn but their judgmental attitude and close-mindedness does not allow them to learn. Total commitment and one-pointedness to the path one has chosen.`,
   },
   {
     week_number: 122,
@@ -4413,7 +4535,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Deva Puja: Acknowledging and honoring the Divine in all the forms.`,
-    tarot_back: `They also purify the individual and the collective consciousness. Deva Puja: Acknowledging and honoring the Divine in all the forms. Sangatikarana: Hastening the process of evolution by bringing together all the elements and people in creation.`,
+    tarot_front: `The Stillness`,
+    tarot_back: `They also purify the individual and the collective consciousness. Deva Puja: Acknowledging and honoring the Divine in all the forms. Sangatikarana: Hastening the process of evolution by bringing together all the elements and people in creation. Dana: Sharing and giving what one has been blessed with.`,
   },
   {
     week_number: 123,
@@ -4451,7 +4574,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Belma says: You cannot pray to a child; you can only pray to your father.`,
-    tarot_back: `One who delivers can also grant wishes. He/She clings onto to you like a baby till you grow old and die. God keeps crying for nourishment.`,
+    tarot_front: `The God`,
+    tarot_back: `Most people do not even deliver. One who delivers can also grant wishes. He/She clings onto to you like a baby till you grow old and die. God keeps crying for nourishment.`,
   },
   {
     week_number: 124,
@@ -4491,7 +4615,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And especially for those on this path of knowledge, there is no reason for you to not feel blessed.`,
-    tarot_back: `This deep sense of feeling that "I am blessed" can help you overcome any obstacles in life. It gives you courage and confidence and it will open your lid for grace to be poured in. If you don't realize you are blessed, then the doership begins.`,
+    tarot_front: `The Heart`,
+    tarot_back: `This deep sense of feeling that "I am blessed" can help you overcome any obstacles in life. It gives you courage and confidence and it will open your lid for grace to be poured in. Wanting love disappears. If you don't realize you are blessed, then the doership begins.`,
   },
   {
     week_number: 125,
@@ -4531,7 +4656,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Neither is there a beginning nor is there an end, because it is all spherical.`,
-    tarot_back: `A sphere has neither a beginning nor an end, nor a goal, nor a direction. Truth has no direction, no goal. Truth itself is the goal and truth is infinite.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `Neither is there a beginning nor is there an end, because it is all spherical. A sphere has neither a beginning nor an end, nor a goal, nor a direction. Truth has no direction, no goal. Truth itself is the goal and truth is infinite.`,
   },
   {
     week_number: 126,
@@ -4591,7 +4717,8 @@ Jai Guru Dev ,
 
 Back To Top ^`,
     quote: `You are afraid of losing respect because love does not allow distance and respect tends to keep distance.`,
-    tarot_back: `Try to reciprocate even though it is not genuine. Doubt the love expressed and ones own worthiness. You are afraid of losing respect because love does not allow distance and respect tends to keep distance.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Feel foolish and awkward. Try to reciprocate even though it is not genuine. Doubt the love expressed and ones own worthiness. You are afraid of losing respect because love does not allow distance and respect tends to keep distance.`,
   },
   {
     week_number: 127,
@@ -4645,7 +4772,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `This will turn your demand into gratefulness and the more you are grateful in life, the more love comes your way.`,
-    tarot_back: `1.Have patience and change your expression of love. Be centered and limit your expression of love. Sometimes over-expression of love puts people off.`,
+    tarot_front: `The Heart`,
+    tarot_back: `How do you maintain your lovingness? 1.Have patience and change your expression of love. Be centered and limit your expression of love. Sometimes over-expression of love puts people off.`,
   },
   {
     week_number: 128,
@@ -4677,7 +4805,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Ego can be transcended by knowing the Truth; by enquiring "Who am I?" Often, your attitude towards one who has ego is of contempt or jealousy.`,
-    tarot_back: `Ego can be transcended by knowing the Truth; by enquiring "Who am I?" Often, your attitude towards one who has ego is of contempt or jealousy. But rather you should have compassion, or even pity, isn't it? There is also a positive aspect of ego.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Ego causes heaviness, discomfort. It doesn't let love flow. Ego can be transcended by knowing the Truth; by enquiring "Who am I?" Often, your attitude towards one who has ego is of contempt or jealousy. But rather you should have compassion, or even pity, isn't it?`,
   },
   {
     week_number: 129,
@@ -4719,7 +4848,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Memory of the ever changing relative, however good or bad, brings bondage.`,
-    tarot_back: `It is all a matter of where you are, of what you are. If you are ignorant, it is because of your memory. If you are enlightened, it is because of your memory.`,
+    tarot_front: `The Eye`,
+    tarot_back: `Memory of past events and worldly concerns constricts the vastness of the self. It is all a matter of where you are, of what you are. If you are ignorant, it is because of your memory. If you are enlightened, it is because of your memory.`,
   },
   {
     week_number: 130,
@@ -4755,7 +4885,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `It is the intellect which harbors inhibitions, likes and dislikes, approvals and disapprovals and it is again the intellect which harbors wisdom, which brings forth the intuition.`,
-    tarot_back: `Q: Is intuition beyond intellect? Q: Are emotion and intellect contradictory? Q: When there is a conflict, which is better?`,
+    tarot_front: `The Sage`,
+    tarot_back: `Q: Is intuition beyond intellect? Q: Are emotion and intellect contradictory? Q: When there is a conflict, which is better? Q: Is intellect affected by Karma?`,
   },
   {
     week_number: 131,
@@ -4789,7 +4920,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the mind is dull or unconscious, it is unable to experience itself.`,
-    tarot_back: `When the mind is excited or happy, time seems to be too short and when the mind is miserable, time seems to be too long. To escape from the two extremes, many resort to alcohol, sleep etc..... Samadhi, no-mindedness or timelessness, is peace, the Real peace.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `When the mind is dull or unconscious, it is unable to experience itself. When the mind is excited or happy, time seems to be too short and when the mind is miserable, time seems to be too long. To escape from the two extremes, many resort to alcohol, sleep etc..... Samadhi, no-mindedness or timelessness, is peace, the Real peace.`,
   },
   {
     week_number: 132,
@@ -4813,7 +4945,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `As you come close to your Being, all the faces melt and leave you as the Space that you are.`,
-    tarot_back: `As you come close to your Being, all the faces melt and leave you as the Space that you are. At the gross level, you identify yourself as somebody. At a subtle level, you identify yourself as some energy or an incarnation of some angel, saint or prophet.`,
+    tarot_front: `The Horizon`,
+    tarot_back: `When you come face to face with your faces then conflicts, confusion and chaos arise in you. From time to time in different phases, different faces appear. As you come close to your Being, all the faces melt and leave you as the Space that you are. At the gross level, you identify yourself as somebody.`,
   },
   {
     week_number: 133,
@@ -4843,7 +4976,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Joy is forgetting that you are matter and so you become intense vibration.`,
-    tarot_back: `Pleasure in the subtle is long lasting, energizing, refreshing and freeing. Pleasure from the gross is short lived, tiring and binding. When you know you are electricity (vibration/energy), then craving, greed, lust and anger disappear.`,
+    tarot_front: `The Dance`,
+    tarot_back: `Pleasure that comes from Satsang is of a higher nature. Mantra and singing create vibrations in the spirit. That's why when you sing, the ecstasy stays for a long time. Pleasure in the subtle is long lasting, energizing, refreshing and freeing.`,
   },
   {
     week_number: 134,
@@ -4883,7 +5017,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And people who are selfish and who just want to enjoy themselves will be miserable even in good times.`,
-    tarot_back: `A wise one is happy even in bad times. And the stupid one is unhappy even in good times. You make the time good or bad.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `Often the organizers of a party do not enjoy the party because some little thing is missing, they forgot to invite somebody, somebody did not come or some little thing went wrong. A wise one is happy even in bad times. And the stupid one is unhappy even in good times. You make the time good or bad.`,
   },
   {
     week_number: 135,
@@ -4903,7 +5038,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If, by your skill, you could move them within you towards the centre of your existence, another dimension of everlasting pleasure, thrill, bliss, and undying love will all be yours.`,
-    tarot_back: `Lust, greed, power and jealousy are also powerful because they are nothing but energy and you are the source of it - the pure electricity. Dedication and devotion keep the purity of your electricity and they move you upward. Realizing you are pleasure or electricity yourself your craving subsides and serenity dawns.`,
+    tarot_front: `The Heart`,
+    tarot_back: `If, by your skill, you could move them within you towards the centre of your existence, another dimension of everlasting pleasure, thrill, bliss, and undying love will all be yours. Lust, greed, power and jealousy are also powerful because they are nothing but energy and you are the source of it - the pure electricity. Dedication and devotion keep the purity of your electricity and they move you upward. Realizing you are pleasure or electricity yourself your craving subsides and serenity dawns.`,
   },
   {
     week_number: 136,
@@ -4941,7 +5077,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The more you don't want it, the more you will harbor it in your consciousness.`,
-    tarot_back: `And you say you don't want politics? The more you don't want it, the more you will harbor it in your consciousness. When you recognize politics in any group or Satsang, that is a blessing for you to be centered and go inward.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `There were politics among the 12 apostles, and with Buddha. And Krishna was in politics from head to toe. And you say you don't want politics? The more you don't want it, the more you will harbor it in your consciousness.`,
   },
   {
     week_number: 137,
@@ -4977,7 +5114,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `It is only the Self that is always assuring.`,
-    tarot_back: `When you are tolerating, it is a temporary state. Tolerance is a potential volcano. If you are tolerating it means you are holding on.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `It indicates a sense of separateness . limitation of consciousness. When you are tolerating, it is a temporary state. Tolerance is a potential volcano.`,
   },
   {
     week_number: 138,
@@ -5013,7 +5151,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you have all the material securities and not have faith, you will still reel in fear.`,
-    tarot_back: `If you have all the material securities and not have faith, you will still reel in fear. You have to let go of all possessions in the mind. False security is keeping things where they don't belong.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Faith is the greatest security. If you have all the material securities and not have faith, you will still reel in fear. You have to let go of all possessions in the mind. False security is keeping things where they don't belong.`,
   },
   {
     week_number: 139,
@@ -5045,7 +5184,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When there is so much devotion, you simply want to organize.`,
-    tarot_back: `When there is so much devotion, you simply want to organize. Devotion brings faith, compassion, and responsibility. With responsibility and caring, you want to give knowledge, wisdom, and love.`,
+    tarot_front: `The Chalice`,
+    tarot_back: `They don't go together, yet they cannot be apart or exist without each other. No organization can arise without devotion. When there is so much devotion, you simply want to organize. Devotion brings faith, compassion, and responsibility.`,
   },
   {
     week_number: 140,
@@ -5079,7 +5219,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A mistake means something that brings misery to you in the long run.`,
-    tarot_back: `While pointing out a mistake to someone, do you consider him as separate from you and go on pointing out his error or do you make him feel a part of you? When you point out a mistake to someone, does it make him more stressed, or does it create more awareness in that person? Often you do not point out someone's mistake when it is required.`,
+    tarot_front: `The Child`,
+    tarot_back: `That very pinch will take you out of the mistake. A mistake means something that brings misery to you in the long run. So why would someone knowingly commit a mistake? While pointing out a mistake to someone, do you consider him as separate from you and go on pointing out his error or do you make him feel a part of you?`,
   },
   {
     week_number: 141,
@@ -5113,7 +5254,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you respect someone, it only shows your own magnanimity.`,
-    tarot_back: `How many people you don't respect in the world, that much less is your wealth. If you respect everyone in the world, that much more is your value. Wiser is the one who respects everyone.`,
+    tarot_front: `The Bow`,
+    tarot_back: `When you respect someone, it only shows your own magnanimity. How many people you don't respect in the world, that much less is your wealth. If you respect everyone in the world, that much more is your value. Wiser is the one who respects everyone.`,
   },
   {
     week_number: 142,
@@ -5147,7 +5289,8 @@ Since 1993 the Prison SMART Foundation has been teaching angry, troubled, stress
 
 Back To Top ^`,
     quote: `When the moment is whole, complete, then that moment is Divine.`,
-    tarot_back: `Control means two, weakness. One is not doing something naturally but exerting pressure. Often people think they are in control of their lives, their situation.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Shiva reversed is Vashi. Control is of the mind. Control means two, weakness. One is not doing something naturally but exerting pressure.`,
   },
   {
     week_number: 143,
@@ -5175,7 +5318,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Cordiality is the core of one's existence, formality is the outer shell.`,
-    tarot_back: `Formality maintains duality. Structures are based on formality. Love and knowledge are based on cordiality.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Formality improves communication; cordiality improves communion - oneness. Communication is only necessary where there are two. Formality maintains duality. Structures are based on formality.`,
   },
   {
     week_number: 144,
@@ -5207,7 +5351,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `With the knowledge of the Self inside everything is truly joyful.`,
-    tarot_back: `"We were ten but now we are only nine," they replied. The wise man saw they were ten, so he asked them to count. Each counted nine but left out himself.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `They were very distraught and began to cry for the loss of the tenth. "We were ten but now we are only nine," they replied. The wise man saw they were ten, so he asked them to count. Each counted nine but left out himself.`,
   },
   {
     week_number: 145,
@@ -5233,7 +5378,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All that you are, the love, the beauty, the compassion, the Divinity, doesn't show up fully.`,
-    tarot_back: `All that you are, the love, the beauty, the compassion, the Divinity, doesn't show up fully. What shows up is the crust of behaviors. Ask yourself, "Are you really your behaviors?`,
+    tarot_front: `The Heart`,
+    tarot_back: `Outside you are finite, just a small limited form, a normal stupid person! All that you are, the love, the beauty, the compassion, the Divinity, doesn't show up fully. What shows up is the crust of behaviors. Ask yourself, "Are you really your behaviors?`,
   },
   {
     week_number: 146,
@@ -5260,7 +5406,8 @@ Jai Gurudev !
 
 Back To Top ^`,
     quote: `Often, what you perceive as reality is not joyful and so when misery is there, you never wonder if it is a dream.`,
-    tarot_back: `In fact, all the miseries are unreal. A wise man knows that happiness is real, as it is one's very nature. Unhappiness is unreal as it is inflicted by memory.`,
+    tarot_front: `The Sun`,
+    tarot_back: `You are sure it is real. This is knowing the real as unreal and unreal as real. In fact, all the miseries are unreal. A wise man knows that happiness is real, as it is one's very nature.`,
   },
   {
     week_number: 147,
@@ -5331,7 +5478,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you do not try to impress, expression comes naturally.`,
-    tarot_back: `When you come from the self, your expression is perfect and your impression lasts for ages. Often you don't seem to have a control over your impressions and expressions. Wisdom is selecting your impressions and expressions.`,
+    tarot_front: `The Sage`,
+    tarot_back: `If you do not try to impress, expression comes naturally. When you come from the self, your expression is perfect and your impression lasts for ages. Often you don't seem to have a control over your impressions and expressions. Wisdom is selecting your impressions and expressions.`,
   },
   {
     week_number: 148,
@@ -5361,7 +5509,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Therefore, the door is fully open means the door is fully closed!`,
-    tarot_back: `Tarka is sequential logical understanding; it increases scientific knowledge. When sequential logical understanding changes, then scientific conclusions change. For example: Pesticides and antibiotics were considered to be very useful in the past, and are now proven to be more harmful.`,
+    tarot_front: `The Heart`,
+    tarot_back: `For example : The door is half open means the door is half closed. Therefore, the door is fully open means the door is fully closed! Tarka is sequential logical understanding; it increases scientific knowledge. When sequential logical understanding changes, then scientific conclusions change.`,
   },
   {
     week_number: 149,
@@ -5385,7 +5534,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There is yet another type of softness in people and this softness comes out of maturity, magnanimity, and the knowledge of the Self.`,
-    tarot_back: `The people who are soft out of lack of courage suffer a lot. And sometime or other they become volatile. Similarly there are two types of forcefulness in people Ö aggression or assertiveness.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `There is yet another type of softness in people and this softness comes out of maturity, magnanimity, and the knowledge of the Self. The people who are soft out of lack of courage suffer a lot. And sometime or other they become volatile. Similarly there are two types of forcefulness in people Ö aggression or assertiveness.`,
   },
   {
     week_number: 151,
@@ -5419,7 +5569,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Decision is always about choice and choice is always confusing.`,
-    tarot_back: `Action is spontaneous when there is no actor. In you, there is an actor and there is a witness. An actor is either confused or decisive, but the witness realizes that the action is spontaneous and smiles.`,
+    tarot_front: `The Maze`,
+    tarot_back: `Decision is always about choice and choice is always confusing. So, all decision-makers are confused! Action is spontaneous when there is no actor. In you, there is an actor and there is a witness.`,
   },
   {
     week_number: 152,
@@ -5447,7 +5598,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Again and again you remember that you are peace, you are love, you are joy and that you are hosting the Creator.`,
-    tarot_back: `Again and again you remember that you are peace, you are love, you are joy and that you are hosting the Creator. If you donÒ´ realize that you are the host, you live like a ghost. The under-privileged are those who do not realize that they are privileged, and so they also host, but they host all the negativities.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Among all the knowledgeable ones, you are most privileged. Again and again you remember that you are peace, you are love, you are joy and that you are hosting the Creator. If you donÒ´ realize that you are the host, you live like a ghost. The under-privileged are those who do not realize that they are privileged, and so they also host, but they host all the negativities.`,
   },
   {
     week_number: 153,
@@ -5481,7 +5633,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Being with this truth kindles the energy in you and brings up the consciousness.`,
-    tarot_back: `Just like a microphone absorbs sound and converts it into electricity, the body absorbs the vibrations and converts it into consciousness. When you sit in bhajans your entire body gets soaked in energy and transformation happens. If your are sitting and listening to gossip or violent music, then that gets absorbed by your body and does not give a nice feeling.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `When you sing bhajans, the Sound Energy Vibration Gets Absorbed Into Every Particle Of Your Body. Just like a microphone absorbs sound and converts it into electricity, the body absorbs the vibrations and converts it into consciousness. When you sit in bhajans your entire body gets soaked in energy and transformation happens. If your are sitting and listening to gossip or violent music, then that gets absorbed by your body and does not give a nice feeling.`,
   },
   {
     week_number: 154,
@@ -5526,7 +5679,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There is a proverb among the villagers in India, which says that it may take some time to pluck a flower but it takes no time to meet the Divine !`,
-    tarot_back: `It is simply the intensity of your longing. Intensify your longing for the Divine right away. This you can do when you know that you want nothing and you are nothing.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `Abilities, qualifications are not the criteria. It is simply the intensity of your longing. Intensify your longing for the Divine right away. This you can do when you know that you want nothing and you are nothing.`,
   },
   {
     week_number: 155,
@@ -5568,7 +5722,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There are three types of faith : faith in yourself, faith in the world, and faith in God.`,
-    tarot_back: `Banks give you loans having faith that you will pay it back. You deposit money in the bank having faith that it will be returned. If you doubt everything in the world, nothing will happen.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `You need to have faith in yourself -- without faith, you think, I can't do this. I will never be liberated in this life. You must have faith in the world. Without this, you cant move an inch in the world.`,
   },
   {
     week_number: 156,
@@ -5610,7 +5765,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the "I" is asleep, there is no experience.`,
-    tarot_back: `The rishis made a mockery. They created a practice of awakening God every morning. They call it Suprabhatam service.`,
+    tarot_front: `The Rose`,
+    tarot_back: `It's you who wakes up first and then you awaken God. And when God wakes up, neither you nor the world remain. The rishis made a mockery. They created a practice of awakening God every morning.`,
   },
   {
     week_number: 157,
@@ -5638,7 +5794,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The rational mind is like a railroad track that is fixed in grooves.`,
-    tarot_back: `This is not stepping out of the rational mind (though they think it is). We step out of the rational mind when we do something that has no purpose. Accepting that, as an act, makes it a game.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `A balloon can float anywhere. Some people step out of the rational mind in order to rebel against society. They want to break social law but for the ego's sake. They do it out of anger, hatred, rebelliousness, and wanting attention.`,
   },
   {
     week_number: 158,
@@ -5678,7 +5835,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Your intellect is a small portion of your total consciousness.`,
-    tarot_back: `If you are stuck in the intellect, you miss a lot. Happiness is when you transcend the intellect. Also, in awe or in feeling stupid, you transcend the intellect.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Your intellect is a small portion of your total consciousness. If you are stuck in the intellect, you miss a lot. Happiness is when you transcend the intellect. Also, in awe or in feeling stupid, you transcend the intellect.`,
   },
   {
     week_number: 159,
@@ -5714,7 +5872,8 @@ The International Research Committee is designing a survey to measure how the He
 
 Back To Top ^`,
     quote: `Only those who have their rights can give away their rights!!!`,
-    tarot_back: `You need to recognize no one can take away your rights. The courageous will give away their rights. The degree to which you give away your rights indicates your freedom, your strength.`,
+    tarot_front: `The Sky`,
+    tarot_back: `This is an ignorant pride. You need to recognize no one can take away your rights. The courageous will give away their rights. The degree to which you give away your rights indicates your freedom, your strength.`,
   },
   {
     week_number: 160,
@@ -5746,7 +5905,8 @@ The North American tour started to heat up as Guruji came to Chicago for more in
 
 Back To Top ^`,
     quote: `When you feel generous your life becomes abundant, full of compassion and love.`,
-    tarot_back: `Either a princess or a pauper can feel generous. Generosity is the quality of the spirit. When you feel generous your life becomes abundant, full of compassion and love.`,
+    tarot_front: `The Breath`,
+    tarot_back: `Here is the solution....FEEL GENEROUS....right away, not tomorrow. Either a princess or a pauper can feel generous. Generosity is the quality of the spirit. When you feel generous your life becomes abundant, full of compassion and love.`,
   },
   {
     week_number: 161,
@@ -5804,7 +5964,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Then Krishna tells Arjuna he must surrender.`,
-    tarot_back: `Non-surrender is an illusion. So surrender is an assumption. Finally, it reveals itself as an illusion.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Surrender is not an action; it is an assumption. Non-surrender is an illusion. So surrender is an assumption. Finally, it reveals itself as an illusion.`,
   },
   {
     week_number: 162,
@@ -5826,7 +5987,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And when dispassion is there, everything comes in abundance.`,
-    tarot_back: `And that is followed by "I am miserable". You can be anywhere and be dispassionate. Dispassion is welcoming everything.`,
+    tarot_front: `The Shield`,
+    tarot_back: `But trying to enjoy the bliss, you step down from is-ness to am-ness - "l am peaceful", "I am blissful". And that is followed by "I am miserable". "l am" is dispassion. You can be anywhere and be dispassionate.`,
   },
   {
     week_number: 163,
@@ -5854,7 +6016,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The Divine is all knowing and all loving; there is no chance for mercy.`,
-    tarot_back: `It also indicates lack of courage and valor. At times mercy is an impediment to growth. Mercy, of course, brings some comfort and relief; but can impair the process of transformation.`,
+    tarot_front: `The Storm`,
+    tarot_back: `When you ask for mercy, you are self- centered. You want to be excused from the law of cause and effect. It also indicates lack of courage and valor. At times mercy is an impediment to growth.`,
   },
   {
     week_number: 164,
@@ -5881,7 +6044,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `All are amazed at how smoothly things have gone, and there is no question that this is all due to the Guru's grace.`,
-    tarot_back: `It becomes miserable when identified with the body. You see, in a huge atomic reactor, it is just one tiny atom that is exploded. In the same way, in our whole body, there is just one little tiny atom of "I".`,
+    tarot_front: `The Mask`,
+    tarot_back: `When this atom, this ego, is associated with the material world, it becomes mundane. When it is associated with the spirit, it becomes Divine. It becomes shakti when associated with the Being, the Self. It becomes miserable when identified with the body.`,
   },
   {
     week_number: 165,
@@ -5916,7 +6080,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When the mind is not integrated it is feverish, disloyal and opportunistic.`,
-    tarot_back: `Loyalty is a real strength and will have the support of nature in the long run. Fear and ambitions are impediments to loyalty. Loyalty is needed both in the material and spiritual plane.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Integrity or wholeness is essential to be healthy. A divided mind will gradually lead to schizophrenia and other physical and mental disorders. Loyalty is a real strength and will have the support of nature in the long run. Fear and ambitions are impediments to loyalty.`,
   },
   {
     week_number: 166,
@@ -5959,7 +6124,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `If you love God, because He is yours, then however God is, whether He creates or destroys, you still love Him.`,
-    tarot_back: `People say "I love God, because He is great". If God is found to be ordinary, just one of us, then your love for God collapses! If you love God, because He is yours, then however God is, whether He creates or destroys, you still love Him.`,
+    tarot_front: `The Heart`,
+    tarot_back: `If you love someone for their qualities, then when the quality changes or you get used to the quality, love also changes. However, if you love someone out of kinship, because they belong to you, then that love remains for life-times. People say "I love God, because He is great". This is no big thing.`,
   },
   {
     week_number: 167,
@@ -5986,7 +6152,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `And when you are with the guru, you go blank and forget all the questions.`,
-    tarot_back: `Your ego obstructs you from singing. Many do not feel comfortable singing with people. When you sing with people then you descend to the heart level or feeling level.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Then communication comes through the soul in silence. When you meet with people, you like to remain in the head, you seldom sing with people (other than when it is organised). Your ego obstructs you from singing. Many do not feel comfortable singing with people.`,
   },
   {
     week_number: 168,
@@ -6018,7 +6185,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When consciousness moves through the body in limited channels, pleasure is experienced.`,
-    tarot_back: `Listening to the same piece of music loses the charm, people in the sex industry don't enjoy sex. If the stimuli are observed, then consciousness expands and becomes peace. With awareness the stimuli lose their significance; whether they exist or not makes no difference.`,
+    tarot_front: `The Dove`,
+    tarot_back: `Repeated enjoyment of the stimuli causes inertia and dullness. Often cooks don't enjoy their own food. Listening to the same piece of music loses the charm, people in the sex industry don't enjoy sex. If the stimuli are observed, then consciousness expands and becomes peace.`,
   },
   {
     week_number: 169,
@@ -6050,7 +6218,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Individual Self/Soul/Jeeva is interdependence and in fact every wise person knows that everything is interdependent and that there is nothing like independence.`,
-    tarot_back: `When they become aware of their limitations and dependency, the desire for independence arises. Independence cannot be achieved unless you start moving from within. When you move within, you discover that you are interdependent.`,
+    tarot_front: `The Mask`,
+    tarot_back: `In looking for independence often you get stuck in the ego and become more miserable. Most people are not aware of their dependency. When they become aware of their limitations and dependency, the desire for independence arises. Independence cannot be achieved unless you start moving from within.`,
   },
   {
     week_number: 170,
@@ -6086,7 +6255,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When to have what and how much to have is wisdom.`,
-    tarot_back: `And there are others who crave for long rest not knowing the rest is in non-doership. It is the quality of rest, even if it is short, that recuperates. When rest is needed, your body will automatically take it.`,
+    tarot_front: `The Moon`,
+    tarot_back: `Thinking you have worked hard itself interferes with the quality of rest. Some people take pride in working hard without any results. And there are others who crave for long rest not knowing the rest is in non-doership. It is the quality of rest, even if it is short, that recuperates.`,
   },
   {
     week_number: 171,
@@ -6115,7 +6285,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Friendliness, compassion and meditation should continue as practices till you realise that they are your very nature.`,
-    tarot_back: `When it is done as your nature, you are not attached to the result and you continue doing it. An action that arises from your nature is neither tiring nor frustrating. For example, daily routines like brushing one's teeth or bathing are not even considered actions because they are so integrated into one's life.`,
+    tarot_front: `The Lotus`,
+    tarot_back: `The flaw in doing something as an act is that you look for a result. When it is done as your nature, you are not attached to the result and you continue doing it. An action that arises from your nature is neither tiring nor frustrating. For example, daily routines like brushing one's teeth or bathing are not even considered actions because they are so integrated into one's life.`,
   },
   {
     week_number: 172,
@@ -6255,7 +6426,8 @@ come/paid basis, and will be limited to 200 people maximum.
 
 Back To Top ^`,
     quote: `Books and Tapes--for Divine Shops as well as mail order--has relocated.`,
-    tarot_back: `mental health therapists, and possibly other areas. professional atmosphere, this is ideal. calling Janice Burgoyne at Nova: 954-262-3017.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `book orders to continue carrying Art of Living books. mental health therapists, and possibly other areas. professional atmosphere, this is ideal. calling Janice Burgoyne at Nova: 954-262-3017.`,
   },
   {
     week_number: 173,
@@ -6284,7 +6456,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Often, those who are trying to correct mistakes get caught up in more mistakes.`,
-    tarot_back: `Often, when one acknowledges a mistake, one tries to justify it, without taking responsibility for it. And sometimes one accepts that one made a mistake and starts justifying it or feeling guilty about it. Mistakes get dropped when one is troubled by ones conscience (viveka) or grief.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Those who recognize their are mistakes are freed from them. Often, when one acknowledges a mistake, one tries to justify it, without taking responsibility for it. And sometimes one accepts that one made a mistake and starts justifying it or feeling guilty about it. Mistakes get dropped when one is troubled by ones conscience (viveka) or grief.`,
   },
   {
     week_number: 174,
@@ -6319,7 +6492,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `To realize that everything is happening you need heightened awareness.`,
-    tarot_back: `Heightened awareness brings you close to the reality and the reality is a witness. To realize that everything is happening you need heightened awareness. And to bring about heightened awareness you have to increase the prana.`,
+    tarot_front: `The Stillness`,
+    tarot_back: `Heightened awareness brings you close to the reality and the reality is a witness. To realize that everything is happening you need heightened awareness. And to bring about heightened awareness you have to increase the prana. All of these together is Yagna.`,
   },
   {
     week_number: 175,
@@ -6367,7 +6541,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `All you hear will simply remain a jumble of words if there is no experiential understanding, which is more on the feeling level.`,
-    tarot_back: `Most theologians are in this category. Existential realization contains within it both experiential and intellectual understanding. But it is beyond both of these.`,
+    tarot_front: `The Garden`,
+    tarot_back: `All you hear will simply remain a jumble of words if there is no experiential understanding, which is more on the feeling level. You can know intellectually you are hollow and empty but sitting and feeling you are hollow and empty is totally different. When one gets an experience, one wants to understand more about it and becomes a seeker. If you have only intellectual understanding, you will think you know it all.`,
   },
   {
     week_number: 176,
@@ -6410,7 +6585,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `And all our life we try to correct events, people and situations.`,
-    tarot_back: `This seed, "It's not OK," brings you back into this world again and again. How do you burn this seed? First recognize that it is there.`,
+    tarot_front: `The Heart`,
+    tarot_back: `This seed does not allow you to be happy, to smile from your heart, to be loving and loveable. It's there all the time like a thorn - irritating, irritating. This seed, "It's not OK," brings you back into this world again and again. How do you burn this seed?`,
   },
   {
     week_number: 177,
@@ -6446,7 +6622,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `So when you appreciate someone you simply imply that it is not their nature, it is not the way they usually are.`,
-    tarot_back: `If a child made you a cup of tea, you would appreciate it, but if a mother made the same cup of tea, you would not likely appreciate it because it is a normal act for her. In the same way, you appreciate getting a ride from someone you don't know, but you don't necessarily appreciate it from a bus driver. In all these cases, those acts are temporary, out of character, or not their nature.`,
+    tarot_front: `The Garden`,
+    tarot_back: `Or, when somebody you think is not good does a good act, then you appreciate them. Also, when a good person does something extraordinary, then you appreciate them. If a child made you a cup of tea, you would appreciate it, but if a mother made the same cup of tea, you would not likely appreciate it because it is a normal act for her. In the same way, you appreciate getting a ride from someone you don't know, but you don't necessarily appreciate it from a bus driver.`,
   },
   {
     week_number: 178,
@@ -6484,7 +6661,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When you love someone, you want to see them always happy and you want them to have the best .`,
-    tarot_back: `They are always in your mind. Ordinary things become extraordinary. A baby winking at grandmother.`,
+    tarot_front: `The Heart`,
+    tarot_back: `The more you do, the more you want to do for them. They are always in your mind. Ordinary things become extraordinary. A baby winking at grandmother.`,
   },
   {
     week_number: 179,
@@ -6522,7 +6700,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `If there is fear in your life, it is because of a lack of commitment.`,
-    tarot_back: `The very thought I am here in this world to do seva (service), dissolves the i and when the i dissolves, worries dissolve. Seva is not something u do out of convenience or for pleasure. The ultimate purpose of life is to be of service.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `If there is confusion in your life, it is because of lack of commitment. The very thought I am here in this world to do seva (service), dissolves the i and when the i dissolves, worries dissolve. Seva is not something u do out of convenience or for pleasure. The ultimate purpose of life is to be of service.`,
   },
   {
     week_number: 180,
@@ -6559,7 +6738,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The true austerity has tolerance for richness and is never resentful.`,
-    tarot_back: `The true austerity has tolerance for richness and is never resentful. In fact, one who is mature will have pity for one who is not austere. Austerity is not against celebration and just vanity is not celebration.`,
+    tarot_front: `The Dance`,
+    tarot_back: `This is a very pitiable state. Such austerity is not born out of maturity but out of compulsion. The true austerity has tolerance for richness and is never resentful. In fact, one who is mature will have pity for one who is not austere.`,
   },
   {
     week_number: 181,
@@ -6591,7 +6771,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The balance between the focussed mind and expanded consciousness brings perfection.`,
-    tarot_back: `The balance between the focussed mind and expanded consciousness brings perfection. Both Sudarshan Kriya and the Advanced Course techniques are aimed at developing such consciousness which is sharp and unbounded. Seva and commitment play a major role in this.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `At the same time, just the sharp mind without expansion causes tension, anger and frustration. The balance between the focussed mind and expanded consciousness brings perfection. Both Sudarshan Kriya and the Advanced Course techniques are aimed at developing such consciousness which is sharp and unbounded. Seva and commitment play a major role in this.`,
   },
   {
     week_number: 182,
@@ -6635,7 +6816,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The same when harnessed manifests as enthusiasm, sparkle, sharpness of intellect and love.`,
-    tarot_back: `Lust is nothing but primordial un-harnessed energy. The same when harnessed manifests as enthusiasm, sparkle, sharpness of intellect and love. What are the factors which can sublimate or transform lust into love?`,
+    tarot_front: `The Heart`,
+    tarot_back: `Lust when indulged brings inertia, and when suppressed brings anger. Lust is nothing but primordial un-harnessed energy. The same when harnessed manifests as enthusiasm, sparkle, sharpness of intellect and love. What are the factors which can sublimate or transform lust into love?`,
   },
   {
     week_number: 183,
@@ -6674,7 +6856,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `If you are certain that everything is uncertain, then you are liberated.`,
-    tarot_back: `When you are uncertain in ignorance then you become worried and tense. Uncertainty with awareness brings higher states of consciousness and a smile. Bharat says: A certain smile!!!`,
+    tarot_front: `The Ocean`,
+    tarot_back: `You have to rely on the non-change and accept the change. If you are certain that everything is uncertain, then you are liberated. When you are uncertain in ignorance then you become worried and tense. Uncertainty with awareness brings higher states of consciousness and a smile.`,
   },
   {
     week_number: 184,
@@ -6713,7 +6896,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The whole world is nothing but organization, where the atoms have decided to organize themselves in a specific pattern to form a particular substance.`,
-    tarot_back: `Death/decay/transformation happens when the atoms get bored of patterns and decide to recognise themselves. : When the atoms of the apple say "Enough of being an apple", that's when the rotting starts. If there is never boredom of patterns, there can be no decay.`,
+    tarot_front: `The Crossing`,
+    tarot_back: `And those particular patterns bring them specific qualities. Death/decay/transformation happens when the atoms get bored of patterns and decide to recognise themselves. : When the atoms of the apple say "Enough of being an apple", that's when the rotting starts. If there is never boredom of patterns, there can be no decay.`,
   },
   {
     week_number: 185,
@@ -6748,7 +6932,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Remind yourself that everything here is recycled material - so relax!`,
-    tarot_back: `Remind yourself that everything here is recycled material - so relax! Everything goes to where it came from. Recycling brings back purity and hygiene.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Everything here is recycled. Consciousness is recycled - its the same old consciousness. Remind yourself that everything here is recycled material - so relax! Everything goes to where it came from.`,
   },
   {
     week_number: 186,
@@ -6776,7 +6961,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All that you seek in your life is bliss, that divine union with your source, and everything else in the world distracts you from that goal.`,
-    tarot_back: `Bliss is the abode of all divinity, all devas. It is possible only in this human body to comprehend, to uphold, and having had a human life and having known this path, if you still do not realize this - you are at the greatest loss. The cravings and aversions make your heart hard.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `The mind is kept alive by cravings and aversions - shoulds or should nots and wants. Only when the mind dies does the bliss dawn. Bliss is the abode of all divinity, all devas. It is possible only in this human body to comprehend, to uphold, and having had a human life and having known this path, if you still do not realize this - you are at the greatest loss.`,
   },
   {
     week_number: 187,
@@ -6806,7 +6992,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `God will never pass your test because He will never show up for your test.`,
-    tarot_back: `God does not test you because he knows you in and out and your past, present and future. He knows your strengths and weaknesses and he alone gives you strength. Only you can test yourself.`,
+    tarot_front: `The Oak`,
+    tarot_back: `How could people ever think that God is testing them? God does not test you because he knows you in and out and your past, present and future. He knows your strengths and weaknesses and he alone gives you strength. Only you can test yourself.`,
   },
   {
     week_number: 188,
@@ -6842,7 +7029,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you act on all thoughts that come to your mind, you will end up in a mental hospital or in prison.`,
-    tarot_back: `So, you resist or ignore some thoughts and welcome other thoughts. You need discrimination in life. Welcoming and resisting is a swing in life.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `When you welcome a thought, it means you find it good and act on it. If you act on all thoughts that come to your mind, you will end up in a mental hospital or in prison. So, you resist or ignore some thoughts and welcome other thoughts. You need discrimination in life.`,
   },
   {
     week_number: 189,
@@ -6866,7 +7054,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Distinction between pleasure and love has to be understood, only the luckiest one will understand.`,
-    tarot_back: `Distinction between pleasure and love has to be understood, only the luckiest one will understand. Like you eat sugar and stimulate the tongue, music stimulates the ears and sight stimulates the eyes. And what stimulates the soul?`,
+    tarot_front: `The Pearl`,
+    tarot_back: `Often people think pleasure is love. Distinction between pleasure and love has to be understood, only the luckiest one will understand. Like you eat sugar and stimulate the tongue, music stimulates the ears and sight stimulates the eyes. And what stimulates the soul?`,
   },
   {
     week_number: 190,
@@ -6908,7 +7097,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `If you do not know emptiness then you cannot know the joy of the Being.`,
-    tarot_back: `Stretching the Life is Celebration. Stretching the Devotee is God. Stretching the Feeling is Ecstasy.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Stretching the Mind is Meditation. Stretching the Life is Celebration. Stretching the Devotee is God. Stretching the Feeling is Ecstasy.`,
   },
   {
     week_number: 191,
@@ -6939,7 +7129,8 @@ Those who are arriving for the 16-18 meet and wish to place orders for the Divin
 
 Back To Top ^`,
     quote: `You are in a state where all problems and differences slide away and only love shines through.`,
-    tarot_back: `Usually we get stuck in our differences, because we have lost sight of ourselves. In the name of love we try to manipulate and control the other person. This is natural that when we love somebody, we want them to be perfect.`,
+    tarot_front: `The Heart`,
+    tarot_back: `You are in a state where all problems and differences slide away and only love shines through. Usually we get stuck in our differences, because we have lost sight of ourselves. In the name of love we try to manipulate and control the other person. This is natural that when we love somebody, we want them to be perfect.`,
   },
   {
     week_number: 192,
@@ -6971,7 +7162,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `And every time you try to defend your position it makes you more and more weak.`,
-    tarot_back: `And every time you try to defend your position it makes you more and more weak. On the path, people even use the Knowledge as a defense against criticism! Don't use Knowledge as a defense.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `And to keep yourself in the boundary you put forth defenses. When you try to defend your position, it is such a stress, isn't it? And every time you try to defend your position it makes you more and more weak. On the path, people even use the Knowledge as a defense against criticism!`,
   },
   {
     week_number: 193,
@@ -7010,7 +7202,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Education is called "Shiksha", the horizon of discipline - total discipline.`,
-    tarot_back: `Education is called "Shiksha", the horizon of discipline - total discipline. Discipline is needed for education. "Diksha" is needed for meditation.`,
+    tarot_front: `The Lotus`,
+    tarot_back: `"Diksha" means transcending the intellect. Education is called "Shiksha", the horizon of discipline - total discipline. Discipline is needed for education. "Diksha" is needed for meditation.`,
   },
   {
     week_number: 194,
@@ -7059,7 +7252,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Love is playfulness and in lust there is cunningness and manipulation.`,
-    tarot_back: `Here are some salient attributes of love and lust. They are so different yet so close! If you find more you may add to the list.`,
+    tarot_front: `The Heart`,
+    tarot_back: `In lust even a living being becomes a mere object. You want to use even people like objects. Here are some salient attributes of love and lust. They are so different yet so close!`,
   },
   {
     week_number: 195,
@@ -7087,7 +7281,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `You never doubt something that is dear to you, close to you.`,
-    tarot_back: `You never doubt something that is dear to you, close to you. The moment you doubt, it is no longer dear to you; a distance has come. You may doubt yourself, but you do not doubt that which is yours.`,
+    tarot_front: `The Veil`,
+    tarot_back: `Doubt needs a distance to appear. You never doubt something that is dear to you, close to you. The moment you doubt, it is no longer dear to you; a distance has come. You may doubt yourself, but you do not doubt that which is yours.`,
   },
   {
     week_number: 196,
@@ -7109,7 +7304,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Having lost this first sign, the second sign of intelligence is - once you have started something, see it through to the end.`,
-    tarot_back: `Having lost this first sign, the second sign of intelligence is - once you have started something, see it through to the end. The short-sighted ones look for short-term benefits. Far sighted ones look for long-term benefits.`,
+    tarot_front: `The Hands`,
+    tarot_back: `Having lost this first sign, the second sign of intelligence is - once you have started something, see it through to the end. The short-sighted ones look for short-term benefits. Far sighted ones look for long-term benefits. Whether you consider yourself intelligent or not, there is no escape from SEVA (service), for Seva gives immediate satisfaction as well as long-term merit.`,
   },
   {
     week_number: 197,
@@ -7135,7 +7331,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When desire dominates, Self-awareness will be at its lowest, and that's why all the philosophers around the world have always advocated renunciation and dropping of desires.`,
-    tarot_back: `When you have lots of desires, you are not aware of the Self. When desire dominates, Self-awareness will be at its lowest, and that's why all the philosophers around the world have always advocated renunciation and dropping of desires. When the awareness is dominant, then happiness dawns.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `When you have lots of desires, you are not aware of the Self. When desire dominates, Self-awareness will be at its lowest, and that's why all the philosophers around the world have always advocated renunciation and dropping of desires. When the awareness is dominant, then happiness dawns. When desire dominates, stress and sorrow result.`,
   },
   {
     week_number: 198,
@@ -7167,7 +7364,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When you are happy and love what you are doing, you simply don't feel the time.`,
-    tarot_back: `Also, in sleep you don't feel the time. In deep meditation, you are the time and everything is happening in you. Events are happening in you like the clouds come and go in the sky.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `When you are happy and love what you are doing, you simply don't feel the time. Also, in sleep you don't feel the time. In deep meditation, you are the time and everything is happening in you. Events are happening in you like the clouds come and go in the sky.`,
   },
   {
     week_number: 199,
@@ -7210,7 +7408,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Give me not hunger if you cannot give me food.`,
-    tarot_back: `Give me not intelligence if I cannot perceive beyond it. Give me not knowledge if I cannot digest it. Give me not love if I cannot serve.`,
+    tarot_front: `The Candle`,
+    tarot_back: `Give me not the skills if I cannot put them to good use. Give me not intelligence if I cannot perceive beyond it. Give me not knowledge if I cannot digest it. Give me not love if I cannot serve.`,
   },
   {
     week_number: 200,
@@ -7249,7 +7448,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `The message of non-violence has to come loud and clear so that it can be heard from a young age.`,
-    tarot_back: `The message of non-violence has to come loud and clear so that it can be heard from a young age. A sense of shame has to be connected with anger and violence. The reason for violence in young people is a sense of pride in anger and violence, not a sense of shame.`,
+    tarot_front: `The Stillness`,
+    tarot_back: `But the time has come for people who are non-violent to make noise so that the violence will quiet down. The message of non-violence has to come loud and clear so that it can be heard from a young age. A sense of shame has to be connected with anger and violence. The reason for violence in young people is a sense of pride in anger and violence, not a sense of shame.`,
   },
   {
     week_number: 201,
@@ -7272,7 +7472,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When you want to enjoy the fruit of action know that life is eternal.`,
-    tarot_back: `When you realize life is short, procrastination falls away. But when you know that there are many lifetimes, you realize that if you don't get it sooner, you get it later. Wake up and see your life is too short.`,
+    tarot_front: `The Mountain`,
+    tarot_back: `Impatience goes away when you know that life is eternal. When you are looking for a return of a favor from someone or a result from your good deed, you want it quickly. When you realize life is short, procrastination falls away. But when you know that there are many lifetimes, you realize that if you don't get it sooner, you get it later.`,
   },
   {
     week_number: 202,
@@ -7294,7 +7495,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `And prayer, love and meditation are all flavors of deep rest.`,
-    tarot_back: `Nothing is expected of you that you cannot do. Doing service involves only doing what you can do. And no one wants you to be someone whom you are not.`,
+    tarot_front: `The Moon`,
+    tarot_back: `You will not be asked to give what you cannot give. Nothing is expected of you that you cannot do. Doing service involves only doing what you can do. And no one wants you to be someone whom you are not.`,
   },
   {
     week_number: 203,
@@ -7330,7 +7532,8 @@ Sri Sri Ravi Shankar
 
 Back To Top ^`,
     quote: `Make your body God's abode and there will be peace and bliss.`,
-    tarot_back: `See this world as play and as a display of God Himself and you will repose in the Non-Dual Self. Blessing comes to you in many forms. If you are generous, blessing comes to you as abundance.`,
+    tarot_front: `The Crown`,
+    tarot_back: `Feel your mind as a toy of God and you'll watch and enjoy all its games. See this world as play and as a display of God Himself and you will repose in the Non-Dual Self. Blessing comes to you in many forms. If you are generous, blessing comes to you as abundance.`,
   },
   {
     week_number: 204,
@@ -7372,7 +7575,8 @@ Jai Guru Dev !
 
 Back To Top ^`,
     quote: `Then ......you are certainly not stupid .`,
-    tarot_back: `Then ......you are certainly not stupid . Then you don't know who you are. And if don't know who you are.....`,
+    tarot_front: `The Shortcut!`,
+    tarot_back: `And if you know who you are...... Then ......you are certainly not stupid . Then you don't know who you are. And if don't know who you are.....`,
   },
   {
     week_number: 205,
@@ -7406,7 +7610,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Faith is the nature of undivided mind, undivided consciousness.`,
-    tarot_back: `Are faith and belief the same? Guruji: Belief is a little diluted, faith is little strong, more concrete. Our beliefs can change, faith is firm.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `Whatever you have faith in, you do not need to know about it. Do not make that something you have faith in, an object of knowing. Like you have faith in God, you cannot make God an object of knowing; like you have faith in yourself, you can't make the Self an object of knowing. Are faith and belief the same?`,
   },
   {
     week_number: 206,
@@ -7440,7 +7645,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Assuming a limit is underestimating yourself.`,
-    tarot_back: `If you have no boundaries then where is your success? If you have limitless access then there is no success. You don't say that you successfully drank a glass of water, because it is well within your capabilities.`,
+    tarot_front: `The Summit`,
+    tarot_back: `Assuming a limit is underestimating yourself. If you have no boundaries then where is your success? If you have limitless access then there is no success. You don't say that you successfully drank a glass of water, because it is well within your capabilities.`,
   },
   {
     week_number: 207,
@@ -7486,7 +7692,8 @@ Jai Gurudev
 
 Back To Top ^`,
     quote: `You can read about living in the moment so many times, but it only becomes knowledge when you experience it.`,
-    tarot_back: `How can He give you a message? The wise neither need a message nor give a message. The unwise would give a message and want a message -- and would be unable to use the message anyway.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `God is more close to you than your breath. How can He give you a message? The wise neither need a message nor give a message. The unwise would give a message and want a message -- and would be unable to use the message anyway.`,
   },
   {
     week_number: 208,
@@ -7518,7 +7725,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you get bored, it indicates you are more alive and human.`,
-    tarot_back: `It is a sign that you are growing, that you are evolving. An animal, for example, keeps doing the same thing. Cows, horses, birds do the same things over and over all their lives.`,
+    tarot_front: `The Tide`,
+    tarot_back: `If you get bored, it indicates you are more alive and human. It is a sign that you are growing, that you are evolving. An animal, for example, keeps doing the same thing. Cows, horses, birds do the same things over and over all their lives.`,
   },
   {
     week_number: 209,
@@ -7545,7 +7753,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All the Avatars and prophets have been caring for people and so were in politics.`,
-    tarot_back: `All the Avatars and prophets have been caring for people and so were in politics. You can find many examples to this effect. When religions restrict the freedom to worship and restrict modes of worship they become unsuitable for creating a harmonious society.`,
+    tarot_front: `The Politics`,
+    tarot_back: `He cannot be anything but religious. All the Avatars and prophets have been caring for people and so were in politics. You can find many examples to this effect. When religions restrict the freedom to worship and restrict modes of worship they become unsuitable for creating a harmonious society.`,
   },
   {
     week_number: 210,
@@ -7579,7 +7788,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `True love is non-possessive and brings freedom, and renunciation is nothing but freedom.`,
-    tarot_back: `I am free." In love there is no other need. Renunciation is having no need. Love and renunciation, although appearing to be opposites, are two sides of the same coin.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Only in freedom can love fully blossom. When in love you say, "I want nothing, I just want this." Renunciation is, " I don't want anything. I am free." In love there is no other need. Renunciation is having no need.`,
   },
   {
     week_number: 211,
@@ -7613,7 +7823,8 @@ Jai Guru Dev !
 
 Back To Top ^`,
     quote: `And there are some who realize that everything is changing, yet see there is something that is non-changing.`,
-    tarot_back: `There are some who do not think there is anything to change. And there are some who realize that everything is changing, yet see there is something that is non-changing. Those who recognize the non-changing amidst the change are the wisest of all.`,
+    tarot_front: `The Heart`,
+    tarot_back: `There are some who see the change, but don't acknowledge it, out of fear. There are some who do not notice the change at all. There are some who do not think there is anything to change. And there are some who realize that everything is changing, yet see there is something that is non-changing.`,
   },
   {
     week_number: 212,
@@ -7670,7 +7881,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `"Thank you" is like "good bye." You can complete all transactions at a surface level, but deeper inside is only one-ness.`,
-    tarot_back: `When you say "Thank you," you complete something. You are finishing a transaction, a relationship, a process. "Thank you" is like "good bye." You can complete all transactions at a surface level, but deeper inside is only one-ness.`,
+    tarot_front: `The Superficially`,
+    tarot_back: `But superficially you can thank. Thanks are like ripples on the surface of the water. When you say "Thank you," you complete something. You are finishing a transaction, a relationship, a process.`,
   },
   {
     week_number: 213,
@@ -7708,7 +7920,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Anything can flow from the intellect, and you are a witness to the flow, whether it is garbage or wisdom.`,
-    tarot_back: `Whether you complain, compose a poem, or speak Knowledge, you are a witness to the flow. Suppose someone is complaining or justifying. They are simply saying things spontaneously.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `It re-discovers its true nature, which is non-dual. Whether you complain, compose a poem, or speak Knowledge, you are a witness to the flow. Suppose someone is complaining or justifying. They are simply saying things spontaneously.`,
   },
   {
     week_number: 214,
@@ -7736,7 +7949,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Guru is that principle which is wisdom and love, and that is awakened in each one who has stepped onto the path.`,
-    tarot_back: `You also call that person a Guru in whom there is no gap between life and wisdom and love. Often one recognizes wisdom but sees a gap between wisdom and one's own life. The purpose of becoming a disciple is to bridge that gap.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `Guru is that principle which is wisdom and love, and that is awakened in each one who has stepped onto the path. You also call that person a Guru in whom there is no gap between life and wisdom and love. Often one recognizes wisdom but sees a gap between wisdom and one's own life. The purpose of becoming a disciple is to bridge that gap.`,
   },
   {
     week_number: 215,
@@ -7792,8 +8006,9 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you recognise a feeling as a reality it only makes your ignorance grow.`,
-    tarot_back: `Realise that in the current of moving time all will perish. Think of everyone that is jealous of you for what you have. Stephano added: "And see that all that people envy you for has not brought joy anyway."
-9.`,
+    tarot_front: `The Wheel`,
+    tarot_back: `Ananda says, "Observe the sensations."
+6. Join hands and form a team with them. Realise that in the current of moving time all will perish. Think of everyone that is jealous of you for what you have.`,
   },
   {
     week_number: 216,
@@ -7839,7 +8054,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Accept a teeny tiny bit of everything in life, that will bring you fulfilment.`,
-    tarot_back: `The moment you accept that one atom, you will see change happen. This has to be done in a meditative state. You want more and more of them.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `It may be difficult to accept something that you don't like but you can definitely accept a teeny tiny bit (an atom) of it. The moment you accept that one atom, you will see change happen. This has to be done in a meditative state. Suppose you love someone.`,
   },
   {
     week_number: 217,
@@ -7870,7 +8086,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Knowledge is a burden if it is not integrated into life.`,
-    tarot_back: `Knowledge is a burden if it doesn't bring joy. Knowledge is a burden if it gives you an idea that you are wise. Knowledge is a burden if it doesn't set you free.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Knowledge is a burden if it is not integrated into life. Knowledge is a burden if it doesn't bring joy. Knowledge is a burden if it gives you an idea that you are wise. Knowledge is a burden if it doesn't set you free.`,
   },
   {
     week_number: 218,
@@ -7913,7 +8130,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Only that which is temporary, small or perishable needs protection, while that which is permanent, big or vast does not.`,
-    tarot_back: `At the same time, without protection the desired transformation cannot happen. A seed needs protection to transform into a plant, a plant needs protection to become a tree. Protection can aid or hamper transformation.`,
+    tarot_front: `The Phoenix`,
+    tarot_back: `Protection also prevents transformation. Transformation cannot happen in protection. At the same time, without protection the desired transformation cannot happen. A seed needs protection to transform into a plant, a plant needs protection to become a tree.`,
   },
   {
     week_number: 219,
@@ -7943,7 +8161,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And that is why only few people in the world succeed in reaching their goal.`,
-    tarot_back: `That is how in groups people shy away from seva -- when they don't get a position, when they get insulted, when they feel they are not getting what they expected out of it, and when they consider their goal as a struggle rather than a challenge. And that is why only few people in the world succeed in reaching their goal. What is more important to you?`,
+    tarot_front: `The Moon`,
+    tarot_back: `Many people quit doing seva as they put their self-image, prestige, respect, comfort and convenience ahead of their goal. That is how in groups people shy away from seva -- when they don't get a position, when they get insulted, when they feel they are not getting what they expected out of it, and when they consider their goal as a struggle rather than a challenge. And that is why only few people in the world succeed in reaching their goal. What is more important to you?`,
   },
   {
     week_number: 220,
@@ -7993,7 +8212,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `At this Guruji turned to the rest of us with a smile and said, "See, he is so confident of my love for him that he is not afraid of any punishment.`,
-    tarot_back: `On a domestic flight in the US, Manjesh's mother fainted. A checkup showed that the aorta had dilated; the doctors suggested an immediate operation. She visited Guruji in San Jose, and when she went for a checkup again, the aorta was back to its normal size!`,
+    tarot_front: `The Heart`,
+    tarot_back: `At this Guruji said, "Devotees are the fan; God is the air. Air is always there, but the fans make you feel it. On a domestic flight in the US, Manjesh's mother fainted. A checkup showed that the aorta had dilated; the doctors suggested an immediate operation.`,
   },
   {
     week_number: 221,
@@ -8033,7 +8253,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `An ignorant person's compassion is on the fruit of an action whereas a wise person's compassion is towards the non-availability of knowledge.`,
-    tarot_back: `One reaps the fruit of one's actions. If a judge has compassion for all the offenders then the jails will be empty. At the same time, are the judges cruel to the offenders?`,
+    tarot_front: `The Wheel`,
+    tarot_back: `Suffering comes because of karma, and if you believe in karma, where is compassion? One reaps the fruit of one's actions. If a judge has compassion for all the offenders then the jails will be empty. At the same time, are the judges cruel to the offenders?`,
   },
   {
     week_number: 222,
@@ -8077,7 +8298,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All negativity is a pointer to move to the centre and broaden the vision to the cosmic intelligence.`,
-    tarot_back: `It looks for a hook to hang its negativity on - if not this person, then that thing or that person and so on. This perpetuates the maya! The creeper of negativity needs a support in order to grow.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `The mind goes on trying to find support for its negativity. It looks for a hook to hang its negativity on - if not this person, then that thing or that person and so on. This perpetuates the maya! The creeper of negativity needs a support in order to grow.`,
   },
   {
     week_number: 223,
@@ -8113,7 +8335,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The decision to fight can take away your depression like it did for Arjuna.`,
-    tarot_back: `Depression happens when you lose the will to fight. Arjuna was depressed and he did not want to fight. His bow fell from his hands and his fingers trembled.`,
+    tarot_front: `The Life`,
+    tarot_back: `Teachers are fighting against ignorance. Depression happens when you lose the will to fight. Arjuna was depressed and he did not want to fight. His bow fell from his hands and his fingers trembled.`,
   },
   {
     week_number: 224,
@@ -8150,7 +8373,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `In some parts of the world, such as in rural India or Africa, celebration means loud music; there is no silence at all.`,
-    tarot_back: `And silence gives the depth to celebration. Some people think being silent is spirituality. Many meditators feel that laughing, singing and dancing are not spiritual.`,
+    tarot_front: `The Dance`,
+    tarot_back: `A celebration without spirituality does not have any depth. And silence gives the depth to celebration. Some people think being silent is spirituality. Many meditators feel that laughing, singing and dancing are not spiritual.`,
   },
   {
     week_number: 225,
@@ -8181,7 +8405,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Have faith in sound when it is pleasant and have faith in the silence when the sound is unpleasant.`,
-    tarot_back: `When some one says something bad you immediately believe it and the mind becomes more disturbed. Believing in an unpleasant sound creates more turmoil in the mind. In that situation shift your faith to silence.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `When some one says something bad you immediately believe it and the mind becomes more disturbed. Believing in an unpleasant sound creates more turmoil in the mind. In that situation shift your faith to silence. Have faith in the sound, like the chanting of mantras.`,
   },
   {
     week_number: 226,
@@ -8219,7 +8444,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `This projection of the nature of self which is "always", on the temporal which can never be "always", is called Maya.`,
-    tarot_back: `In wanting perfection always, one become angry. In wanting to be rich always, one becomes greedy
+    tarot_front: `The Shadow`,
+    tarot_back: `In wanting to be comfortable always, one becomes lazy. In wanting perfection always, one become angry. In wanting to be rich always, one becomes greedy
 When we do not realise that only life is for always, then fear comes. This projection of the nature of self which is "always", on the temporal which can never be "always", is called Maya.`,
   },
   {
@@ -8254,7 +8480,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All her life AMMA served with love, humour and dynamism, extending her motherly love to one and all.`,
-    tarot_back: `Hundreds of people bid a moving farewell to AMMA, singing JAI JAI RADHA RAMAN. AMMA'S mortal ashes were brought to Delhi and GURUJI accompanied them to HARDWAR and immersed them in the Holy Ganges there. A portion of her ashes were also immersed in the river Cauvery, on whose banks AMMA grew up.`,
+    tarot_front: `The Heart`,
+    tarot_back: `All her life AMMA served with love, humour and dynamism, extending her motherly love to one and all. She had an unparalleled love for GURUJI and shared a unique relationship with HIM - not only as a son but also as a Mentor. Hundreds of people bid a moving farewell to AMMA, singing JAI JAI RADHA RAMAN. AMMA'S mortal ashes were brought to Delhi and GURUJI accompanied them to HARDWAR and immersed them in the Holy Ganges there.`,
   },
   {
     week_number: 228,
@@ -8304,7 +8531,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Kailasa means "where there is only celebration", and Smashana is where there is only void.`,
-    tarot_back: `All talents, invention, creativity springs forth from the void, and creation has a tendency to return to the void. All the places of worship in all religions are connected with places of burial/cremation, as the awareness of death alone can bring dispassion and make you well grounded in knowledge. According to the Indian mythology, the abode of Shiva is in Mount Kailasa as well as in Smashana (the cremation ground).`,
+    tarot_front: `The Crossing`,
+    tarot_back: `Void is the fertile ground for the spirit to manifest. All talents, invention, creativity springs forth from the void, and creation has a tendency to return to the void. All the places of worship in all religions are connected with places of burial/cremation, as the awareness of death alone can bring dispassion and make you well grounded in knowledge. According to the Indian mythology, the abode of Shiva is in Mount Kailasa as well as in Smashana (the cremation ground).`,
   },
   {
     week_number: 229,
@@ -8343,7 +8571,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Life appears to be so meaningless to these children, who are either too scared of the competitive world or bogged down by heavy stimuli.`,
-    tarot_back: `Depression sets in if there is a lack of zeal to fight. Depression is lack of energy, and anger and aggression are a bolt of energy. When Arjuna was depressed, Krishna inspired him to fight and thus reinstated life back in Arjuna.`,
+    tarot_front: `The Storm`,
+    tarot_back: `And Spirituality is that inspiration that can keep the spirit up! Aggression is the antidote to depression. Depression sets in if there is a lack of zeal to fight. Depression is lack of energy, and anger and aggression are a bolt of energy.`,
   },
   {
     week_number: 230,
@@ -8371,7 +8600,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Let go of all the impressions right this moment and be Hollow and Empty.`,
-    tarot_back: `When you hear a word the sound conveys the meaning instantaneously. Similarly, the knowledge that you are sitting, standing, talking, etc. neither needs a confirmation nor a proof.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `When you hear a word the sound conveys the meaning instantaneously. Similarly, the knowledge that you are sitting, standing, talking, etc. neither needs a confirmation nor a proof. Just an intention to be free makes you free right away.`,
   },
   {
     week_number: 231,
@@ -8415,7 +8645,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The mantras and their effect, influence, method and mode of working are all a mystery.`,
-    tarot_back: `The principles of governing; the principles of maintaining the orderliness in creation are a secret. The more you know about nature, the mystery deepens. The more a scientist knows, the more he feels there is much more to know.`,
+    tarot_front: `The Crossing`,
+    tarot_back: `Death remains a mystery. The process of separation of spirit from matter and its journey from then on is a secret. The principles of governing; the principles of maintaining the orderliness in creation are a secret. The more you know about nature, the mystery deepens.`,
   },
   {
     week_number: 232,
@@ -8441,7 +8672,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `An unenlightened one tries to protect a secret; and he also reveals the secret at the wrong time, to the wrong person, in the wrong place and makes a big fuss about secrets.`,
-    tarot_back: `For example, you do not talk about menstruation, death, etc. to a five-year-old, but as they grow older these things are not hidden from them any more. They become known as a matter of course.`,
+    tarot_front: `The Sage`,
+    tarot_back: `For example, you do not talk about menstruation, death, etc. to a five-year-old, but as they grow older these things are not hidden from them any more. They become known as a matter of course. An unenlightened one tries to protect a secret; and he also reveals the secret at the wrong time, to the wrong person, in the wrong place and makes a big fuss about secrets.`,
   },
   {
     week_number: 233,
@@ -8463,7 +8695,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The one who wakes up to this truth is wise.`,
-    tarot_back: `Devotion dissolves intentions. Intention pushes you to the future. The one who wakes up to this truth is wise.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `Within tension, rest does not become deep. Devotion dissolves intentions. Intention pushes you to the future. Bliss is always present.`,
   },
   {
     week_number: 234,
@@ -8533,7 +8766,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The 5 senses and thinking ability are all present in consciousness.`,
-    tarot_back: `When someone says something; you are all ears . you are listening from every cell of your body. There is the expression "looking from a 1000 eyes"; one is all eyes.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `So each cell of the body has the potential ability to perform all the functions of the senses. When someone says something; you are all ears . you are listening from every cell of your body. There is the expression "looking from a 1000 eyes"; one is all eyes.`,
   },
   {
     week_number: 235,
@@ -8586,7 +8820,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Awareness, alertness, knowledge and meditation all help erase the past impressions.`,
-    tarot_back: `Different times of the day and year have different influences on the mind. Different types of food that you take influence you for some days. The past impressions-the Karmas- have a different impact on the mind.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Suppose you like a particular place; you may find that a little later it will not be the same. Time is also a factor. Different times of the day and year have different influences on the mind. Different types of food that you take influence you for some days.`,
   },
   {
     week_number: 236,
@@ -8618,7 +8853,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `You would like to have your wishes fulfilled and because it is more pleasurable.`,
-    tarot_back: `You would like to have your wishes fulfilled and because it is more pleasurable. Everything else looks more painful to you and you come for comfort. You want to evolve and become enlightened; you want to know higher Knowledge.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `You would like to have your wishes fulfilled and because it is more pleasurable. Everything else looks more painful to you and you come for comfort. You want to evolve and become enlightened; you want to know higher Knowledge. You have a vision or goal; you share a vision of the Guru.`,
   },
   {
     week_number: 237,
@@ -8658,7 +8894,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `And that is how the experience of contraction and expansion is all play and display of the mind.`,
-    tarot_back: `Evolution is becoming something which it is not already. Self is the same, so it cannot evolve. There is no devolution or decay in the Self.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Contraction -- Akunchana. Contraction means something shrinks from something else. Self does not withdraw or shrink from anything, so contraction does not exist in the Self. Evolution -- Vriddhi.`,
   },
   {
     week_number: 238,
@@ -8686,7 +8923,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `When such is the case, how could you think there is no variety in the Spirit.`,
-    tarot_back: `How could this consciousness that manifested this whole creation and loves variety, be monotonous? God seems to love different varieties. He must be of infinite variety Himself.`,
+    tarot_front: `The Breath`,
+    tarot_back: `There is not just one type of tree, not just one type of snake, cloud, mosquito or vegetable - there is not just one type of anything, so why should God be only one? How could this consciousness that manifested this whole creation and loves variety, be monotonous? God seems to love different varieties. He must be of infinite variety Himself.`,
   },
   {
     week_number: 239,
@@ -8724,7 +8962,8 @@ JAl GURU DEV
 
 Back To Top ^`,
     quote: `Only when you are searching for a solution is there a problem and so there is no problem that cannot be solved.`,
-    tarot_back: `Obviously, you cannot heat the ocean. If it cannot be solved, you accept it and it's no longer a problem. Only when you are searching for a solution is there a problem and so there is no problem that cannot be solved.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `For example: Suppose you think it is a problem that the ocean in Norway is too cold. Obviously, you cannot heat the ocean. If it cannot be solved, you accept it and it's no longer a problem. Only when you are searching for a solution is there a problem and so there is no problem that cannot be solved.`,
   },
   {
     week_number: 240,
@@ -8756,7 +8995,8 @@ One of our youth leaders addressed a gathering of 20000 people and inspired them
 
 Back To Top ^`,
     quote: `Idolizing without a sense of  belongingness is always futile.`,
-    tarot_back: `And there are others who are  paranoid about  worship. They get irritated by seeing others worshipping. The modes of worship or idolizing may be different in different parts of the world.`,
+    tarot_front: `The Shadow`,
+    tarot_back: `And there are others who are  paranoid about  worship. They get irritated by seeing others worshipping. The modes of worship or idolizing may be different in different parts of the world. Some worship the pope ; others worship the pop stars.`,
   },
   {
     week_number: 241,
@@ -8812,7 +9052,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `It is the pinch that irks the consciousness and that pinch disallows the mistake to be repeated.`,
-    tarot_back: `Be with the pinch and not the guilt. It is a very fine balance. Sri Sri: Guilt is about a specific action and pinch is about a specific result or happening.`,
+    tarot_front: `The River`,
+    tarot_back: `Sri Sri: A mistake is something that gives you a pinch. If it hasn't pinched you, it is not a mistake at all. It is the pinch that irks the consciousness and that pinch disallows the mistake to be repeated. Be with the pinch and not the guilt.`,
   },
   {
     week_number: 242,
@@ -8848,7 +9089,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The praise that comes out of an elevated state of consciousness is simply its nature and is quite different.`,
-    tarot_back: `Some praise with motives, and some others just to elevate. Others praise themselves in order to hide their low self-esteem. The real praise dawns in a blossomed state of consciousness.`,
+    tarot_front: `The Thorn`,
+    tarot_back: `And some others are simply not used to. Some praise with motives, and some others just to elevate. Others praise themselves in order to hide their low self-esteem. The real praise dawns in a blossomed state of consciousness.`,
   },
   {
     week_number: 243,
@@ -8890,7 +9132,8 @@ The Times of India on February 10th came with this article and another about Pre
 
 Back To Top ^`,
     quote: `The policemen would hug people, and confessed that only their uniform was preventing them from joining the dance.`,
-    tarot_back: `Following 27 minutes of total, still meditation, the entire crowd were on their feet, singing and dancing Ö the sub-inspector of police remarked that even though a meagre force of 500 was deployed, they had nothing to do, so blissful and orderly was the crowd. The policemen would hug people, and confessed that only their uniform was preventing them from joining the dance. The high priests of the ancient city of Dwarka (Krishna's capital), came all the way to invite Guruji, and placed a resplendent turban (which was from the temple deity) on His head.`,
+    tarot_front: `The Thorn`,
+    tarot_back: `It was a sight to see streams of people flooding in, all excited and happy even before the program began, the crowd totalled nearly 200,000! The traffic diversion for the event was announced by the traffic police well in advance, as THE event took off without any chaos. Following 27 minutes of total, still meditation, the entire crowd were on their feet, singing and dancing Ö the sub-inspector of police remarked that even though a meagre force of 500 was deployed, they had nothing to do, so blissful and orderly was the crowd. The policemen would hug people, and confessed that only their uniform was preventing them from joining the dance.`,
   },
   {
     week_number: 244,
@@ -8944,7 +9187,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Similarly, wisdom and grace have no form but are expressed through form.`,
-    tarot_back: `Discarding the formless, you become inert, materialistic and paranoid. Discarding the form, you become a lost ascetic, a space cadet or an emotional junk! Aggression and assertiveness overshadow intuition.`,
+    tarot_front: `The Sage`,
+    tarot_back: `Similarly, wisdom and grace have no form but are expressed through form. Discarding the formless, you become inert, materialistic and paranoid. Discarding the form, you become a lost ascetic, a space cadet or an emotional junk! Aggression and assertiveness overshadow intuition.`,
   },
   {
     week_number: 245,
@@ -8976,7 +9220,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you ask the question "Who am I?" you get no answer, there is silence.`,
-    tarot_back: `For your soul is solidified silence. This solidified silence is wisdom, is knowledge. The easy way to silence the thoughts is to arouse the feelings.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Their goal is Silence. When you ask the question "Who am I?" you get no answer, there is silence. That is the real answer. For your soul is solidified silence.`,
   },
   {
     week_number: 246,
@@ -9020,7 +9265,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The main impediment of many seekers in the path is that they want to surrender.`,
-    tarot_back: `want to love you", love is evident there. Surrender is not an act, it is a state of your being. Whether you acknowledge it or not, it is there.`,
+    tarot_front: `The Offering`,
+    tarot_back: `Wanting to surrender becomes an impediment on the path. want to love you", love is evident there. Surrender is not an act, it is a state of your being. Whether you acknowledge it or not, it is there.`,
   },
   {
     week_number: 247,
@@ -9048,7 +9294,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are doing something very important, take a moment off to do something totally irrelevant and insignificant.`,
-    tarot_back: `Then sleep, listening to flute music, cold water baths, etc. house, take a moment off to cut grass, or go shopping! When you are doing something very important, take a moment off to do something totally irrelevant and insignificant.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `Then sleep, listening to flute music, cold water baths, etc. house, take a moment off to cut grass, or go shopping! When you are doing something very important, take a moment off to do something totally irrelevant and insignificant. This enhances your creativity.`,
   },
   {
     week_number: 248,
@@ -9106,7 +9353,8 @@ Jai Gurudev ! Janael McQueen, TTC Coordinator
 
 Back To Top ^`,
     quote: `A desire can be triggered through the association of certain people and a place.`,
-    tarot_back: `A desire can be triggered through the association of certain people and a place. Someone else's need or desire may manifest in you as your own desire, e.g. when someone is hungry, you get a desire to feed them or someone wants to talk to you and you get a desire to talk to them.`,
+    tarot_front: `The Moth`,
+    tarot_back: `A desire might arise through listening. A desire can be triggered through the association of certain people and a place. Someone else's need or desire may manifest in you as your own desire, e.g. when someone is hungry, you get a desire to feed them or someone wants to talk to you and you get a desire to talk to them.`,
   },
   {
     week_number: 249,
@@ -9136,7 +9384,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `That which is radiant in every particle of the Being is Rama.`,
-    tarot_back: `Kaushalya (Sanskrit for "skilled") stands for skill. The skillful reiner of the ten chariots can give birth to Ram. When the ten are used skillfully, radiance is born within.`,
+    tarot_front: `The Dawn`,
+    tarot_back: `Dasharatha (In Sanskrit this means "the ten charioted one") signifies the five organs of sense and the five organs of action. Kaushalya (Sanskrit for "skilled") stands for skill. The skillful reiner of the ten chariots can give birth to Ram. When the ten are used skillfully, radiance is born within.`,
   },
   {
     week_number: 250,
@@ -9198,7 +9447,8 @@ to notify Chris if your email address should change in the future.
 
 Back To Top ^`,
     quote: `Whenever happiness has disappeared from your life, look deeper and you will see it is because of the desire.`,
-    tarot_back: `And all that we desire is happiness! No person, animal or creature desiring unhappiness is ever born, never has it happened before and never will it happen in the future. When your small mind gets tired of running here and there, of wandering everywhere, it reaches a conclusion, "My desires have killed my happiness".`,
+    tarot_front: `The Sun`,
+    tarot_back: `Whenever happiness has disappeared from your life, look deeper and you will see it is because of the desire. And all that we desire is happiness! No person, animal or creature desiring unhappiness is ever born, never has it happened before and never will it happen in the future. When your small mind gets tired of running here and there, of wandering everywhere, it reaches a conclusion, "My desires have killed my happiness".`,
   },
   {
     week_number: 251,
@@ -9258,7 +9508,8 @@ Think of how he has opened your heart and see if you can help to do the same for
 
 Back To Top ^`,
     quote: `Examine everything in life and say "This is nothing" and what remains after all that is Love, and that is everything.`,
-    tarot_back: `That is to say it leads you to void - this is nothing. A sign of intelligence is how soon you arrive at this understanding. Examine everything in life and say "This is nothing" and what remains after all that is Love, and that is everything.`,
+    tarot_front: `The Heart`,
+    tarot_back: `In the progression of life, you will leave behind every experience saying, "This is nothing." Anything that is completed loses its importance. That is to say it leads you to void - this is nothing. A sign of intelligence is how soon you arrive at this understanding. Examine everything in life and say "This is nothing" and what remains after all that is Love, and that is everything.`,
   },
   {
     week_number: 252,
@@ -9284,7 +9535,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If your desire does not get fulfilled, it leads to frustration and causes misery.`,
-    tarot_back: `You get pleasure from an object or a person only when you desire them. When you do not desire an object, you do not get pleasure from it. For example, when a person is hot and thirsty, a sip of cold water gives him pleasure; but not if he is not thirsty.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `Vasishta said that desire is the cause of pleasure. You get pleasure from an object or a person only when you desire them. When you do not desire an object, you do not get pleasure from it. For example, when a person is hot and thirsty, a sip of cold water gives him pleasure; but not if he is not thirsty.`,
   },
   {
     week_number: 253,
@@ -9320,7 +9572,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And what ever you are seeking and where ever you seek itÒ³ always only One; and the One is what you already are.`,
-    tarot_back: `And so -- you cannot seek something you do not know and when you know what you are seeking, you already have it. When you seek the world, you get misery and when you want to find the way out of misery, you find the divine. A man lost a penny and was seeking for the penny in a bush when he found a huge treasure.`,
+    tarot_front: `The Light`,
+    tarot_back: `And what ever you are seeking and where ever you seek itÒ³ always only One; and the One is what you already are. And so -- you cannot seek something you do not know and when you know what you are seeking, you already have it. When you seek the world, you get misery and when you want to find the way out of misery, you find the divine. A man lost a penny and was seeking for the penny in a bush when he found a huge treasure.`,
   },
   {
     week_number: 254,
@@ -9354,7 +9607,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If yes and you don't get awakened, then Guru is to be blamed.`,
-    tarot_back: `If Guru could set you free, he could have done it to the whole world. So Guru is not responsible for your awakening. And yet freedom is next to impossible without Guru.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `If yes and you don't get awakened, then Guru is to be blamed. If Guru could set you free, he could have done it to the whole world. So Guru is not responsible for your awakening. And yet freedom is next to impossible without Guru.`,
   },
   {
     week_number: 255,
@@ -9406,7 +9660,8 @@ Violence ends where love begins
 
 Back To Top ^`,
     quote: `Wisdom that doesn't give rise to feeling is incomplete.`,
-    tarot_back: `Feeling that doesn’t translate into action is incomplete. Action that doesn't give rise to fulfillment is incomplete. For Fulfillment, is returning to the Self.`,
+    tarot_front: `The Sage`,
+    tarot_back: `Wisdom that doesn't give rise to feeling is incomplete. Feeling that doesn’t translate into action is incomplete. Action that doesn't give rise to fulfillment is incomplete. For Fulfillment, is returning to the Self.`,
   },
   {
     week_number: 256,
@@ -9438,7 +9693,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Information -- Often we think information is education, but it is only one aspect of education.`,
-    tarot_back: `Attitude -- An integral aspect of education is cultivating the right attitude. Proper attitude at the right time and place determines your actions and behavior. Imagination -- Imagination is essential for creativity, for the arts.`,
+    tarot_front: `The Hourglass`,
+    tarot_back: `You need to conceive in order to create. Attitude -- An integral aspect of education is cultivating the right attitude. Proper attitude at the right time and place determines your actions and behavior. Imagination -- Imagination is essential for creativity, for the arts.`,
   },
   {
     week_number: 257,
@@ -9478,7 +9734,8 @@ Jai Guru Dev !
 
 Back To Top ^`,
     quote: `As you mature in life, you find everything is untruth - events, situations, people, emotions, thoughts, opinions, concepts, your body - everything is untruth.`,
-    tarot_back: `When you don't identify the untruth, you cannot become free from it. Your own experiences in life make you identify your own untruth. As you mature in life, you find everything is untruth - events, situations, people, emotions, thoughts, opinions, concepts, your body - everything is untruth.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `When you identify that which appears to you as untruth, then you will become free from it. When you don't identify the untruth, you cannot become free from it. Your own experiences in life make you identify your own untruth. As you mature in life, you find everything is untruth - events, situations, people, emotions, thoughts, opinions, concepts, your body - everything is untruth.`,
   },
   {
     week_number: 258,
@@ -9508,7 +9765,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And by not expressing love you feel stifled.`,
-    tarot_back: `If I am humble I am not honest. If I'm honest I can not be humble!!! Hide your dispassion and express your love.`,
+    tarot_front: `The Heart`,
+    tarot_back: `I am not humble - how can God be humble! If I am humble I am not honest. If I'm honest I can not be humble!!! Hide your dispassion and express your love.`,
   },
   {
     week_number: 259,
@@ -9550,7 +9808,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are steeped in love, with the Existence, with the Divine, nothing whatsoever can humiliate you.`,
-    tarot_back: `The more egotistic you are, the more humiliation you feel. When you are childlike and have a greater sense of kinship then you don't feel humiliated. When you are committed to truth and not to your ego then you also don't feel humiliated.`,
+    tarot_front: `The Mask`,
+    tarot_back: `The more egotistic you are, the more humiliation you feel. When you are childlike and have a greater sense of kinship then you don't feel humiliated. When you are committed to truth and not to your ego then you also don't feel humiliated. If you are afraid of humiliation, you can neither make progress in your material life nor in your spiritual life.`,
   },
   {
     week_number: 260,
@@ -9578,7 +9837,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Legendary is the wisdom that withstands turbulence.`,
-    tarot_back: `It will be one-pointed and will reach the goal. Legendary is the wisdom that withstands turbulence. It will be integrated in life.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Legendary is the commitment that withstands humiliation. It will be one-pointed and will reach the goal. Legendary is the wisdom that withstands turbulence. It will be integrated in life.`,
   },
   {
     week_number: 261,
@@ -9608,7 +9868,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When someone is in an argumentative mood, then giving knowledge or advice is in vain.`,
-    tarot_back: `That is why wise people do not give advice when they are in an argumentative environment. It can bring out the truth if there is no emotion or sense of "I" attached to it. Argument can also have a disadvantage.`,
+    tarot_front: `The Arrow`,
+    tarot_back: `Then you are not ready for knowledge. That is why wise people do not give advice when they are in an argumentative environment. Argument has a purpose. It can bring out the truth if there is no emotion or sense of "I" attached to it.`,
   },
   {
     week_number: 262,
@@ -9644,7 +9905,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The seeker should remember that he is born with virtues; otherwise he could not have been a seeker.`,
-    tarot_back: `If you think you do not have virtues and then try to cultivate them, you will fail. You often compare yourself with others on the basis of virtues. Do not compare yourself with them.`,
+    tarot_front: `The Lily`,
+    tarot_back: `The seeker should remember that he is born with virtues; otherwise he could not have been a seeker. If you think you do not have virtues and then try to cultivate them, you will fail. You often compare yourself with others on the basis of virtues. Do not compare yourself with them.`,
   },
   {
     week_number: 263,
@@ -9676,7 +9938,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Reaction, as well as non-action, both create karma, but a conscious action transcends karma.`,
-    tarot_back: `Impulsiveness creates a chain of Karma. Reaction, as well as non-action, both create karma, but a conscious action transcends karma. non-action can create karma.`,
+    tarot_front: `The Arrow`,
+    tarot_back: `Reaction is out of impulsiveness. Impulsiveness creates a chain of Karma. Reaction, as well as non-action, both create karma, but a conscious action transcends karma. non-action can create karma.`,
   },
   {
     week_number: 264,
@@ -9710,7 +9973,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Spirituality is the technology of consciousness, and the whole world is the play and display of consciousness.`,
-    tarot_back: `Technology without human values would see nature as a dead object. Science gives an insight into the life of nature and spirituality makes the nature come alive. For example, in the eyes of children, there is nothing dead in the world - animals, trees, the sun and the moon - they all have life, they all have emotions, they all have feelingsÅ‰n the eyes of a stressed and ignorant person, even human beings are like robots - objects!`,
+    tarot_front: `The Shadow`,
+    tarot_back: `neglected, instead of bringing comfort, technology brings fear and destruction. Technology without human values would see nature as a dead object. Science gives an insight into the life of nature and spirituality makes the nature come alive. For example, in the eyes of children, there is nothing dead in the world - animals, trees, the sun and the moon - they all have life, they all have emotions, they all have feelingsÅ‰n the eyes of a stressed and ignorant person, even human beings are like robots - objects!`,
   },
   {
     week_number: 265,
@@ -9748,7 +10012,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you are in love, you feel weak because love makes you weak.`,
-    tarot_back: `All those who were feeling strong were taken aback! If you are in love, you feel weak because love makes you weak. Yet there is no power stronger than love.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Sri Sri : "Only those who feel weak can surrender". All those who were feeling strong were taken aback! If you are in love, you feel weak because love makes you weak. Yet there is no power stronger than love.`,
   },
   {
     week_number: 266,
@@ -9782,7 +10047,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And when the mind is smaller than the senses, like in animals, there is no conflict.`,
-    tarot_back: `When they are below you, you love them and you feel compassionate. Either submission or compassion can take you out of a fight in no time. This is one way to look at it when you are tired of fighting.`,
+    tarot_front: `The Child`,
+    tarot_back: `When they are above you, you respect them. When they are below you, you love them and you feel compassionate. Either submission or compassion can take you out of a fight in no time. This is one way to look at it when you are tired of fighting.`,
   },
   {
     week_number: 267,
@@ -9812,7 +10078,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The second thing is to willingly accept the problem and see it as a challenge.`,
-    tarot_back: `First you met me and then you had a problem (Laughter). When it snows, there are no bacteria since no herbs to heal you grow in that season. In the spring, the herbs come first and then the bugs.`,
+    tarot_front: `The Garden`,
+    tarot_back: `Fourth, know that nature has provided you the solution even before giving you the problem. First you met me and then you had a problem (Laughter). When it snows, there are no bacteria since no herbs to heal you grow in that season. In the spring, the herbs come first and then the bugs.`,
   },
   {
     week_number: 268,
@@ -9842,7 +10109,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Because he loves you, and is afraid to lose your love or hurt you.`,
-    tarot_back: `What's the use of pointing out a mistake that he knows he has committed? By doing this, you will only make them feel more guilty, defensive or resentful and this will only create more distance. Do not point out the mistake of a person who knows but doesn't want you to know.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Do not tell a person a mistake he knows. What's the use of pointing out a mistake that he knows he has committed? By doing this, you will only make them feel more guilty, defensive or resentful and this will only create more distance. Do not point out the mistake of a person who knows but doesn't want you to know.`,
   },
   {
     week_number: 269,
@@ -9884,7 +10152,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The source of conflict is the division of "mine" and "yours." Knowledge eases the sense of limited belongingness and resolves this conflict.`,
-    tarot_back: `Wise are those who make you cry for the Divine. The source of conflict is the division of "mine" and "yours." Knowledge eases the sense of limited belongingness and resolves this conflict. It is amazing when knowledge dawns in you that there is no stranger in the whole world!`,
+    tarot_front: `The Light`,
+    tarot_back: `Unwise are those who make you cry for the world. Wise are those who make you cry for the Divine. The source of conflict is the division of "mine" and "yours." Knowledge eases the sense of limited belongingness and resolves this conflict. It is amazing when knowledge dawns in you that there is no stranger in the whole world!`,
   },
   {
     week_number: 270,
@@ -9912,7 +10181,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `As every individual is nothing but a puppet of the ONE, thanking and being obliged is simply an exhibition of ignorance.`,
-    tarot_back: `Otherwise your thankfulness is centered around ego. You are grateful, but not for an act. You are grateful for what is.`,
+    tarot_front: `The Wheel`,
+    tarot_back: `Appreciate people for what they are, do not thank them for what they do. Otherwise your thankfulness is centered around ego. You are grateful, but not for an act. You are grateful for what is.`,
   },
   {
     week_number: 271,
@@ -9940,7 +10210,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If a person has to appease and please ten people all the time, it will be so tiring.`,
-    tarot_back: `They expend a lot of energy in cajoling and this brings down the joy and celebration of the moment. It is okay for you to show your upset mood or tendency once in a while, but doing it over and over again is taxing for you and people you love. If you feel down, appease and please yourself.`,
+    tarot_front: `The Heart`,
+    tarot_back: `People who keep a long face and expect others to cajole and appease them make others run away. Lovers often do this. They expend a lot of energy in cajoling and this brings down the joy and celebration of the moment. It is okay for you to show your upset mood or tendency once in a while, but doing it over and over again is taxing for you and people you love.`,
   },
   {
     week_number: 272,
@@ -9964,7 +10235,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the river meets the ocean, it recognizes that it is the ocean from the beginning to the end.`,
-    tarot_back: `In the same way, the moment a devotee meets (surrenders to) the Divine, the devotee becomes GOD. When the river meets the ocean, it recognizes that it is the ocean from the beginning to the end. Similarly, the individual "IÅ® IÅ®" dissolves in ONE Divinity.`,
+    tarot_front: `The Offering`,
+    tarot_back: `A drop of the ocean is part of the ocean. In the same way, the moment a devotee meets (surrenders to) the Divine, the devotee becomes GOD. When the river meets the ocean, it recognizes that it is the ocean from the beginning to the end. Similarly, the individual "IÅ® IÅ®" dissolves in ONE Divinity.`,
   },
   {
     week_number: 273,
@@ -10022,7 +10294,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When a materialistic person tells you a secret, it will only create doubts and spread malaise.`,
-    tarot_back: `Being completely immersed in the mystery of Life and this Creation is Samadhi. Your knowing or believing doesn't really matter to what Is. This Creation is an unfathomable secret, and its mysteries only deepen.`,
+    tarot_front: `The Chalice`,
+    tarot_back: `If both birth and death are mysterious, then life is certainly a greater mystery. Being completely immersed in the mystery of Life and this Creation is Samadhi. Your knowing or believing doesn't really matter to what Is. This Creation is an unfathomable secret, and its mysteries only deepen.`,
   },
   {
     week_number: 274,
@@ -10049,7 +10322,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `In a state of wisdom or enlightenment, imperfection is an effort; perfection is a compulsion and is unavoidable!`,
-    tarot_back: `When you think that others are responsible, then your degree of responsibility diminishes. When you are in total Vairagya (dispassion), you can take care of even trivial and insignificant things with such perfection. For example, during the Pooja every morning, Guruji decorates the Pooja table with flowers with such great care, choosing different color combinations and patterns everyday; fully knowing that the decoration is not going to last even 10 minutes.`,
+    tarot_front: `The Garden`,
+    tarot_back: `Perfection is taking total responsibility, and total responsibility means knowing that you are the only responsible person in the whole world. When you think that others are responsible, then your degree of responsibility diminishes. When you are in total Vairagya (dispassion), you can take care of even trivial and insignificant things with such perfection. For example, during the Pooja every morning, Guruji decorates the Pooja table with flowers with such great care, choosing different color combinations and patterns everyday; fully knowing that the decoration is not going to last even 10 minutes.`,
   },
   {
     week_number: 275,
@@ -10096,7 +10370,8 @@ Sri Sri Ravi Shankar at the Canadian Ashram
 
 Back To Top ^`,
     quote: `Always know that the Divine never gives you a responsibility you cannot fulfill.`,
-    tarot_back: `And you do not know what you can do! Always accept that you do not know what you can do. Ignorance of your capability can expand you!`,
+    tarot_front: `The Light`,
+    tarot_back: `Your responsibility is only what you can do. And you do not know what you can do! Always accept that you do not know what you can do. Ignorance of your capability can expand you!`,
   },
   {
     week_number: 276,
@@ -10132,7 +10407,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When the love is cast over the entire creation, then you are the Big Self.`,
-    tarot_back: `There are many stories associated with this day. It was this day that the demon Narakasaura was killed. King Narakasura (Naraka means hell) had been granted a boon that he could be destroyed only by a woman.`,
+    tarot_front: `The Heart`,
+    tarot_back: `That is the Lordship. When the Lordship dawns on the Self, there is perennial celebration. Today is Deepawali, the festival of lights. There are many stories associated with this day.`,
   },
   {
     week_number: 277,
@@ -10170,7 +10446,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Whereas a tourist is satisfying the senses, a pilgrim is in the quest of the truth.`,
-    tarot_back: `A tourist compares with other experiences and places and hence is not in the present moment. But a pilgrim has a sense of sacredness, so he tends to be in the present moment. Most people in life are just tourists without even being aware of it.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `A tourist gets tired and tanned, while a pilgrim sparkles with spirit. Every move a pilgrim makes is with sacredness and gratitude, while a tourist is often preoccupied and unaware. A tourist compares with other experiences and places and hence is not in the present moment. But a pilgrim has a sense of sacredness, so he tends to be in the present moment.`,
   },
   {
     week_number: 278,
@@ -10208,7 +10485,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you witness the sansara, every step you take is benevolent and impeccable.`,
-    tarot_back: `He took sixteen steps towards the tree and under each step, blossomed a Lotus flower. The Bodhi tree is symbolic of both sansara (world) and Dharma. The Lotus flower symbolizes clarity, dispassion, love, beauty and purity.`,
+    tarot_front: `The Heart`,
+    tarot_back: `He took sixteen steps towards the tree and under each step, blossomed a Lotus flower. The Bodhi tree is symbolic of both sansara (world) and Dharma. The Lotus flower symbolizes clarity, dispassion, love, beauty and purity. It is only when you are detached in life can you watch the sansara and all of its plays.`,
   },
   {
     week_number: 279,
@@ -10250,7 +10528,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A confused consciousness seeks clarity and every confusion is breaking away from clarity.`,
-    tarot_back: `Unlimited possibilities are open to one who is not clear and not confused. Your mind swings from clarity to confusion and confusion to clarity but the state in which there is no doership nor inertia is the most creative and progressive state. A sharp instrument does its job perfectly, effortlessly.`,
+    tarot_front: `The Light`,
+    tarot_back: `Being very clear means not opening to new possibilities and can lead to limitations. Unlimited possibilities are open to one who is not clear and not confused. Your mind swings from clarity to confusion and confusion to clarity but the state in which there is no doership nor inertia is the most creative and progressive state. A sharp instrument does its job perfectly, effortlessly.`,
   },
   {
     week_number: 280,
@@ -10306,7 +10585,8 @@ Info@PrisonSmart.org
 
 Back To Top ^`,
     quote: `Whenever there is a problem we either deny it saying there is no problem or sit to solve the problem and make it a big issue.`,
-    tarot_back: `If it concerns people, keep in touch with them instead of avoiding them. Talk less and give time a chance. Get together and celebrate.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `Acknowledge the problem - it is there. See it as a small problem, and do not say it is big. If it concerns people, keep in touch with them instead of avoiding them. Talk less and give time a chance.`,
   },
   {
     week_number: 281,
@@ -10342,7 +10622,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Then every minute of your life is sacred, every place you go to becomes sacred, every person you meet is only your reflection, and every act of yours is sacred.`,
-    tarot_back: `Sri Sri: This happens when your memory overpowers your consciousness and you lose your sensitivity. For example, people living in Benares do not feel that it is a sacred place. That sensitivity is just not there.`,
+    tarot_front: `The Temple`,
+    tarot_back: `When every action of yours becomes sacred, you have become one with the Divine. Then every minute of your life is sacred, every place you go to becomes sacred, every person you meet is only your reflection, and every act of yours is sacred. Sri Sri: This happens when your memory overpowers your consciousness and you lose your sensitivity. For example, people living in Benares do not feel that it is a sacred place.`,
   },
   {
     week_number: 282,
@@ -10391,7 +10672,8 @@ To contact Prison SMART Email: TomDuffy@prisonSMART.org
 
 Back To Top ^`,
     quote: `If you are love and you say, "I am not God," you are saying God is not love, and that is blasphemy.`,
-    tarot_back: `If you say, "I am not God," you deny that God is aware, alert and awake. When you say, "I am not God," you deny God of a portion of existence, and that is blasphemy. Also, you are denying the scriptures that say, "God made man in His own image." If you say, "I am not God," you are denying God.`,
+    tarot_front: `The Heart`,
+    tarot_back: `If you are love and you say, "I am not God," you are saying God is not love, and that is blasphemy. "I am" is your consciousness. If you say, "I am not God," you deny that God is aware, alert and awake. When you say, "I am not God," you deny God of a portion of existence, and that is blasphemy.`,
   },
   {
     week_number: 283,
@@ -10415,7 +10697,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Atheism is not a reality, it is just a matter of convenience.`,
-    tarot_back: `An atheist denies God without first disproving it. In order to disprove God, you must have enormous knowledge. And when you have enormous knowledge, you cannot disprove it!`,
+    tarot_front: `The Lamp`,
+    tarot_back: `With a spirit of enquiry, you cannot deny something which you have not disproved. An atheist denies God without first disproving it. In order to disprove God, you must have enormous knowledge. And when you have enormous knowledge, you cannot disprove it!`,
   },
   {
     week_number: 284,
@@ -10453,7 +10736,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `There is a total merging with the Beloved and all duality disappears.`,
-    tarot_back: `The first stage is Saarupya (to see the formless in the form) Ö Seeing God in all the forms. Often, one feels more comfortable to see God as formless rather than with a form, because with a form, one feels a distance, a duality, a fear of rejection and other limitations. In life all of our interactions are with the form, other than in deep sleep and in Samadhi.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Perception of love, not as an emotion, but as the substratum of existence becomes evident. The formless spirit shines through every form in creation and mystery of life deepens, shattering the atheism. Then the journey begins and it has four stages. The first stage is Saarupya (to see the formless in the form) Ö Seeing God in all the forms.`,
   },
   {
     week_number: 285,
@@ -10485,7 +10769,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When someone is hurt, arguing with them and establishing your righteousness will be in vain.`,
-    tarot_back: `Many people feel pride in hearing "Sorry" from others. But when you say "Sorry" to a wise man, it evokes compassion at your ignorance. However, when you say "Sorry" to your Guru, He will get angry and say, "Go!`,
+    tarot_front: `The Storm`,
+    tarot_back: `This one word of five letters, when said sincerely can remove anger, guilt, hatred and distance. Many people feel pride in hearing "Sorry" from others. This boosts their ego. But when you say "Sorry" to a wise man, it evokes compassion at your ignorance.`,
   },
   {
     week_number: 286,
@@ -10515,7 +10800,8 @@ The City Council in Alpharetta, Georgia, USA, planned to remove several 150-year
 
 Back To Top ^`,
     quote: `(Laughter) From the moment you wake up in the morning you are always with people and your mind is caught up in worldly thoughts.`,
-    tarot_back: `So sometime during the day, sit for a few minutes, get into the cave of your heart, eyes closed, and kick the world away like a ball. But as soon as you open your eyes, hold onto the ball because you need to kick it again in the next session. (Laughter) During the day be 100 percent attached to the work, don't try to detach yourself.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `(Laughter) From the moment you wake up in the morning you are always with people and your mind is caught up in worldly thoughts. So sometime during the day, sit for a few minutes, get into the cave of your heart, eyes closed, and kick the world away like a ball. But as soon as you open your eyes, hold onto the ball because you need to kick it again in the next session. (Laughter) During the day be 100 percent attached to the work, don't try to detach yourself.`,
   },
   {
     week_number: 287,
@@ -10549,7 +10835,8 @@ The City Council in Alpharetta, Georgia, USA, planned to remove several 150-year
 
 Back To Top ^`,
     quote: `A journalist asked me, "Why is it important to breathe?" "Why is it important to be happy?" "Why is it important to have peace?" These questions are not relevant at all.`,
-    tarot_back: `(Laughter.) Things are either themselves important or they make other things important. So that means everything is important, and. everything is unimportant.`,
+    tarot_front: `The "Unimportant"`,
+    tarot_back: `So you cannot eliminate unimportant things. It is important to have unimportant things to make something else important. (Laughter.) Things are either themselves important or they make other things important. So that means everything is important, and.`,
   },
   {
     week_number: 288,
@@ -10580,7 +10867,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `And a person who has nothing to worship or adore is sure to fall into depression.`,
-    tarot_back: `Lack of adoration has led to many emotional, psychological and social problems in the society. If you have nothing to hold up high in life, selfishness, arrogance and violence are sure to follow. Adoring and honoring each other in society eliminates stress and fosters compassion and love.`,
+    tarot_front: `The Heart`,
+    tarot_back: `In life, if you do not adore or appreciate anything, you will be filled with negativity. And a person who has nothing to worship or adore is sure to fall into depression. Lack of adoration has led to many emotional, psychological and social problems in the society. If you have nothing to hold up high in life, selfishness, arrogance and violence are sure to follow.`,
   },
   {
     week_number: 289,
@@ -10614,7 +10902,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Spirit is all over in Nature, but when it dawns in the human body as an elevated state of consciousness, then it gains immense value.`,
-    tarot_back: `the mind is even more subtle than one millionth of an atom. When the mind explodes, that is Enlightenment. Over the centuries, thousands of sages who have meditated, done penance and been enlightened come to the "Kumbha Mela" and relieve themselves of the burden of the merits gained through Sadhana by bathing in the rivers.`,
+    tarot_front: `The Heart`,
+    tarot_back: `When a tiny atom explodes, the radiation lasts for a long time ... the mind is even more subtle than one millionth of an atom. When the mind explodes, that is Enlightenment. Over the centuries, thousands of sages who have meditated, done penance and been enlightened come to the "Kumbha Mela" and relieve themselves of the burden of the merits gained through Sadhana by bathing in the rivers.`,
   },
   {
     week_number: 290,
@@ -10660,7 +10949,8 @@ In India, hundreds of Art of Living volunteers are busily engaged in the relief 
 
 Back To Top ^`,
     quote: `A certain degree of aloofness in every relationship will strengthen your personality and connect you to your source.`,
-    tarot_back: `In many occasions, it is better to be unfriendly than be friendly. Being unfriendly does not mean being aggressive and inimical. The best secretaries, personal assistants, security personnel, and judges have to be unfriendly.`,
+    tarot_front: `The Sage`,
+    tarot_back: `It takes a lot of wisdom to be free from the burden of obligation and not be influenced by your friends' opinions and feelings. In many occasions, it is better to be unfriendly than be friendly. Being unfriendly does not mean being aggressive and inimical. The best secretaries, personal assistants, security personnel, and judges have to be unfriendly.`,
   },
   {
     week_number: 291,
@@ -10714,7 +11004,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `It is only with wisdom and self-knowledge that you can transcend relationships.`,
-    tarot_back: `Don't try to find a shortcut to overcome longing. Don't make the longing short - that's why it's called loooonging. True longing in itself brings up spurts of bliss.`,
+    tarot_front: `The Light`,
+    tarot_back: `But longing also brings along a sense of pain. To avoid the pain, you try to push away the longing. The skill is to bear the pain of longing and move on. Don't try to find a shortcut to overcome longing.`,
   },
   {
     week_number: 292,
@@ -10750,7 +11041,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Earthquakes, floods and volcanoes all drive home the truth that nothing is permanent and you cannot find security in that which is not permanent.`,
-    tarot_back: `With wisdom, shocks can make you grow in leaps and bounds. Without wisdom a shock can only lead you to negativity and depression. Why should nature destroy small innocent children?`,
+    tarot_front: `The Lamp`,
+    tarot_back: `Strangely, when you find someone to blame you feel comfortable, but with natural calamities you cannot blame anyone. It comes to you as a shock. With wisdom, shocks can make you grow in leaps and bounds. Without wisdom a shock can only lead you to negativity and depression.`,
   },
   {
     week_number: 293,
@@ -10778,7 +11070,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `True self-reliance is realizing that nothing is excluded from the Self.`,
-    tarot_back: `The same spirit that wants to be self-reliant is also passionate. It is only in spirituality that passion and dispassion can happen together. This is the rarest combination.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `If you are passionate, you have to forget about being self-reliant. If you want to be self-reliant, you have to drop your passion. That which brings together these two completely different aspects in you, is your spirit. The same spirit that wants to be self-reliant is also passionate.`,
   },
   {
     week_number: 294,
@@ -10826,7 +11119,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are in love, when you are surrendered, there is no fear.`,
-    tarot_back: `Fear moves you from being insensitive to being sensitive. Fear moves you from dullness to alertness. Total lack of fear may lead to destructive tendencies - a distorted ego knows no fear.`,
+    tarot_front: `The Shadow`,
+    tarot_back: `Fear moves you from carelessness to taking care. Fear moves you from being insensitive to being sensitive. Fear moves you from dullness to alertness. Total lack of fear may lead to destructive tendencies - a distorted ego knows no fear.`,
   },
   {
     week_number: 295,
@@ -10866,7 +11160,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A warrior is one who takes on challenges and commitment and stands by it.`,
-    tarot_back: `A strong ego will counteract depression. Often ego is thought to be selfish but it is the greatest motivating factor for creativity and generosity. Ego propels one to venture into the unknown.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Ego gives strength and courage, brings valour to meet the challenges with endurance and perseverance. A strong ego will counteract depression. Often ego is thought to be selfish but it is the greatest motivating factor for creativity and generosity. Ego propels one to venture into the unknown.`,
   },
   {
     week_number: 296,
@@ -10896,7 +11191,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `You can only sacrifice that which you would like to keep for yourself; in other words, that which gives you pleasure and joy.`,
-    tarot_back: `Sacrifice here becomes irrelevant, because love alone is your strongest driving force. So when there is so much love there cannot be sacrifice. At the same time when there is no love, there is no sacrifice.`,
+    tarot_front: `The Altar`,
+    tarot_back: `At the same time, when your love for the greater good is so strong, nothing else assumes any value. Sacrifice here becomes irrelevant, because love alone is your strongest driving force. So when there is so much love there cannot be sacrifice. At the same time when there is no love, there is no sacrifice.`,
   },
   {
     week_number: 297,
@@ -10944,7 +11240,8 @@ And finally, once it was all over, Ashish from Dallas exclaimed, "Hey guys, it's
 
 Back To Top ^`,
     quote: `Paganism, Satan and animal worship, without the knowledge of the one divinity is very different from seeing the divine in every form of the manifest universe.`,
-    tarot_back: `They are not actually worshipping the idols but worshipping the unmanifest divinity which has all the divine qualities. So, the idol worshippers of the East are not the same as the ones in the Middle East as described in the Bible, because they are not just worshipping different gods and different idols, they are worshipping the ONE divinity in many different forms. Paganism, Satan and animal worship, without the knowledge of the one divinity is very different from seeing the divine in every form of the manifest universe.`,
+    tarot_front: `The Light`,
+    tarot_back: `This is in all puja practices. They are not actually worshipping the idols but worshipping the unmanifest divinity which has all the divine qualities. So, the idol worshippers of the East are not the same as the ones in the Middle East as described in the Bible, because they are not just worshipping different gods and different idols, they are worshipping the ONE divinity in many different forms. Paganism, Satan and animal worship, without the knowledge of the one divinity is very different from seeing the divine in every form of the manifest universe.`,
   },
   {
     week_number: 298,
@@ -10984,7 +11281,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The general notion is that when you work under someone, you lose your freedom, you have to be answerable.`,
-    tarot_back: `Refusing to work under someone is a sign of weakness, not strength. A strong person would not feel uncomfortable working under anyone, because he knows his strength. It is the weak and poor in spirit who do not like to work under someone else, because they are unaware of their strength.`,
+    tarot_front: `The Oak`,
+    tarot_back: `In fact, being in business binds you more than the boss! Refusing to work under someone is a sign of weakness, not strength. A strong person would not feel uncomfortable working under anyone, because he knows his strength. It is the weak and poor in spirit who do not like to work under someone else, because they are unaware of their strength.`,
   },
   {
     week_number: 299,
@@ -11021,7 +11319,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Whenever their commitment is shaken, their comfort is also shaken.`,
-    tarot_back: `Those who are ambitious and have a passion for a goal do not care for convenience. To the wise their commitment is their comfort. Whenever their commitment is shaken, their comfort is also shaken.`,
+    tarot_front: `The Oath`,
+    tarot_back: `Wisdom is to strike a balance between convenience and commitment because both bring comfort to the body, mind and spirit. A seeker of knowledge should forget about convenience, so should soldiers, rulers, students, seekers of wealth and all essential service providers. Those who want to be creative and adventurous transcend convenience. Those who are ambitious and have a passion for a goal do not care for convenience.`,
   },
   {
     week_number: 300,
@@ -11070,7 +11369,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `At this moment wake up and see you are Being and nothing can touch you.`,
-    tarot_back: `Do you register it in your mind and get emotionally upset? Do you dismiss them altogether without taking a lesson from it? Do you talk about it with people and waste your time and otherÒ³ time and money?`,
+    tarot_front: `The Echo`,
+    tarot_back: `Owning responsibility for all your experiences in life makes you powerful and will put an end to grumbling, planning counter attacks, explanations, and all those host of negative tendencies. Owning full responsibility you become free. When someone blames you, directly or indirectly, what do you do? Do you register it in your mind and get emotionally upset?`,
   },
   {
     week_number: 301,
@@ -11118,7 +11418,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you know you can achieve something easily, you are not ambitious about it.`,
-    tarot_back: `For ambition to be, one must have a little bit of confidence and total ignorance of the Self. It is next to impossible to have total confidence without Self-knowledge. play and display of one's own consciousness.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `So one you has total self-confidence cannot be ambitious!! At the same time a person who lacks total self-confidence cannot be ambitious either!! For ambition to be, one must have a little bit of confidence and total ignorance of the Self. It is next to impossible to have total confidence without Self-knowledge.`,
   },
   {
     week_number: 302,
@@ -11162,7 +11463,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The wise knows that even when one is giving one is under obligations, as the person has accepted what one gives.`,
-    tarot_back: `Anyway, who belongs to whom in this world? Here you are a stranger and everyone is a stranger to you! Blessed are those who feel themselves as a stranger!`,
+    tarot_front: `The Storm`,
+    tarot_back: `With a sense of belongingness comes carefreeness and lack of attention. Look belongingness can make you insensitive, dull, and take away the charm in life! Anyway, who belongs to whom in this world? Here you are a stranger and everyone is a stranger to you!`,
   },
   {
     week_number: 303,
@@ -11204,7 +11506,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `You are trapped by your own good actions, for everyone expects more from a good person.`,
-    tarot_back: `You are trapped by your own good actions, for everyone expects more from a good person. Nobody expects anything from a bad person. Most of the people are stuck in this cage of prestige and honor.`,
+    tarot_front: `The Moon`,
+    tarot_back: `Your virtues and good actions are like a golden cage. You are trapped by your own good actions, for everyone expects more from a good person. Nobody expects anything from a bad person. Most of the people are stuck in this cage of prestige and honor.`,
   },
   {
     week_number: 304,
@@ -11250,7 +11553,8 @@ Denise Richardson & Tom Duffy gave a dynamic presentation about Prison SMART Str
 
 Back To Top ^`,
     quote: `When you see life is dream a burden or a joke only then can you be centered.`,
-    tarot_back: `In every miserable condition you have been walked or carried through and you realize life is a dream. When you see life is dream a burden or a joke only then can you be centered. And when you have really gone through misery you have really seen life as a dream.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `And if you have undergone misery thoroughly you will realize that life is a dream. In every miserable condition you have been walked or carried through and you realize life is a dream. When you see life is dream a burden or a joke only then can you be centered. And when you have really gone through misery you have really seen life as a dream.`,
   },
   {
     week_number: 305,
@@ -11283,7 +11587,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Whenever reason or faith breaks, confusion and chaos prevails which is often a step for growth.`,
-    tarot_back: `Faith is beyond reason, yet you need to have faith in your own reasoning! (A sentence to be pondered on.) Faith and reason cannot exist without each other. Every reason is based on some faith.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `While reasoning keeps you sane and grounded, no miracle can happen without faith. Faith takes you beyond limitations. In faith you can transcend the laws of nature but it needs to be pure. Faith is beyond reason, yet you need to have faith in your own reasoning!`,
   },
   {
     week_number: 306,
@@ -11311,7 +11616,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Not that you do trivial things all your life, but consciously agreeing to do the trivial actions for eternity, opens a new dimension and brings in immense peace and restfulness.`,
-    tarot_back: `The readiness to consciously do trivial things for eternity unites you with eternity. This is an antidote to ego. Ego is always ambitious and wants to do the toughest job like climbing Mount Everest etc.`,
+    tarot_front: `The Mask`,
+    tarot_back: `If you can think of one thing that is way below your capacity to do and agree to do it for eternity, that becomes Pooja. The readiness to consciously do trivial things for eternity unites you with eternity. This is an antidote to ego. Ego is always ambitious and wants to do the toughest job like climbing Mount Everest etc.`,
   },
   {
     week_number: 307,
@@ -11353,7 +11659,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Being happy in one's own joy and sad in one's own sorrow is a trait of animals.`,
-    tarot_back: `Being happy at another's joy and saddened by another's sorrow is a trait of humans. If you are saddened by other’s sorrow then sorrow will never come to you. If you are happy at another's joy then joy will never leave you.`,
+    tarot_front: `The Sun`,
+    tarot_back: `Being happy in one's own joy and sad in one's own sorrow is a trait of animals. Being happy at another's joy and saddened by another's sorrow is a trait of humans. If you are saddened by other’s sorrow then sorrow will never come to you. If you are happy at another's joy then joy will never leave you.`,
   },
   {
     week_number: 308,
@@ -11381,7 +11688,8 @@ The Art of Living course is now in 132 countries. Last week the Art of Living Co
 
 Back To Top ^`,
     quote: `Deep rest is bliss, and bliss is the understanding that only God exists.`,
-    tarot_back: `Samadhi is needed even for the most materialistic person because a materialistic person looks to gain strength and virtues. To be in Samadhi you do not need any effort or talents, strengths or virtues. Withdrawing from all types of physical and mental activity is rest.`,
+    tarot_front: `The Moon`,
+    tarot_back: `Samadhi is the mother of all talents, strengths and virtues. Samadhi is needed even for the most materialistic person because a materialistic person looks to gain strength and virtues. To be in Samadhi you do not need any effort or talents, strengths or virtues. Withdrawing from all types of physical and mental activity is rest.`,
   },
   {
     week_number: 309,
@@ -11411,7 +11719,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Knowledge of your death or life, confidence in the Self, in the Divine, can all calm down the mental restlessness.`,
-    tarot_back: `Knowledge alone can cure this restlessness. Seeing life from a broader perspective, knowledge about the Self and the impermanence of everything. If you achieve everything, so what?`,
+    tarot_front: `The Moon`,
+    tarot_back: `The remedy for this is exercise, moderation in work habits and going on a vegetable or juice diet for one or two days. The third type of restlessness is mental restlessness. It is caused by ambition, strong thoughts, likes or dislikes. Knowledge alone can cure this restlessness.`,
   },
   {
     week_number: 310,
@@ -11437,7 +11746,8 @@ Guruji's address to the Protestant Christian Congregation in Germany was simply 
 
 Back To Top ^`,
     quote: `And only awareness and impeccable devotion can bring this freedom.`,
-    tarot_back: `Both these factors - the tendencies from within and influences from outside, can either be beneficial or harmful. It is the awareness that filters the outer negative influences and it is the awareness that corrects and annihilates the unhealthy inner tendencies. This awareness is called Gyana.`,
+    tarot_front: `The Wheel`,
+    tarot_back: `This is what is called Karma. Both these factors - the tendencies from within and influences from outside, can either be beneficial or harmful. It is the awareness that filters the outer negative influences and it is the awareness that corrects and annihilates the unhealthy inner tendencies. This awareness is called Gyana.`,
   },
   {
     week_number: 311,
@@ -11473,7 +11783,8 @@ The Mayor of Franklin Township, Somerset, New Jersey declared June 24, to be "Sr
 
 Back To Top ^`,
     quote: `Whenever your intentions are impure, it pricks your consciousness, so it cannot be authentic.`,
-    tarot_back: `You cannot have an authentic action and a skillful intention. If you try to be authentic in your action but manipulative in your mind, that is when mistakes happen. Sri Sri: If your intention is colored by greed, over-ambition, etc.`,
+    tarot_front: `The Arrow`,
+    tarot_back: `Yet skill without authenticity makes you shallow. You cannot have an authentic action and a skillful intention. If you try to be authentic in your action but manipulative in your mind, that is when mistakes happen. Sri Sri: If your intention is colored by greed, over-ambition, etc.`,
   },
   {
     week_number: 312,
@@ -11495,7 +11806,8 @@ Week long seva activities and slum cleanup projects were taken up in Bangalore. 
 
 Back To Top ^`,
     quote: `Then celebration infiltrates your mind in all moods and space, and celebration is inevitable.`,
-    tarot_back: `When you honor time and space, your mind becomes alert. But for the one who has transcended the mind, either sacredness has no meaning, or all time, every place and every mood is sacred. Precious moments are few in life.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `To recognize divinity, there are three dimensions: time, space and mind. For a seeker, it is necessary to honor time and space so he or she can experience sacredness in his or her mind. When you honor time and space, your mind becomes alert. But for the one who has transcended the mind, either sacredness has no meaning, or all time, every place and every mood is sacred.`,
   },
   {
     week_number: 313,
@@ -11531,7 +11843,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Authority and love seem to be contradictory, but in reality they are not.`,
-    tarot_back: `To correct mistakes you need authority and love. Authority and love seem to be contradictory, but in reality they are not. Authority without love is stifling and does not work.`,
+    tarot_front: `The Heart`,
+    tarot_back: `But even if you correct it, this does not work. You correct someone’s mistake, not because it bothers you, but for their sake so that they can grow. To correct mistakes you need authority and love. Authority and love seem to be contradictory, but in reality they are not.`,
   },
   {
     week_number: 314,
@@ -11549,7 +11862,8 @@ Preparation for the Yagyas is already underway and 9 pundits from India have arr
 
 Back To Top ^`,
     quote: `All activities that you do, you do so that you can have deep rest.`,
-    tarot_back: `So, to the one who has tasted pleasure in rest (Samadhi), the pleasure in activity is insignificant. All activities that you do, you do so that you can have deep rest. Activity is part of the system.`,
+    tarot_front: `The Moon`,
+    tarot_back: `The pleasure in rest is magnanimous and energizing. So, to the one who has tasted pleasure in rest (Samadhi), the pleasure in activity is insignificant. All activities that you do, you do so that you can have deep rest. Activity is part of the system.`,
   },
   {
     week_number: 315,
@@ -11583,7 +11897,8 @@ News Flash
 
 Back To Top ^`,
     quote: `When you are angry, you express your anger and the next moment you are all right.`,
-    tarot_back: `Feelings are like flowers, they come up, they blossom and they die. Feelings rise, they fall and then disappear. When feelings are expressed, you feel relieved.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Worry puts you in a cage. When you feel, you do not worry. Feelings are like flowers, they come up, they blossom and they die. Feelings rise, they fall and then disappear.`,
   },
   {
     week_number: 316,
@@ -11603,7 +11918,8 @@ People from 29 countries are gathered in the German Ashram for an enlightening A
 
 Back To Top ^`,
     quote: `But if your whole aim is just to please yourself, you will get depressed.`,
-    tarot_back: `God then acted tough and man had to start pleasing Him. And so, man kept himself busy pleasing God and he became happier since he had no time to get worried or depressed. So, when you have someone to please, it keeps you on your toes and you feel happier.`,
+    tarot_front: `The Thorn`,
+    tarot_back: `But man got more and more depressed. God then acted tough and man had to start pleasing Him. And so, man kept himself busy pleasing God and he became happier since he had no time to get worried or depressed. So, when you have someone to please, it keeps you on your toes and you feel happier.`,
   },
   {
     week_number: 317,
@@ -11635,7 +11951,8 @@ Bad Antogast is overflowing with various courses. Preparations for yagyas are on
 
 Back To Top ^`,
     quote: `A master is a symbol of security, love and a sign of great wealth.`,
-    tarot_back: `Not having a master was looked down upon as being an orphan, being poor and a sign of misfortune. The word "anatha" in Sanskrit, means one without a master. Those without a master were considered to be orphans, but not those without parents.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `Being with the guru is like being with one’s higher self. Not having a master was looked down upon as being an orphan, being poor and a sign of misfortune. The word "anatha" in Sanskrit, means one without a master. Those without a master were considered to be orphans, but not those without parents.`,
   },
   {
     week_number: 318,
@@ -11673,7 +11990,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Love and authority are totally opposite values yet they co-exist.`,
-    tarot_back: `Asserting authority indicates lack of confidence and love. The more evident one’s authority, the less sensitive and effective it will be. A sensible person would not demand authority at all...`,
+    tarot_front: `The Heart`,
+    tarot_back: `When you are gross, you demand authority and when you demand authority, love recedes. Asserting authority indicates lack of confidence and love. The more evident one’s authority, the less sensitive and effective it will be. A sensible person would not demand authority at all...`,
   },
   {
     week_number: 319,
@@ -11709,7 +12027,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The whole universe is nothing but groups of atoms, groups of quality, of energy.`,
-    tarot_back: `Gana means group and a group cannot exist without a lord. Like the queen bee whose mere existence brings forth the honeycomb, this diverse universe in itself is enough evidence for Ganesha's presence. This Ganesha, or the lord, was born from the unmanifest transcendental consciousness, the Self, called Shiva.`,
+    tarot_front: `The Ocean`,
+    tarot_back: `The whole universe is nothing but groups of atoms, groups of quality, of energy. Gana means group and a group cannot exist without a lord. Like the queen bee whose mere existence brings forth the honeycomb, this diverse universe in itself is enough evidence for Ganesha's presence. This Ganesha, or the lord, was born from the unmanifest transcendental consciousness, the Self, called Shiva.`,
   },
   {
     week_number: 320,
@@ -11751,9 +12070,10 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you don’t have love or passion to bring about transformation in the society, then you are hungry for power.`,
-    tarot_back: `If you do not realize that you are THE power -- that is to say that you are enlightened, then you crave for power. You don’t have any talents,
+    tarot_front: `The Tower`,
+    tarot_back: `Passion is for an end. People who do not see power or money as a means, but see it as an end in itself, they do not live, they simply exist. If you do not realize that you are THE power -- that is to say that you are enlightened, then you crave for power. You don’t have any talents,
     You have no love or passion,
-    You are not innocent and childlike. If you don’t have any talent and you are not contributing anything substantial to society, like an artist or a scientist, or an Art of Living teacher or volunteer, then you are hungry for power.`,
+    You are not innocent and childlike.`,
   },
   {
     week_number: 321,
@@ -11787,7 +12107,8 @@ There was a rousing welcome to Guruji in Pune.
 
 Back To Top ^`,
     quote: `When he owns something small his mind stays small, his life gets stifled and his whole consciousness is immersed in his house, car, spouse, children and such.`,
-    tarot_back: `The owning has simply shifted from objects and people to ideas and practices. But a wise one knows that he owns the sun, the moon, the stars, the air, all of space and the Divine in its entirety. When you own something big then your consciousness also expands, and when you own something small then all the small negative emotions start coming up such as anger, greed, etc.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `There also he starts owning his asana, rosary, books, concepts and his knowledge. The owning has simply shifted from objects and people to ideas and practices. But a wise one knows that he owns the sun, the moon, the stars, the air, all of space and the Divine in its entirety. When you own something big then your consciousness also expands, and when you own something small then all the small negative emotions start coming up such as anger, greed, etc.`,
   },
   {
     week_number: 322,
@@ -11819,7 +12140,8 @@ It was a whirlwind tour, and it was as if an Art of Living wave swept across all
 
 Back To Top ^`,
     quote: `When you have reverence in all your relationships then your own consciousness expands.`,
-    tarot_back: `Then, you do not need to reject or renounce anything of this universe. Reverence in ownership frees you from greed, jealousy and lust. Cultivate the skill of having reverence every moment in your life.`,
+    tarot_front: `The Ocean`,
+    tarot_back: `Often you lose reverence for that which you own, and this happens unconsciously. When you have reverence for the whole universe, you are in harmony with the while universe. Then, you do not need to reject or renounce anything of this universe. Reverence in ownership frees you from greed, jealousy and lust.`,
   },
   {
     week_number: 323,
@@ -11851,7 +12173,8 @@ Siliguri, a town in the foothill of the Darjeeling, (close to Nepal, Bhutan and 
 
 Back To Top ^`,
     quote: `Only when people become sensible, rise above hatred and have heightened consciousness can the war be stopped.`,
-    tarot_back: `As reasons change, his justifications fall apart. Man has to transcend reason, and only then can he realize the Divinity. Then he does not engage in war.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `No other species in creation engage in war or mass destruction, as they have no reason. Animals have their prey and let everything just be. But mankind, from time immemorial, has been engaging in war because Man lives on reason. Man gives reason to every act of his and justifies it.`,
   },
   {
     week_number: 324,
@@ -11915,7 +12238,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The act which is only destructive and inflicts suffering both on oneself and others is terrorism.`,
-    tarot_back: `Valuing some ideas and concepts more than life. Having a narrow perspective of life and dishonoring its diversity. Inculcate a broader perspective of life -- value life more than race, religion and nationality.`,
+    tarot_front: `The Arrow`,
+    tarot_back: `Instead of solutions the terrorist looks for destruction as an answer. If you simply criticize without giving a solution, know that this criticism comes from the same seed as terrorism! Valuing some ideas and concepts more than life. Having a narrow perspective of life and dishonoring its diversity.`,
   },
   {
     week_number: 325,
@@ -11959,7 +12283,8 @@ Several public satsangs and Post Trauma Stress Relief Courses are in progress in
 
 Back To Top ^`,
     quote: `The International association for Human Values, based in Geneva, has been chosen as a member of the Swiss Peace Foundation, which is an office of the Swiss Federal Government.`,
-    tarot_back: `Having faith and surrendering to the Divine and knowing that there is a supreme power who loves you. The supreme power is behind you and accepts you totally. The sense of security comes with the sense of belongingness.`,
+    tarot_front: `The Offering`,
+    tarot_back: `Combined practice of yoga, breathing and meditation. Know the impermanence of the world. Having faith and surrendering to the Divine and knowing that there is a supreme power who loves you. The supreme power is behind you and accepts you totally.`,
   },
   {
     week_number: 326,
@@ -11989,7 +12314,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The basis of violence is anger, lust, hatred, jealousy, greed, frustration or aggression.`,
-    tarot_back: `A surgeon cuts open a person's belly; so does a criminal. But the surgeon's intention is to save and the criminal's is to destroy. Violence or non-violence is determined by the attitude and not the act.`,
+    tarot_front: `The Storm`,
+    tarot_back: `A surgeon cuts open a person's belly; so does a criminal. The action is similar. But the surgeon's intention is to save and the criminal's is to destroy. Violence or non-violence is determined by the attitude and not the act.`,
   },
   {
     week_number: 327,
@@ -12033,6 +12359,7 @@ The One who has made our life sweet as honey is in silence!
 
 Back To Top ^`,
     quote: `The One who has made our life sweet as honey is in silence!`,
+    tarot_front: `The Honey`,
     tarot_back: `Let it be sweet like honey. The One who has made our life sweet as honey is in silence!`,
   },
   {
@@ -12057,7 +12384,8 @@ Blessings are always special, but the ecstasy experienced by one and all on Rish
 
 Back To Top ^`,
     quote: `Yagyas were performed for the health, happiness and well being of people all over the world, which would also contribute to establishing peace everywhere.`,
-    tarot_back: `Dropping the intentions is not an act – just the intention to drop the intentions itself serves the purpose. Dropping all intentions even for a moment brings you in touch with your Self – that instant meditation happens. While you sit for meditation you have to let the world be the way it is.`,
+    tarot_front: `The Lotus`,
+    tarot_back: `Sri Sri: Yes, but that intention is the last and necessary intention. Dropping the intentions is not an act – just the intention to drop the intentions itself serves the purpose. Dropping all intentions even for a moment brings you in touch with your Self – that instant meditation happens. While you sit for meditation you have to let the world be the way it is.`,
   },
   {
     week_number: 329,
@@ -12099,7 +12427,8 @@ The Ashram is buzzing with the enthusiasm of more than 200 TTC participants!
 
 Back To Top ^`,
     quote: `There was Aishwarya in Sri Rama, but only glimpses of Madhurya.`,
-    tarot_back: `Wealth, too, is referred to as Aishwarya because wealth does command a certain amount of authority. Can love and authority co-exist? Only in a fully blossomed Being, there is both Lordship and Sweetness.`,
+    tarot_front: `The Heart`,
+    tarot_back: `Aishwarya means Ishwaratva – Lordship of that which IS. Wealth, too, is referred to as Aishwarya because wealth does command a certain amount of authority. Can love and authority co-exist? Only in a fully blossomed Being, there is both Lordship and Sweetness.`,
   },
   {
     week_number: 330,
@@ -12140,7 +12469,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The joy is immediate – it does not come on the first of every month in the form of a salary!`,
-    tarot_back: `A volunteer devoid of spiritual dimension is utterly weak. 1) A volunteer needs to stick to his commitment. 2) The integrity in a volunteer comes from spiritual practices.`,
+    tarot_front: `The Seed`,
+    tarot_back: `If you want to construct a building, you have to accept the authority of the structural engineer. All these can only be overcome by being more grounded in spiritual knowledge. A volunteer devoid of spiritual dimension is utterly weak. 1) A volunteer needs to stick to his commitment.`,
   },
   {
     week_number: 331,
@@ -12181,7 +12511,8 @@ Jai Gurudev
 Back To Top ^`,
     quote: `Adulation works in three ways:
 If it is for someone else, it is not palatable to an egoistic person.`,
-    tarot_back: `And the one who is great, does not get swayed by adulation. So the test of the greatness of a person is that he is not shaken by any amount of adulation. A desire for adulation is a sign of immaturity.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Unanimous chorus : When Guruji is adulated, E V E R Y O N E adores it! Adulation indicates the magnanimity of the person who is adoring. And the one who is great, does not get swayed by adulation. So the test of the greatness of a person is that he is not shaken by any amount of adulation.`,
   },
   {
     week_number: 332,
@@ -12218,7 +12549,8 @@ It was all celebration in the steel township of Vijyanagar. The highlights of th
 
 Back To Top ^`,
     quote: `The second type of seva is what you do because it is needed in that situation.`,
-    tarot_back: `The second type of seva is what you do because it is needed in that situation. You do the third type of seva because it gives you joy. The fourth type is done out of your desire for merit - you do seva expecting some benefit in the future.`,
+    tarot_front: `The Sun`,
+    tarot_back: `You do not recognize it as seva because it is your very nature - you cannot but do it! The second type of seva is what you do because it is needed in that situation. You do the third type of seva because it gives you joy. The fourth type is done out of your desire for merit - you do seva expecting some benefit in the future.`,
   },
   {
     week_number: 333,
@@ -12250,7 +12582,8 @@ The 250 teachers at the Teacher’s Refresher Meet in Rishikesh are blissed and 
 
 Back To Top ^`,
     quote: `When you see your life from a bigger context of time and space, then you realize your life is nothing.`,
-    tarot_back: `When you see your life from a bigger context of time and space, then you realize your life is nothing. When you are humble you need to see that you are unique and dear to the Divine, which brings confidence, and when you realize you are insignificant, that brings confidence. When you have a guru, you cannot be arrogant.`,
+    tarot_front: `The Seed`,
+    tarot_back: `Confidence blended with humility is most appreciated by everybody. When you see your life from a bigger context of time and space, then you realize your life is nothing. When you are humble you need to see that you are unique and dear to the Divine, which brings confidence, and when you realize you are insignificant, that brings confidence. When you have a guru, you cannot be arrogant.`,
   },
   {
     week_number: 334,
@@ -12286,7 +12619,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `You have a desire but you do not have the faith that you can achieve your desire - that is what you call daydreaming.`,
-    tarot_back: `You can control daydreaming by having a strong goal and believing in it. Like the scientist who wanted to go to the moon and kept dreaming about it - for him it was the goal of his life but for others it was daydreaming. Either you drop that it will not happen or you believe!`,
+    tarot_front: `The Anchor`,
+    tarot_back: `You have a desire but you do not have the faith that you can achieve your desire - that is what you call daydreaming. You can control daydreaming by having a strong goal and believing in it. Like the scientist who wanted to go to the moon and kept dreaming about it - for him it was the goal of his life but for others it was daydreaming. Either you drop that it will not happen or you believe!`,
   },
   {
     week_number: 335,
@@ -12322,7 +12656,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `In self respect, everything is a game, winning or losing has no meaning, every step is joy, every move is celebration.`,
-    tarot_back: `The less you are attached to your virtues, the more self respect you have. If you get attached to your virtues, you look down upon everybody else and they (the virtues) start diminishing. Non- attachment to virtues brings the highest self respect.`,
+    tarot_front: `The Mask`,
+    tarot_back: `Respect that comes because of your virtues like honesty, kindness, commitment, patience and your smile. This respect, no one can take away. The less you are attached to your virtues, the more self respect you have. If you get attached to your virtues, you look down upon everybody else and they (the virtues) start diminishing.`,
   },
   {
     week_number: 336,
@@ -12352,7 +12687,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `All the five elements - Earth, Water, Fire, Air and Ether - can be measured.`,
-    tarot_back: `Example: If something weighs 6 kilos on the earth, it then weighs only 1 kilo on the moon. The light of the star you see today is not really today's light. It has taken at least 4 years for the light to reach you!`,
+    tarot_front: `The Flame`,
+    tarot_back: `Measurement is always relative and not absolute. Example: If something weighs 6 kilos on the earth, it then weighs only 1 kilo on the moon. The light of the star you see today is not really today's light. It has taken at least 4 years for the light to reach you!`,
   },
   {
     week_number: 337,
@@ -12388,7 +12724,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `You are not in control of thoughts and emotions coming to you.`,
-    tarot_back: `Perhaps a tiny part of your waking state! You are not in control when you are sleeping or dreaming. You are not in control of thoughts and emotions coming to you.`,
+    tarot_front: `The Moon`,
+    tarot_back: `What are you in control of? Perhaps a tiny part of your waking state! You are not in control when you are sleeping or dreaming. You are not in control of thoughts and emotions coming to you.`,
   },
   {
     week_number: 338,
@@ -12412,7 +12749,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The forgetfulness in the nature of man is the root cause of all problems and suffering in life.`,
-    tarot_back: `The purpose of knowledge is to remind you of your true nature. In the Bhagvad Gita, Arjuna said to Krishna, "I got back my memory. Memory is a blessing and your best friend when it comes to your true nature.`,
+    tarot_front: `The Crown`,
+    tarot_back: `Here, memory is your best friend. The purpose of knowledge is to remind you of your true nature. In the Bhagvad Gita, Arjuna said to Krishna, "I got back my memory. Memory is a blessing and your best friend when it comes to your true nature.`,
   },
   {
     week_number: 339,
@@ -12436,7 +12774,8 @@ In the past year, 310,000 people have benefited from the 5H program in 7000 vill
 
 Back To Top ^`,
     quote: `Foolishness cannot overpower or annihilate wisdom nor does the foolishness stay all the time.`,
-    tarot_back: `Foolishness cannot overpower or annihilate wisdom nor does the foolishness stay all the time. When you are not well-founded in wisdom, then foolishness perturbs you, throws you out of balance. When you create space for foolishness you do not get perturbed by it, rather you will laugh and move on.`,
+    tarot_front: `The Sage`,
+    tarot_back: `It is foolish to be perturbed by the foolishness. Foolishness cannot overpower or annihilate wisdom nor does the foolishness stay all the time. When you are not well-founded in wisdom, then foolishness perturbs you, throws you out of balance. When you create space for foolishness you do not get perturbed by it, rather you will laugh and move on.`,
   },
   {
     week_number: 340,
@@ -12464,7 +12803,8 @@ Sri Sri visited the Garden of the Gods, a sacred site for Native Americans with 
 
 Back To Top ^`,
     quote: `Alternately, the dispassion that is afraid of glory is weak.`,
-    tarot_back: `When someone runs after glory they are shallow. Like movie stars, politicians and religious leaders who try to hold on to their status, to their glory, they are certain to lose. If you run after glory all you get is misery.`,
+    tarot_front: `The Glory`,
+    tarot_back: `The glory that comes with dispassion is something that is true, that is permanent and authentic. When someone runs after glory they are shallow. Like movie stars, politicians and religious leaders who try to hold on to their status, to their glory, they are certain to lose. If you run after glory all you get is misery.`,
   },
   {
     week_number: 341,
@@ -12496,7 +12836,8 @@ So News Flash can never be new anyway. So, Birjoo decided to call it Old Flash!
 
 Back To Top ^`,
     quote: `The so-called dispassionate people are often morose and unenthusiastic.`,
-    tarot_back: `Many a times you hear people saying. " Oh, never mind, God is everywhere, Guruji is in my heart, you can do satsang anywhere. My Seva is my Sadhana, so no need to meditate, anyway I am doing Sadhana twenty-four hours.`,
+    tarot_front: `The Flame`,
+    tarot_back: `The so-called dispassionate people are often morose and unenthusiastic. Many a times you hear people saying. " Oh, never mind, God is everywhere, Guruji is in my heart, you can do satsang anywhere. My Seva is my Sadhana, so no need to meditate, anyway I am doing Sadhana twenty-four hours.`,
   },
   {
     week_number: 342,
@@ -12516,7 +12857,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Spirituality is the heart, business is the legs, and that is what the ancient people conceived.`,
-    tarot_back: `In the body/mind complex depriving any one comfort means depriving both the comforts. You cannot talk spirituality to the poorest of the poor people without taking care of their basic needs. They need to be supported materially.`,
+    tarot_front: `The Breath`,
+    tarot_back: `Business brings material comfort and spirituality brings mental and emotional comfort. Spirituality brings ethics and fair practice to business. In the body/mind complex depriving any one comfort means depriving both the comforts. You cannot talk spirituality to the poorest of the poor people without taking care of their basic needs.`,
   },
   {
     week_number: 343,
@@ -12540,7 +12882,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Because virtues are your very nature and they will never leave you.`,
-    tarot_back: `Because virtues are your very nature and they will never leave you. Your vices are not your nature and they will leave you. The negative tendencies are transient and they will leave you if you do not act on them.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `Because virtues are your very nature and they will never leave you. Your vices are not your nature and they will leave you. The negative tendencies are transient and they will leave you if you do not act on them. Frustration, crying cannot stay for long, at least with the same intensity.`,
   },
   {
     week_number: 344,
@@ -12582,7 +12925,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you have a good sense of humor you can never be humiliated.`,
-    tarot_back: `Humor should be coupled with care and concern. Mere humor without care and concern or appropriate action often irritates those who come to you with serious problems. Humor can keep the spirit high, yet if overdone it leaves a bad taste.`,
+    tarot_front: `The Wind`,
+    tarot_back: `A good sense of humor relieves you from fear and anxiety. Humor should be coupled with care and concern. Mere humor without care and concern or appropriate action often irritates those who come to you with serious problems. Humor can keep the spirit high, yet if overdone it leaves a bad taste.`,
   },
   {
     week_number: 345,
@@ -12614,7 +12958,8 @@ In Thiruvananthapuram, when the participants opened their eyes after Sudarshan K
 
 Back To Top ^`,
     quote: `When one is assured that the love is so strong that the truth can neither break it nor cause bitterness, then the truth prevails and love shines.`,
-    tarot_back: `The fear that the truth might damage their love causes lies to be told between husband and wife, boyfriend and girlfriend, parents and children and in family situations. In love you feel weak and truth brings strength. Yet why do people prefer love over truth, i.e.`,
+    tarot_front: `The Heart`,
+    tarot_back: `People tell lies just to save and maintain their love. The fear that the truth might damage their love causes lies to be told between husband and wife, boyfriend and girlfriend, parents and children and in family situations. In love you feel weak and truth brings strength. Yet why do people prefer love over truth, i.e.`,
   },
   {
     week_number: 346,
@@ -12660,7 +13005,8 @@ Jai Guru Dev !
 
 Back To Top ^`,
     quote: `If you have always been the center of attention, and are suddenly sidelined, you may feel out of place.`,
-    tarot_back: `A very busy person with nothing to do, or a laid back person who is faced with a lot of responsibilities may experience restlessness. Very often, feeling out of place blocks the reason and distorts the logic. If the situation you are in is inevitable, tolerate it.`,
+    tarot_front: `The Moon`,
+    tarot_back: `Similarly if you have always been on the side lines, and are suddenly pushed to center stage, you may experience restlessness. If you are used to ordering, and suddenly have to take orders, or, if you usually follow orders, and you are made to give them, you may feel out of place. A very busy person with nothing to do, or a laid back person who is faced with a lot of responsibilities may experience restlessness. Very often, feeling out of place blocks the reason and distorts the logic.`,
   },
   {
     week_number: 347,
@@ -12702,7 +13048,8 @@ Jai Gurudev !
 
 Back To Top ^`,
     quote: `Self Knowledge and Devotion alone can free you from this vicious cycle.`,
-    tarot_back: `And reaction leads to regret. Regret causes frustration. Frustration clouds the reason.`,
+    tarot_front: `The Flame`,
+    tarot_back: `And reaction leads to regret. Regret causes frustration. Frustration clouds the reason. Unreasonable acts provoke rage, and start a vicious cycle.`,
   },
   {
     week_number: 348,
@@ -12732,7 +13079,8 @@ Jai Guru Dev !
 
 Back To Top ^`,
     quote: `And Shiva is peace, infinity, beauty and the non-dual One.`,
-    tarot_back: `Contentment is your nature, yet you continue to reel in desires. Benevolence is your nature, yet you don’t reach out. Going towards your nature is Sadhana.`,
+    tarot_front: `The Garden`,
+    tarot_back: `Happiness is your nature, yet you become miserable for some reason or another. Contentment is your nature, yet you continue to reel in desires. Benevolence is your nature, yet you don’t reach out. Going towards your nature is Sadhana.`,
   },
   {
     week_number: 349,
@@ -12767,7 +13115,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `So your praise is meaningful when it is directed towards a fool!`,
-    tarot_back: `So your praise is meaningful when it is directed towards a fool! A wise man by his very nature will keep doing good work. His attitude does not depend on someone’s praise or blame.`,
+    tarot_front: `The Harp`,
+    tarot_back: `In this sense it is wise to praise a fool as he needs motivation. So your praise is meaningful when it is directed towards a fool! A wise man by his very nature will keep doing good work. His attitude does not depend on someone’s praise or blame.`,
   },
   {
     week_number: 350,
@@ -12801,7 +13150,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A real holiday is that which energizes and does not wear you out.`,
-    tarot_back: `-   Doubts and complaints are impediments for rest. -  The moment you set out on your holiday, know that it has begun. Often people expect to find a pinnacle of happiness.`,
+    tarot_front: `The Veil`,
+    tarot_back: `Remember, nothing energizes you like Wisdom. -   Doubts and complaints are impediments for rest. -  The moment you set out on your holiday, know that it has begun. Often people expect to find a pinnacle of happiness.`,
   },
   {
     week_number: 351,
@@ -12835,7 +13185,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `You can never be close to the Truth when you are in a rush because your perception, observation and expression become distorted.`,
-    tarot_back: `All the rush that you have in your life only denies the joy and freedom of here and now. Often one does not even know why one is in a hurry. It almost becomes a biological phenomenon to be in a rush.`,
+    tarot_front: `The Lamp`,
+    tarot_back: `The rush to enjoy robs the joy from life. All the rush that you have in your life only denies the joy and freedom of here and now. Often one does not even know why one is in a hurry. It almost becomes a biological phenomenon to be in a rush.`,
   },
   {
     week_number: 352,
@@ -12872,7 +13223,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Only spirituality can check greed and open up the hearts of the rich to help the needy.`,
-    tarot_back: `Only spirituality can bring fulfillment to communism. Only spirituality can check greed and open up the hearts of the rich to help the needy. Only spirituality can check the fanaticism and fundamentalism of religious groups and create a sense of belongingness in the whole world.`,
+    tarot_front: `The Breath`,
+    tarot_back: `To care for and share with the needy. Only spirituality can bring fulfillment to communism. Only spirituality can check greed and open up the hearts of the rich to help the needy. Only spirituality can check the fanaticism and fundamentalism of religious groups and create a sense of belongingness in the whole world.`,
   },
   {
     week_number: 353,
@@ -12894,7 +13246,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `An atheist is one who does not believe in anything that is not concrete and tangible.`,
-    tarot_back: `Whether it is business, science or art, they all involve a certain amount of guesswork, assumptions, imagination and intuition. All of them are ethereal in nature and are not tangible. The moment an atheist accepts, even remotely a field that is unexplainable, he ceases to be an atheist.`,
+    tarot_front: `The Garden`,
+    tarot_back: `Life is not all concrete and tangible. Nor is this Universe. Whether it is business, science or art, they all involve a certain amount of guesswork, assumptions, imagination and intuition. All of them are ethereal in nature and are not tangible.`,
   },
   {
     week_number: 354,
@@ -12925,7 +13278,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `If you are committed to your family then your family supports you, if you are committed to your society, you enjoy the support of society.`,
-    tarot_back: `If you are committed to Truth, Truth brings you strength. Often one is not aware of this idea and that is why one is hesitant to commit to a greater cause. Also there is a fear that commitment would weaken one or take away one's freedom.`,
+    tarot_front: `The Oak`,
+    tarot_back: `If you are committed to God, God gives you strength. If you are committed to Truth, Truth brings you strength. Often one is not aware of this idea and that is why one is hesitant to commit to a greater cause. Also there is a fear that commitment would weaken one or take away one's freedom.`,
   },
   {
     week_number: 355,
@@ -12961,7 +13315,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `The first one is pure knowledge and the second one is applied knowledge.`,
-    tarot_back: `Sometime in the future, if you do not discard the knowledge you have as impractical, it will be of use to you. Often people discard the pure knowledge for its lack of immediate application. In fact these two types of knowledge compliment each other.`,
+    tarot_front: `The Scroll`,
+    tarot_back: `If there are some things that you have studied or understood that you are unable to put into practice, do not get disheartened. Sometime in the future, if you do not discard the knowledge you have as impractical, it will be of use to you. Often people discard the pure knowledge for its lack of immediate application. In fact these two types of knowledge compliment each other.`,
   },
   {
     week_number: 356,
@@ -12988,7 +13343,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `Brave are those who nurture friendships for only friendship’s sake.`,
-    tarot_back: `You talk about your problems and become friends. For example, sickness, job dissatisfaction, etc…
+    tarot_front: `The Bond`,
+    tarot_back: `You make friendships because you have a common problem. You talk about your problems and become friends. For example, sickness, job dissatisfaction, etc…
     People get together because they have common interests. For example, through business or a profession (doctors, architects, social workers, etc…)
     You make friends because you have common tastes.`,
   },
@@ -13010,7 +13366,8 @@ This is the problem with Art of Living members. Many feel they have attained the
 
 Back To Top ^`,
     quote: `The attainment of love brings such bliss and such intoxication, it not only takes away your passion, but dispassion as well.`,
-    tarot_back: `If you renounce something here you gain something out there. Those who are seeking enlightenment practice austerities and take vows for a better place in heaven. The third type of dispassion comes out of wisdom or knowledge.`,
+    tarot_front: `The Shadow`,
+    tarot_back: `Some consider dispassion as a path to enlightenment. If you renounce something here you gain something out there. Those who are seeking enlightenment practice austerities and take vows for a better place in heaven. The third type of dispassion comes out of wisdom or knowledge.`,
   },
   {
     week_number: 358,
@@ -13042,7 +13399,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are alert, usually there is no faith and you feel restless and insecure.`,
-    tarot_back: `Satvic faith is innocent and is born out of fullness of consciousness. Faith and alertness, though apparently opposite in nature, are actually complementary to each other. In the absence of faith there can be no growth, and without alertness there can be no correct understanding.`,
+    tarot_front: `The Anchor`,
+    tarot_back: `Rajasic faith which is brought on by intense compulsion of desires and ambition. The ambition keeps the faith alive. Satvic faith is innocent and is born out of fullness of consciousness. Faith and alertness, though apparently opposite in nature, are actually complementary to each other.`,
   },
   {
     week_number: 359,
@@ -13090,7 +13448,8 @@ Please call us at 819 532 3328 or email: artofliving.northamerica.sympatico.ca f
 
 Back To Top ^`,
     quote: `When you are with your source, you can only be enthusiastic.`,
-    tarot_back: `You cannot be but enthusiastic when your mind is totally in the present moment. You should know that dispassion is not apathy. It is simply a broader perspective of reality.`,
+    tarot_front: `The Mirror`,
+    tarot_back: `Apathy is when you are away from the source of life. You cannot be but enthusiastic when your mind is totally in the present moment. You should know that dispassion is not apathy. It is simply a broader perspective of reality.`,
   },
   {
     week_number: 360,
@@ -13126,7 +13485,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When things are interesting you do not need commitment at all.`,
-    tarot_back: `From every situation, from everybody, you learn either what to do or what not to do. Either by mistakes or by doing things correctly, you cannot but learn. It is only when you sleep that you do not learn.`,
+    tarot_front: `The Beacon`,
+    tarot_back: `Learning is inevitable. By doing things right you learn, and by doing things wrong you also learn. From every situation, from everybody, you learn either what to do or what not to do. Either by mistakes or by doing things correctly, you cannot but learn.`,
   },
   {
     week_number: 361,
@@ -13158,7 +13518,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `These four will give you progress when practiced for a limited period of time.`,
-    tarot_back: `They give limited results, positive or negative. But if they stay on for a longer period, they eat away the potential of life. One has to transcend all these four to attain peace.`,
+    tarot_front: `The Dove`,
+    tarot_back: `Duragra means blind adamancy, reckless stubbornness. These four will give you progress when practiced for a limited period of time. They give limited results, positive or negative. But if they stay on for a longer period, they eat away the potential of life.`,
   },
   {
     week_number: 362,
@@ -13192,7 +13553,8 @@ fantastic course to people in impoverished villages and barrios
 
 Back To Top ^`,
     quote: `When you transcend the intellect you allow yourself to be used by the spirit.`,
-    tarot_back: `An intelligent one uses the material world to rise high in the spirit. When you transcend the intellect you allow yourself to be used by the spirit. One who is awake neither uses anything nor loses anything.`,
+    tarot_front: `The Tower`,
+    tarot_back: `An intelligent one uses the material world to rise high in the spirit. When you transcend the intellect you allow yourself to be used by the spirit. One who is awake neither uses anything nor loses anything. Become intelligent, transcend and wake up.`,
   },
   {
     week_number: 363,
@@ -13216,7 +13578,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `When you are enthusiastic you are closer to the creative principle of existence.`,
-    tarot_back: `Creativity brings along with it a new round of enthusiasm. Both creative and procreative impulses in nature are associated with enthusiasm. When you are enthusiastic you are closer to the creative principle of existence.`,
+    tarot_front: `The Stillness`,
+    tarot_back: `Everything becomes fresh and alive. Creativity brings along with it a new round of enthusiasm. Both creative and procreative impulses in nature are associated with enthusiasm. When you are enthusiastic you are closer to the creative principle of existence.`,
   },
   {
     week_number: 364,
@@ -13242,7 +13605,8 @@ Jai Guru Dev
 
 Back To Top ^`,
     quote: `A frustrated person cannot be with someone happy because the other is not dancing to their tune.`,
-    tarot_back: `Intelligent people do not feel at home with foolish people. Foolish people feel that intelligent ones are not humane. One with wisdom feels at home with the disgruntled as well as the happy, foolish and intelligent.`,
+    tarot_front: `The Know`,
+    tarot_back: `You only feel comfortable when the other person is in tune with you. Intelligent people do not feel at home with foolish people. Foolish people feel that intelligent ones are not humane. One with wisdom feels at home with the disgruntled as well as the happy, foolish and intelligent.`,
   },
   {
     week_number: 365,
@@ -13321,6 +13685,7 @@ Keep your tone friendly, helpful, and encouraging!]
 - When you have multiple single file components inside a folder, and their total length is manageable, use regex like Bash(cat src/**/*.tsx) to read them very quickly with a single tool call.
 </reminder>`,
     quote: `A wise person will consider the past as destiny and the future as free will.`,
-    tarot_back: `A wise person will consider the past as destiny and the future as free will. When you consider the past as destiny, no more questions are raised and the mind is at ease. And when you consider the future as free will you are filled with enthusiasm and dynamism.`,
+    tarot_front: `The Path`,
+    tarot_back: `When they consider the future as destiny, lethargy and inertia set in. A wise person will consider the past as destiny and the future as free will. When you consider the past as destiny, no more questions are raised and the mind is at ease. And when you consider the future as free will you are filled with enthusiasm and dynamism.`,
   },
 ]
