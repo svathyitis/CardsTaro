@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { ScrollArea } from '@/components/ui/scroll-area'
@@ -49,6 +49,8 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCa
   const [shuffled, setShuffled] = useState(false)
   const [shuffleKey, setShuffleKey] = useState(0)
   const [selectedCard, setSelectedCard] = useState<CardItem | null>(null)
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
 
   const safeCards = Array.isArray(cards) ? cards : []
 
@@ -263,7 +265,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCa
       </div>
 
       {/* Full teaching dialog */}
-      <Dialog open={!!selectedCard} onOpenChange={(open) => { if (!open) setSelectedCard(null) }}>
+      {mounted && <Dialog open={!!selectedCard} onOpenChange={(open) => { if (!open) setSelectedCard(null) }}>
         <DialogContent className="max-w-2xl rounded-none border-border">
           <div className="flex items-center gap-4 mb-4">
             <div
@@ -290,7 +292,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCa
             </div>
           </ScrollArea>
         </DialogContent>
-      </Dialog>
+      </Dialog>}
 
       {/* Download FAB */}
       <button
