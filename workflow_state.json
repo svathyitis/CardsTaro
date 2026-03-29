@@ -1,0 +1,37 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "User Query", "nodeCategory": "input"},
+      {"id": "knowledge_wisdom_agent", "type": "Agent", "label": "Knowledge Wisdom Agent", "nodeCategory": "agent"},
+      {"id": "output_node", "type": "Output", "label": "Wisdom Response", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "knowledge_wisdom_agent"},
+      {"source": "knowledge_wisdom_agent", "target": "output_node"}
+    ]
+  },
+  "agents": [
+    {
+      "agent_id": "69c919d3a534bb15fd3fc879",
+      "name": "Knowledge Wisdom Agent",
+      "node_id": "knowledge_wisdom_agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "file_output": true,
+      "has_knowledge_base": true,
+      "rag_id": "69c919bb58da8006ab0d8d49",
+      "rag_name": "srisriknowledgebase5b5w"
+    }
+  ],
+  "knowledge_bases": [
+    {
+      "rag_id": "69c919bb58da8006ab0d8d49",
+      "rag_name": "srisriknowledgebase5b5w",
+      "name": "Sri Sri Knowledge Base",
+      "description": "365 weekly knowledge points from Sri Sri Ravi Shankar's talks",
+      "crawled_url": "https://www.cse.iitb.ac.in/~sri/ssrvm/knowledge.htm"
+    }
+  ]
+}

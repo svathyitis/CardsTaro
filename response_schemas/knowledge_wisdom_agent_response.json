@@ -1,0 +1,46 @@
+{
+  "agent_name": "Knowledge Wisdom Agent",
+  "agent_id": "69c919d3a534bb15fd3fc879",
+  "description": "Retrieves, structures, and interprets Sri Sri Ravi Shankar's 365 knowledge points from the website. Generates detailed card content, tarot-style front/back mystical interpretations, and distilled wisdom quotes. Compiles themed PDF outputs on request.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "cards": [
+      {
+        "week_number": "number",
+        "title": "string",
+        "content": "string",
+        "tarot_front": "string",
+        "tarot_back": "string",
+        "quote": "string",
+        "theme": "string"
+      }
+    ],
+    "total_count": "number",
+    "query_type": "string"
+  },
+  "example_response": {
+    "cards": [
+      {
+        "week_number": 0,
+        "title": "sample string",
+        "content": "sample string",
+        "tarot_front": "sample string",
+        "tarot_back": "sample string",
+        "quote": "sample string",
+        "theme": "sample string"
+      }
+    ],
+    "total_count": 0,
+    "query_type": "sample string"
+  },
+  "has_module_outputs": true,
+  "module_outputs_example": {
+    "artifact_files": [
+      {
+        "file_url": "https://example.com/file.pdf"
+      }
+    ]
+  }
+}
