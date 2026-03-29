@@ -1,7 +1,8 @@
 'use client'
 
-import React, { useState, useEffect, useCallback, useRef } from 'react'
+import React, { useState, useMemo } from 'react'
 import { callAIAgent } from '@/lib/aiAgent'
+import { KNOWLEDGE_SHEETS } from '@/lib/knowledgeData'
 import HeroHeader from './sections/HeroHeader'
 import KnowledgeCardsTab from './sections/KnowledgeCardsTab'
 import TarotCardsTab from './sections/TarotCardsTab'
@@ -12,8 +13,7 @@ import { Badge } from '@/components/ui/badge'
 const AGENT_ID = '69c919d3a534bb15fd3fc879'
 const RAG_ID = '69c919bb58da8006ab0d8d49'
 
-const BATCH_SIZE = 15
-const TOTAL_WEEKS = 365
+const TOTAL_WEEKS = KNOWLEDGE_SHEETS.length
 
 const THEME_VARS = {
   '--background': '0 0% 99%',
@@ -41,6 +41,11 @@ interface CardItem {
   tarot_back?: string
   quote?: string
   theme?: string
+}
+
+function extractQuote(content: string): string {
+  const sentences = content.split(/[.!?]+/).map(s => s.trim()).filter(s => s.length > 20 && s.length < 200)
+  return sentences.length > 0 ? sentences[0] + '.' : ''
 }
 
 class ErrorBoundary extends React.Component<
@@ -71,72 +76,23 @@ class ErrorBoundary extends React.Component<
 }
 
 export default function Page() {
-  const [cards, setCards] = useState<CardItem[]>([])
-  const [loading, setLoading] = useState(false)
   const [activeTab, setActiveTab] = useState('knowledge')
   const [pdfModalOpen, setPdfModalOpen] = useState(false)
   const [pdfTheme, setPdfTheme] = useState<string | null>(null)
   const [downloading, setDownloading] = useState(false)
   const [activeAgentId, setActiveAgentId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [nextStart, setNextStart] = useState(1)
-  const [hasMore, setHasMore] = useState(true)
-  const [loadingMore, setLoadingMore] = useState(false)
-  const [totalLoaded, setTotalLoaded] = useState(0)
-  const initialFetchDone = useRef(false)
 
-  const fetchBatch = useCallback(async (startWeek: number, isInitial: boolean) => {
-    if (isInitial) setLoading(true)
-    else setLoadingMore(true)
-    setError(null)
-    setActiveAgentId(AGENT_ID)
-
-    const endWeek = Math.min(startWeek + BATCH_SIZE - 1, TOTAL_WEEKS)
-    const prompt = `From the Sri Sri Ravi Shankar knowledge base, retrieve the knowledge points for weeks ${startWeek} to ${endWeek}. For each knowledge point, return: week_number, title (the main topic), content (the full teaching text), tarot_front (a mystical card title for the teaching), tarot_back (a mystical interpretation of the teaching in 2-3 sentences), quote (the most powerful single quote or sentence from the teaching), and theme (a one or two word theme category). Return them as a JSON object with a "cards" array.`
-
-    try {
-      const result = await callAIAgent(prompt, AGENT_ID)
-      if (result?.success) {
-        const parsed = result?.response?.result ?? result?.response ?? null
-        if (parsed && typeof parsed === 'object') {
-          const agentCards = Array.isArray(parsed?.cards) ? parsed.cards : []
-          if (agentCards.length > 0) {
-            setCards(prev => {
-              const existingWeeks = new Set(prev.map(c => c.week_number))
-              const newCards = agentCards.filter((c: CardItem) => !existingWeeks.has(c.week_number))
-              return [...prev, ...newCards].sort((a, b) => (a.week_number ?? 0) - (b.week_number ?? 0))
-            })
-            setTotalLoaded(prev => prev + agentCards.length)
-          }
-        }
-        const newStart = endWeek + 1
-        setNextStart(newStart)
-        setHasMore(newStart <= TOTAL_WEEKS)
-      } else {
-        const errMsg = result?.error || result?.response?.message || 'Failed to retrieve knowledge cards.'
-        setError(`Batch ${startWeek}-${endWeek}: ${errMsg}`)
-      }
-    } catch (err) {
-      setError(`Error fetching weeks ${startWeek}-${endWeek}. Please try again.`)
-    } finally {
-      if (isInitial) setLoading(false)
-      else setLoadingMore(false)
-      setActiveAgentId(null)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (!initialFetchDone.current) {
-      initialFetchDone.current = true
-      fetchBatch(1, true)
-    }
-  }, [fetchBatch])
-
-  const handleLoadMore = () => {
-    if (!loadingMore && hasMore) {
-      fetchBatch(nextStart, false)
-    }
-  }
+  // Static knowledge cards - loaded directly, no agent needed
+  const cards: CardItem[] = useMemo(() => KNOWLEDGE_SHEETS.map(sheet => ({
+    week_number: sheet.week_number,
+    title: sheet.title,
+    content: sheet.content,
+    theme: sheet.country,
+    quote: extractQuote(sheet.content),
+    tarot_front: sheet.title,
+    tarot_back: sheet.content.slice(0, 200),
+  })), [])
 
   const handleDownloadPdf = async () => {
     if (!pdfTheme) return
@@ -165,7 +121,7 @@ export default function Page() {
   return (
     <ErrorBoundary>
       <div style={THEME_VARS} className="min-h-screen bg-background text-foreground font-serif">
-        <HeroHeader activeTab={activeTab} onTabChange={setActiveTab} loading={loading || downloading} totalLoaded={totalLoaded} totalWeeks={TOTAL_WEEKS} />
+        <HeroHeader activeTab={activeTab} onTabChange={setActiveTab} loading={downloading} totalLoaded={cards.length} totalWeeks={TOTAL_WEEKS} />
 
         {error && (
           <div className="max-w-7xl mx-auto px-6 pt-4">
@@ -173,7 +129,6 @@ export default function Page() {
               <p className="text-sm text-red-700 font-light tracking-wider">{error}</p>
               <div className="flex gap-3 mt-2">
                 <button onClick={() => setError(null)} className="text-xs text-red-500 underline tracking-widest">Dismiss</button>
-                <button onClick={() => { setError(null); fetchBatch(nextStart > 1 ? nextStart - BATCH_SIZE : 1, cards.length === 0); }} className="text-xs text-red-600 underline tracking-widest">Retry</button>
               </div>
             </div>
           </div>
@@ -181,13 +136,13 @@ export default function Page() {
 
         <main className="pb-24">
           {activeTab === 'knowledge' && (
-            <KnowledgeCardsTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
+            <KnowledgeCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
           )}
           {activeTab === 'tarot' && (
-            <TarotCardsTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
+            <TarotCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
           )}
           {activeTab === 'quotes' && (
-            <QuotesTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
+            <QuotesTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
           )}
         </main>
 
@@ -202,9 +157,7 @@ export default function Page() {
               <span className="text-xs font-light tracking-wider text-foreground">Knowledge Wisdom Agent</span>
               {activeAgentId && <Badge variant="outline" className="text-xs font-light tracking-wider rounded-none ml-auto">Active</Badge>}
             </div>
-            {totalLoaded > 0 && (
-              <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{totalLoaded} of {TOTAL_WEEKS} cards loaded</p>
-            )}
+            <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets loaded</p>
           </div>
         </div>
       </div>
