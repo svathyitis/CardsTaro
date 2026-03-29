@@ -1,16 +1,16 @@
-import { Suspense } from 'react'
 import dynamic from 'next/dynamic'
 
-const PageClient = dynamic(() => import('./PageClient'), { ssr: false })
+export const revalidate = 0
+
+const PageClient = dynamic(() => import('./PageClient'), {
+  ssr: false,
+  loading: () => (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FDFCFB' }}>
+      <p style={{ fontSize: 14, letterSpacing: 3, color: '#7A7060', fontWeight: 300 }}>Loading wisdom...</p>
+    </div>
+  ),
+})
 
 export default function Page() {
-  return (
-    <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-sm tracking-widest text-gray-500">Loading...</p>
-      </div>
-    }>
-      <PageClient />
-    </Suspense>
-  )
+  return <PageClient />
 }

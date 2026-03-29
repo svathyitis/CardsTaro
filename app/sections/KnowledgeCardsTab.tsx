@@ -54,6 +54,8 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMo
   const [searchTerm, setSearchTerm] = useState('')
   const [weekFilter, setWeekFilter] = useState<number | null>(null)
   const [selectedCard, setSelectedCard] = useState<CardItem | null>(null)
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
 
   const safeCards = Array.isArray(cards) ? cards : []
 
@@ -138,7 +140,7 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMo
         <Download className="h-5 w-5" />
       </button>
 
-      <Dialog open={!!selectedCard} onOpenChange={(open) => { if (!open) setSelectedCard(null) }}>
+      {mounted && <Dialog open={!!selectedCard} onOpenChange={(open) => { if (!open) setSelectedCard(null) }}>
         <DialogContent className="max-w-2xl rounded-none border-border">
           <DialogHeader>
             <div className="flex items-center gap-4 mb-2">
@@ -163,7 +165,7 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMo
             </div>
           </ScrollArea>
         </DialogContent>
-      </Dialog>
+      </Dialog>}
     </div>
   )
 }

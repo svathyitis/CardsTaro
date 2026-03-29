@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import { Loader2, Download } from 'lucide-react'
@@ -43,6 +43,9 @@ const tabLabels: Record<string, string> = {
 }
 
 export default function PdfThemeModal({ open, onOpenChange, selectedTheme, onSelectTheme, onDownload, downloading, activeTab }: PdfThemeModalProps) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+  if (!mounted) return null
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-lg rounded-none border-border">
