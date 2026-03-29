@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from 'react'
 import { Input } from '@/components/ui/input'
 import { Loader2, Search, Download } from 'lucide-react'
-import { Separator } from '@/components/ui/separator'
 
 interface CardItem {
   week_number?: number
@@ -19,9 +18,12 @@ interface QuotesTabProps {
   cards: CardItem[]
   loading: boolean
   onDownloadPdf: () => void
+  hasMore?: boolean
+  loadingMore?: boolean
+  onLoadMore?: () => void
 }
 
-export default function QuotesTab({ cards, loading, onDownloadPdf }: QuotesTabProps) {
+export default function QuotesTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore }: QuotesTabProps) {
   const [searchTerm, setSearchTerm] = useState('')
 
   const safeCards = Array.isArray(cards) ? cards : []
@@ -48,7 +50,7 @@ export default function QuotesTab({ cards, loading, onDownloadPdf }: QuotesTabPr
     return (
       <div className="flex flex-col items-center justify-center py-32 gap-4">
         <p className="text-sm tracking-widest text-muted-foreground">No quotes loaded yet.</p>
-        <p className="text-xs text-muted-foreground font-light">Enable Sample Data or wait for the agent to respond.</p>
+        <p className="text-xs text-muted-foreground font-light">Waiting for the agent to retrieve quotes...</p>
       </div>
     )
   }
@@ -82,6 +84,18 @@ export default function QuotesTab({ cards, loading, onDownloadPdf }: QuotesTabPr
           ))}
         </div>
       </div>
+
+      {hasMore && onLoadMore && (
+        <div className="flex justify-center mt-10 max-w-2xl mx-auto px-6">
+          <button onClick={onLoadMore} disabled={loadingMore} className="px-8 py-3 border border-primary text-primary text-xs tracking-widest uppercase font-light transition-all duration-300 hover:bg-primary hover:text-primary-foreground disabled:opacity-50 flex items-center gap-3">
+            {loadingMore ? (
+              <><Loader2 className="h-4 w-4 animate-spin" /> Loading more...</>
+            ) : (
+              'Load More Quotes'
+            )}
+          </button>
+        </div>
+      )}
 
       <button onClick={onDownloadPdf} className="fixed bottom-8 right-8 w-14 h-14 bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 z-40 rounded-full" aria-label="Download PDF">
         <Download className="h-5 w-5" />

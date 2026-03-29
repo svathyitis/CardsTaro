@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { callAIAgent } from '@/lib/aiAgent'
 import HeroHeader from './sections/HeroHeader'
 import KnowledgeCardsTab from './sections/KnowledgeCardsTab'
@@ -11,6 +11,9 @@ import { Badge } from '@/components/ui/badge'
 
 const AGENT_ID = '69c919d3a534bb15fd3fc879'
 const RAG_ID = '69c919bb58da8006ab0d8d49'
+
+const BATCH_SIZE = 15
+const TOTAL_WEEKS = 365
 
 const THEME_VARS = {
   '--background': '0 0% 99%',
@@ -39,14 +42,6 @@ interface CardItem {
   quote?: string
   theme?: string
 }
-
-const SAMPLE_CARDS: CardItem[] = [
-  { week_number: 1, title: 'The Nature of the Self', content: 'The self is neither the body nor the mind. It is the witness of both. When you rest in the self, you find that nothing can disturb you.\n\n### Key Insight\n- Awareness is your true nature\n- The mind is an instrument, not the master\n- Stillness reveals the self', tarot_front: 'The Witness Within', tarot_back: 'In the silence between thoughts, the eternal observer awaits. Release identification with the transient and discover the unchanging presence that has always been your foundation.', quote: 'You are not the wave, you are the ocean.', theme: 'Self-Awareness' },
-  { week_number: 2, title: 'Breath and Being', content: 'The breath is the link between the body and the mind. When the breath is calm, the mind is calm. When the breath is agitated, the mind is agitated.\n\n### Practice\n- Observe the natural rhythm\n- Let go of control\n- Simply witness', tarot_front: 'The Sacred Breath', tarot_back: 'Each inhalation is a gift from the cosmos, each exhalation a surrender to the infinite. The breath bridges the mortal and the divine, the seen and the unseen.', quote: 'The breath is the bridge between the visible and the invisible.', theme: 'Pranayama' },
-  { week_number: 3, title: 'Love Without Conditions', content: 'True love asks for nothing in return. It is not a transaction. It is a state of being. When you are in love, you are in the most natural state.\n\n### Reflection\n- Love is not an emotion, it is your nature\n- Conditions limit love\n- Unconditional love liberates', tarot_front: 'The Boundless Heart', tarot_back: 'The heart that loves without walls becomes a vessel for the divine. In giving everything and expecting nothing, you discover that you are everything.', quote: 'Love is not what you do. Love is what you are.', theme: 'Love' },
-  { week_number: 4, title: 'The Power of Silence', content: 'Silence is not the absence of sound. It is the presence of awareness. In silence, creativity is born. In silence, solutions appear.\n\n### Benefits\n- Mental clarity\n- Emotional balance\n- Deeper intuition', tarot_front: 'The Still Point', tarot_back: 'At the center of all creation lies a silence so profound that within it, every answer already exists. Seek the stillness, and the universe speaks.', quote: 'Silence is the language of the divine.', theme: 'Meditation' },
-  { week_number: 5, title: 'Letting Go of Worry', content: 'Worry is a misuse of imagination. The mind projects fear onto the future, creating suffering that does not yet exist.\n\n### Wisdom\n- This moment is all that is real\n- Worry solves nothing\n- Trust the flow of life', tarot_front: 'The Surrendered Mind', tarot_back: 'When the grip of worry loosens, the hands open to receive grace. The future is not yours to control — it is yours to trust.', quote: 'Whatever has happened, has happened for the best. Whatever is happening, is happening for the best.', theme: 'Surrender' },
-]
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
@@ -79,48 +74,69 @@ export default function Page() {
   const [cards, setCards] = useState<CardItem[]>([])
   const [loading, setLoading] = useState(false)
   const [activeTab, setActiveTab] = useState('knowledge')
-  const [sampleMode, setSampleMode] = useState(false)
   const [pdfModalOpen, setPdfModalOpen] = useState(false)
   const [pdfTheme, setPdfTheme] = useState<string | null>(null)
   const [downloading, setDownloading] = useState(false)
   const [activeAgentId, setActiveAgentId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [hasFetched, setHasFetched] = useState(false)
+  const [nextStart, setNextStart] = useState(1)
+  const [hasMore, setHasMore] = useState(true)
+  const [loadingMore, setLoadingMore] = useState(false)
+  const [totalLoaded, setTotalLoaded] = useState(0)
+  const initialFetchDone = useRef(false)
 
-  const fetchCards = useCallback(async () => {
-    if (hasFetched) return
-    setLoading(true)
+  const fetchBatch = useCallback(async (startWeek: number, isInitial: boolean) => {
+    if (isInitial) setLoading(true)
+    else setLoadingMore(true)
     setError(null)
     setActiveAgentId(AGENT_ID)
+
+    const endWeek = Math.min(startWeek + BATCH_SIZE - 1, TOTAL_WEEKS)
+    const prompt = `From the Sri Sri Ravi Shankar knowledge base, retrieve the knowledge points for weeks ${startWeek} to ${endWeek}. For each knowledge point, return: week_number, title (the main topic), content (the full teaching text), tarot_front (a mystical card title for the teaching), tarot_back (a mystical interpretation of the teaching in 2-3 sentences), quote (the most powerful single quote or sentence from the teaching), and theme (a one or two word theme category). Return them as a JSON object with a "cards" array.`
+
     try {
-      const result = await callAIAgent('Retrieve all 365 knowledge cards with week_number, title, and content', AGENT_ID)
+      const result = await callAIAgent(prompt, AGENT_ID)
       if (result?.success) {
         const parsed = result?.response?.result ?? result?.response ?? null
         if (parsed && typeof parsed === 'object') {
           const agentCards = Array.isArray(parsed?.cards) ? parsed.cards : []
           if (agentCards.length > 0) {
-            setCards(agentCards)
-            setHasFetched(true)
+            setCards(prev => {
+              const existingWeeks = new Set(prev.map(c => c.week_number))
+              const newCards = agentCards.filter((c: CardItem) => !existingWeeks.has(c.week_number))
+              return [...prev, ...newCards].sort((a, b) => (a.week_number ?? 0) - (b.week_number ?? 0))
+            })
+            setTotalLoaded(prev => prev + agentCards.length)
           }
         }
+        const newStart = endWeek + 1
+        setNextStart(newStart)
+        setHasMore(newStart <= TOTAL_WEEKS)
       } else {
-        setError('Failed to retrieve knowledge cards. Try enabling Sample Data.')
+        const errMsg = result?.error || result?.response?.message || 'Failed to retrieve knowledge cards.'
+        setError(`Batch ${startWeek}-${endWeek}: ${errMsg}`)
       }
     } catch (err) {
-      setError('An error occurred while fetching cards.')
+      setError(`Error fetching weeks ${startWeek}-${endWeek}. Please try again.`)
     } finally {
-      setLoading(false)
+      if (isInitial) setLoading(false)
+      else setLoadingMore(false)
       setActiveAgentId(null)
     }
-  }, [hasFetched])
+  }, [])
 
   useEffect(() => {
-    if (!sampleMode && !hasFetched) {
-      fetchCards()
+    if (!initialFetchDone.current) {
+      initialFetchDone.current = true
+      fetchBatch(1, true)
     }
-  }, [sampleMode, hasFetched, fetchCards])
+  }, [fetchBatch])
 
-  const displayCards = sampleMode ? SAMPLE_CARDS : cards
+  const handleLoadMore = () => {
+    if (!loadingMore && hasMore) {
+      fetchBatch(nextStart, false)
+    }
+  }
 
   const handleDownloadPdf = async () => {
     if (!pdfTheme) return
@@ -146,33 +162,32 @@ export default function Page() {
     }
   }
 
-  const handleSampleToggle = (val: boolean) => {
-    setSampleMode(val)
-  }
-
   return (
     <ErrorBoundary>
       <div style={THEME_VARS} className="min-h-screen bg-background text-foreground font-serif">
-        <HeroHeader sampleMode={sampleMode} onSampleToggle={handleSampleToggle} activeTab={activeTab} onTabChange={setActiveTab} loading={loading || downloading} />
+        <HeroHeader activeTab={activeTab} onTabChange={setActiveTab} loading={loading || downloading} totalLoaded={totalLoaded} totalWeeks={TOTAL_WEEKS} />
 
         {error && (
           <div className="max-w-7xl mx-auto px-6 pt-4">
             <div className="border border-red-200 bg-red-50 p-4">
               <p className="text-sm text-red-700 font-light tracking-wider">{error}</p>
-              <button onClick={() => setError(null)} className="text-xs text-red-500 underline mt-1 tracking-widest">Dismiss</button>
+              <div className="flex gap-3 mt-2">
+                <button onClick={() => setError(null)} className="text-xs text-red-500 underline tracking-widest">Dismiss</button>
+                <button onClick={() => { setError(null); fetchBatch(nextStart > 1 ? nextStart - BATCH_SIZE : 1, cards.length === 0); }} className="text-xs text-red-600 underline tracking-widest">Retry</button>
+              </div>
             </div>
           </div>
         )}
 
         <main className="pb-24">
           {activeTab === 'knowledge' && (
-            <KnowledgeCardsTab cards={displayCards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <KnowledgeCardsTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
           )}
           {activeTab === 'tarot' && (
-            <TarotCardsTab cards={displayCards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <TarotCardsTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
           )}
           {activeTab === 'quotes' && (
-            <QuotesTab cards={displayCards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <QuotesTab cards={cards} loading={loading} onDownloadPdf={() => setPdfModalOpen(true)} hasMore={hasMore} loadingMore={loadingMore} onLoadMore={handleLoadMore} />
           )}
         </main>
 
@@ -187,6 +202,9 @@ export default function Page() {
               <span className="text-xs font-light tracking-wider text-foreground">Knowledge Wisdom Agent</span>
               {activeAgentId && <Badge variant="outline" className="text-xs font-light tracking-wider rounded-none ml-auto">Active</Badge>}
             </div>
+            {totalLoaded > 0 && (
+              <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{totalLoaded} of {TOTAL_WEEKS} cards loaded</p>
+            )}
           </div>
         </div>
       </div>

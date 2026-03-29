@@ -1,15 +1,13 @@
 'use client'
 
 import React from 'react'
-import { Switch } from '@/components/ui/switch'
-import { Label } from '@/components/ui/label'
 
 interface HeroHeaderProps {
-  sampleMode: boolean
-  onSampleToggle: (val: boolean) => void
   activeTab: string
   onTabChange: (tab: string) => void
   loading: boolean
+  totalLoaded: number
+  totalWeeks: number
 }
 
 const tabs = [
@@ -18,7 +16,7 @@ const tabs = [
   { id: 'quotes', label: 'Quotes' },
 ]
 
-export default function HeroHeader({ sampleMode, onSampleToggle, activeTab, onTabChange, loading }: HeroHeaderProps) {
+export default function HeroHeader({ activeTab, onTabChange, loading, totalLoaded, totalWeeks }: HeroHeaderProps) {
   return (
     <header className="border-b border-border">
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-6">
@@ -28,10 +26,15 @@ export default function HeroHeader({ sampleMode, onSampleToggle, activeTab, onTa
             <h1 className="text-4xl md:text-5xl font-medium tracking-widest font-serif text-foreground leading-tight">Knowledge Cards</h1>
             <p className="mt-3 text-sm font-light tracking-widest text-muted-foreground leading-relaxed max-w-lg">365 points of wisdom, distilled into cards, tarot interpretations, and quotes.</p>
           </div>
-          <div className="flex items-center gap-3 pt-2">
-            <Label htmlFor="sample-toggle" className="text-xs tracking-widest text-muted-foreground uppercase">Sample Data</Label>
-            <Switch id="sample-toggle" checked={sampleMode} onCheckedChange={onSampleToggle} />
-          </div>
+          {totalLoaded > 0 && (
+            <div className="text-right pt-2">
+              <p className="text-xs tracking-widest text-muted-foreground uppercase mb-1">{totalLoaded} / {totalWeeks}</p>
+              <div className="w-32 h-1 bg-muted overflow-hidden">
+                <div className="h-full bg-primary transition-all duration-500" style={{ width: `${Math.round((totalLoaded / totalWeeks) * 100)}%` }} />
+              </div>
+              <p className="text-xs font-light text-muted-foreground mt-1 tracking-wider">cards loaded</p>
+            </div>
+          )}
         </div>
 
         <nav className="flex gap-8">

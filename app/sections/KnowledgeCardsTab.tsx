@@ -22,6 +22,9 @@ interface KnowledgeCardsTabProps {
   cards: CardItem[]
   loading: boolean
   onDownloadPdf: () => void
+  hasMore?: boolean
+  loadingMore?: boolean
+  onLoadMore?: () => void
 }
 
 function renderMarkdown(text: string) {
@@ -47,7 +50,7 @@ function formatInline(text: string) {
   return parts.map((part, i) => i % 2 === 1 ? <strong key={i} className="font-medium">{part}</strong> : part)
 }
 
-export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf }: KnowledgeCardsTabProps) {
+export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore }: KnowledgeCardsTabProps) {
   const [searchTerm, setSearchTerm] = useState('')
   const [weekFilter, setWeekFilter] = useState<number | null>(null)
   const [selectedCard, setSelectedCard] = useState<CardItem | null>(null)
@@ -80,7 +83,7 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf }: Kno
     return (
       <div className="flex flex-col items-center justify-center py-32 gap-4">
         <p className="text-sm tracking-widest text-muted-foreground">No knowledge cards loaded yet.</p>
-        <p className="text-xs text-muted-foreground font-light">Enable Sample Data or wait for the agent to respond.</p>
+        <p className="text-xs text-muted-foreground font-light">Waiting for the agent to retrieve knowledge cards...</p>
       </div>
     )
   }
@@ -117,6 +120,18 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf }: Kno
             </button>
           ))}
         </div>
+
+        {hasMore && onLoadMore && (
+          <div className="flex justify-center mt-10">
+            <button onClick={onLoadMore} disabled={loadingMore} className="px-8 py-3 border border-primary text-primary text-xs tracking-widest uppercase font-light transition-all duration-300 hover:bg-primary hover:text-primary-foreground disabled:opacity-50 flex items-center gap-3">
+              {loadingMore ? (
+                <><Loader2 className="h-4 w-4 animate-spin" /> Loading more...</>
+              ) : (
+                'Load More Cards'
+              )}
+            </button>
+          </div>
+        )}
       </div>
 
       <button onClick={onDownloadPdf} className="fixed bottom-8 right-8 w-14 h-14 bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 z-40 rounded-full" aria-label="Download PDF">
