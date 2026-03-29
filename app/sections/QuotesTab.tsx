@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react'
 import { Input } from '@/components/ui/input'
-import { Loader2, Search, Download } from 'lucide-react'
+import { Loader2, Search, Download, Pencil } from 'lucide-react'
 
 interface CardItem {
   week_number?: number
@@ -21,9 +21,11 @@ interface QuotesTabProps {
   hasMore?: boolean
   loadingMore?: boolean
   onLoadMore?: () => void
+  isAdmin?: boolean
+  onEditCard?: (index: number, card: CardItem) => void
 }
 
-export default function QuotesTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore }: QuotesTabProps) {
+export default function QuotesTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore, isAdmin, onEditCard }: QuotesTabProps) {
   const [searchTerm, setSearchTerm] = useState('')
 
   const safeCards = Array.isArray(cards) ? cards : []
@@ -68,7 +70,16 @@ export default function QuotesTab({ cards, loading, onDownloadPdf, hasMore, load
         <div className="space-y-0">
           {filtered.map((card, idx) => (
             <React.Fragment key={idx}>
-              <div className="py-10 text-center">
+              <div className="py-10 text-center relative">
+                {isAdmin && (
+                  <button
+                    onClick={() => { const origIdx = safeCards.indexOf(card); onEditCard?.(origIdx, card) }}
+                    className="absolute top-4 right-0 w-7 h-7 bg-white/90 rounded-full flex items-center justify-center shadow-md hover:bg-white transition-colors"
+                    title="Edit card"
+                  >
+                    <Pencil className="h-3 w-3 text-gray-700" />
+                  </button>
+                )}
                 <p className="text-xs tracking-widest text-primary uppercase mb-4">Week {card?.week_number ?? '?'}</p>
                 <blockquote className="text-lg font-light leading-relaxed text-foreground font-serif italic max-w-lg mx-auto">&ldquo;{card?.quote}&rdquo;</blockquote>
                 {card?.title && <p className="mt-4 text-xs tracking-widest text-muted-foreground uppercase">{card.title}</p>}

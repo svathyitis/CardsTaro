@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
-import { Loader2, Search, Download } from 'lucide-react'
+import { Loader2, Search, Download, Pencil } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 interface CardItem {
@@ -25,6 +25,8 @@ interface KnowledgeCardsTabProps {
   hasMore?: boolean
   loadingMore?: boolean
   onLoadMore?: () => void
+  isAdmin?: boolean
+  onEditCard?: (index: number, card: CardItem) => void
 }
 
 function renderMarkdown(text: string) {
@@ -50,7 +52,7 @@ function formatInline(text: string) {
   return parts.map((part, i) => i % 2 === 1 ? <strong key={i} className="font-medium">{part}</strong> : part)
 }
 
-export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore }: KnowledgeCardsTabProps) {
+export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMore, loadingMore, onLoadMore, isAdmin, onEditCard }: KnowledgeCardsTabProps) {
   const [searchTerm, setSearchTerm] = useState('')
   const [weekFilter, setWeekFilter] = useState<number | null>(null)
   const [selectedCard, setSelectedCard] = useState<CardItem | null>(null)
@@ -107,8 +109,20 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMo
         <p className="text-xs text-muted-foreground tracking-widest mb-6 uppercase">{filtered.length} card{filtered.length !== 1 ? 's' : ''} found</p>
 
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
-          {filtered.map((card, idx) => (
-            <button key={idx} onClick={() => setSelectedCard(card)} className="w-full mb-4 break-inside-avoid text-left border border-border bg-card p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 group">
+          {filtered.map((card, idx) => {
+            const originalIndex = safeCards.indexOf(card)
+            return (
+            <div key={idx} className="relative mb-4 break-inside-avoid">
+              {isAdmin && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); onEditCard?.(originalIndex, card) }}
+                  className="absolute top-2 right-2 z-10 w-7 h-7 bg-white/90 rounded-full flex items-center justify-center shadow-md hover:bg-white transition-colors"
+                  title="Edit card"
+                >
+                  <Pencil className="h-3 w-3 text-gray-700" />
+                </button>
+              )}
+            <button onClick={() => setSelectedCard(card)} className="w-full text-left border border-border bg-card p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 group">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-10 h-10 border border-primary text-primary flex items-center justify-center text-xs font-light tracking-widest rounded-full">
                   {card?.week_number ?? '?'}
@@ -120,7 +134,9 @@ export default function KnowledgeCardsTab({ cards, loading, onDownloadPdf, hasMo
                 </div>
               </div>
             </button>
-          ))}
+            </div>
+            )
+          })}
         </div>
 
         {hasMore && onLoadMore && (

@@ -4,7 +4,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Loader2, Shuffle, Download } from 'lucide-react'
+import { Loader2, Shuffle, Download, Pencil } from 'lucide-react'
 
 interface CardItem {
   week_number?: number
@@ -23,6 +23,8 @@ interface TarotCardsTabProps {
   hasMore?: boolean
   loadingMore?: boolean
   onLoadMore?: () => void
+  isAdmin?: boolean
+  onEditCard?: (index: number, card: CardItem) => void
 }
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII']
@@ -43,7 +45,7 @@ function CardCorner({ className }: { className?: string }) {
   )
 }
 
-export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCardsTabProps) {
+export default function TarotCardsTab({ cards, loading, onDownloadPdf, isAdmin, onEditCard }: TarotCardsTabProps) {
   const [weekFilter, setWeekFilter] = useState<number | null>(null)
   const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set())
   const [shuffled, setShuffled] = useState(false)
@@ -127,6 +129,16 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCa
             const weekNum = card?.week_number ?? 0
             return (
               <div key={`${shuffleKey}-${idx}`} className="w-full">
+                <div className="relative">
+                {isAdmin && (
+                  <button
+                    onClick={(e) => { e.stopPropagation(); onEditCard?.(safeCards.indexOf(card), card) }}
+                    className="absolute top-2 right-2 z-10 w-7 h-7 bg-white/90 rounded-full flex items-center justify-center shadow-md hover:bg-white transition-colors"
+                    title="Edit card"
+                  >
+                    <Pencil className="h-3 w-3 text-gray-700" />
+                  </button>
+                )}
                 <button
                   onClick={() => toggleFlip(idx)}
                   className="w-full"
@@ -246,6 +258,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf }: TarotCa
                   </div>
                 </button>
 
+                </div>
                 {/* Read more */}
                 {isFlipped && (
                   <button

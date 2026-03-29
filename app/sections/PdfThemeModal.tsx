@@ -39,6 +39,7 @@ const themes = [
 const tabLabels: Record<string, string> = {
   knowledge: 'Knowledge Cards',
   tarot: 'Tarot Cards',
+  mystic: 'Mystic Tarot',
   quotes: 'Quotes',
 }
 

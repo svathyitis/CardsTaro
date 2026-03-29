@@ -5,8 +5,10 @@ import { KNOWLEDGE_SHEETS } from '@/lib/knowledgeData'
 import HeroHeader from './sections/HeroHeader'
 import KnowledgeCardsTab from './sections/KnowledgeCardsTab'
 import TarotCardsTab from './sections/TarotCardsTab'
+import MysticTarotTab from './sections/MysticTarotTab'
 import QuotesTab from './sections/QuotesTab'
 import PdfThemeModal from './sections/PdfThemeModal'
+import AdminEditModal from './sections/AdminEditModal'
 
 const TOTAL_WEEKS = KNOWLEDGE_SHEETS.length
 
@@ -49,7 +51,7 @@ function pdfRoman(n: number): string { return n <= 22 ? (ROMAN_MAP[n] || String(
 
 function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): string {
   const t = PDF_THEMES[theme] || PDF_THEMES.light
-  const tabTitles: Record<string, string> = { knowledge: 'Knowledge Cards', tarot: 'Tarot Cards', quotes: 'Quotes' }
+  const tabTitles: Record<string, string> = { knowledge: 'Knowledge Cards', tarot: 'Tarot Cards', mystic: 'Mystic Tarot', quotes: 'Quotes' }
   const title = tabTitles[activeTab] || 'Knowledge Cards'
 
   let contentHtml = ''
@@ -118,6 +120,44 @@ function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): s
               <p style="color: ${t.accent}; font-size: 10px; font-style: italic; line-height: 1.5;">&ldquo;${card.quote}&rdquo;</p>
             </div>` : ''}
           </div>
+        </div>
+      </div>`
+    }).join('')
+  } else if (activeTab === 'mystic') {
+    const mysticPalettes = [
+      { bg: 'linear-gradient(135deg, #667eea, #764ba2)', accent: '#e0c3fc', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #f093fb, #f5576c)', accent: '#ffd6e0', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #4facfe, #00f2fe)', accent: '#c2f0fc', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #43e97b, #38f9d7)', accent: '#c6ffe2', text: '#1a3c34' },
+      { bg: 'linear-gradient(135deg, #fa709a, #fee140)', accent: '#ffe8cc', text: '#4a2020' },
+      { bg: 'linear-gradient(135deg, #a18cd1, #fbc2eb)', accent: '#edd6ff', text: '#3a2060' },
+      { bg: 'linear-gradient(135deg, #fccb90, #d57eeb)', accent: '#f5d5ff', text: '#3a1a50' },
+      { bg: 'linear-gradient(135deg, #e0c3fc, #8ec5fc)', accent: '#d0e8ff', text: '#2a2060' },
+      { bg: 'linear-gradient(135deg, #f5576c, #ff6b6b)', accent: '#ffd4d4', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #0c3483, #a2b6df)', accent: '#c8d8f0', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #c471f5, #fa71cd)', accent: '#fcd6f5', text: '#fff' },
+      { bg: 'linear-gradient(135deg, #48c6ef, #6f86d6)', accent: '#d0e4ff', text: '#fff' },
+    ]
+    contentHtml = cards.map((card, i) => {
+      const p = mysticPalettes[i % mysticPalettes.length]
+      return `
+      <div style="display: flex; gap: 20px; margin-bottom: 28px; page-break-inside: avoid;">
+        <div style="flex: 1; min-width: 0; aspect-ratio: 2.5/4; background: ${p.bg}; border: 2px solid rgba(255,255,255,0.2); border-radius: 12px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
+          <div style="position: absolute; inset: 8px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px;"></div>
+          <h3 style="color: ${p.text}; font-size: 16px; font-family: 'Playfair Display', serif; letter-spacing: 4px; text-transform: uppercase; margin: 0; text-shadow: 0 0 15px rgba(255,255,255,0.3);">${card.tarot_front ?? ''}</h3>
+          <div style="display: flex; align-items: center; gap: 6px; margin: 16px 0;">
+            <div style="width: 20px; height: 1px; background: ${p.accent}88;"></div>
+            <div style="width: 4px; height: 4px; border: 1px solid ${p.accent}; transform: rotate(45deg);"></div>
+            <div style="width: 20px; height: 1px; background: ${p.accent}88;"></div>
+          </div>
+          ${card.theme ? `<p style="color: ${p.accent}; font-size: 8px; letter-spacing: 4px; text-transform: uppercase;">${card.theme}</p>` : ''}
+        </div>
+        <div style="flex: 1; min-width: 0; background: ${t.backBg}; border: 1px solid ${t.border}; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; box-shadow: 0 2px 12px rgba(0,0,0,0.1);">
+          <h4 style="color: ${t.text}; font-size: 13px; font-family: 'Playfair Display', serif; letter-spacing: 2px; text-align: center; margin: 4px 0 12px;">${card.title ?? ''}</h4>
+          <p style="color: ${t.text}; font-size: 11px; line-height: 1.7; font-weight: 300; flex: 1;">${card.tarot_back ?? ''}</p>
+          ${card.quote ? `<div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid ${t.border};">
+            <p style="color: ${t.accent}; font-size: 10px; font-style: italic; line-height: 1.5;">&ldquo;${card.quote}&rdquo;</p>
+          </div>` : ''}
         </div>
       </div>`
     }).join('')
@@ -190,6 +230,8 @@ class ErrorBoundary extends React.Component<
   }
 }
 
+const ADMIN_PASSCODE = 'meowrani'
+
 export default function Page() {
   const [activeTab, setActiveTab] = useState('knowledge')
   const [pdfModalOpen, setPdfModalOpen] = useState(false)
@@ -197,8 +239,18 @@ export default function Page() {
   const [downloading, setDownloading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // Admin state
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [showPasscodePrompt, setShowPasscodePrompt] = useState(false)
+  const [passcodeInput, setPasscodeInput] = useState('')
+  const [passcodeError, setPasscodeError] = useState(false)
+
+  // Card edits (stored as overrides keyed by index)
+  const [cardEdits, setCardEdits] = useState<Record<number, Partial<CardItem>>>({})
+  const [editingCard, setEditingCard] = useState<{ index: number; card: CardItem } | null>(null)
+
   // Static knowledge cards - loaded directly from embedded data
-  const cards: CardItem[] = useMemo(() => KNOWLEDGE_SHEETS.map(sheet => ({
+  const baseCards: CardItem[] = useMemo(() => KNOWLEDGE_SHEETS.map(sheet => ({
     week_number: sheet.week_number,
     title: sheet.title,
     content: sheet.content,
@@ -207,6 +259,43 @@ export default function Page() {
     tarot_front: sheet.tarot_front,
     tarot_back: sheet.tarot_back,
   })), [])
+
+  // Apply edits on top of base data
+  const cards: CardItem[] = useMemo(() => baseCards.map((card, idx) => {
+    const edit = cardEdits[idx]
+    if (!edit) return card
+    return { ...card, ...edit }
+  }), [baseCards, cardEdits])
+
+  const handleAdminToggle = useCallback(() => {
+    if (isAdmin) {
+      setIsAdmin(false)
+    } else {
+      setShowPasscodePrompt(true)
+      setPasscodeInput('')
+      setPasscodeError(false)
+    }
+  }, [isAdmin])
+
+  const handlePasscodeSubmit = useCallback(() => {
+    if (passcodeInput === ADMIN_PASSCODE) {
+      setIsAdmin(true)
+      setShowPasscodePrompt(false)
+      setPasscodeInput('')
+      setPasscodeError(false)
+    } else {
+      setPasscodeError(true)
+    }
+  }, [passcodeInput])
+
+  const handleEditCard = useCallback((index: number, card: CardItem) => {
+    setEditingCard({ index, card })
+  }, [])
+
+  const handleSaveCard = useCallback((index: number, updated: CardItem) => {
+    setCardEdits(prev => ({ ...prev, [index]: updated }))
+    setEditingCard(null)
+  }, [])
 
   const handleDownloadPdf = useCallback(() => {
     if (!pdfTheme) return
@@ -259,27 +348,68 @@ export default function Page() {
 
         <main className="pb-24">
           {activeTab === 'knowledge' && (
-            <KnowledgeCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <KnowledgeCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} isAdmin={isAdmin} onEditCard={handleEditCard} />
           )}
           {activeTab === 'tarot' && (
-            <TarotCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <TarotCardsTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} isAdmin={isAdmin} onEditCard={handleEditCard} />
+          )}
+          {activeTab === 'mystic' && (
+            <MysticTarotTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} isAdmin={isAdmin} onEditCard={handleEditCard} />
           )}
           {activeTab === 'quotes' && (
-            <QuotesTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} />
+            <QuotesTab cards={cards} loading={false} onDownloadPdf={() => setPdfModalOpen(true)} isAdmin={isAdmin} onEditCard={handleEditCard} />
           )}
         </main>
 
         <PdfThemeModal open={pdfModalOpen} onOpenChange={setPdfModalOpen} selectedTheme={pdfTheme} onSelectTheme={setPdfTheme} onDownload={handleDownloadPdf} downloading={downloading} activeTab={activeTab} />
 
-        {/* Status */}
+        {/* Admin Edit Modal */}
+        <AdminEditModal
+          open={!!editingCard}
+          onOpenChange={(open) => { if (!open) setEditingCard(null) }}
+          card={editingCard?.card ?? null}
+          cardIndex={editingCard?.index ?? 0}
+          onSave={handleSaveCard}
+        />
+
+        {/* Passcode Prompt */}
+        {showPasscodePrompt && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50" onClick={() => setShowPasscodePrompt(false)}>
+            <div className="bg-card border border-border p-8 max-w-sm w-full mx-4 shadow-xl" onClick={(e) => e.stopPropagation()}>
+              <p className="text-sm tracking-widest text-foreground mb-4 uppercase">Admin Access</p>
+              <input
+                type="password"
+                value={passcodeInput}
+                onChange={(e) => { setPasscodeInput(e.target.value); setPasscodeError(false) }}
+                onKeyDown={(e) => e.key === 'Enter' && handlePasscodeSubmit()}
+                placeholder="Enter passcode..."
+                className="w-full h-10 px-4 border border-border bg-background text-foreground text-sm font-light tracking-wider focus:outline-none focus:ring-1 focus:ring-ring mb-3"
+                autoFocus
+              />
+              {passcodeError && <p className="text-xs text-red-500 mb-3 tracking-wider">Incorrect passcode</p>}
+              <div className="flex gap-3">
+                <button onClick={handlePasscodeSubmit} className="flex-1 h-10 bg-primary text-primary-foreground text-xs tracking-widest uppercase font-light">Enter</button>
+                <button onClick={() => setShowPasscodePrompt(false)} className="h-10 px-4 border border-border text-xs tracking-widest uppercase font-light text-muted-foreground">Cancel</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Status + Admin Toggle */}
         <div className="fixed bottom-8 left-8 z-40">
           <div className="border border-border bg-card p-4 shadow-sm max-w-xs">
             <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Status</p>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-500" />
-              <span className="text-xs font-light tracking-wider text-foreground">All Data Loaded</span>
+              <div className={`w-2 h-2 rounded-full ${isAdmin ? 'bg-amber-500' : 'bg-green-500'}`} />
+              <span className="text-xs font-light tracking-wider text-foreground">{isAdmin ? 'Admin Mode' : 'All Data Loaded'}</span>
             </div>
             <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets</p>
+            <button
+              onClick={handleAdminToggle}
+              className="mt-3 text-[10px] tracking-widest uppercase font-light text-muted-foreground hover:text-foreground transition-colors border-t border-border pt-2 w-full text-left"
+            >
+              {isAdmin ? 'Exit Admin Mode' : 'Admin'}
+            </button>
           </div>
         </div>
       </div>

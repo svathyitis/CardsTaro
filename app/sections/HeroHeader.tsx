@@ -13,6 +13,7 @@ interface HeroHeaderProps {
 const tabs = [
   { id: 'knowledge', label: 'Knowledge Cards' },
   { id: 'tarot', label: 'Tarot Cards' },
+  { id: 'mystic', label: 'Mystic Tarot' },
   { id: 'quotes', label: 'Quotes' },
 ]
 
