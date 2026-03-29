@@ -1,9 +1,8 @@
 'use client'
 
 import React, { useState, useMemo } from 'react'
-import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { Loader2, Search, Download, Shuffle } from 'lucide-react'
+import { Loader2, Shuffle, Download } from 'lucide-react'
 
 interface CardItem {
   week_number?: number
@@ -29,6 +28,7 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
   const [flippedCards, setFlippedCards] = useState<Set<number>>(new Set())
   const [shuffled, setShuffled] = useState(false)
   const [shuffleKey, setShuffleKey] = useState(0)
+  const [expandedCard, setExpandedCard] = useState<number | null>(null)
 
   const safeCards = Array.isArray(cards) ? cards : []
 
@@ -94,34 +94,90 @@ export default function TarotCardsTab({ cards, loading, onDownloadPdf, hasMore, 
 
         <p className="text-xs text-muted-foreground tracking-widest mb-6 uppercase">{filtered.length} tarot card{filtered.length !== 1 ? 's' : ''}</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((card, idx) => {
             const isFlipped = flippedCards.has(idx)
+            const isExpanded = expandedCard === idx
             return (
-              <button key={`${shuffleKey}-${idx}`} onClick={() => toggleFlip(idx)} className="w-full" style={{ perspective: '1000px' }}>
-                <div className="relative w-full transition-transform duration-700" style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)', minHeight: '360px' }}>
-                  {/* Front */}
-                  <div className="absolute inset-0 border border-border bg-card p-6 flex flex-col items-center justify-center text-center" style={{ backfaceVisibility: 'hidden' }}>
-                    <div className="border-2 border-primary/30 p-6 w-full h-full flex flex-col items-center justify-center gap-4">
-                      <div className="w-12 h-12 border border-primary text-primary flex items-center justify-center text-xs font-light tracking-widest rounded-full">
-                        {card?.week_number ?? '?'}
+              <div key={`${shuffleKey}-${idx}`} className="w-full">
+                <button
+                  onClick={() => toggleFlip(idx)}
+                  className="w-full"
+                  style={{ perspective: '1000px' }}
+                >
+                  <div
+                    className="relative w-full transition-transform duration-700"
+                    style={{
+                      transformStyle: 'preserve-3d',
+                      transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+                      minHeight: '480px',
+                    }}
+                  >
+                    {/* Front */}
+                    <div
+                      className="absolute inset-0 border border-border bg-card p-8 flex flex-col items-center justify-center text-center"
+                      style={{ backfaceVisibility: 'hidden' }}
+                    >
+                      <div className="border-2 border-primary/30 p-8 w-full h-full flex flex-col items-center justify-center gap-5">
+                        <div className="w-14 h-14 border border-primary text-primary flex items-center justify-center text-sm font-light tracking-widest rounded-full">
+                          {card?.week_number ?? '?'}
+                        </div>
+                        <h3 className="text-base font-normal tracking-widest text-foreground leading-relaxed">
+                          {card?.tarot_front ?? card?.title ?? 'Untitled'}
+                        </h3>
+                        <div className="w-10 h-px bg-primary/40 my-1" />
+                        <p className="text-sm font-light text-muted-foreground leading-relaxed">
+                          {card?.quote ?? 'Click to reveal the teaching'}
+                        </p>
+                        <p className="text-xs text-muted-foreground/50 tracking-widest uppercase mt-auto">Click to flip</p>
                       </div>
-                      <h3 className="text-sm font-normal tracking-widest text-foreground leading-relaxed">{card?.title ?? 'Untitled'}</h3>
-                      <div className="w-8 h-px bg-primary/40 my-1" />
-                      <p className="text-xs font-light text-muted-foreground leading-relaxed">{card?.tarot_front ?? 'Click to reveal'}</p>
-                      <p className="text-xs text-muted-foreground/50 tracking-widest uppercase mt-auto">Click to flip</p>
+                    </div>
+                    {/* Back */}
+                    <div
+                      className="absolute inset-0 border border-primary/40 bg-card p-8 flex flex-col items-center justify-start text-center overflow-y-auto"
+                      style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                    >
+                      <div className="border border-primary/20 p-6 w-full flex flex-col items-center gap-4 bg-secondary/30">
+                        <p className="text-xs tracking-widest text-primary uppercase mb-2">Week {card?.week_number ?? '?'}</p>
+                        <h4 className="text-sm font-medium tracking-widest text-foreground">{card?.title ?? ''}</h4>
+                        <div className="w-8 h-px bg-primary/40" />
+                        <p className="text-sm font-light text-foreground leading-relaxed text-left w-full">
+                          {card?.tarot_back ?? 'No interpretation available'}
+                        </p>
+                        {card?.theme && (
+                          <p className="text-xs tracking-widest text-muted-foreground uppercase mt-4">
+                            {card.theme}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
-                  {/* Back */}
-                  <div className="absolute inset-0 border border-primary/40 bg-card p-6 flex flex-col items-center justify-center text-center" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-                    <div className="border border-primary/20 p-6 w-full h-full flex flex-col items-center justify-center gap-4 bg-secondary/30">
-                      <p className="text-xs tracking-widest text-primary uppercase mb-2">Week {card?.week_number ?? '?'}</p>
-                      <p className="text-sm font-light text-foreground leading-relaxed">{card?.tarot_back ?? 'No interpretation available'}</p>
-                      {card?.theme && <p className="text-xs tracking-widest text-muted-foreground uppercase mt-auto">Theme: {card.theme}</p>}
+                </button>
+
+                {/* Expand button under each card */}
+                {isFlipped && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      setExpandedCard(isExpanded ? null : idx)
+                    }}
+                    className="mt-2 w-full text-xs text-primary tracking-widest uppercase font-light py-2 border border-border hover:bg-secondary/50 transition-colors"
+                  >
+                    {isExpanded ? 'Collapse' : 'Read Full Teaching'}
+                  </button>
+                )}
+
+                {/* Expanded full content */}
+                {isExpanded && (
+                  <div className="mt-2 border border-primary/20 bg-card p-6 max-h-[500px] overflow-y-auto">
+                    <p className="text-xs tracking-widest text-primary uppercase mb-3">Week {card?.week_number} — Full Teaching</p>
+                    <h4 className="text-sm font-medium tracking-widest text-foreground mb-4">{card?.title}</h4>
+                    <div className="text-sm font-light text-foreground leading-relaxed whitespace-pre-line">
+                      {card?.content}
                     </div>
                   </div>
-                </div>
-              </button>
+                )}
+              </div>
             )
           })}
         </div>

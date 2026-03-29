@@ -8,6 +8,8 @@ export interface KnowledgeSheet {
   date: string
   country: string
   content: string
+  quote: string
+  tarot_back: string
 }
 
 export const KNOWLEDGE_SHEETS: KnowledgeSheet[] = [
@@ -48,6 +50,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `Knowledge, love, Brahman is seeing beyond the event, personality, or object.`,
+    tarot_back: `Someone else got angry first and someone else and someone else and on and on like that. When you go beyond an event, only then the truth dawns. One particular event gives you a false notion.`,
   },
   {
     week_number: 2,
@@ -76,6 +80,8 @@ You are with the Master to share the joy of the Master, to share the consciousne
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Response from the room: Call Guruji every week and if he doesn't answer the phone then you know you are loved.`,
+    tarot_back: `How have you been?" Stop formal and superficial conversations with the Master and speak with your heart that which is very important and intimate, very deep to your life. Don't just say how much the squash costs, 30 cents or whatever. If you don't feel close to the Master, there's no point in having a Master.`,
   },
   {
     week_number: 3,
@@ -98,6 +104,8 @@ Know this and surrender both good and bad karma to the Divine and be free.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you prepare halwa, if sugar is less or ghee is less, water more or less, it can all be adjusted, repaired.`,
+    tarot_back: `If the buttermilk is sour, milk can be added, salt can be added to make it drinkable. But it can never be reversed back to milk. Prabdha karma cannot be changed.`,
   },
   {
     week_number: 4,
@@ -124,6 +132,8 @@ Without any intention, misunderstandings happen. It's not up to you to try to re
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The whole message of the Gita is to be peaceful yourself and then fight.`,
+    tarot_back: `Trying to end conflict prolongs it. Face the conflict by seeking the comfort of the Self. God is alive in the world and has been putting up with all the ongoing conflicts throughout the ages.`,
   },
   {
     week_number: 5,
@@ -150,6 +160,8 @@ Master is the Presence. World is relativity. And relativity has limitations. Pre
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And the presence of the Master in one's life will bring fulfillment to all relations.`,
+    tarot_back: `But a place filled with love, filled with joy, cooperation, compassion, and all virtues. The world is much more fun. Looking through the doorway, there is no fear.`,
   },
   {
     week_number: 6,
@@ -168,6 +180,8 @@ Doubt is wanting to get rid of something. Doubt is a temporary state. Neither up
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Gray is something which is neither white nor black.`,
+    tarot_back: `And see the gray as a shade of black or white. Honest or dishonest -- accept it. You are not in the gray area.`,
   },
   {
     week_number: 7,
@@ -188,6 +202,8 @@ Back To Top ^`,
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A saint is like a camphor flame that creates light and the fragrance of love.`,
+    tarot_back: `The same fire that supports life in winter, can also destroy. One fire, like a ghee lamp, lights your way and purifies. Another fire made of toxic material creates pollution.`,
   },
   {
     week_number: 8,
@@ -220,6 +236,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The nature of vasana is to bother you, or bind you, and wanting to be free is the nature of life.`,
+    tarot_back: `Consider the time and place for vows to be taken. When the mind dwells on useless thoughts, then two things happen. One is that all those old patterns come up and you feel discouraged by them.`,
   },
   {
     week_number: 9,
@@ -252,6 +270,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `An enlightened person says "Don't blame me because it will hurt you." So here you say, don't blame because of compassion.`,
+    tarot_back: `Outside you may resist, but inside if you don't resist, and feel happy, "Oh, good, somebody is there to blame me and take some negative karma," you will feel immediately lighter. How does it feel to you when someone blames you? Do you feel some heaviness?`,
   },
   {
     week_number: 10,
@@ -277,6 +297,8 @@ Jai Guru Dev
 <
 
 Back To Top ^`,
+    quote: `It is the divinity that is the most attractive; the energy that pulls everything to it.`,
+    tarot_back: `Often people fail to see the spirit behind the attraction and merely hold on to the outer shell. And the moment you try to possess the shell, you will see Krishna has played a trick and you will be left with an empty shell in your hands and tears in your eyes. Be clever like Radha -- don't be tricked by Krishna.`,
   },
   {
     week_number: 11,
@@ -309,6 +331,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `At a particular level of consciousness you will become anasuya.`,
+    tarot_back: `That kind of mind set cannot know the sacred Knowledge. Krishna tells Arjuna that he is giving him the Royal Secret, because he is anasuya. From a distance, even craters cannot be seen.`,
   },
   {
     week_number: 12,
@@ -337,6 +361,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The love of the ignorant can be harmful yet even the anger of the Enlightened is not harmful.`,
+    tarot_back: `The love in the mother's ignorance has spoiled the child. The child will never learn the alphabet, never learn to read or write, but the mother says, "Oh, never mind, there are sheep to look after and fields to tend." The mother's love in ignorance has spoiled the child. The anger of the Enlightened is a blessing.`,
   },
   {
     week_number: 13,
@@ -375,6 +401,8 @@ And so . . . ha ha (laugh). You need not go through all the listed mental gymnas
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The person you call a liar is not a good liar and they are innocent.`,
+    tarot_back: `I thought they were so innocent that they could not even lie properly. If they had not been caught, how would you know they were a liar? you can never know a good liar.`,
   },
   {
     week_number: 14,
@@ -421,6 +449,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Every atom of Big Mind is crammed with Knowledge.`,
+    tarot_back: `You seek until you come to the Master. You walk until you come to the swimming pool. You don't walk or run in the swimming pool -- you swim or float.`,
   },
   {
     week_number: 15,
@@ -443,6 +473,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Smiling with all the Existence Is silence!`,
+    tarot_back: `Smiling with all the Existence Is silence!`,
   },
   {
     week_number: 16,
@@ -469,6 +501,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When the small mind wins over, it is misery and when the Big Mind wins, it is joy.`,
+    tarot_back: `Small mind promises joy and leaves your hand empty. Big Mind may bring resistance in the beginning but fills you with joy. The word Guru means great.`,
   },
   {
     week_number: 17,
@@ -497,6 +531,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When you think you are too good, you blame the world; then you become sad.`,
+    tarot_back: `The purpose of sorrow is to bring you back to the self. But this is possible only through Knowledge -- awareness. Knowledge or awareness leads sorrow towards the self.`,
   },
   {
     week_number: 18,
@@ -522,6 +558,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The Advaita Knowledge has been totally misused or used according to one's own fancies and conveniences.`,
+    tarot_back: `Understand this and go ahead in life. You have some restrictions and it is this that allows you freedom. You can choose to focus either on freedom or discipline, and this makes you happy or unhappy.`,
   },
   {
     week_number: 19,
@@ -548,6 +586,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `And so it is infinite, for infinity can never be complete.`,
+    tarot_back: `The master does a ceremony called Samavartha, where he tells the disciple that he is ending the discipleship and asking him to behave at par with him, and let the Brahman dynamically manifest. Sakha is a companion in life and death; it never ends. In the path of love there is neither beginning nor end.`,
   },
   {
     week_number: 20,
@@ -586,6 +626,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When the senses are with the Self, that is pleasure (sukha), because the Self is the source of all joy or pleasure.`,
+    tarot_back: `In any pleasant experience, you close your eyes; you smell a nice flower, or you taste or touch something. So sukha is that which takes you to the Self. Dukha is that which takes you away from the Self.`,
   },
   {
     week_number: 21,
@@ -616,6 +658,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `A sceptic is stuck in a paradigm and closes all other possibilities.`,
+    tarot_back: `Scepticism is dispelled by Knowledge. Perception and inference are two means of knowing. In every human being deep inside, there is faith and love.`,
   },
   {
     week_number: 22,
@@ -648,6 +692,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When you realize everyone is part of your Self, you enjoy the whole world without a sense of craving.`,
+    tarot_back: `You become Ashaucha and you have to get back to Shaucha. Go deeper in to yourself, then real Shaucha happens. Shaucha's benefits are clarity in the intellect, a pleasing mind, focused awareness in the mind, a say over the senses, and therefore eligibility to realize the Self.`,
   },
   {
     week_number: 23,
@@ -672,6 +718,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `A repetition without interest or love causes a monotonous state of mind; that is boredom.`,
+    tarot_back: `Whether the practice gives you joy or boredom, it must be continued. Only the practice or abhyasa can annihilate the Mind. Self is Love and Love is always repetitive.`,
   },
   {
     week_number: 24,
@@ -694,6 +742,8 @@ Back To Top ^`,
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Vishnu shakti is maintenance and Shiva shakti is bringing in transformation, filling in life, or destroying.`,
+    tarot_back: `You may create well, but you may not be able to maintain. For example, you may make friends very fast, but it does not last long. There are others who cannot create but are good at maintaining.`,
   },
   {
     week_number: 25,
@@ -738,6 +788,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Say, "Everything is temporary, everything is changing." Speak some Knowledge on the changing nature of the world.`,
+    tarot_back: `This is the way to maintain intimacy. If you attend Satsang you don't get much; but if you don't, you lose a lot. Just to maintain where you are, what you are, you need to attend weekly Satsang.`,
   },
   {
     week_number: 26,
@@ -766,6 +818,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `And when that one finds it, he gives it to everyone.`,
+    tarot_back: `Then Guruji himself went in. He came out with the sweets and gave them to everyone. This is exactly what happens in life.`,
   },
   {
     week_number: 27,
@@ -796,6 +850,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If the vehicle is in perfect condition, the skill is effective.`,
+    tarot_back: `You can slow down or wait for some time to allow the vehicle to move far away from you. You can use your skill, overtake the vehicle, and forget about it. As in the first case, most of you stick on the events and are miserable, like inhaling fumes throughout your journey.`,
   },
   {
     week_number: 28,
@@ -816,6 +872,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Pure water is like love, Knowledge is like detergent, mind is like cloth, and the body like the washing machine.`,
+    tarot_back: `But instead of detergent, if you use dirt, then you have dirty clothes. Pure water is like love, Knowledge is like detergent, mind is like cloth, and the body like the washing machine. If you put in mud instead of detergent, your clothes become dirtier than before.`,
   },
   {
     week_number: 29,
@@ -848,6 +906,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If you celebrate every moment, you are the Lord of Creation.`,
+    tarot_back: `How useful were you this past year? Sit for an hour and think about every week, one minute per week, and see the year's growth in less than an hour. With a flower, on New Year's Day, offer the whole year to the Divine.`,
   },
   {
     week_number: 30,
@@ -912,6 +972,8 @@ Jai Guru Dev
 (Compiled by Ananda and Wally)
 
 Back To Top ^`,
+    quote: `And everyone was unusually crazy .`,
+    tarot_back: `And a basket full of chocolates was on the couch . They were in shape of bees today. And they started flying from the Guru's hand.`,
   },
   {
     week_number: 31,
@@ -936,6 +998,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Divine love is the present, yet we are holding onto the paper believing we have already enjoyed the gift.`,
+    tarot_back: `A little chocolate may seep into the mouth, but the covering makes sores in the mouth. The whole world is there for you to enjoy. The wise know how to enjoy the gift inside, while the ignorant get stuck with the paper.`,
   },
   {
     week_number: 32,
@@ -980,6 +1044,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If Guru is satisfied, then your growth is shunned.`,
+    tarot_back: `If Guru is satisfied, then your growth is shunned. If Guru is unsatisfied, he's away from the Self. If Guru is satisfied, then what can inspire you to grow?`,
   },
   {
     week_number: 33,
@@ -1026,6 +1092,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If your prayers are not answered it is because you have never given quality time.`,
+    tarot_back: `You definitely will be rewarded. Here in Hawaii there is a fun-filled course, for you know God Loves Fun. This has been followed with the long-awaited book, Way of Grace.`,
   },
   {
     week_number: 34,
@@ -1066,6 +1134,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `There is a place you can come where everything is beautiful.`,
+    tarot_back: `Then wherever you go, you add beauty there. If you are unhappy, even the moon is irritating to you. Sweet things are nauseating, music is disturbing.`,
   },
   {
     week_number: 35,
@@ -1110,6 +1180,8 @@ Guruji, not only in spirit, but also physically, piloted a twin engine Cessna pl
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Then you are infinitely indebted for your body, for Knowledge, for things you have received, and for your own life.`,
+    tarot_back: `You think you are indebted, but you really are not. It is better to feel totally indebted, because every bit of what you have, doesn't belong to you, including your body. Then you are infinitely indebted for your body, for Knowledge, for things you have received, and for your own life.`,
   },
   {
     week_number: 36,
@@ -1142,6 +1214,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Spirit is the valentine of matter and matter is the valentine of the spirit.`,
+    tarot_back: `If you hold onto matter and do not respect the spirit, then matter is not pleased. If you honor the spirit then you will care for the world, and when you care for the world, it will take care of you. I am the valentine of the whole world and I reside in every heart.`,
   },
   {
     week_number: 37,
@@ -1178,6 +1252,8 @@ Jai Guru Dev
  (Compiled by Shirley and Kiran)
 
 Back To Top ^`,
+    quote: `The knowledge and faith of science is of "happening." In spirituality, faith is first and Knowledge comes later.`,
+    tarot_back: `And then another knowledge came that they were not good and the faith shifted to organic farming. The same with antibiotics. The knowledge brought faith, the knowledge changed, and then faith changed.`,
   },
   {
     week_number: 38,
@@ -1212,6 +1288,8 @@ NEWS FLASH:
  
 
 Back To Top ^`,
+    quote: `So I can never lose respect for anybody, however they may be.`,
+    tarot_back: `And when they do change, you lose respect. You only respect the greatness. I have tremendous respect for each and every one.`,
   },
   {
     week_number: 39,
@@ -1242,6 +1320,8 @@ The silence was broken with the boisterous celebration of Holi -- the festival o
 We had Satsang in the open air. The sound of the drums and the beat of the heart were magical and brought laughter and tears together in everybody. The full moon was so full and everyone was soaked in bright colors.
 
 Back To Top ^`,
+    quote: `All desires are for happiness.`,
+    tarot_back: `But have you thought about the nature of desire? It simply means tomorrow, and not now, isn't it? How can you have desires when you are joyful?`,
   },
   {
     week_number: 40,
@@ -1284,6 +1364,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Love is the highest strength, yet it makes you absolutely weak.`,
+    tarot_back: `So God/Enlightened One/Nature does not want you to have more faith or love. With too much faith and love, you make God weak. So, it is better for God that you have less faith.`,
   },
   {
     week_number: 41,
@@ -1314,6 +1396,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `A boy asked a question and before Guruji could answer, he was ready with another question.`,
+    tarot_back: `To this Guruji said, "If you hold onto the question how will you receive the answer? Give away the question to me and then you will find that you are in the answer. If your hands are holding onto the question, how will you receive the answer?`,
   },
   {
     week_number: 42,
@@ -1350,6 +1434,8 @@ Jai Guru Dev
   
 
 Back To Top ^`,
+    quote: `When there is more joy, the contrast is greater.`,
+    tarot_back: `Do you see what I am saying? It is like a quantum leap. If one jumps across this threshold then there is no fall.`,
   },
   {
     week_number: 43,
@@ -1384,6 +1470,8 @@ NEWS FLASH:
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When someone is drowning in the ocean of attachments, surrender is the life jacket they can put on and wait for the rescue team.`,
+    tarot_back: `Unfortunately most people do not notice this until it is too late. When someone is drowning in the ocean of attachments, surrender is the life jacket they can put on and wait for the rescue team. Without fighting the attachments, observe the feverish breath and go to the cool place of silence within.`,
   },
   {
     week_number: 44,
@@ -1436,6 +1524,8 @@ NEWS FLASH:
  
 
 Back To Top ^`,
+    quote: `If you say that you have no one in this world, then you are disowning me.`,
+    tarot_back: `Vivek means knowing that everything is changing. Time and again you have to awaken to this -- that the world, the people, our body, our emotions, are constantly changing. When you experience sorrow, understand that Vivek has been overshadowed.`,
   },
   {
     week_number: 45,
@@ -1464,6 +1554,8 @@ NEWS FLASH:
  
 
 Back To Top ^`,
+    quote: `What is wrong with the word "brainwashing?" It indicates a clean brain, a clean mind, but it is used in a derogatory manner.`,
+    tarot_back: `It means "that which is new in the town, the most modern." But it is used in the sense of being old. In the course of time, meanings of words change. The word "enthused" comes from the Greek which means "God is with us." Then it came to mean crazy, and now it's changed again.`,
   },
   {
     week_number: 46,
@@ -1500,6 +1592,8 @@ Jai Guru Dev
 (Compiled by Raghu, Prashant, and John)
 
 Back To Top ^`,
+    quote: `All the struggle in the world, whatever it may be, is the bondage of Karma.`,
+    tarot_back: `This understanding will lift you from getting stuck to the events or personalities and help you in your Journey to the Self. Only human life has the ability to be free from Karma. And only a few thousands aim to be free from it.`,
   },
   {
     week_number: 47,
@@ -1536,6 +1630,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When they were all at Sumeru Mantap, lightening and thunder surrounded us and everyone was drenched and then they ran to Guruji's kutir.`,
+    tarot_back: `It was a confluence of eight prominent saints of India who in a private meeting honored Guruji in one of their ashrams. Each of these saints gives lectures or Darshan to hundreds of thousands of devotees and they all run their own schools, hospitals and ashrams. Four of them who were just introduced to Guruji followed us for a brief tour of our Ashram.`,
   },
   {
     week_number: 48,
@@ -1564,6 +1660,8 @@ Jai Guru Dev
 (Compiled by Kamu, Rajesh, and Kashi)
 
 Back To Top ^`,
+    quote: `Since every perception is erroneous, the world is an illusion.`,
+    tarot_back: `Since every perception is erroneous, the world is an illusion. Experiences are all of perception. The experiencer is the only reality.`,
   },
   {
     week_number: 49,
@@ -1614,6 +1712,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `All the meditation you do is for the mind.`,
+    tarot_back: `Neither the body nor the mind is the Self. All the yoga you do is for the body. All the meditation you do is for the mind.`,
   },
   {
     week_number: 50,
@@ -1654,6 +1754,8 @@ Jai Guru Dev
 (Compiled by Nitin)
 
 Back To Top ^`,
+    quote: `The Knowledge acquired by a human being cannot be measured or judged by external behavior.`,
+    tarot_back: `Someone may behave as though they have absorbed all the Knowledge but internally they have not. Someone who seems to have not changed at all may have absorbed a lot. Ordinary people would just look at the behavior, but the intelligent looks beyond and is amazed by the play of the consciousness (Brahman).`,
   },
   {
     week_number: 51,
@@ -1688,6 +1790,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Somewhere it is nails, somewhere it is nose and tongue but all is a manifestation of a single cell.`,
+    tarot_back: `This is savitarka samadhi. Savitarka samadhi means equanimity with logical awareness. Deep sleep can be jada samadhi (equanimity with inertia).`,
   },
   {
     week_number: 52,
@@ -1730,6 +1834,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `There is no end to learning but there is an end to unlearning.`,
+    tarot_back: `there is no point in talking about what you know and no point in talking about what you don't know! There is no end to learning but there is an end to unlearning. That is when you become totally hollow and empty.`,
   },
   {
     week_number: 53,
@@ -1762,6 +1868,8 @@ SEVA IS SAVIOR
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The way to expand from individual to universal consciousness is to share others's sorrow and joy.`,
+    tarot_back: `When you expand in Knowledge with time, then depression is not possible. Your inner most source is joy. The way to overcome personal misery is to share universal misery!`,
   },
   {
     week_number: 54,
@@ -1790,6 +1898,8 @@ Back To Top ^`,
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Joy is the realization that there is no vacation from wisdom.`,
+    tarot_back: `Perfection hides; imperfection shows off. The wise will not stay on the surface but will probe into the depth. Things are not blurred; your vision is blurred.`,
   },
   {
     week_number: 55,
@@ -1828,6 +1938,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Only in the state of Being when you are full of love and compassion can you ever be free from all judgements.`,
+    tarot_back: `Yet the world cannot move without judgements. Until you judge something as good or bad, you cannot do any actions. If you see rotten apples in the market, you say, "No good." Good ones you buy.`,
   },
   {
     week_number: 56,
@@ -1856,6 +1968,8 @@ Be sincere in your attempts. Do not try to outsmart the Divine. Once you get the
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you go underneath the carpet, He will go underneath the floor.`,
+    tarot_back: `Most of your prayers and rituals are just attempts to trick the Divine. You try to give the least and get the maximum out of the Divine and He knows. He's an astute businessman; He will trick you even more.`,
   },
   {
     week_number: 57,
@@ -1884,6 +1998,8 @@ Taking responsibility or surrendering without doership is the skill of the wise.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A little water in the sun will evaporate but the ocean never dries up.`,
+    tarot_back: `One who is irresponsible cannot surrender either. Why is someone irresponsible? They are lazy or fearful or both.`,
   },
   {
     week_number: 58,
@@ -1924,6 +2040,8 @@ The Satsang that evening in the local Hindu Temple was sweet and full of lively 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are totally established, you find the fools come up with wisdom.`,
+    tarot_back: `Don't try to get rid of them! If you are not centered you will have no patience to put up with them. When you are totally established, you find the fools come up with wisdom.`,
   },
   {
     week_number: 59,
@@ -1962,6 +2080,8 @@ Guru Purnima is moving into the German Academy.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The Ashram is radiating so much love that the postman kept polishing the letterbox outside the Ashram for a long time without knowing why.`,
+    tarot_back: `One who does a lot of work will never say he did a lot. When someone says he did a lot of work, that means he can do more. Work does not tire you as much as the doership does.`,
   },
   {
     week_number: 60,
@@ -2006,6 +2126,8 @@ NEWS FLASH:
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are part of the Master, you have every right to be happy.`,
+    tarot_back: `When you go beyond gratefulness, then union happens. You are part of the Master. You are just One Being with a thousand heads and a thousand arms, but with one heart.`,
   },
   {
     week_number: 61,
@@ -2044,6 +2166,8 @@ Next day Guruji gave a beautiful talk at the Unity Church in Tustin. "All of you
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And meditation is of both and connects both.`,
+    tarot_back: `A mature intellect is devoted. A mature heart is full of knowledge. And meditation matures your intellect as well as your heart.`,
   },
   {
     week_number: 62,
@@ -2086,6 +2210,8 @@ For people who do not have a teacher in their area and/or have not taken the Int
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When your intention is to get a boon, then you are in a hurry.`,
+    tarot_back: `When you know you own God, you are not in a hurry to get something out of God. Your hurry to get something throws you off balance and makes you small. Have "eternal wait," infinite patience.`,
   },
   {
     week_number: 63,
@@ -2110,6 +2236,8 @@ Jai Guru Dev
 (Compiled by Bhanu)
 
 Back To Top ^`,
+    quote: `The head that bends in surrender will never have to bend in shame.`,
+    tarot_back: `The head that bends in surrender will never have to bend in shame. Shame accompanies arrogance. See how children are endowed with shyness, that is natural.`,
   },
   {
     week_number: 64,
@@ -2148,6 +2276,8 @@ Then on to Norway for the extraordinary residential week-long basic course with 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `(Everyone is silent) Your perception, observation, and expression have advanced.`,
+    tarot_back: `Because everybody thinks they are very special in some way or another! Your perception has improved. You see the cause behind every cause, the Divine, and you see the great plan behind every small plan.`,
   },
   {
     week_number: 65,
@@ -2190,6 +2320,8 @@ Today is Krishna's birthday and all planes are leading to Bangalore.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When there is a total sense of belongingness, real play happens.`,
+    tarot_back: `Normally what happens to you when you lose an argument? You are sad and upset, hurt and angry. But when you lose or win an argument with me you are still happy.`,
   },
   {
     week_number: 66,
@@ -2216,6 +2348,8 @@ Two residential Advanced Courses, one Basic Course, one Sahaj Samadhi Meditation
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If the pot is well baked and strong, then it does not matter whether you put the water into the pot or the pot into the water.`,
+    tarot_back: `If the pot is well baked and strong, then it does not matter whether you put the water into the pot or the pot into the water. During Satsang that evening a devotee presents a beautiful hand crafted pot to Guruji. Another devotee presents a bouquet of roses.`,
   },
   {
     week_number: 67,
@@ -2256,6 +2390,8 @@ Jai Guru Dev
 (Compiled by Reghu, Bawa, Goof and Ping)
 
 Back To Top ^`,
+    quote: `The ocean becoming the cloud is a secret, but the cloud becoming the ocean is obvious.`,
+    tarot_back: `The ocean becoming the cloud is a secret, but the cloud becoming the ocean is obvious. In the world only a few can notice your inner growth and height, but your outer expressions are apparent. Never brood that people don’t understand you.`,
   },
   {
     week_number: 68,
@@ -2336,6 +2472,8 @@ Jai Guru Dev
 (Compiled by Ajay)
 
 Back To Top ^`,
+    quote: `Usually, you give your anger freely and smile rarely as though a smile is costly.`,
+    tarot_back: `In ignorance, anger is cheaper and a smile is costly. In Knowledge, a smile is free like sun, air, and water and anger is extremely expensive like a diamond.`,
   },
   {
     week_number: 69,
@@ -2374,6 +2512,8 @@ This was a course that started in bliss and ended in chaos. Even though people t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `This is the dilemma of life: Everyone is looking for perfect balance.`,
+    tarot_back: `Discipline without freedom is suffocating. Orderliness is monotonous and chaos is stressful. We have to make the discipline free and the freedom disciplined.`,
   },
   {
     week_number: 70,
@@ -2419,6 +2559,8 @@ Randy Berlin Telephone 408-626-1600
 Fax 408-626-6801
 
 Back To Top ^`,
+    quote: `These are responsible for restoring all earthly and spiritual benefits.`,
+    tarot_back: `At night the entire creation goes to sleep including the ashram night watchman. (Laughter) People working come home at night and they really celebrate, rejoice and pray. Nine nights are precious as they have subtle energy.`,
   },
   {
     week_number: 71,
@@ -2449,6 +2591,8 @@ Jai Guru Dev
 (Compiled by Raghu, Kashi, Prashant and others)
 
 Back To Top ^`,
+    quote: `One who has given everything has also given freedom: Honor the freedom first and make good use of all things given to you.`,
+    tarot_back: `Offer all the desires and your sankalpas to the Divine... Effortlessness is the key to the Absolute. Your mind does not belong to you.`,
   },
   {
     week_number: 72,
@@ -2477,6 +2621,8 @@ Jai Guru Dev
 (Compiled by Raghu, Kashi and others)
 
 Back To Top ^`,
+    quote: `And everyone is free to be sincere at any point of time or space.`,
+    tarot_back: `Q: Why do people choose to be sincere only sometimes? A: Because of the illusion that they are going to miss some mundane pleasure. Hankering after pleasure makes them insincere.`,
   },
   {
     week_number: 73,
@@ -2505,6 +2651,8 @@ Jai Guru Dev
 (Compiled by Raghu, Jonathan and John)
 
 Back To Top ^`,
+    quote: `Shiva is called Chandrasekhara which means that mind which is in the Shiva (transcendence) and is always above the peak.`,
+    tarot_back: `One who goes to the peak comes down, but the peak seeks the one who is stationed in the inner space. Shiva is called Chandrasekhara which means that mind which is in the Shiva (transcendence) and is always above the peak. Often people are running after parties and celebrations, but for the one who is not running after them, parties and celebrations follow him.`,
   },
   {
     week_number: 74,
@@ -2535,6 +2683,8 @@ Jai Guru Dev
 (Compiled by Jonathan, Bhanu, Reghu and Sharmila)
 
 Back To Top ^`,
+    quote: `And if you feel a part of me you can only see the Divine in yourself.`,
+    tarot_back: `If you see the Divine in me you cannot but be a part of me and you cannot be away from me. And if you feel a part of me you can only see the Divine in yourself. And if you can see the Divine in yourself, you'll see the Divine in everyone.`,
   },
   {
     week_number: 75,
@@ -2567,6 +2717,8 @@ Jai Guru Dev
 (Compiled by Jonathan)
 
 Back To Top ^`,
+    quote: `When your survival is at stake, you don't complain that nobody loves you.`,
+    tarot_back: `If you have a conflicting environment you tend to seek harmony ... Ask yourself this question: Do you seek harmony in every situation or do you seek to widen the differences and prove your righteousness? When your survival is at stake, you don't complain that nobody loves you.`,
   },
   {
     week_number: 76,
@@ -2599,6 +2751,8 @@ Jai Guru Dev
 (Compiled by Arun, Bhanu and Jonathan)
 
 Back To Top ^`,
+    quote: `The greater the intensity of desire and the later it gets fulfilled, then greater will be the gratitude.`,
+    tarot_back: `The feeling of gratitude is so overwhelming after the fulfillment of desire that it's achievement loses its charm and significance. The son of a farmer in India had a life-long desire to go to England and he prayed deeply for it. Even the news of his trip to England materializing filled him with immense gratitude -- he did not even care whether he went or not.`,
   },
   {
     week_number: 77,
@@ -2637,6 +2791,8 @@ Jai Guru Dev
 (Compiled by Bharat Sirur and Nityanand)
 
 Back To Top ^`,
+    quote: `When you lack faith, happiness is neither in the inner nor the outer world.`,
+    tarot_back: `Happiness springs forth from faith. Happiness is forgetting the body consciousness. Pain or sorrow is holding on to the body consciousness.`,
   },
   {
     week_number: 78,
@@ -2695,6 +2851,8 @@ Jai Guru Dev
 (Compiled by Murali and Sreeranjini)
 
 Back To Top ^`,
+    quote: `The next time when someone is rude to you, make sure you don't get upset.`,
+    tarot_back: `Then what are the options? The next time when someone is rude to you, make sure you don't get upset. Just give back a broad smile.`,
   },
   {
     week_number: 79,
@@ -2729,6 +2887,8 @@ Jai Guru Dev
 (Compiled by Jeff, Bawa, Priya, Kashi)
 
 Back To Top ^`,
+    quote: `When you are centered, all pleasures come to you anyway, but they are no longer pleasures.`,
+    tarot_back: `The mind that seeks pleasure can never achieve the highest. If you are after pleasure, forget about Satsang. Why are you wasting your time?`,
   },
   {
     week_number: 80,
@@ -2759,6 +2919,8 @@ At 9:00 a.m. sharp on 12 December, Guruji suddenly assumed the role of a Seva Co
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Consciousness has three aspects: "is-ness" - that it is; knowingness/expression - it knows and expresses; and love - it is loving.`,
+    tarot_back: `Consciousness has three aspects: "is-ness" - that it is; knowingness/expression - it knows and expresses; and love - it is loving. This is the secret of the whole universe. Maya is not being aware of the three aspects of consciousness.`,
   },
   {
     week_number: 81,
@@ -2801,6 +2963,8 @@ Today is Christmas, and appropriately all the course participants have gone into
 Guruji's message for Christmas: BE A FOUNTAIN OF LOVE
 
 Back To Top ^`,
+    quote: `When you want to depend on yourself for everything, there is nobody else, then it needs a lot of courage.`,
+    tarot_back: `Because even a little fear is detrimental to self-reliance. If you don't have a hundred dollars, you cannot have a thousand dollars. Self-reliance contains surrender.`,
   },
   {
     week_number: 82,
@@ -2833,6 +2997,8 @@ The snow in Switzerland is celebrating our presence.
 Compiled by David Burge, Judy Clark, and Ceci Balmer
 
 Back To Top ^`,
+    quote: `When you are living for the sake of the world, the world is fortunate.`,
+    tarot_back: `Whatever the world needs or wants, you are there for that. So the year is fortunate that you are on the earth at this point in time. Let the time celebrate your presence.`,
   },
   {
     week_number: 83,
@@ -2861,6 +3027,8 @@ The teacher refresher course at the German ashram is in full swing. The atmosphe
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The solar plexus is connected with the sun, that's why it is called "solar" plexus.`,
+    tarot_back: `The solar plexus has a profound impact on the central nervous system, optic nerves, stomach, and what we usually call "gut feeling." It is the second brain in your body. Usually the solar plexus is slightly bigger than an almond. Studies have shown that with the practice of yoga, meditation, and Sudarshan Kriya, the solar plexus can become as a large as the size of the palm.`,
   },
   {
     week_number: 84,
@@ -2885,6 +3053,8 @@ Janael McQueen said that a Joytish (astrologer) had said many devotees would be 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `All the emotional upheavals one undergoes is because one doesn't know Bhakti.`,
+    tarot_back: `So in Bhakti four things are there: fulfillment and nourishment; means of knowing; "tarana" or salvation; and energy. Bhakti is the means of knowing, the right knowledge. When Bhakti is there the doubts don't come.`,
   },
   {
     week_number: 85,
@@ -2915,6 +3085,8 @@ Short story: Guruji was walking along the beach with some devotees and there was
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If the world is at its worst, then it can only get better and you are here to make it better.`,
+    tarot_back: `If the world is at its worst, then it can only get better and you are here to make it better. What happens when you have to do it all by yourself -- no one comes to help? You do everything by yourself?`,
   },
   {
     week_number: 86,
@@ -2962,6 +3134,8 @@ Jai Gurudev
 (Compiled by Dean, Jeff, Kathy, and Marcy)
 
 Back To Top ^`,
+    quote: `Love is the appetizer -- seva is the exercise -- without love and seva, knowledge becomes indigestible.`,
+    tarot_back: `Your inability to do something (break a habit) can cause a pinch; when you are deeply pained by something, then that will rid you of that habit. If you are pained by your shortcomings, then you are sadhak. Pain takes you out of addiction.`,
   },
   {
     week_number: 87,
@@ -2982,6 +3156,8 @@ NEWS FLASH:
 Guruji is in Philadelphia today, New Jersey tomorrow, and Florida on Sunday for a week-long silence course.
 
 Back To Top ^`,
+    quote: `Unknown Knowledge.`,
+    tarot_back: `Do you recall this from last week's Knowledge sheet?`,
   },
   {
     week_number: 88,
@@ -3002,6 +3178,8 @@ From Los Angeles Guruji and the entourage went to New Jersey, New York, Phiadelp
 P.S. How many of you work hard? Wai till next week for the answer.
 
 Back To Top ^`,
+    quote: `When knowledge is lodged in you as wisdom, it will never leave you.`,
+    tarot_back: `This is the last thing to do and the first thing to do. Keep your heart in a safe place; it is too delicate. Events, small things make strong impressions on it.`,
   },
   {
     week_number: 89,
@@ -3030,6 +3208,8 @@ REST - Responsibility, Enthusiasm, Seva and Tenacity
 Compiled by Nancy D.
 
 Back To Top ^`,
+    quote: `Its reward is for sure and is always more than your doing.`,
+    tarot_back: `Its reward is for sure and is always more than your doing. Your expectation of reward for the seva turns the seva into labor. If you think you have done a lot, you will do very little; if you see you have done a little, then you will do more.`,
   },
   {
     week_number: 90,
@@ -3054,6 +3234,8 @@ NEWS FLASH
 The full moon greeted the Master as he visited the island of Maui in Hawaii for the first time. A talk was given, then on to the island of Kauai at David and Gary's ashram home. Guruji had come to rest, but didn't rest, yet he was not restless. He outlined a new course for teenagers named ART Excell (All-Round-Training for Excellence). A talk in Honolulu completed his Hawaii "vacation."
 
 Back To Top ^`,
+    quote: `Share your problems only with the Divine, not with Tom, Dick, or Harry -- that just increases the problem.`,
+    tarot_back: `By not sharing your joy, it reduces. Share your problems only with the Divine, not with Tom, Dick, or Harry -- that just increases the problem. Share your joy with everybody.`,
   },
   {
     week_number: 91,
@@ -3072,6 +3254,8 @@ The Governor of Hawaii and the mayor of Honolulu each wrote letters to Guruji we
 Jai Gurudev !
 
 Back To Top ^`,
+    quote: `The consciousness which is bliss, innocence, omnipresent, and the bestower of dispassion is Shiva.`,
+    tarot_back: `Like roots and stems and leaves come out of a seed when it is sprouted, all the Angels in your life manifest when you are centered. Angels rejoice in your company, but you have nothing to gain from them. They only come around those who have nothing to gain from them.`,
   },
   {
     week_number: 92,
@@ -3106,6 +3290,8 @@ Then on to Delhi, the spiritually saturated capital of India, where billboards w
 (Compiled by Vikram and Nityanand)
 
 Back To Top ^`,
+    quote: `Knowledge of life brings confidence, and knowledge of death makes you fearless and centered.`,
+    tarot_back: `Knowledge of life brings confidence, and knowledge of death makes you fearless and centered. Celebrate while you are alone and when you are with people. Some know to celebrate when they are in a crowd.`,
   },
   {
     week_number: 93,
@@ -3132,6 +3318,8 @@ Thanks to Guruji's incredible grace and the loving seva of Baroda Satsangees, we
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Krishna said to Arjuna: One who is unfriendly everywhere (including himself); his consciousness is stable and awareness is established.`,
+    tarot_back: `Your friend sympathizes with you and makes you believe in matter. Your enemy makes you feel helpless and takes you to the spirit. So your enemy is your friend and your friend is your enemy!`,
   },
   {
     week_number: 94,
@@ -3168,6 +3356,8 @@ Holi is the festival of colors during the full moon. The already jubiliant parti
 More than 600 people have gathered for the first Advance Course. The joyful and celebrative crowd is one of a kind!
 
 Back To Top ^`,
+    quote: `If you are only with simplicity, it makes you lazy and dull.`,
+    tarot_back: `That will make you more skillful. If you are only with simplicity, it makes you lazy and dull. Being only with complexity makes you angry and frustrated.`,
   },
   {
     week_number: 95,
@@ -3202,6 +3392,8 @@ Many healing experiences were reported during the first advance course , which e
 Rishikesh town is resonating with Art of Living Bhajans, and the second advance course is beginning with 600 people. Tuesday night after Satsang, sniffing squads were active all over the ashram due to changing fragrances of Guruji.
 
 Back To Top ^`,
+    quote: `Ego, pride - If you cannot get rid of pride, take pride in owning THE DIVINE.`,
+    tarot_back: `Ego, pride - If you cannot get rid of pride, take pride in owning THE DIVINE. Greed - Be greedy for SATSANG. Craving - Crave for truth.`,
   },
   {
     week_number: 96,
@@ -3242,6 +3434,8 @@ On April 3rd, at 2230 hours, seven devotees got enlightened, their names will be
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Because fear is love standing upside down, everything that can be interpreted with Love can also be interpreted with fear.`,
+    tarot_back: `FEAR OF DEATH PRESERVES LIFE. FEAR OF WRONG KEEPS THE RIGHT. FEAR OF SICKNESS BRINGS HYGIENE.`,
   },
   {
     week_number: 97,
@@ -3270,6 +3464,8 @@ The big hoardings all over Calcutta attracted a big crowd and the Satsang was wo
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you are a taker of happiness, you get misery.`,
+    tarot_back: `So he builds a shelter for physical comforts. In the same way, for spiritual and mental comfort - Satsang is the shelter. One who does not do Satsang is like a wild animal.`,
   },
   {
     week_number: 98,
@@ -3304,6 +3500,8 @@ Jai Guru Dev
 (Compiled by Raghu and Vinod)
 
 Back To Top ^`,
+    quote: `The Divine Love is like the sky which is limitless, infinite.`,
+    tarot_back: `The Love that comes out of comfort and familiarity grows. But this Love has no thrill, no enthusiasm, joy, or fire to it. For example, you are more comfortable with an old friend who is a familiar person, rather than with a new person.`,
   },
   {
     week_number: 99,
@@ -3330,6 +3528,8 @@ Jai Guru Dev
 (Compiled by Raghu and Deepali)
 
 Back To Top ^`,
+    quote: `And when a person can correct or act, he will never complain.`,
+    tarot_back: `Complaining is the nature of utter ignorance where one does not know the Self. Complaint takes away the Beauty that is inborn in you. And it shows up more on the one who is on this path.`,
   },
   {
     week_number: 100,
@@ -3364,6 +3564,8 @@ Jai Guru Dev
 Remember that May 13 is Guruj's 41st Birthday! We should start an annual tradition based on last year's birthday surprise which Guruji really liked. At pre-dawn in India (6 to 7 pm U.S. East coast time), we should all join together in silence and meditation to celebrate the incarnation of Grace on this planet. I (Bill Hayden) would like to recommend a Birthday present dear to our Master's heart. We should see how many Dollar-a-Day children that our local communities can support between May 13 and Gurupurnima. We can present this gift to Him at the Gurupurnima celebration. Carla Riechman (our Dollar a Day manager) would like to "keep score" for us and make the presentation to Guruji. Please contact her at 301-588-6422 or laughter@his.com to learn more about this wonderful program and how your community can be a part of His birthday present.
 
 Back To Top ^`,
+    quote: `When you think bad about yourself you feel low and again you start getting angry and you hate everyone else.`,
+    tarot_back: `Self image whether good or bad causes misery. When you think good about yourself in a very subtle manner you think bad about others. Then anger, jealousy, hatred - everything follows.`,
   },
   {
     week_number: 101,
@@ -3394,6 +3596,8 @@ Instead of "How are you?" Guruji greeted everyone with "How am I?"
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When we are not caught up in this then we are truly and sincerely able to say, "I belong to you." That is when all the cravings and aversions, desires and doubts fall off -- and in a moment the world belongs to you.`,
+    tarot_back: `The sun rises and sets, the grass grows, the river flows, the moon shines and I am here forever! How do you feel if someone praises you? It does something to you, doesn't it?`,
   },
   {
     week_number: 102,
@@ -3420,6 +3624,8 @@ Today's full moon is dedicated to Buddha and now it is time to rededicate onesel
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When dedication is not complete, it leads to grumbling and complaints.`,
+    tarot_back: `You have to dedicate and rededicate again and again. Often people take their dedication for granted and then the mind starts demanding or complaining. When dedication is not complete, it leads to grumbling and complaints.`,
   },
   {
     week_number: 103,
@@ -3458,6 +3664,8 @@ Carla Riechman (our Dollar a Day manager) has gotten a good response for Guruji'
 Please note the wonderful children and teenager programs that are available for the first time at this summer's advanced courses.
 
 Back To Top ^`,
+    quote: `All these three (Tapas, Vairagya and surrender) purify your mind and uplift you in joy.`,
+    tarot_back: `- Vairagya means I want nothing and I am nothing. If you are grumbling then these are lacking, because when you accept the situation you cannot grumble; when you take it as Tapa you will not grumble; when you come from a state dispassion ("I don't want anything") you don't grumble; and if you are surrendered you will have no complaints. All these three (Tapas, Vairagya and surrender) purify your mind and uplift you in joy.`,
   },
   {
     week_number: 104,
@@ -3484,6 +3692,8 @@ The joke of the week is that by the end of the tour, he started serving us to su
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When the time is not good, even a friend will behave like a foe.`,
+    tarot_back: `When the time is good, a foe will behave like a friend. When the time is not good, even a friend will behave like a foe. The wiser one believes in Mahakala (the Grand time or Shiva).`,
   },
   {
     week_number: 105,
@@ -3524,6 +3734,8 @@ The Advanced Course in Paris left everyone joyful, even the unshakeable Zen monk
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `According to the degree of their surrender they are installed by the Master.`,
+    tarot_back: `From other stones he makes the steps. Certain stones become the tower of the Temple. Only those stones which are extremely suitable for carving will become the Deity and be installed in the Temple.`,
   },
   {
     week_number: 106,
@@ -3563,6 +3775,8 @@ In your own Satsang group, see how both sensitivity and
 strength have grown.
 
 Back To Top ^`,
+    quote: `Sensitivity is love .Sensitivity is real strength: calmness , endurance ,silence ,non-reactiveness ,confidence ,faith --and a smile.`,
+    tarot_back: `Those who are sensitive to others but not to themselves often end up feeling Poor me. Some conclude it's better not to be sensitive ,because sensitivity brings pain. They shut off .But mind you , if you are not sensitive, you will lose all the finer things in life, too--intuition, beauty and ecstasy of love.`,
   },
   {
     week_number: 107,
@@ -3607,6 +3821,8 @@ Jai Guru Dev
 If you want to send an email to Guruji or Bhanu, please send it to tejasvi@giasbga.vsnl.net.in
 
 Back To Top ^`,
+    quote: `When you love an object it becomes life.`,
+    tarot_back: `When you attach emotion, the whole creation becomes personal. When you remove the emotion, even people become objects. Violence is removing the emotion.`,
   },
   {
     week_number: 108,
@@ -3647,6 +3863,8 @@ The Quebec Ashram fountain is creating rainbows. An advanced course is happening
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Worldly thought brings pleasure only as memory, whereas Divine thought comes as Reality.`,
+    tarot_back: `Worldly thought leads to indulgence, which brings you down from pleasure to disappointment and dejection. Divine thought takes you up from pleasure to Bliss, Intelligence, and progress in life. Worldly thought brings pleasure only as memory, whereas Divine thought comes as Reality.`,
   },
   {
     week_number: 109,
@@ -3683,6 +3901,8 @@ Jai Guru Dev
 Ronnie Newman again needs your community's help for more research relating health improvements to Sudarshan Kriya. She needs all health practitioners to send her information by August 5. Please call her ASAP for the questionaire at 954-721-7437.
 
 Back To Top ^`,
+    quote: `When someone doubts your love, they start questioning you and demanding explanations for all your actions.`,
+    tarot_back: `Your nature is to shed the burden, and so you don't feel comfortable. When you question the reason behind an action, you are asking for justice for yourself. You are creating a distance when you ask for justice.`,
   },
   {
     week_number: 110,
@@ -3709,6 +3929,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If you name love, for example, brother, sister, mother, father, guru, you are making it into a relationship.`,
+    tarot_back: `If you name love, for example, brother, sister, mother, father, guru, you are making it into a relationship. Relationship restricts love. What is your relationship to yourself?`,
   },
   {
     week_number: 111,
@@ -3747,6 +3969,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The Guru is your very SELF and your SELF is the very life in every being.`,
+    tarot_back: `This is the cause of greed, fear, jealousy, and lack of contentment. On this Guru Purnima wake up and realize that the Lord of the Universe is very personal to you. Your personal Guru is the Guru of the whole world.`,
   },
   {
     week_number: 112,
@@ -3779,6 +4003,8 @@ Midway through the Art Excel Course at Lake Tahoe, the teenagers staged a 'rebel
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `If they don't respect you, you are not obliged to answer their questions and you can drop all the formalities.`,
+    tarot_back: `Either you will be naturally smiling or frowning. When people love and respect you, you are obliged to return their courtesies because you don't want to hurt them. When they don't respect or love you, they will not be hurt by your actions and expressions.`,
   },
   {
     week_number: 113,
@@ -3819,6 +4045,8 @@ From Bad Antogast: Can you imagine, translations in ten languages are happening 
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Zeal, enthusiasm, strength and joy are all connected to sacrifice.`,
+    tarot_back: `It takes you to a higher pedestal. Often people think sacrifice makes life dull and joyless. In fact, it is the sacrifice which makes life worth living.`,
   },
   {
     week_number: 114,
@@ -3845,6 +4073,8 @@ In Stockholm, far more people came for the evening program than could be accommo
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you are not awake, then even the most precious knowledge does not make any sense.`,
+    tarot_back: `When there is a storm you need to shut your windows, otherwise you will get wet. When it is hot and suffocating inside, you need to open your windows. Your senses are like the windows.`,
   },
   {
     week_number: 115,
@@ -3874,6 +4104,8 @@ A number of TV stations interviewed Guruji and several newspapers carried articl
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Your bondage to the knowledge, to the master, to the truth, To The Self, All Saves You.`,
+    tarot_back: `Your bondage to the knowledge, to the master, to the truth, To The Self, All Saves You. A Rope Can Be Tied To Either Protect Or Strangle You. The Small Mind And Mundane Things can strangle you.`,
   },
   {
     week_number: 116,
@@ -3918,6 +4150,8 @@ This week also saw an advanced course in Calcutta, big Satsangs in Durban, Krish
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `An unintelligent man, in spite of having all the information, cannot be creative.`,
+    tarot_back: `But a beaver synthesizes, it brings all the wood together and builds a dam. Birds also synthesize such as the Weaver birds. A human being both analyzes and synthesizes.`,
   },
   {
     week_number: 117,
@@ -3942,6 +4176,8 @@ More than four thousand people filled up a beautiful hall for a fabulous Satsang
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `For example, if you have taken the Karnataka Express to Bangalore, then there is no need to ask at every station "Where is the train going?".`,
+    tarot_back: `When you know somebody is taking care of you, what is the need to ask any question? For example, if you have taken the Karnataka Express to Bangalore, then there is no need to ask at every station "Where is the train going?". When there is someone to take care of your desire, then why go to an astrologer?`,
   },
   {
     week_number: 118,
@@ -3996,6 +4232,8 @@ Jai Gurudev
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `the experiences are on the circumference and they keep on changing.`,
+    tarot_back: `Similarly, if you are unhappy, ask Who is unhappy? If you think you know something, ask Who knows it? If you think you are enlightened, ask Who is enlightened?`,
   },
   {
     week_number: 119,
@@ -4050,6 +4288,8 @@ Many healing experience are pouring in from all corners.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A glimpse of Divine love makes you so complete and over rules all the relative pleasures.`,
+    tarot_back: `It takes you away from the object and turns you towards your body and mind. Energy is the second insight. A bolt of energy brings you back to your Self.`,
   },
   {
     week_number: 120,
@@ -4102,6 +4342,8 @@ The ashram is being visited by renowned saints from all over the country. After 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The more you give, the more strength will be given to you.`,
+    tarot_back: `Next week's knowledge sheet will be written and spoken by those whose name starts with the letter "A" and this will continue in alphabetical order. Take a commitment for a seva project. The more you give, the more strength will be given to you.`,
   },
   {
     week_number: 121,
@@ -4142,6 +4384,8 @@ The renowned Saint Swami Pragyanandji is in the Ashram, giving discourses on the
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Always putting truth and service before pleasure.`,
+    tarot_back: `Being non-judgmental and open-minded. Some people would like to learn but their judgmental attitude and close-mindedness does not allow them to learn. Total commitment and one-pointedness to the path one has chosen.`,
   },
   {
     week_number: 122,
@@ -4168,6 +4412,8 @@ New clothes and gifts were distributed to the poorest of the poor women from sev
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Deva Puja: Acknowledging and honoring the Divine in all the forms.`,
+    tarot_back: `They also purify the individual and the collective consciousness. Deva Puja: Acknowledging and honoring the Divine in all the forms. Sangatikarana: Hastening the process of evolution by bringing together all the elements and people in creation.`,
   },
   {
     week_number: 123,
@@ -4204,6 +4450,8 @@ An Advanced Course has begun in the Ashram. Guruji will be touring the South sta
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Belma says: You cannot pray to a child; you can only pray to your father.`,
+    tarot_back: `One who delivers can also grant wishes. He/She clings onto to you like a baby till you grow old and die. God keeps crying for nourishment.`,
   },
   {
     week_number: 124,
@@ -4242,6 +4490,8 @@ In Shimoga, saints from various ashrams greeted Sri Sri and all the devotees wit
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And especially for those on this path of knowledge, there is no reason for you to not feel blessed.`,
+    tarot_back: `This deep sense of feeling that "I am blessed" can help you overcome any obstacles in life. It gives you courage and confidence and it will open your lid for grace to be poured in. If you don't realize you are blessed, then the doership begins.`,
   },
   {
     week_number: 125,
@@ -4280,6 +4530,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Neither is there a beginning nor is there an end, because it is all spherical.`,
+    tarot_back: `A sphere has neither a beginning nor an end, nor a goal, nor a direction. Truth has no direction, no goal. Truth itself is the goal and truth is infinite.`,
   },
   {
     week_number: 126,
@@ -4338,6 +4590,8 @@ Please contact your local teacher for organizational help, and any of us for aid
 Jai Guru Dev ,
 
 Back To Top ^`,
+    quote: `You are afraid of losing respect because love does not allow distance and respect tends to keep distance.`,
+    tarot_back: `Try to reciprocate even though it is not genuine. Doubt the love expressed and ones own worthiness. You are afraid of losing respect because love does not allow distance and respect tends to keep distance.`,
   },
   {
     week_number: 127,
@@ -4390,6 +4644,8 @@ Sri Sri visit to the Pink City (Jaipur) was celebrated in Rajasthani style (warm
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `This will turn your demand into gratefulness and the more you are grateful in life, the more love comes your way.`,
+    tarot_back: `1.Have patience and change your expression of love. Be centered and limit your expression of love. Sometimes over-expression of love puts people off.`,
   },
   {
     week_number: 128,
@@ -4420,6 +4676,8 @@ Fireworks and exuberant Ashramites welcomed Guruji back to Bangalore. An Advance
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Ego can be transcended by knowing the Truth; by enquiring "Who am I?" Often, your attitude towards one who has ego is of contempt or jealousy.`,
+    tarot_back: `Ego can be transcended by knowing the Truth; by enquiring "Who am I?" Often, your attitude towards one who has ego is of contempt or jealousy. But rather you should have compassion, or even pity, isn't it? There is also a positive aspect of ego.`,
   },
   {
     week_number: 129,
@@ -4460,6 +4718,8 @@ A massive rally was organized for environmental awareness in Bangalore. This was
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Memory of the ever changing relative, however good or bad, brings bondage.`,
+    tarot_back: `It is all a matter of where you are, of what you are. If you are ignorant, it is because of your memory. If you are enlightened, it is because of your memory.`,
   },
   {
     week_number: 130,
@@ -4494,6 +4754,8 @@ The volunteers did a marvelous job throughout Kerala. Many healing experiences w
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `It is the intellect which harbors inhibitions, likes and dislikes, approvals and disapprovals and it is again the intellect which harbors wisdom, which brings forth the intuition.`,
+    tarot_back: `Q: Is intuition beyond intellect? Q: Are emotion and intellect contradictory? Q: When there is a conflict, which is better?`,
   },
   {
     week_number: 131,
@@ -4526,6 +4788,8 @@ At a Satsang, somebody suggested that we have some deer, peacocks, swans and dov
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When the mind is dull or unconscious, it is unable to experience itself.`,
+    tarot_back: `When the mind is excited or happy, time seems to be too short and when the mind is miserable, time seems to be too long. To escape from the two extremes, many resort to alcohol, sleep etc..... Samadhi, no-mindedness or timelessness, is peace, the Real peace.`,
   },
   {
     week_number: 132,
@@ -4548,6 +4812,8 @@ Amidst the hectic activity in the Ashram, there is deep silence and serenity. Th
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `As you come close to your Being, all the faces melt and leave you as the Space that you are.`,
+    tarot_back: `As you come close to your Being, all the faces melt and leave you as the Space that you are. At the gross level, you identify yourself as somebody. At a subtle level, you identify yourself as some energy or an incarnation of some angel, saint or prophet.`,
   },
   {
     week_number: 133,
@@ -4576,6 +4842,8 @@ Thanks to the whole seva team who has transformed the Ashram into a warm and coz
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Joy is forgetting that you are matter and so you become intense vibration.`,
+    tarot_back: `Pleasure in the subtle is long lasting, energizing, refreshing and freeing. Pleasure from the gross is short lived, tiring and binding. When you know you are electricity (vibration/energy), then craving, greed, lust and anger disappear.`,
   },
   {
     week_number: 134,
@@ -4614,6 +4882,8 @@ NEWS FLASH: The first Advanced Course has finished in Germany and the second one
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And people who are selfish and who just want to enjoy themselves will be miserable even in good times.`,
+    tarot_back: `A wise one is happy even in bad times. And the stupid one is unhappy even in good times. You make the time good or bad.`,
   },
   {
     week_number: 135,
@@ -4632,6 +4902,8 @@ People from 22 countries took part in the advanced course in Germany thanks to t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If, by your skill, you could move them within you towards the centre of your existence, another dimension of everlasting pleasure, thrill, bliss, and undying love will all be yours.`,
+    tarot_back: `Lust, greed, power and jealousy are also powerful because they are nothing but energy and you are the source of it - the pure electricity. Dedication and devotion keep the purity of your electricity and they move you upward. Realizing you are pleasure or electricity yourself your craving subsides and serenity dawns.`,
   },
   {
     week_number: 136,
@@ -4668,6 +4940,8 @@ People from 22 countries took part in the advanced course in Germany thanks to t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The more you don't want it, the more you will harbor it in your consciousness.`,
+    tarot_back: `And you say you don't want politics? The more you don't want it, the more you will harbor it in your consciousness. When you recognize politics in any group or Satsang, that is a blessing for you to be centered and go inward.`,
   },
   {
     week_number: 137,
@@ -4702,6 +4976,8 @@ NEWS FLASH: From Surinam the entourage moved on to Bogota, the capital of Columb
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `It is only the Self that is always assuring.`,
+    tarot_back: `When you are tolerating, it is a temporary state. Tolerance is a potential volcano. If you are tolerating it means you are holding on.`,
   },
   {
     week_number: 138,
@@ -4736,6 +5012,8 @@ Gurudev said, " In between lifetimes!"
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you have all the material securities and not have faith, you will still reel in fear.`,
+    tarot_back: `If you have all the material securities and not have faith, you will still reel in fear. You have to let go of all possessions in the mind. False security is keeping things where they don't belong.`,
   },
   {
     week_number: 139,
@@ -4766,6 +5044,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `When there is so much devotion, you simply want to organize.`,
+    tarot_back: `When there is so much devotion, you simply want to organize. Devotion brings faith, compassion, and responsibility. With responsibility and caring, you want to give knowledge, wisdom, and love.`,
   },
   {
     week_number: 140,
@@ -4798,6 +5078,8 @@ NEWS FLASH: In Bali, we went to the ancient temple of Besaki. Here, as in the ol
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A mistake means something that brings misery to you in the long run.`,
+    tarot_back: `While pointing out a mistake to someone, do you consider him as separate from you and go on pointing out his error or do you make him feel a part of you? When you point out a mistake to someone, does it make him more stressed, or does it create more awareness in that person? Often you do not point out someone's mistake when it is required.`,
   },
   {
     week_number: 141,
@@ -4830,6 +5112,8 @@ The inaugural session for the second symposium of the International Association 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you respect someone, it only shows your own magnanimity.`,
+    tarot_back: `How many people you don't respect in the world, that much less is your wealth. If you respect everyone in the world, that much more is your value. Wiser is the one who respects everyone.`,
   },
   {
     week_number: 142,
@@ -4862,6 +5146,8 @@ SPECIAL NOTE:
 Since 1993 the Prison SMART Foundation has been teaching angry, troubled, stressed and drug-dependent individuals to take control of their lives and regain their self-worth. We have provided them with self-sufficient techniques to manage their challenges. While primarily this has been for prisons, Prison SMART has also developed programs for at-risk youth, the victims of crime, and law enforcement. Your support is welcome. We are beginning to expand our work with gangs from Los Angeles. The Prison SMART Foundations wishes to thank everyone in the Art of Living for their past support. To find out more write to Box 3642, Boulder CO, 80303 or to Prisonsmart@compuserve.com.
 
 Back To Top ^`,
+    quote: `When the moment is whole, complete, then that moment is Divine.`,
+    tarot_back: `Control means two, weakness. One is not doing something naturally but exerting pressure. Often people think they are in control of their lives, their situation.`,
   },
   {
     week_number: 143,
@@ -4888,6 +5174,8 @@ NEWS FLASH: The delegates from the International Conference on Human Values flew
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Cordiality is the core of one's existence, formality is the outer shell.`,
+    tarot_back: `Formality maintains duality. Structures are based on formality. Love and knowledge are based on cordiality.`,
   },
   {
     week_number: 144,
@@ -4918,6 +5206,8 @@ NEWS FLASH: Bhajans were coming out from a locked suitcase! Do you think it was 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `With the knowledge of the Self inside everything is truly joyful.`,
+    tarot_back: `"We were ten but now we are only nine," they replied. The wise man saw they were ten, so he asked them to count. Each counted nine but left out himself.`,
   },
   {
     week_number: 145,
@@ -4942,6 +5232,8 @@ Many healings were reported this week including a 56-year old man who had lost h
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `All that you are, the love, the beauty, the compassion, the Divinity, doesn't show up fully.`,
+    tarot_back: `All that you are, the love, the beauty, the compassion, the Divinity, doesn't show up fully. What shows up is the crust of behaviors. Ask yourself, "Are you really your behaviors?`,
   },
   {
     week_number: 146,
@@ -4967,6 +5259,8 @@ In Rishikesh, the Advanced course, Teachers Training and the Art Excel courses c
 Jai Gurudev !
 
 Back To Top ^`,
+    quote: `Often, what you perceive as reality is not joyful and so when misery is there, you never wonder if it is a dream.`,
+    tarot_back: `In fact, all the miseries are unreal. A wise man knows that happiness is real, as it is one's very nature. Unhappiness is unreal as it is inflicted by memory.`,
   },
   {
     week_number: 147,
@@ -5036,6 +5330,8 @@ Then on to Calcutta - the City of Joy - where Sri Sri was seen smiling from nook
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you do not try to impress, expression comes naturally.`,
+    tarot_back: `When you come from the self, your expression is perfect and your impression lasts for ages. Often you don't seem to have a control over your impressions and expressions. Wisdom is selecting your impressions and expressions.`,
   },
   {
     week_number: 148,
@@ -5064,6 +5360,8 @@ Sri Sri's black bag was lost and found miraculously after a week!!! Easter Advan
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Therefore, the door is fully open means the door is fully closed!`,
+    tarot_back: `Tarka is sequential logical understanding; it increases scientific knowledge. When sequential logical understanding changes, then scientific conclusions change. For example: Pesticides and antibiotics were considered to be very useful in the past, and are now proven to be more harmful.`,
   },
   {
     week_number: 149,
@@ -5086,6 +5384,8 @@ NEWS FLASH: There were spring and cherry blossoms in the German ashram and as Gu
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `There is yet another type of softness in people and this softness comes out of maturity, magnanimity, and the knowledge of the Self.`,
+    tarot_back: `The people who are soft out of lack of courage suffer a lot. And sometime or other they become volatile. Similarly there are two types of forcefulness in people Ö aggression or assertiveness.`,
   },
   {
     week_number: 151,
@@ -5118,6 +5418,8 @@ NEWS FLASH: There was a big discussion whether Guruji should wear a plain white 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Decision is always about choice and choice is always confusing.`,
+    tarot_back: `Action is spontaneous when there is no actor. In you, there is an actor and there is a witness. An actor is either confused or decisive, but the witness realizes that the action is spontaneous and smiles.`,
   },
   {
     week_number: 152,
@@ -5144,6 +5446,8 @@ Guruji visited Rome on 6 May after 11 years of absence.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Again and again you remember that you are peace, you are love, you are joy and that you are hosting the Creator.`,
+    tarot_back: `Again and again you remember that you are peace, you are love, you are joy and that you are hosting the Creator. If you donÒ´ realize that you are the host, you live like a ghost. The under-privileged are those who do not realize that they are privileged, and so they also host, but they host all the negativities.`,
   },
   {
     week_number: 153,
@@ -5176,6 +5480,8 @@ Ishani and Bawa's dogs also turned vegetarian.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Being with this truth kindles the energy in you and brings up the consciousness.`,
+    tarot_back: `Just like a microphone absorbs sound and converts it into electricity, the body absorbs the vibrations and converts it into consciousness. When you sit in bhajans your entire body gets soaked in energy and transformation happens. If your are sitting and listening to gossip or violent music, then that gets absorbed by your body and does not give a nice feeling.`,
   },
   {
     week_number: 154,
@@ -5219,6 +5525,8 @@ Vikram: Someone should take up a similar project for the Ashram.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `There is a proverb among the villagers in India, which says that it may take some time to pluck a flower but it takes no time to meet the Divine !`,
+    tarot_back: `It is simply the intensity of your longing. Intensify your longing for the Divine right away. This you can do when you know that you want nothing and you are nothing.`,
   },
   {
     week_number: 155,
@@ -5259,6 +5567,8 @@ Miscellaneous Newsplashes - After hectic activities in Bangalore, Guruji tried t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `There are three types of faith : faith in yourself, faith in the world, and faith in God.`,
+    tarot_back: `Banks give you loans having faith that you will pay it back. You deposit money in the bank having faith that it will be returned. If you doubt everything in the world, nothing will happen.`,
   },
   {
     week_number: 156,
@@ -5299,6 +5609,8 @@ Homework for next week: Everyone individually or in their Satsang groups should 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When the "I" is asleep, there is no experience.`,
+    tarot_back: `The rishis made a mockery. They created a practice of awakening God every morning. They call it Suprabhatam service.`,
   },
   {
     week_number: 157,
@@ -5325,6 +5637,8 @@ NEWSFLASH! The Guru Magic worked magic in Botswana and South Africa. From Botswa
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The rational mind is like a railroad track that is fixed in grooves.`,
+    tarot_back: `This is not stepping out of the rational mind (though they think it is). We step out of the rational mind when we do something that has no purpose. Accepting that, as an act, makes it a game.`,
   },
   {
     week_number: 158,
@@ -5363,6 +5677,8 @@ Guruji attended the Baltimore conference on Breaking the Cycle of Violence. In a
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Your intellect is a small portion of your total consciousness.`,
+    tarot_back: `If you are stuck in the intellect, you miss a lot. Happiness is when you transcend the intellect. Also, in awe or in feeling stupid, you transcend the intellect.`,
   },
   {
     week_number: 159,
@@ -5397,6 +5713,8 @@ Jai Guru Dev
 The International Research Committee is designing a survey to measure how the Healing Breath Technique and related processes impact a practitioner's "quality of life." including physical health, mental health, social relations, spiritual life. If you have experienced any specific benefits or changes that you feel it is important to be included in the survey, please contact us through e-mail at: plslal@msn.com or fax us - Ronnie Newman & Peter Sutphen - at (954) 721-7437. We need to have the survey ready by the Lake Tahoe course, so we should have your responses by wednesday, July 1, 1998 at the latest. Thank You & Jai Guru Dev !
 
 Back To Top ^`,
+    quote: `Only those who have their rights can give away their rights!!!`,
+    tarot_back: `You need to recognize no one can take away your rights. The courageous will give away their rights. The degree to which you give away your rights indicates your freedom, your strength.`,
   },
   {
     week_number: 160,
@@ -5427,6 +5745,8 @@ NEWS FLASH Following Guruj's visit to South Africa, there is now a very successf
 The North American tour started to heat up as Guruji came to Chicago for more inspiring talks and intimate Satsangs. The knowledge flowed as each devotee felt Guruji was speaking only to them. There is no independent consciousness. In Jackson Hole, Wyoming the weather cooled but the volunteers were still hot arranging standing room only talks and quiet walks by pristine lakes. Then on to Vancouver where Guruji was again met by sunshine in the skies and on the faces of devotees.
 
 Back To Top ^`,
+    quote: `When you feel generous your life becomes abundant, full of compassion and love.`,
+    tarot_back: `Either a princess or a pauper can feel generous. Generosity is the quality of the spirit. When you feel generous your life becomes abundant, full of compassion and love.`,
   },
   {
     week_number: 161,
@@ -5483,6 +5803,8 @@ join the festivities.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Then Krishna tells Arjuna he must surrender.`,
+    tarot_back: `Non-surrender is an illusion. So surrender is an assumption. Finally, it reveals itself as an illusion.`,
   },
   {
     week_number: 162,
@@ -5503,6 +5825,8 @@ To the sweet strains of Om Namo Bhagavate the course participants seemed to floa
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And when dispassion is there, everything comes in abundance.`,
+    tarot_back: `And that is followed by "I am miserable". You can be anywhere and be dispassionate. Dispassion is welcoming everything.`,
   },
   {
     week_number: 163,
@@ -5529,6 +5853,8 @@ NEWS FLASH: As the summer tour moved to the San Francisco Bay area the talks wer
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `The Divine is all knowing and all loving; there is no chance for mercy.`,
+    tarot_back: `It also indicates lack of courage and valor. At times mercy is an impediment to growth. Mercy, of course, brings some comfort and relief; but can impair the process of transformation.`,
   },
   {
     week_number: 164,
@@ -5554,6 +5880,8 @@ Ottawa, Canada's capital, was graced with the Master's presence for two action-p
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `All are amazed at how smoothly things have gone, and there is no question that this is all due to the Guru's grace.`,
+    tarot_back: `It becomes miserable when identified with the body. You see, in a huge atomic reactor, it is just one tiny atom that is exploded. In the same way, in our whole body, there is just one little tiny atom of "I".`,
   },
   {
     week_number: 165,
@@ -5587,6 +5915,8 @@ Please contact the ashram at (819) 532-3328 or fax at (819) 532-2033 or e-mail a
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `When the mind is not integrated it is feverish, disloyal and opportunistic.`,
+    tarot_back: `Loyalty is a real strength and will have the support of nature in the long run. Fear and ambitions are impediments to loyalty. Loyalty is needed both in the material and spiritual plane.`,
   },
   {
     week_number: 166,
@@ -5628,6 +5958,8 @@ Note : Between 22nd of Aug. to Sept. 5th, Guruji has suggested that people NOT m
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `If you love God, because He is yours, then however God is, whether He creates or destroys, you still love Him.`,
+    tarot_back: `People say "I love God, because He is great". If God is found to be ordinary, just one of us, then your love for God collapses! If you love God, because He is yours, then however God is, whether He creates or destroys, you still love Him.`,
   },
   {
     week_number: 167,
@@ -5653,6 +5985,8 @@ Art of Living hosted an UN Round Table on the Art of Making Peace in Geneva. Kri
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `And when you are with the guru, you go blank and forget all the questions.`,
+    tarot_back: `Your ego obstructs you from singing. Many do not feel comfortable singing with people. When you sing with people then you descend to the heart level or feeling level.`,
   },
   {
     week_number: 168,
@@ -5683,6 +6017,8 @@ A beautiful course in the beautiful mountain setting of Norway ... visit to the 
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `When consciousness moves through the body in limited channels, pleasure is experienced.`,
+    tarot_back: `Listening to the same piece of music loses the charm, people in the sex industry don't enjoy sex. If the stimuli are observed, then consciousness expands and becomes peace. With awareness the stimuli lose their significance; whether they exist or not makes no difference.`,
   },
   {
     week_number: 169,
@@ -5713,6 +6049,8 @@ In the past 240 days, Sri Sri visited 92 places. In the ashram in Germany, TTC1 
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Individual Self/Soul/Jeeva is interdependence and in fact every wise person knows that everything is interdependent and that there is nothing like independence.`,
+    tarot_back: `When they become aware of their limitations and dependency, the desire for independence arises. Independence cannot be achieved unless you start moving from within. When you move within, you discover that you are interdependent.`,
   },
   {
     week_number: 170,
@@ -5747,6 +6085,8 @@ The Polish advanced course bid farewell to Sri Sri with a candle dance. Bombay s
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `When to have what and how much to have is wisdom.`,
+    tarot_back: `And there are others who crave for long rest not knowing the rest is in non-doership. It is the quality of rest, even if it is short, that recuperates. When rest is needed, your body will automatically take it.`,
   },
   {
     week_number: 171,
@@ -5774,6 +6114,8 @@ The Art of Living family has taken up "Clean Guwahati" program. The Mayor of Guw
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Friendliness, compassion and meditation should continue as practices till you realise that they are your very nature.`,
+    tarot_back: `When it is done as your nature, you are not attached to the result and you continue doing it. An action that arises from your nature is neither tiring nor frustrating. For example, daily routines like brushing one's teeth or bathing are not even considered actions because they are so integrated into one's life.`,
   },
   {
     week_number: 172,
@@ -5912,6 +6254,8 @@ come/paid basis, and will be limited to 200 people maximum.
  
 
 Back To Top ^`,
+    quote: `Books and Tapes--for Divine Shops as well as mail order--has relocated.`,
+    tarot_back: `mental health therapists, and possibly other areas. professional atmosphere, this is ideal. calling Janice Burgoyne at Nova: 954-262-3017.`,
   },
   {
     week_number: 173,
@@ -5939,6 +6283,8 @@ Serious discussions are under way for expanding the facilities in the Ashram. Ev
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Often, those who are trying to correct mistakes get caught up in more mistakes.`,
+    tarot_back: `Often, when one acknowledges a mistake, one tries to justify it, without taking responsibility for it. And sometimes one accepts that one made a mistake and starts justifying it or feeling guilty about it. Mistakes get dropped when one is troubled by ones conscience (viveka) or grief.`,
   },
   {
     week_number: 174,
@@ -5972,6 +6318,8 @@ Every corner of the Bangalore Ashram is resonating with energy of Navaratri cele
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `To realize that everything is happening you need heightened awareness.`,
+    tarot_back: `Heightened awareness brings you close to the reality and the reality is a witness. To realize that everything is happening you need heightened awareness. And to bring about heightened awareness you have to increase the prana.`,
   },
   {
     week_number: 175,
@@ -6018,6 +6366,8 @@ Guruji is visiting Halifax and surprised the devotees of Halifax. Halifax is far
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `All you hear will simply remain a jumble of words if there is no experiential understanding, which is more on the feeling level.`,
+    tarot_back: `Most theologians are in this category. Existential realization contains within it both experiential and intellectual understanding. But it is beyond both of these.`,
   },
   {
     week_number: 176,
@@ -6059,6 +6409,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `And all our life we try to correct events, people and situations.`,
+    tarot_back: `This seed, "It's not OK," brings you back into this world again and again. How do you burn this seed? First recognize that it is there.`,
   },
   {
     week_number: 177,
@@ -6093,6 +6445,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `So when you appreciate someone you simply imply that it is not their nature, it is not the way they usually are.`,
+    tarot_back: `If a child made you a cup of tea, you would appreciate it, but if a mother made the same cup of tea, you would not likely appreciate it because it is a normal act for her. In the same way, you appreciate getting a ride from someone you don't know, but you don't necessarily appreciate it from a bus driver. In all these cases, those acts are temporary, out of character, or not their nature.`,
   },
   {
     week_number: 178,
@@ -6129,6 +6483,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `When you love someone, you want to see them always happy and you want them to have the best .`,
+    tarot_back: `They are always in your mind. Ordinary things become extraordinary. A baby winking at grandmother.`,
   },
   {
     week_number: 179,
@@ -6165,6 +6521,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `If there is fear in your life, it is because of a lack of commitment.`,
+    tarot_back: `The very thought I am here in this world to do seva (service), dissolves the i and when the i dissolves, worries dissolve. Seva is not something u do out of convenience or for pleasure. The ultimate purpose of life is to be of service.`,
   },
   {
     week_number: 180,
@@ -6200,6 +6558,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `The true austerity has tolerance for richness and is never resentful.`,
+    tarot_back: `The true austerity has tolerance for richness and is never resentful. In fact, one who is mature will have pity for one who is not austere. Austerity is not against celebration and just vanity is not celebration.`,
   },
   {
     week_number: 181,
@@ -6230,6 +6590,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `The balance between the focussed mind and expanded consciousness brings perfection.`,
+    tarot_back: `The balance between the focussed mind and expanded consciousness brings perfection. Both Sudarshan Kriya and the Advanced Course techniques are aimed at developing such consciousness which is sharp and unbounded. Seva and commitment play a major role in this.`,
   },
   {
     week_number: 182,
@@ -6272,6 +6634,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `The same when harnessed manifests as enthusiasm, sparkle, sharpness of intellect and love.`,
+    tarot_back: `Lust is nothing but primordial un-harnessed energy. The same when harnessed manifests as enthusiasm, sparkle, sharpness of intellect and love. What are the factors which can sublimate or transform lust into love?`,
   },
   {
     week_number: 183,
@@ -6309,6 +6673,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `If you are certain that everything is uncertain, then you are liberated.`,
+    tarot_back: `When you are uncertain in ignorance then you become worried and tense. Uncertainty with awareness brings higher states of consciousness and a smile. Bharat says: A certain smile!!!`,
   },
   {
     week_number: 184,
@@ -6346,6 +6712,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `The whole world is nothing but organization, where the atoms have decided to organize themselves in a specific pattern to form a particular substance.`,
+    tarot_back: `Death/decay/transformation happens when the atoms get bored of patterns and decide to recognise themselves. : When the atoms of the apple say "Enough of being an apple", that's when the rotting starts. If there is never boredom of patterns, there can be no decay.`,
   },
   {
     week_number: 185,
@@ -6379,6 +6747,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `Remind yourself that everything here is recycled material - so relax!`,
+    tarot_back: `Remind yourself that everything here is recycled material - so relax! Everything goes to where it came from. Recycling brings back purity and hygiene.`,
   },
   {
     week_number: 186,
@@ -6405,6 +6775,8 @@ NEWS FLASH
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `All that you seek in your life is bliss, that divine union with your source, and everything else in the world distracts you from that goal.`,
+    tarot_back: `Bliss is the abode of all divinity, all devas. It is possible only in this human body to comprehend, to uphold, and having had a human life and having known this path, if you still do not realize this - you are at the greatest loss. The cravings and aversions make your heart hard.`,
   },
   {
     week_number: 187,
@@ -6433,6 +6805,8 @@ The Poland Art of Living distributed 76,000 kgs of milk powder to homeless child
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `God will never pass your test because He will never show up for your test.`,
+    tarot_back: `God does not test you because he knows you in and out and your past, present and future. He knows your strengths and weaknesses and he alone gives you strength. Only you can test yourself.`,
   },
   {
     week_number: 188,
@@ -6467,6 +6841,8 @@ All countries are requested to send 3 sets of all their literature, tapes, newsp
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you act on all thoughts that come to your mind, you will end up in a mental hospital or in prison.`,
+    tarot_back: `So, you resist or ignore some thoughts and welcome other thoughts. You need discrimination in life. Welcoming and resisting is a swing in life.`,
   },
   {
     week_number: 189,
@@ -6489,6 +6865,8 @@ Ms. Ronnie Newman presented a paper on the Art of Living at the U N which was ap
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Distinction between pleasure and love has to be understood, only the luckiest one will understand.`,
+    tarot_back: `Distinction between pleasure and love has to be understood, only the luckiest one will understand. Like you eat sugar and stimulate the tongue, music stimulates the ears and sight stimulates the eyes. And what stimulates the soul?`,
   },
   {
     week_number: 190,
@@ -6529,6 +6907,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `If you do not know emptiness then you cannot know the joy of the Being.`,
+    tarot_back: `Stretching the Life is Celebration. Stretching the Devotee is God. Stretching the Feeling is Ecstasy.`,
   },
   {
     week_number: 191,
@@ -6558,6 +6938,8 @@ IMPORTANT NOTE FOR CENTRE COORDINATORS IN INDIA
 Those who are arriving for the 16-18 meet and wish to place orders for the Divine Shop, may kindly do so immediately by email. The DD for the 80% may be carried when you arrive at Bangalore.
 
 Back To Top ^`,
+    quote: `You are in a state where all problems and differences slide away and only love shines through.`,
+    tarot_back: `Usually we get stuck in our differences, because we have lost sight of ourselves. In the name of love we try to manipulate and control the other person. This is natural that when we love somebody, we want them to be perfect.`,
   },
   {
     week_number: 192,
@@ -6588,6 +6970,8 @@ The Indian Teacher's and Organizer's meeting filled everyone with joy and enthus
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `And every time you try to defend your position it makes you more and more weak.`,
+    tarot_back: `And every time you try to defend your position it makes you more and more weak. On the path, people even use the Knowledge as a defense against criticism! Don't use Knowledge as a defense.`,
   },
   {
     week_number: 193,
@@ -6625,6 +7009,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `Education is called "Shiksha", the horizon of discipline - total discipline.`,
+    tarot_back: `Education is called "Shiksha", the horizon of discipline - total discipline. Discipline is needed for education. "Diksha" is needed for meditation.`,
   },
   {
     week_number: 194,
@@ -6672,6 +7058,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `Love is playfulness and in lust there is cunningness and manipulation.`,
+    tarot_back: `Here are some salient attributes of love and lust. They are so different yet so close! If you find more you may add to the list.`,
   },
   {
     week_number: 195,
@@ -6698,6 +7086,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `You never doubt something that is dear to you, close to you.`,
+    tarot_back: `You never doubt something that is dear to you, close to you. The moment you doubt, it is no longer dear to you; a distance has come. You may doubt yourself, but you do not doubt that which is yours.`,
   },
   {
     week_number: 196,
@@ -6718,6 +7108,8 @@ NEWS FLASH Each country is asked to choose one particular month in a year to org
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Having lost this first sign, the second sign of intelligence is - once you have started something, see it through to the end.`,
+    tarot_back: `Having lost this first sign, the second sign of intelligence is - once you have started something, see it through to the end. The short-sighted ones look for short-term benefits. Far sighted ones look for long-term benefits.`,
   },
   {
     week_number: 197,
@@ -6742,6 +7134,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `When desire dominates, Self-awareness will be at its lowest, and that's why all the philosophers around the world have always advocated renunciation and dropping of desires.`,
+    tarot_back: `When you have lots of desires, you are not aware of the Self. When desire dominates, Self-awareness will be at its lowest, and that's why all the philosophers around the world have always advocated renunciation and dropping of desires. When the awareness is dominant, then happiness dawns.`,
   },
   {
     week_number: 198,
@@ -6772,6 +7166,8 @@ Over to Chennai down Southern India, Sri Sri presided over India Heritage '99, a
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `When you are happy and love what you are doing, you simply don't feel the time.`,
+    tarot_back: `Also, in sleep you don't feel the time. In deep meditation, you are the time and everything is happening in you. Events are happening in you like the clouds come and go in the sky.`,
   },
   {
     week_number: 199,
@@ -6813,6 +7209,8 @@ NEWS FLASH: Guruji arrived in Singapore for a big Satsang in the football stadiu
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Give me not hunger if you cannot give me food.`,
+    tarot_back: `Give me not intelligence if I cannot perceive beyond it. Give me not knowledge if I cannot digest it. Give me not love if I cannot serve.`,
   },
   {
     week_number: 200,
@@ -6850,6 +7248,8 @@ NEWS FLASH: Sri Sri continued on from Kauai, Hawaii to the Island of Oahu, Hawai
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `The message of non-violence has to come loud and clear so that it can be heard from a young age.`,
+    tarot_back: `The message of non-violence has to come loud and clear so that it can be heard from a young age. A sense of shame has to be connected with anger and violence. The reason for violence in young people is a sense of pride in anger and violence, not a sense of shame.`,
   },
   {
     week_number: 201,
@@ -6871,6 +7271,8 @@ NEWS FLASH: In addition to the jubilee and satsangs in Apple Valley, Los Angeles
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `When you want to enjoy the fruit of action know that life is eternal.`,
+    tarot_back: `When you realize life is short, procrastination falls away. But when you know that there are many lifetimes, you realize that if you don't get it sooner, you get it later. Wake up and see your life is too short.`,
   },
   {
     week_number: 202,
@@ -6891,6 +7293,8 @@ NEWS FLASH: Sri Sri's American tour picked up speed as it move first to San Jose
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `And prayer, love and meditation are all flavors of deep rest.`,
+    tarot_back: `Nothing is expected of you that you cannot do. Doing service involves only doing what you can do. And no one wants you to be someone whom you are not.`,
   },
   {
     week_number: 203,
@@ -6925,6 +7329,8 @@ RECENT CLARIFICATIONS FOR THE NORTH AMERICAN ASHRAM SUMMER COURSES
 Sri Sri Ravi Shankar
 
 Back To Top ^`,
+    quote: `Make your body God's abode and there will be peace and bliss.`,
+    tarot_back: `See this world as play and as a display of God Himself and you will repose in the Non-Dual Self. Blessing comes to you in many forms. If you are generous, blessing comes to you as abundance.`,
   },
   {
     week_number: 204,
@@ -6965,6 +7371,8 @@ children. Seva Camps are also held in other areas.
 Jai Guru Dev !
 
 Back To Top ^`,
+    quote: `Then ......you are certainly not stupid .`,
+    tarot_back: `Then ......you are certainly not stupid . Then you don't know who you are. And if don't know who you are.....`,
   },
   {
     week_number: 205,
@@ -6997,6 +7405,8 @@ NEWS FLASH: The guru as usual with his love and grace charmed the French people 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Faith is the nature of undivided mind, undivided consciousness.`,
+    tarot_back: `Are faith and belief the same? Guruji: Belief is a little diluted, faith is little strong, more concrete. Our beliefs can change, faith is firm.`,
   },
   {
     week_number: 206,
@@ -7029,6 +7439,8 @@ The Scandinavian whirl-wind tour started with a lively satsang in Denmark and Fi
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Assuming a limit is underestimating yourself.`,
+    tarot_back: `If you have no boundaries then where is your success? If you have limitless access then there is no success. You don't say that you successfully drank a glass of water, because it is well within your capabilities.`,
   },
   {
     week_number: 207,
@@ -7073,6 +7485,8 @@ MAHA SEVA: All people who have any time at all to spare or donations to give are
 Jai Gurudev
 
 Back To Top ^`,
+    quote: `You can read about living in the moment so many times, but it only becomes knowledge when you experience it.`,
+    tarot_back: `How can He give you a message? The wise neither need a message nor give a message. The unwise would give a message and want a message -- and would be unable to use the message anyway.`,
   },
   {
     week_number: 208,
@@ -7103,6 +7517,8 @@ Guruji was fascinated by the orange fire spewing down the side of the volcano as
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you get bored, it indicates you are more alive and human.`,
+    tarot_back: `It is a sign that you are growing, that you are evolving. An animal, for example, keeps doing the same thing. Cows, horses, birds do the same things over and over all their lives.`,
   },
   {
     week_number: 209,
@@ -7128,6 +7544,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `All the Avatars and prophets have been caring for people and so were in politics.`,
+    tarot_back: `All the Avatars and prophets have been caring for people and so were in politics. You can find many examples to this effect. When religions restrict the freedom to worship and restrict modes of worship they become unsuitable for creating a harmonious society.`,
   },
   {
     week_number: 210,
@@ -7160,6 +7578,8 @@ The Clean Gujarat Project has been launched by the devotees from Gujurat. A Yagn
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `True love is non-possessive and brings freedom, and renunciation is nothing but freedom.`,
+    tarot_back: `I am free." In love there is no other need. Renunciation is having no need. Love and renunciation, although appearing to be opposites, are two sides of the same coin.`,
   },
   {
     week_number: 211,
@@ -7192,6 +7612,8 @@ Jai Guru Dev !
  
 
 Back To Top ^`,
+    quote: `And there are some who realize that everything is changing, yet see there is something that is non-changing.`,
+    tarot_back: `There are some who do not think there is anything to change. And there are some who realize that everything is changing, yet see there is something that is non-changing. Those who recognize the non-changing amidst the change are the wisest of all.`,
   },
   {
     week_number: 212,
@@ -7247,6 +7669,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `"Thank you" is like "good bye." You can complete all transactions at a surface level, but deeper inside is only one-ness.`,
+    tarot_back: `When you say "Thank you," you complete something. You are finishing a transaction, a relationship, a process. "Thank you" is like "good bye." You can complete all transactions at a surface level, but deeper inside is only one-ness.`,
   },
   {
     week_number: 213,
@@ -7283,6 +7707,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Anything can flow from the intellect, and you are a witness to the flow, whether it is garbage or wisdom.`,
+    tarot_back: `Whether you complain, compose a poem, or speak Knowledge, you are a witness to the flow. Suppose someone is complaining or justifying. They are simply saying things spontaneously.`,
   },
   {
     week_number: 214,
@@ -7309,6 +7735,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Guru is that principle which is wisdom and love, and that is awakened in each one who has stepped onto the path.`,
+    tarot_back: `You also call that person a Guru in whom there is no gap between life and wisdom and love. Often one recognizes wisdom but sees a gap between wisdom and one's own life. The purpose of becoming a disciple is to bridge that gap.`,
   },
   {
     week_number: 215,
@@ -7363,6 +7791,9 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `If you recognise a feeling as a reality it only makes your ignorance grow.`,
+    tarot_back: `Realise that in the current of moving time all will perish. Think of everyone that is jealous of you for what you have. Stephano added: "And see that all that people envy you for has not brought joy anyway."
+9.`,
   },
   {
     week_number: 216,
@@ -7407,6 +7838,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Accept a teeny tiny bit of everything in life, that will bring you fulfilment.`,
+    tarot_back: `The moment you accept that one atom, you will see change happen. This has to be done in a meditative state. You want more and more of them.`,
   },
   {
     week_number: 217,
@@ -7436,6 +7869,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Knowledge is a burden if it is not integrated into life.`,
+    tarot_back: `Knowledge is a burden if it doesn't bring joy. Knowledge is a burden if it gives you an idea that you are wise. Knowledge is a burden if it doesn't set you free.`,
   },
   {
     week_number: 218,
@@ -7477,6 +7912,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Only that which is temporary, small or perishable needs protection, while that which is permanent, big or vast does not.`,
+    tarot_back: `At the same time, without protection the desired transformation cannot happen. A seed needs protection to transform into a plant, a plant needs protection to become a tree. Protection can aid or hamper transformation.`,
   },
   {
     week_number: 219,
@@ -7505,6 +7942,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `And that is why only few people in the world succeed in reaching their goal.`,
+    tarot_back: `That is how in groups people shy away from seva -- when they don't get a position, when they get insulted, when they feel they are not getting what they expected out of it, and when they consider their goal as a struggle rather than a challenge. And that is why only few people in the world succeed in reaching their goal. What is more important to you?`,
   },
   {
     week_number: 220,
@@ -7553,6 +7992,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `At this Guruji turned to the rest of us with a smile and said, "See, he is so confident of my love for him that he is not afraid of any punishment.`,
+    tarot_back: `On a domestic flight in the US, Manjesh's mother fainted. A checkup showed that the aorta had dilated; the doctors suggested an immediate operation. She visited Guruji in San Jose, and when she went for a checkup again, the aorta was back to its normal size!`,
   },
   {
     week_number: 221,
@@ -7591,6 +8032,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `An ignorant person's compassion is on the fruit of an action whereas a wise person's compassion is towards the non-availability of knowledge.`,
+    tarot_back: `One reaps the fruit of one's actions. If a judge has compassion for all the offenders then the jails will be empty. At the same time, are the judges cruel to the offenders?`,
   },
   {
     week_number: 222,
@@ -7633,6 +8076,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `All negativity is a pointer to move to the centre and broaden the vision to the cosmic intelligence.`,
+    tarot_back: `It looks for a hook to hang its negativity on - if not this person, then that thing or that person and so on. This perpetuates the maya! The creeper of negativity needs a support in order to grow.`,
   },
   {
     week_number: 223,
@@ -7667,6 +8112,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The decision to fight can take away your depression like it did for Arjuna.`,
+    tarot_back: `Depression happens when you lose the will to fight. Arjuna was depressed and he did not want to fight. His bow fell from his hands and his fingers trembled.`,
   },
   {
     week_number: 224,
@@ -7702,6 +8149,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `In some parts of the world, such as in rural India or Africa, celebration means loud music; there is no silence at all.`,
+    tarot_back: `And silence gives the depth to celebration. Some people think being silent is spirituality. Many meditators feel that laughing, singing and dancing are not spiritual.`,
   },
   {
     week_number: 225,
@@ -7731,6 +8180,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Have faith in sound when it is pleasant and have faith in the silence when the sound is unpleasant.`,
+    tarot_back: `When some one says something bad you immediately believe it and the mind becomes more disturbed. Believing in an unpleasant sound creates more turmoil in the mind. In that situation shift your faith to silence.`,
   },
   {
     week_number: 226,
@@ -7767,6 +8218,9 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `This projection of the nature of self which is "always", on the temporal which can never be "always", is called Maya.`,
+    tarot_back: `In wanting perfection always, one become angry. In wanting to be rich always, one becomes greedy
+When we do not realise that only life is for always, then fear comes. This projection of the nature of self which is "always", on the temporal which can never be "always", is called Maya.`,
   },
   {
     week_number: 227,
@@ -7799,6 +8253,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `All her life AMMA served with love, humour and dynamism, extending her motherly love to one and all.`,
+    tarot_back: `Hundreds of people bid a moving farewell to AMMA, singing JAI JAI RADHA RAMAN. AMMA'S mortal ashes were brought to Delhi and GURUJI accompanied them to HARDWAR and immersed them in the Holy Ganges there. A portion of her ashes were also immersed in the river Cauvery, on whose banks AMMA grew up.`,
   },
   {
     week_number: 228,
@@ -7847,6 +8303,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Kailasa means "where there is only celebration", and Smashana is where there is only void.`,
+    tarot_back: `All talents, invention, creativity springs forth from the void, and creation has a tendency to return to the void. All the places of worship in all religions are connected with places of burial/cremation, as the awareness of death alone can bring dispassion and make you well grounded in knowledge. According to the Indian mythology, the abode of Shiva is in Mount Kailasa as well as in Smashana (the cremation ground).`,
   },
   {
     week_number: 229,
@@ -7884,6 +8342,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Life appears to be so meaningless to these children, who are either too scared of the competitive world or bogged down by heavy stimuli.`,
+    tarot_back: `Depression sets in if there is a lack of zeal to fight. Depression is lack of energy, and anger and aggression are a bolt of energy. When Arjuna was depressed, Krishna inspired him to fight and thus reinstated life back in Arjuna.`,
   },
   {
     week_number: 230,
@@ -7910,6 +8370,8 @@ A traffic policeman in Cochin suddenly got a glimpse of Guruji and started givin
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Let go of all the impressions right this moment and be Hollow and Empty.`,
+    tarot_back: `When you hear a word the sound conveys the meaning instantaneously. Similarly, the knowledge that you are sitting, standing, talking, etc. neither needs a confirmation nor a proof.`,
   },
   {
     week_number: 231,
@@ -7952,6 +8414,8 @@ Want to see wild elephants? You don't need to visit Africa! These days around fo
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The mantras and their effect, influence, method and mode of working are all a mystery.`,
+    tarot_back: `The principles of governing; the principles of maintaining the orderliness in creation are a secret. The more you know about nature, the mystery deepens. The more a scientist knows, the more he feels there is much more to know.`,
   },
   {
     week_number: 232,
@@ -7976,6 +8440,8 @@ Prominent leaders of the Jain community are meeting in the Bangalore Ashram to d
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `An unenlightened one tries to protect a secret; and he also reveals the secret at the wrong time, to the wrong person, in the wrong place and makes a big fuss about secrets.`,
+    tarot_back: `For example, you do not talk about menstruation, death, etc. to a five-year-old, but as they grow older these things are not hidden from them any more. They become known as a matter of course.`,
   },
   {
     week_number: 233,
@@ -7996,6 +8462,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The one who wakes up to this truth is wise.`,
+    tarot_back: `Devotion dissolves intentions. Intention pushes you to the future. The one who wakes up to this truth is wise.`,
   },
   {
     week_number: 234,
@@ -8064,6 +8532,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `The 5 senses and thinking ability are all present in consciousness.`,
+    tarot_back: `When someone says something; you are all ears . you are listening from every cell of your body. There is the expression "looking from a 1000 eyes"; one is all eyes.`,
   },
   {
     week_number: 235,
@@ -8115,6 +8585,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `Awareness, alertness, knowledge and meditation all help erase the past impressions.`,
+    tarot_back: `Different times of the day and year have different influences on the mind. Different types of food that you take influence you for some days. The past impressions-the Karmas- have a different impact on the mind.`,
   },
   {
     week_number: 236,
@@ -8145,6 +8617,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `You would like to have your wishes fulfilled and because it is more pleasurable.`,
+    tarot_back: `You would like to have your wishes fulfilled and because it is more pleasurable. Everything else looks more painful to you and you come for comfort. You want to evolve and become enlightened; you want to know higher Knowledge.`,
   },
   {
     week_number: 237,
@@ -8183,6 +8657,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `And that is how the experience of contraction and expansion is all play and display of the mind.`,
+    tarot_back: `Evolution is becoming something which it is not already. Self is the same, so it cannot evolve. There is no devolution or decay in the Self.`,
   },
   {
     week_number: 238,
@@ -8209,6 +8685,8 @@ JAl GURU DEV
  
 
 Back To Top ^`,
+    quote: `When such is the case, how could you think there is no variety in the Spirit.`,
+    tarot_back: `How could this consciousness that manifested this whole creation and loves variety, be monotonous? God seems to love different varieties. He must be of infinite variety Himself.`,
   },
   {
     week_number: 239,
@@ -8245,6 +8723,8 @@ NEWS FLASH: Spontaneous and contagious laughing meditations followed Guruji's pu
 JAl GURU DEV
 
 Back To Top ^`,
+    quote: `Only when you are searching for a solution is there a problem and so there is no problem that cannot be solved.`,
+    tarot_back: `Obviously, you cannot heat the ocean. If it cannot be solved, you accept it and it's no longer a problem. Only when you are searching for a solution is there a problem and so there is no problem that cannot be solved.`,
   },
   {
     week_number: 240,
@@ -8275,6 +8755,8 @@ One of our youth leaders addressed a gathering of 20000 people and inspired them
  
 
 Back To Top ^`,
+    quote: `Idolizing without a sense of  belongingness is always futile.`,
+    tarot_back: `And there are others who are  paranoid about  worship. They get irritated by seeing others worshipping. The modes of worship or idolizing may be different in different parts of the world.`,
   },
   {
     week_number: 241,
@@ -8329,6 +8811,8 @@ Chinese New Year - the Year of The Dragon - was celebrated in the Ashram. The in
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `It is the pinch that irks the consciousness and that pinch disallows the mistake to be repeated.`,
+    tarot_back: `Be with the pinch and not the guilt. It is a very fine balance. Sri Sri: Guilt is about a specific action and pinch is about a specific result or happening.`,
   },
   {
     week_number: 242,
@@ -8363,6 +8847,8 @@ The hot weather at the Bangalore Ashram was dispelled by cool showers of Grace. 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The praise that comes out of an elevated state of consciousness is simply its nature and is quite different.`,
+    tarot_back: `Some praise with motives, and some others just to elevate. Others praise themselves in order to hide their low self-esteem. The real praise dawns in a blossomed state of consciousness.`,
   },
   {
     week_number: 243,
@@ -8403,6 +8889,8 @@ THIS COMES FROM INDIA:
 The Times of India on February 10th came with this article and another about President Clinton's visit to India in March 2000. In light of the increased awareness of the government of the United States we think that now is the time to awaken all sectors of society to The Art of Living and the projects we are doing around the world, especially our 5H program and our schools in Bangalore, Assam and Bengal. We would like committees to be formed from Satsang groups to actively participate in contacting their respective Senators and Representatives in each state as soon as possible to convey the vision of the organization and request for full national participation in our service projects in the rural areas of India. The 5H program involves improvement of the quality of life by addressing Home, Health, Hygiene, Human Values and Harmony in Diversity. For more details about our programs please contact Ajay Tejasvi at ajay_tejasvi@vsnl.com or Dean & Shirley Harmison at Ahimsa108@aol.com.
 
 Back To Top ^`,
+    quote: `The policemen would hug people, and confessed that only their uniform was preventing them from joining the dance.`,
+    tarot_back: `Following 27 minutes of total, still meditation, the entire crowd were on their feet, singing and dancing Ö the sub-inspector of police remarked that even though a meagre force of 500 was deployed, they had nothing to do, so blissful and orderly was the crowd. The policemen would hug people, and confessed that only their uniform was preventing them from joining the dance. The high priests of the ancient city of Dwarka (Krishna's capital), came all the way to invite Guruji, and placed a resplendent turban (which was from the temple deity) on His head.`,
   },
   {
     week_number: 244,
@@ -8455,6 +8943,8 @@ Around 60 AOL teachers are in Rishikesh, planning strategies to develop various 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Similarly, wisdom and grace have no form but are expressed through form.`,
+    tarot_back: `Discarding the formless, you become inert, materialistic and paranoid. Discarding the form, you become a lost ascetic, a space cadet or an emotional junk! Aggression and assertiveness overshadow intuition.`,
   },
   {
     week_number: 245,
@@ -8485,6 +8975,8 @@ B.R. Ambedkar Marathwada University has included The Art of Living course in the
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you ask the question "Who am I?" you get no answer, there is silence.`,
+    tarot_back: `For your soul is solidified silence. This solidified silence is wisdom, is knowledge. The easy way to silence the thoughts is to arouse the feelings.`,
   },
   {
     week_number: 246,
@@ -8527,6 +9019,8 @@ The Gurumobile is on its way to Panchkula after a jubilant Satsang in Chandigarh
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The main impediment of many seekers in the path is that they want to surrender.`,
+    tarot_back: `want to love you", love is evident there. Surrender is not an act, it is a state of your being. Whether you acknowledge it or not, it is there.`,
   },
   {
     week_number: 247,
@@ -8553,6 +9047,8 @@ A jubilant Advanced Course with over 1000 people concluded in Rishikesh yesterda
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are doing something very important, take a moment off to do something totally irrelevant and insignificant.`,
+    tarot_back: `Then sleep, listening to flute music, cold water baths, etc. house, take a moment off to cut grass, or go shopping! When you are doing something very important, take a moment off to do something totally irrelevant and insignificant.`,
   },
   {
     week_number: 248,
@@ -8609,6 +9105,8 @@ address them to Chuck at cfos@mediaone.net, 978-922-2790.
 Jai Gurudev ! Janael McQueen, TTC Coordinator
 
 Back To Top ^`,
+    quote: `A desire can be triggered through the association of certain people and a place.`,
+    tarot_back: `A desire can be triggered through the association of certain people and a place. Someone else's need or desire may manifest in you as your own desire, e.g. when someone is hungry, you get a desire to feed them or someone wants to talk to you and you get a desire to talk to them.`,
   },
   {
     week_number: 249,
@@ -8637,6 +9135,8 @@ Vishu, the Tamil new year, was celebrated with a grand pooja in the Bangalore As
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `That which is radiant in every particle of the Being is Rama.`,
+    tarot_back: `Kaushalya (Sanskrit for "skilled") stands for skill. The skillful reiner of the ten chariots can give birth to Ram. When the ten are used skillfully, radiance is born within.`,
   },
   {
     week_number: 250,
@@ -8697,6 +9197,8 @@ Chris (ckapilla@interserver.com) with your current email address. Remember
 to notify Chris if your email address should change in the future.
 
 Back To Top ^`,
+    quote: `Whenever happiness has disappeared from your life, look deeper and you will see it is because of the desire.`,
+    tarot_back: `And all that we desire is happiness! No person, animal or creature desiring unhappiness is ever born, never has it happened before and never will it happen in the future. When your small mind gets tired of running here and there, of wandering everywhere, it reaches a conclusion, "My desires have killed my happiness".`,
   },
   {
     week_number: 251,
@@ -8755,6 +9257,8 @@ In past years we have meditated at the time of dawn in India on May 13 to celebr
 Think of how he has opened your heart and see if you can help to do the same for those around you on this day.
 
 Back To Top ^`,
+    quote: `Examine everything in life and say "This is nothing" and what remains after all that is Love, and that is everything.`,
+    tarot_back: `That is to say it leads you to void - this is nothing. A sign of intelligence is how soon you arrive at this understanding. Examine everything in life and say "This is nothing" and what remains after all that is Love, and that is everything.`,
   },
   {
     week_number: 252,
@@ -8779,6 +9283,8 @@ An Art of Living group presented the scientific research on mental health benefi
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If your desire does not get fulfilled, it leads to frustration and causes misery.`,
+    tarot_back: `You get pleasure from an object or a person only when you desire them. When you do not desire an object, you do not get pleasure from it. For example, when a person is hot and thirsty, a sip of cold water gives him pleasure; but not if he is not thirsty.`,
   },
   {
     week_number: 253,
@@ -8813,6 +9319,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `And what ever you are seeking and where ever you seek itÒ³ always only One; and the One is what you already are.`,
+    tarot_back: `And so -- you cannot seek something you do not know and when you know what you are seeking, you already have it. When you seek the world, you get misery and when you want to find the way out of misery, you find the divine. A man lost a penny and was seeking for the penny in a bush when he found a huge treasure.`,
   },
   {
     week_number: 254,
@@ -8845,6 +9353,8 @@ Reports of rural service projects are coming from all corners of India.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If yes and you don't get awakened, then Guru is to be blamed.`,
+    tarot_back: `If Guru could set you free, he could have done it to the whole world. So Guru is not responsible for your awakening. And yet freedom is next to impossible without Guru.`,
   },
   {
     week_number: 255,
@@ -8895,6 +9405,8 @@ TomDuffy@prisonSMART.org
 Violence ends where love begins
 
 Back To Top ^`,
+    quote: `Wisdom that doesn't give rise to feeling is incomplete.`,
+    tarot_back: `Feeling that doesn’t translate into action is incomplete. Action that doesn't give rise to fulfillment is incomplete. For Fulfillment, is returning to the Self.`,
   },
   {
     week_number: 256,
@@ -8925,6 +9437,8 @@ Our volunteers have initiated a drought relief program in Gujarat. Cow camps are
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Information -- Often we think information is education, but it is only one aspect of education.`,
+    tarot_back: `Attitude -- An integral aspect of education is cultivating the right attitude. Proper attitude at the right time and place determines your actions and behavior. Imagination -- Imagination is essential for creativity, for the arts.`,
   },
   {
     week_number: 257,
@@ -8963,6 +9477,8 @@ See you there!
 Jai Guru Dev !
 
 Back To Top ^`,
+    quote: `As you mature in life, you find everything is untruth - events, situations, people, emotions, thoughts, opinions, concepts, your body - everything is untruth.`,
+    tarot_back: `When you don't identify the untruth, you cannot become free from it. Your own experiences in life make you identify your own untruth. As you mature in life, you find everything is untruth - events, situations, people, emotions, thoughts, opinions, concepts, your body - everything is untruth.`,
   },
   {
     week_number: 258,
@@ -8991,6 +9507,8 @@ Guruji had given perfume to Mr. Salim, a devotee from Kollam. He called back to 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And by not expressing love you feel stifled.`,
+    tarot_back: `If I am humble I am not honest. If I'm honest I can not be humble!!! Hide your dispassion and express your love.`,
   },
   {
     week_number: 259,
@@ -9031,6 +9549,8 @@ As people poured into the Quebec Ashram to join Guruji for the summer programs, 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are steeped in love, with the Existence, with the Divine, nothing whatsoever can humiliate you.`,
+    tarot_back: `The more egotistic you are, the more humiliation you feel. When you are childlike and have a greater sense of kinship then you don't feel humiliated. When you are committed to truth and not to your ego then you also don't feel humiliated.`,
   },
   {
     week_number: 260,
@@ -9057,6 +9577,8 @@ The first Art of Living Basic course was held in Bangladesh.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Legendary is the wisdom that withstands turbulence.`,
+    tarot_back: `It will be one-pointed and will reach the goal. Legendary is the wisdom that withstands turbulence. It will be integrated in life.`,
   },
   {
     week_number: 261,
@@ -9085,6 +9607,8 @@ Guruji received the highest commendation from the mayor's office of the city of 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When someone is in an argumentative mood, then giving knowledge or advice is in vain.`,
+    tarot_back: `That is why wise people do not give advice when they are in an argumentative environment. It can bring out the truth if there is no emotion or sense of "I" attached to it. Argument can also have a disadvantage.`,
   },
   {
     week_number: 262,
@@ -9119,6 +9643,8 @@ The Guru Purnima celebrations started with the divine sound of the Guru Puja bei
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The seeker should remember that he is born with virtues; otherwise he could not have been a seeker.`,
+    tarot_back: `If you think you do not have virtues and then try to cultivate them, you will fail. You often compare yourself with others on the basis of virtues. Do not compare yourself with them.`,
   },
   {
     week_number: 263,
@@ -9149,6 +9675,8 @@ Meditation sessions are on at the international exhibition in Hannover at the In
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Reaction, as well as non-action, both create karma, but a conscious action transcends karma.`,
+    tarot_back: `Impulsiveness creates a chain of Karma. Reaction, as well as non-action, both create karma, but a conscious action transcends karma. non-action can create karma.`,
   },
   {
     week_number: 264,
@@ -9181,6 +9709,8 @@ walked through the Avenue of Trees, with devotees sprinkling rose-petals in his 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Spirituality is the technology of consciousness, and the whole world is the play and display of consciousness.`,
+    tarot_back: `Technology without human values would see nature as a dead object. Science gives an insight into the life of nature and spirituality makes the nature come alive. For example, in the eyes of children, there is nothing dead in the world - animals, trees, the sun and the moon - they all have life, they all have emotions, they all have feelingsÅ‰n the eyes of a stressed and ignorant person, even human beings are like robots - objects!`,
   },
   {
     week_number: 265,
@@ -9217,6 +9747,8 @@ This news flash cannot contain all the reports from the 1,500 villages adopted b
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you are in love, you feel weak because love makes you weak.`,
+    tarot_back: `All those who were feeling strong were taken aback! If you are in love, you feel weak because love makes you weak. Yet there is no power stronger than love.`,
   },
   {
     week_number: 266,
@@ -9249,6 +9781,8 @@ Discovery Channel discovered the bliss in the ashram.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And when the mind is smaller than the senses, like in animals, there is no conflict.`,
+    tarot_back: `When they are below you, you love them and you feel compassionate. Either submission or compassion can take you out of a fight in no time. This is one way to look at it when you are tired of fighting.`,
   },
   {
     week_number: 267,
@@ -9277,6 +9811,8 @@ Krishna's birthday was celebrated in the German Ashram.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The second thing is to willingly accept the problem and see it as a challenge.`,
+    tarot_back: `First you met me and then you had a problem (Laughter). When it snows, there are no bacteria since no herbs to heal you grow in that season. In the spring, the herbs come first and then the bugs.`,
   },
   {
     week_number: 268,
@@ -9305,6 +9841,8 @@ Jai Guru Dev
  
 
 Back To Top ^`,
+    quote: `Because he loves you, and is afraid to lose your love or hurt you.`,
+    tarot_back: `What's the use of pointing out a mistake that he knows he has committed? By doing this, you will only make them feel more guilty, defensive or resentful and this will only create more distance. Do not point out the mistake of a person who knows but doesn't want you to know.`,
   },
   {
     week_number: 269,
@@ -9345,6 +9883,8 @@ Sixteen fortunate devotees rose in Divine Love with the Master  in a hot-air bal
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The source of conflict is the division of "mine" and "yours." Knowledge eases the sense of limited belongingness and resolves this conflict.`,
+    tarot_back: `Wise are those who make you cry for the Divine. The source of conflict is the division of "mine" and "yours." Knowledge eases the sense of limited belongingness and resolves this conflict. It is amazing when knowledge dawns in you that there is no stranger in the whole world!`,
   },
   {
     week_number: 270,
@@ -9371,6 +9911,8 @@ Many solutions for the tourism industry emerged when Sri Sri delivered his wisdo
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `As every individual is nothing but a puppet of the ONE, thanking and being obliged is simply an exhibition of ignorance.`,
+    tarot_back: `Otherwise your thankfulness is centered around ego. You are grateful, but not for an act. You are grateful for what is.`,
   },
   {
     week_number: 271,
@@ -9397,6 +9939,8 @@ Talakatora Stadium in Delhi was aptly decorated for a grand Satsang. Thousands w
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If a person has to appease and please ten people all the time, it will be so tiring.`,
+    tarot_back: `They expend a lot of energy in cajoling and this brings down the joy and celebration of the moment. It is okay for you to show your upset mood or tendency once in a while, but doing it over and over again is taxing for you and people you love. If you feel down, appease and please yourself.`,
   },
   {
     week_number: 272,
@@ -9419,6 +9963,8 @@ Construction activity for the big meditation hall, the big water tank and more r
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When the river meets the ocean, it recognizes that it is the ocean from the beginning to the end.`,
+    tarot_back: `In the same way, the moment a devotee meets (surrenders to) the Divine, the devotee becomes GOD. When the river meets the ocean, it recognizes that it is the ocean from the beginning to the end. Similarly, the individual "IÅ® IÅ®" dissolves in ONE Divinity.`,
   },
   {
     week_number: 273,
@@ -9475,6 +10021,8 @@ over the world
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When a materialistic person tells you a secret, it will only create doubts and spread malaise.`,
+    tarot_back: `Being completely immersed in the mystery of Life and this Creation is Samadhi. Your knowing or believing doesn't really matter to what Is. This Creation is an unfathomable secret, and its mysteries only deepen.`,
   },
   {
     week_number: 274,
@@ -9500,6 +10048,8 @@ Celebration continues as ever ....
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `In a state of wisdom or enlightenment, imperfection is an effort; perfection is a compulsion and is unavoidable!`,
+    tarot_back: `When you think that others are responsible, then your degree of responsibility diminishes. When you are in total Vairagya (dispassion), you can take care of even trivial and insignificant things with such perfection. For example, during the Pooja every morning, Guruji decorates the Pooja table with flowers with such great care, choosing different color combinations and patterns everyday; fully knowing that the decoration is not going to last even 10 minutes.`,
   },
   {
     week_number: 275,
@@ -9545,6 +10095,8 @@ Sri Sri Ravi Shankar at the Canadian Ashram
   Jai Guru Dev !  We are very excited to announce that Guruji is coming to the Canadian Ashram over the Christmas Holidays, his first winter visit here. This is an especially beautiful, silent and cozy time of year at the ashram.  What a blessing to end the year and start the New Year in the presence of the Master.
 
 Back To Top ^`,
+    quote: `Always know that the Divine never gives you a responsibility you cannot fulfill.`,
+    tarot_back: `And you do not know what you can do! Always accept that you do not know what you can do. Ignorance of your capability can expand you!`,
   },
   {
     week_number: 276,
@@ -9579,6 +10131,8 @@ Priyansh, a two and half year old boy was playing with his friends on his 8th fl
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When the love is cast over the entire creation, then you are the Big Self.`,
+    tarot_back: `There are many stories associated with this day. It was this day that the demon Narakasaura was killed. King Narakasura (Naraka means hell) had been granted a boon that he could be destroyed only by a woman.`,
   },
   {
     week_number: 277,
@@ -9615,6 +10169,8 @@ Though it was the first time in Orissa, the arrangements and the enthusiasm were
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Whereas a tourist is satisfying the senses, a pilgrim is in the quest of the truth.`,
+    tarot_back: `A tourist compares with other experiences and places and hence is not in the present moment. But a pilgrim has a sense of sacredness, so he tends to be in the present moment. Most people in life are just tourists without even being aware of it.`,
   },
   {
     week_number: 278,
@@ -9651,6 +10207,8 @@ Then Guruji moved on to Gaya to offer tribute to His most beloved mother, our Am
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you witness the sansara, every step you take is benevolent and impeccable.`,
+    tarot_back: `He took sixteen steps towards the tree and under each step, blossomed a Lotus flower. The Bodhi tree is symbolic of both sansara (world) and Dharma. The Lotus flower symbolizes clarity, dispassion, love, beauty and purity.`,
   },
   {
     week_number: 279,
@@ -9691,6 +10249,8 @@ The performance of our school at Bangalore has startled educationists-sixteen pr
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A confused consciousness seeks clarity and every confusion is breaking away from clarity.`,
+    tarot_back: `Unlimited possibilities are open to one who is not clear and not confused. Your mind swings from clarity to confusion and confusion to clarity but the state in which there is no doership nor inertia is the most creative and progressive state. A sharp instrument does its job perfectly, effortlessly.`,
   },
   {
     week_number: 280,
@@ -9745,6 +10305,8 @@ Info@PrisonSmart.org
  
 
 Back To Top ^`,
+    quote: `Whenever there is a problem we either deny it saying there is no problem or sit to solve the problem and make it a big issue.`,
+    tarot_back: `If it concerns people, keep in touch with them instead of avoiding them. Talk less and give time a chance. Get together and celebrate.`,
   },
   {
     week_number: 281,
@@ -9779,6 +10341,8 @@ Guruji's entourage walked in no man's land between Germany and Switzerland!
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Then every minute of your life is sacred, every place you go to becomes sacred, every person you meet is only your reflection, and every act of yours is sacred.`,
+    tarot_back: `Sri Sri: This happens when your memory overpowers your consciousness and you lose your sensitivity. For example, people living in Benares do not feel that it is a sacred place. That sensitivity is just not there.`,
   },
   {
     week_number: 282,
@@ -9826,6 +10390,8 @@ been teaching a new course every Monday morning for gang members, have informed 
 To contact Prison SMART Email: TomDuffy@prisonSMART.org
 
 Back To Top ^`,
+    quote: `If you are love and you say, "I am not God," you are saying God is not love, and that is blasphemy.`,
+    tarot_back: `If you say, "I am not God," you deny that God is aware, alert and awake. When you say, "I am not God," you deny God of a portion of existence, and that is blasphemy. Also, you are denying the scriptures that say, "God made man in His own image." If you say, "I am not God," you are denying God.`,
   },
   {
     week_number: 283,
@@ -9848,6 +10414,8 @@ NEWS FLASH Guruji addressed a packed auditorium of prominent scientists and rese
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Atheism is not a reality, it is just a matter of convenience.`,
+    tarot_back: `An atheist denies God without first disproving it. In order to disprove God, you must have enormous knowledge. And when you have enormous knowledge, you cannot disprove it!`,
   },
   {
     week_number: 284,
@@ -9884,6 +10452,8 @@ YTP camps are happening at many places in India.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `There is a total merging with the Beloved and all duality disappears.`,
+    tarot_back: `The first stage is Saarupya (to see the formless in the form) Ö Seeing God in all the forms. Often, one feels more comfortable to see God as formless rather than with a form, because with a form, one feels a distance, a duality, a fear of rejection and other limitations. In life all of our interactions are with the form, other than in deep sleep and in Samadhi.`,
   },
   {
     week_number: 285,
@@ -9914,6 +10484,8 @@ On to Canada for the New Year.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When someone is hurt, arguing with them and establishing your righteousness will be in vain.`,
+    tarot_back: `Many people feel pride in hearing "Sorry" from others. But when you say "Sorry" to a wise man, it evokes compassion at your ignorance. However, when you say "Sorry" to your Guru, He will get angry and say, "Go!`,
   },
   {
     week_number: 286,
@@ -9942,6 +10514,8 @@ NEWS FLASH
 The City Council in Alpharetta, Georgia, USA, planned to remove several 150-year old oak trees as part of a street-widening project. The engineering firm, cable company, and phone company made their studies and gave approval. Local people who wanted to save the trees were told, "There's no hope; it's finished." A devotee put Guruji's picture on each tree and phoned the city officials to tell them the trees were protected by a saint. Word spread through the town and 300 protestors, along with full media coverage, showed up at the City Council. Plans were abandoned, and the trees are happily standing.
 
 Back To Top ^`,
+    quote: `(Laughter) From the moment you wake up in the morning you are always with people and your mind is caught up in worldly thoughts.`,
+    tarot_back: `So sometime during the day, sit for a few minutes, get into the cave of your heart, eyes closed, and kick the world away like a ball. But as soon as you open your eyes, hold onto the ball because you need to kick it again in the next session. (Laughter) During the day be 100 percent attached to the work, don't try to detach yourself.`,
   },
   {
     week_number: 287,
@@ -9974,6 +10548,8 @@ Additional information on last week's NewsFlash-Guruji requested that we identif
 The City Council in Alpharetta, Georgia, USA, planned to remove several 150-year old oak trees as part of a street-widening project. The engineering firm, cable company, and phone company made their studies and gave approval. Local people who wanted to save the trees were told, "There's no hope; it's finished." A devotee -- Juanita Rocca -- put Guruji's picture on each tree and phoned the city officials to tell them the trees were protected by a saint. Word spread through the town and 300 protestors, along with full media coverage, showed up at the City Council. Plans were abandoned, and the trees are happily standing.
 
 Back To Top ^`,
+    quote: `A journalist asked me, "Why is it important to breathe?" "Why is it important to be happy?" "Why is it important to have peace?" These questions are not relevant at all.`,
+    tarot_back: `(Laughter.) Things are either themselves important or they make other things important. So that means everything is important, and. everything is unimportant.`,
   },
   {
     week_number: 288,
@@ -10003,6 +10579,8 @@ Guruji stopped in German Ashram on his way to the Khumba Mela, India, where 80 m
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `And a person who has nothing to worship or adore is sure to fall into depression.`,
+    tarot_back: `Lack of adoration has led to many emotional, psychological and social problems in the society. If you have nothing to hold up high in life, selfishness, arrogance and violence are sure to follow. Adoring and honoring each other in society eliminates stress and fosters compassion and love.`,
   },
   {
     week_number: 289,
@@ -10035,6 +10613,8 @@ Back in Delhi Guruji had very fruitful meetings with various leaders including t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Spirit is all over in Nature, but when it dawns in the human body as an elevated state of consciousness, then it gains immense value.`,
+    tarot_back: `the mind is even more subtle than one millionth of an atom. When the mind explodes, that is Enlightenment. Over the centuries, thousands of sages who have meditated, done penance and been enlightened come to the "Kumbha Mela" and relieve themselves of the burden of the merits gained through Sadhana by bathing in the rivers.`,
   },
   {
     week_number: 290,
@@ -10079,6 +10659,8 @@ In the concluding session of the meeting, Sri Sri addressed the conference and s
 In India, hundreds of Art of Living volunteers are busily engaged in the relief efforts in the state of Gujarat. Within hours of the earthquake, our volunteers provided shelter and food to 1500 people. Food, clothing, water and funds are being arranged by our satsang groups.
 
 Back To Top ^`,
+    quote: `A certain degree of aloofness in every relationship will strengthen your personality and connect you to your source.`,
+    tarot_back: `In many occasions, it is better to be unfriendly than be friendly. Being unfriendly does not mean being aggressive and inimical. The best secretaries, personal assistants, security personnel, and judges have to be unfriendly.`,
   },
   {
     week_number: 291,
@@ -10131,6 +10713,8 @@ The intense longing of TTC-2 graduates and Ashramites pulled our precious Guruji
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `It is only with wisdom and self-knowledge that you can transcend relationships.`,
+    tarot_back: `Don't try to find a shortcut to overcome longing. Don't make the longing short - that's why it's called loooonging. True longing in itself brings up spurts of bliss.`,
   },
   {
     week_number: 292,
@@ -10165,6 +10749,8 @@ Research at the All India Institute of Medical Science showed significant change
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Earthquakes, floods and volcanoes all drive home the truth that nothing is permanent and you cannot find security in that which is not permanent.`,
+    tarot_back: `With wisdom, shocks can make you grow in leaps and bounds. Without wisdom a shock can only lead you to negativity and depression. Why should nature destroy small innocent children?`,
   },
   {
     week_number: 293,
@@ -10191,6 +10777,8 @@ Despite the Ashram overflowing with thousands, there was absolutely no chaos as 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `True self-reliance is realizing that nothing is excluded from the Self.`,
+    tarot_back: `The same spirit that wants to be self-reliant is also passionate. It is only in spirituality that passion and dispassion can happen together. This is the rarest combination.`,
   },
   {
     week_number: 294,
@@ -10237,6 +10825,8 @@ Guruji's entourage decided that it was high time He stopped traveling by train. 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are in love, when you are surrendered, there is no fear.`,
+    tarot_back: `Fear moves you from being insensitive to being sensitive. Fear moves you from dullness to alertness. Total lack of fear may lead to destructive tendencies - a distorted ego knows no fear.`,
   },
   {
     week_number: 295,
@@ -10275,6 +10865,8 @@ So far, 50 truck loads of materials have reached the areas severely hit by the e
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A warrior is one who takes on challenges and commitment and stands by it.`,
+    tarot_back: `A strong ego will counteract depression. Often ego is thought to be selfish but it is the greatest motivating factor for creativity and generosity. Ego propels one to venture into the unknown.`,
   },
   {
     week_number: 296,
@@ -10303,6 +10895,8 @@ Pakistan is the latest addition to the list of countries where Art of Living cou
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `You can only sacrifice that which you would like to keep for yourself; in other words, that which gives you pleasure and joy.`,
+    tarot_back: `Sacrifice here becomes irrelevant, because love alone is your strongest driving force. So when there is so much love there cannot be sacrifice. At the same time when there is no love, there is no sacrifice.`,
   },
   {
     week_number: 297,
@@ -10349,6 +10943,8 @@ The Maha 5H walk took place in Mumbai. Here the walk started from 5 different po
 And finally, once it was all over, Ashish from Dallas exclaimed, "Hey guys, it's not over! This was just the first step."
 
 Back To Top ^`,
+    quote: `Paganism, Satan and animal worship, without the knowledge of the one divinity is very different from seeing the divine in every form of the manifest universe.`,
+    tarot_back: `They are not actually worshipping the idols but worshipping the unmanifest divinity which has all the divine qualities. So, the idol worshippers of the East are not the same as the ones in the Middle East as described in the Bible, because they are not just worshipping different gods and different idols, they are worshipping the ONE divinity in many different forms. Paganism, Satan and animal worship, without the knowledge of the one divinity is very different from seeing the divine in every form of the manifest universe.`,
   },
   {
     week_number: 298,
@@ -10387,6 +10983,8 @@ Knowledge, Bliss and Grace compounded in this largest Advanced course happening 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The general notion is that when you work under someone, you lose your freedom, you have to be answerable.`,
+    tarot_back: `Refusing to work under someone is a sign of weakness, not strength. A strong person would not feel uncomfortable working under anyone, because he knows his strength. It is the weak and poor in spirit who do not like to work under someone else, because they are unaware of their strength.`,
   },
   {
     week_number: 299,
@@ -10422,6 +11020,8 @@ God is within the body and God embodies the whole universe. Those who have eyes 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Whenever their commitment is shaken, their comfort is also shaken.`,
+    tarot_back: `Those who are ambitious and have a passion for a goal do not care for convenience. To the wise their commitment is their comfort. Whenever their commitment is shaken, their comfort is also shaken.`,
   },
   {
     week_number: 300,
@@ -10469,6 +11069,8 @@ Suddenly the whole atmosphere became serene and smiles returned.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `At this moment wake up and see you are Being and nothing can touch you.`,
+    tarot_back: `Do you register it in your mind and get emotionally upset? Do you dismiss them altogether without taking a lesson from it? Do you talk about it with people and waste your time and otherÒ³ time and money?`,
   },
   {
     week_number: 301,
@@ -10515,6 +11117,8 @@ NEWS FLASH
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you know you can achieve something easily, you are not ambitious about it.`,
+    tarot_back: `For ambition to be, one must have a little bit of confidence and total ignorance of the Self. It is next to impossible to have total confidence without Self-knowledge. play and display of one's own consciousness.`,
   },
   {
     week_number: 302,
@@ -10557,6 +11161,8 @@ At the Recife Airport, Guruji played many tricks on all those who were accompany
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The wise knows that even when one is giving one is under obligations, as the person has accepted what one gives.`,
+    tarot_back: `Anyway, who belongs to whom in this world? Here you are a stranger and everyone is a stranger to you! Blessed are those who feel themselves as a stranger!`,
   },
   {
     week_number: 303,
@@ -10597,6 +11203,8 @@ When the local driver got lost in Buenos Aires, Guruji magically navigated the c
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `You are trapped by your own good actions, for everyone expects more from a good person.`,
+    tarot_back: `You are trapped by your own good actions, for everyone expects more from a good person. Nobody expects anything from a bad person. Most of the people are stuck in this cage of prestige and honor.`,
   },
   {
     week_number: 304,
@@ -10641,6 +11249,8 @@ Think of how he has opened your heart and see if you can help to do the same for
 Denise Richardson & Tom Duffy gave a dynamic presentation about Prison SMART Street Lights and Art of Living ART Excel Program, to the Los Angeles Association of School Psychologist conference in LA. A presentation was projected onto a large screen backed up buy an 8-minute video on ART Excel. Art of Living devotees from the L.A. Satsang came and assisted in the registration.
 
 Back To Top ^`,
+    quote: `When you see life is dream a burden or a joke only then can you be centered.`,
+    tarot_back: `In every miserable condition you have been walked or carried through and you realize life is a dream. When you see life is dream a burden or a joke only then can you be centered. And when you have really gone through misery you have really seen life as a dream.`,
   },
   {
     week_number: 305,
@@ -10672,6 +11282,8 @@ Jai Guru Dev
 \`
 
 Back To Top ^`,
+    quote: `Whenever reason or faith breaks, confusion and chaos prevails which is often a step for growth.`,
+    tarot_back: `Faith is beyond reason, yet you need to have faith in your own reasoning! (A sentence to be pondered on.) Faith and reason cannot exist without each other. Every reason is based on some faith.`,
   },
   {
     week_number: 306,
@@ -10698,6 +11310,8 @@ Guruji with a few teachers proceeded to Trichy where a Satsang had been arranged
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Not that you do trivial things all your life, but consciously agreeing to do the trivial actions for eternity, opens a new dimension and brings in immense peace and restfulness.`,
+    tarot_back: `The readiness to consciously do trivial things for eternity unites you with eternity. This is an antidote to ego. Ego is always ambitious and wants to do the toughest job like climbing Mount Everest etc.`,
   },
   {
     week_number: 307,
@@ -10738,6 +11352,8 @@ King Dasharatha had done the Nav Chetana Shibir (the Breath, Water, Sound Progra
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Being happy in one's own joy and sad in one's own sorrow is a trait of animals.`,
+    tarot_back: `Being happy at another's joy and saddened by another's sorrow is a trait of humans. If you are saddened by other’s sorrow then sorrow will never come to you. If you are happy at another's joy then joy will never leave you.`,
   },
   {
     week_number: 308,
@@ -10764,6 +11380,8 @@ The satsang wave moved on with Guruji from Bangalore to Bombay to Germany. In Ba
 The Art of Living course is now in 132 countries. Last week the Art of Living Course was held in Jordan.
 
 Back To Top ^`,
+    quote: `Deep rest is bliss, and bliss is the understanding that only God exists.`,
+    tarot_back: `Samadhi is needed even for the most materialistic person because a materialistic person looks to gain strength and virtues. To be in Samadhi you do not need any effort or talents, strengths or virtues. Withdrawing from all types of physical and mental activity is rest.`,
   },
   {
     week_number: 309,
@@ -10792,6 +11410,8 @@ News Flash: After a memorial satsang in the biggest cathedral in Berlin, Guruji 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Knowledge of your death or life, confidence in the Self, in the Divine, can all calm down the mental restlessness.`,
+    tarot_back: `Knowledge alone can cure this restlessness. Seeing life from a broader perspective, knowledge about the Self and the impermanence of everything. If you achieve everything, so what?`,
   },
   {
     week_number: 310,
@@ -10816,6 +11436,8 @@ Guruji's address to the Protestant Christian Congregation in Germany was simply 
  
 
 Back To Top ^`,
+    quote: `And only awareness and impeccable devotion can bring this freedom.`,
+    tarot_back: `Both these factors - the tendencies from within and influences from outside, can either be beneficial or harmful. It is the awareness that filters the outer negative influences and it is the awareness that corrects and annihilates the unhealthy inner tendencies. This awareness is called Gyana.`,
   },
   {
     week_number: 311,
@@ -10850,6 +11472,8 @@ Guruji arrived in the U.S. after a wonderful Advanced Course in Scandinavia. At 
 The Mayor of Franklin Township, Somerset, New Jersey declared June 24, to be "Sri Sri Ravi Shankar Day" in honor of our founder’s achievements. After grand satsangs in Raleigh North Carolina and Richmond Virginia, Guruji ended the East Coast portion of his tour at the historic Constitution Hall on the National Mall in Washington, D.C. The Washington D.C. Mayor declared June 27 as the "Art of Living Day" in our nation’s capitol.
 
 Back To Top ^`,
+    quote: `Whenever your intentions are impure, it pricks your consciousness, so it cannot be authentic.`,
+    tarot_back: `You cannot have an authentic action and a skillful intention. If you try to be authentic in your action but manipulative in your mind, that is when mistakes happen. Sri Sri: If your intention is colored by greed, over-ambition, etc.`,
   },
   {
     week_number: 312,
@@ -10870,6 +11494,8 @@ Guru Poornima was celebrated surrounded by the majestic mountains and magnificen
 Week long seva activities and slum cleanup projects were taken up in Bangalore. Medical camps were set up, and clothes and food were distributed in many centers.
 
 Back To Top ^`,
+    quote: `Then celebration infiltrates your mind in all moods and space, and celebration is inevitable.`,
+    tarot_back: `When you honor time and space, your mind becomes alert. But for the one who has transcended the mind, either sacredness has no meaning, or all time, every place and every mood is sacred. Precious moments are few in life.`,
   },
   {
     week_number: 313,
@@ -10904,6 +11530,8 @@ Guruji was resplendent rafting down the river with all the course participants f
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Authority and love seem to be contradictory, but in reality they are not.`,
+    tarot_back: `To correct mistakes you need authority and love. Authority and love seem to be contradictory, but in reality they are not. Authority without love is stifling and does not work.`,
   },
   {
     week_number: 314,
@@ -10920,6 +11548,8 @@ At 46,000 feet , on the flight from Lake Tahoe to Montreal, 2+1 really did becom
 Preparation for the Yagyas is already underway and 9 pundits from India have arrived at the North American Ashram to begin the Yagyas, which are ancient ceremonies for creating good vibrations in the environment.
 
 Back To Top ^`,
+    quote: `All activities that you do, you do so that you can have deep rest.`,
+    tarot_back: `So, to the one who has tasted pleasure in rest (Samadhi), the pleasure in activity is insignificant. All activities that you do, you do so that you can have deep rest. Activity is part of the system.`,
   },
   {
     week_number: 315,
@@ -10952,6 +11582,8 @@ News Flash
  
 
 Back To Top ^`,
+    quote: `When you are angry, you express your anger and the next moment you are all right.`,
+    tarot_back: `Feelings are like flowers, they come up, they blossom and they die. Feelings rise, they fall and then disappear. When feelings are expressed, you feel relieved.`,
   },
   {
     week_number: 316,
@@ -10970,6 +11602,8 @@ Pleasure simply brings more craving. But the problem is that we try to get conte
 People from 29 countries are gathered in the German Ashram for an enlightening Advanced Course.
 
 Back To Top ^`,
+    quote: `But if your whole aim is just to please yourself, you will get depressed.`,
+    tarot_back: `God then acted tough and man had to start pleasing Him. And so, man kept himself busy pleasing God and he became happier since he had no time to get worried or depressed. So, when you have someone to please, it keeps you on your toes and you feel happier.`,
   },
   {
     week_number: 317,
@@ -11000,6 +11634,8 @@ Bad Antogast is overflowing with various courses. Preparations for yagyas are on
  
 
 Back To Top ^`,
+    quote: `A master is a symbol of security, love and a sign of great wealth.`,
+    tarot_back: `Not having a master was looked down upon as being an orphan, being poor and a sign of misfortune. The word "anatha" in Sanskrit, means one without a master. Those without a master were considered to be orphans, but not those without parents.`,
   },
   {
     week_number: 318,
@@ -11036,6 +11672,8 @@ Bangalore Ashram is buzzing with blissful faces as Guruji arrives for His hectic
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Love and authority are totally opposite values yet they co-exist.`,
+    tarot_back: `Asserting authority indicates lack of confidence and love. The more evident one’s authority, the less sensitive and effective it will be. A sensible person would not demand authority at all...`,
   },
   {
     week_number: 319,
@@ -11070,6 +11708,8 @@ Recent research conducted by Dr. Geeta shows a marked improvement in cholesterol
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The whole universe is nothing but groups of atoms, groups of quality, of energy.`,
+    tarot_back: `Gana means group and a group cannot exist without a lord. Like the queen bee whose mere existence brings forth the honeycomb, this diverse universe in itself is enough evidence for Ganesha's presence. This Ganesha, or the lord, was born from the unmanifest transcendental consciousness, the Self, called Shiva.`,
   },
   {
     week_number: 320,
@@ -11110,6 +11750,10 @@ East west fusion music concerts are rocking Bangalore. Kerala day, the Onam fest
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you don’t have love or passion to bring about transformation in the society, then you are hungry for power.`,
+    tarot_back: `If you do not realize that you are THE power -- that is to say that you are enlightened, then you crave for power. You don’t have any talents,
+    You have no love or passion,
+    You are not innocent and childlike. If you don’t have any talent and you are not contributing anything substantial to society, like an artist or a scientist, or an Art of Living teacher or volunteer, then you are hungry for power.`,
   },
   {
     week_number: 321,
@@ -11142,6 +11786,8 @@ The UK and USA teams of musicians are taking by storm the college students in Ba
 There was a rousing welcome to Guruji in Pune.
 
 Back To Top ^`,
+    quote: `When he owns something small his mind stays small, his life gets stifled and his whole consciousness is immersed in his house, car, spouse, children and such.`,
+    tarot_back: `The owning has simply shifted from objects and people to ideas and practices. But a wise one knows that he owns the sun, the moon, the stars, the air, all of space and the Divine in its entirety. When you own something big then your consciousness also expands, and when you own something small then all the small negative emotions start coming up such as anger, greed, etc.`,
   },
   {
     week_number: 322,
@@ -11172,6 +11818,8 @@ It was a whirlwind tour, and it was as if an Art of Living wave swept across all
  
 
 Back To Top ^`,
+    quote: `When you have reverence in all your relationships then your own consciousness expands.`,
+    tarot_back: `Then, you do not need to reject or renounce anything of this universe. Reverence in ownership frees you from greed, jealousy and lust. Cultivate the skill of having reverence every moment in your life.`,
   },
   {
     week_number: 323,
@@ -11202,6 +11850,8 @@ Guwahati welcomed Guruji with beautiful Assamese Bihu songs and dance sequences.
 Siliguri, a town in the foothill of the Darjeeling, (close to Nepal, Bhutan and Sikkim), celebrated His arrival with all roads leading to the Mega Satsang. Guruji’s entourage had no risk of getting lost, as any resident of the town could guide them to Guruji’s place of residence and Satsang! The Maha Kriya in the morning had thousands doing the Sudarshan Kriya with Guruji, while the Mega Satsang had over 50,000 people singing, dancing and celebrating the grace of Guruji. At Siliguri, Guruji graced the Sri Sri Ravi Shankar Vidya Mandir and inaugurated the Rural Training Centre in the Siliguri Ashram premises. The entourage is now headed to Agartala for the last leg of Guruji’s tour of the North East.
 
 Back To Top ^`,
+    quote: `Only when people become sensible, rise above hatred and have heightened consciousness can the war be stopped.`,
+    tarot_back: `As reasons change, his justifications fall apart. Man has to transcend reason, and only then can he realize the Divinity. Then he does not engage in war.`,
   },
   {
     week_number: 324,
@@ -11264,6 +11914,8 @@ IAHV initiated that the official meetings in the UN Geneva begins and ends with 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The act which is only destructive and inflicts suffering both on oneself and others is terrorism.`,
+    tarot_back: `Valuing some ideas and concepts more than life. Having a narrow perspective of life and dishonoring its diversity. Inculcate a broader perspective of life -- value life more than race, religion and nationality.`,
   },
   {
     week_number: 325,
@@ -11306,6 +11958,8 @@ TTC1 and TTC2 at the German Ashram culminated with Sri's Sri's visit. The Canadi
 Several public satsangs and Post Trauma Stress Relief Courses are in progress in the New York/New Jersey area.
 
 Back To Top ^`,
+    quote: `The International association for Human Values, based in Geneva, has been chosen as a member of the Swiss Peace Foundation, which is an office of the Swiss Federal Government.`,
+    tarot_back: `Having faith and surrendering to the Divine and knowing that there is a supreme power who loves you. The supreme power is behind you and accepts you totally. The sense of security comes with the sense of belongingness.`,
   },
   {
     week_number: 326,
@@ -11334,6 +11988,8 @@ New York Fire Department has lauded the contribution of the Art of Living seva t
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The basis of violence is anger, lust, hatred, jealousy, greed, frustration or aggression.`,
+    tarot_back: `A surgeon cuts open a person's belly; so does a criminal. But the surgeon's intention is to save and the criminal's is to destroy. Violence or non-violence is determined by the attitude and not the act.`,
   },
   {
     week_number: 327,
@@ -11376,6 +12032,8 @@ New Flash:
 The One who has made our life sweet as honey is in silence!
 
 Back To Top ^`,
+    quote: `The One who has made our life sweet as honey is in silence!`,
+    tarot_back: `Let it be sweet like honey. The One who has made our life sweet as honey is in silence!`,
   },
   {
     week_number: 328,
@@ -11398,6 +12056,8 @@ Navaratri saw unmitigated joy with devotees from all over the world. Guruji emer
 Blessings are always special, but the ecstasy experienced by one and all on Rishi Homa (the last day of Navaratri) as Guruji enthusiastically rushed into the crowds, spraying all His devotees with the Holy waters, was without parallel!
 
 Back To Top ^`,
+    quote: `Yagyas were performed for the health, happiness and well being of people all over the world, which would also contribute to establishing peace everywhere.`,
+    tarot_back: `Dropping the intentions is not an act – just the intention to drop the intentions itself serves the purpose. Dropping all intentions even for a moment brings you in touch with your Self – that instant meditation happens. While you sit for meditation you have to let the world be the way it is.`,
   },
   {
     week_number: 329,
@@ -11438,6 +12098,8 @@ The South-East teacher’s meet ended in immense gratitude and heightened fervou
 The Ashram is buzzing with the enthusiasm of more than 200 TTC participants!
 
 Back To Top ^`,
+    quote: `There was Aishwarya in Sri Rama, but only glimpses of Madhurya.`,
+    tarot_back: `Wealth, too, is referred to as Aishwarya because wealth does command a certain amount of authority. Can love and authority co-exist? Only in a fully blossomed Being, there is both Lordship and Sweetness.`,
   },
   {
     week_number: 330,
@@ -11477,6 +12139,8 @@ In Delhi, Guruji addressed the UN conference on Volunteerism. Then on to Hong Ko
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The joy is immediate – it does not come on the first of every month in the form of a salary!`,
+    tarot_back: `A volunteer devoid of spiritual dimension is utterly weak. 1) A volunteer needs to stick to his commitment. 2) The integrity in a volunteer comes from spiritual practices.`,
   },
   {
     week_number: 331,
@@ -11515,6 +12179,9 @@ Guruji returned to the Ashram for a mega Diwali celebration. Twenty years of Ved
 Jai Gurudev
 
 Back To Top ^`,
+    quote: `Adulation works in three ways:
+If it is for someone else, it is not palatable to an egoistic person.`,
+    tarot_back: `And the one who is great, does not get swayed by adulation. So the test of the greatness of a person is that he is not shaken by any amount of adulation. A desire for adulation is a sign of immaturity.`,
   },
   {
     week_number: 332,
@@ -11550,6 +12217,8 @@ It was all celebration in the steel township of Vijyanagar. The highlights of th
     A whirlwind tour of the ancient temples of Hampi, Kollur and Udipi, including meetings with the pontiffs of these temple ashrams.
 
 Back To Top ^`,
+    quote: `The second type of seva is what you do because it is needed in that situation.`,
+    tarot_back: `The second type of seva is what you do because it is needed in that situation. You do the third type of seva because it gives you joy. The fourth type is done out of your desire for merit - you do seva expecting some benefit in the future.`,
   },
   {
     week_number: 333,
@@ -11580,6 +12249,8 @@ In a "flying" visit to Tirupati, Guruji addressed all the Tirupati temple admini
 The 250 teachers at the Teacher’s Refresher Meet in Rishikesh are blissed and blessed!
 
 Back To Top ^`,
+    quote: `When you see your life from a bigger context of time and space, then you realize your life is nothing.`,
+    tarot_back: `When you see your life from a bigger context of time and space, then you realize your life is nothing. When you are humble you need to see that you are unique and dear to the Divine, which brings confidence, and when you realize you are insignificant, that brings confidence. When you have a guru, you cannot be arrogant.`,
   },
   {
     week_number: 334,
@@ -11614,6 +12285,8 @@ Over a thousand participants are at the Advanced Course at Rishikesh where they 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `You have a desire but you do not have the faith that you can achieve your desire - that is what you call daydreaming.`,
+    tarot_back: `You can control daydreaming by having a strong goal and believing in it. Like the scientist who wanted to go to the moon and kept dreaming about it - for him it was the goal of his life but for others it was daydreaming. Either you drop that it will not happen or you believe!`,
   },
   {
     week_number: 335,
@@ -11648,6 +12321,8 @@ On His return to Bangalore, Guruji blessed 35 yuvacharyas (youth leaders) who gr
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `In self respect, everything is a game, winning or losing has no meaning, every step is joy, every move is celebration.`,
+    tarot_back: `The less you are attached to your virtues, the more self respect you have. If you get attached to your virtues, you look down upon everybody else and they (the virtues) start diminishing. Non- attachment to virtues brings the highest self respect.`,
   },
   {
     week_number: 336,
@@ -11676,6 +12351,8 @@ A huge Satsang in Malleswaram (Bangalore) was attended by thousands of people. G
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `All the five elements - Earth, Water, Fire, Air and Ether - can be measured.`,
+    tarot_back: `Example: If something weighs 6 kilos on the earth, it then weighs only 1 kilo on the moon. The light of the star you see today is not really today's light. It has taken at least 4 years for the light to reach you!`,
   },
   {
     week_number: 337,
@@ -11710,6 +12387,8 @@ The European Teacher’s Meet is underway in full zest and vigour.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `You are not in control of thoughts and emotions coming to you.`,
+    tarot_back: `Perhaps a tiny part of your waking state! You are not in control when you are sleeping or dreaming. You are not in control of thoughts and emotions coming to you.`,
   },
   {
     week_number: 338,
@@ -11732,6 +12411,8 @@ News Flash:
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The forgetfulness in the nature of man is the root cause of all problems and suffering in life.`,
+    tarot_back: `The purpose of knowledge is to remind you of your true nature. In the Bhagvad Gita, Arjuna said to Krishna, "I got back my memory. Memory is a blessing and your best friend when it comes to your true nature.`,
   },
   {
     week_number: 339,
@@ -11754,6 +12435,8 @@ A great course in the great state of Texas! January 10th was declared "Sri Sri R
 In the past year, 310,000 people have benefited from the 5H program in 7000 villages.
 
 Back To Top ^`,
+    quote: `Foolishness cannot overpower or annihilate wisdom nor does the foolishness stay all the time.`,
+    tarot_back: `Foolishness cannot overpower or annihilate wisdom nor does the foolishness stay all the time. When you are not well-founded in wisdom, then foolishness perturbs you, throws you out of balance. When you create space for foolishness you do not get perturbed by it, rather you will laugh and move on.`,
   },
   {
     week_number: 340,
@@ -11780,6 +12463,8 @@ Colorado Springs and Boulder witnessed overflowing halls of joy for Guruji’s p
 Sri Sri visited the Garden of the Gods, a sacred site for Native Americans with towering red rock formations. Although the rocks were glorious all eyes were on Guruji! For wherever Guruji goes on this planet, glory follows.
 
 Back To Top ^`,
+    quote: `Alternately, the dispassion that is afraid of glory is weak.`,
+    tarot_back: `When someone runs after glory they are shallow. Like movie stars, politicians and religious leaders who try to hold on to their status, to their glory, they are certain to lose. If you run after glory all you get is misery.`,
   },
   {
     week_number: 341,
@@ -11810,6 +12495,8 @@ As Guruji spoke on "Time", we found the moment this moment has passed, it is alr
 So News Flash can never be new anyway. So, Birjoo decided to call it Old Flash!
 
 Back To Top ^`,
+    quote: `The so-called dispassionate people are often morose and unenthusiastic.`,
+    tarot_back: `Many a times you hear people saying. " Oh, never mind, God is everywhere, Guruji is in my heart, you can do satsang anywhere. My Seva is my Sadhana, so no need to meditate, anyway I am doing Sadhana twenty-four hours.`,
   },
   {
     week_number: 342,
@@ -11828,6 +12515,8 @@ While Sri Sri is attending the World Economic Forum, the Art of Living is simult
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Spirituality is the heart, business is the legs, and that is what the ancient people conceived.`,
+    tarot_back: `In the body/mind complex depriving any one comfort means depriving both the comforts. You cannot talk spirituality to the poorest of the poor people without taking care of their basic needs. They need to be supported materially.`,
   },
   {
     week_number: 343,
@@ -11850,6 +12539,8 @@ An Advanced Course with people from 37 countries is in progress at the Bangalore
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Because virtues are your very nature and they will never leave you.`,
+    tarot_back: `Because virtues are your very nature and they will never leave you. Your vices are not your nature and they will leave you. The negative tendencies are transient and they will leave you if you do not act on them.`,
   },
   {
     week_number: 344,
@@ -11890,6 +12581,8 @@ News Flash: On Valentine's Day, jubilant TTC1, ecstatic International Advanced C
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you have a good sense of humor you can never be humiliated.`,
+    tarot_back: `Humor should be coupled with care and concern. Mere humor without care and concern or appropriate action often irritates those who come to you with serious problems. Humor can keep the spirit high, yet if overdone it leaves a bad taste.`,
   },
   {
     week_number: 345,
@@ -11920,6 +12613,8 @@ The Chief Minister of Kerala State and most of his cabinet ministers hosted Sri 
 In Thiruvananthapuram, when the participants opened their eyes after Sudarshan Kriya, they could not see Guruji on the stage, though they could hear His voice. Later, they found Him sitting on the branch of a tree with a cordless microphone!
 
 Back To Top ^`,
+    quote: `When one is assured that the love is so strong that the truth can neither break it nor cause bitterness, then the truth prevails and love shines.`,
+    tarot_back: `The fear that the truth might damage their love causes lies to be told between husband and wife, boyfriend and girlfriend, parents and children and in family situations. In love you feel weak and truth brings strength. Yet why do people prefer love over truth, i.e.`,
   },
   {
     week_number: 346,
@@ -11964,6 +12659,8 @@ Following the Gujarat tragedy, Guruji has requested that everyone observe 2 minu
 Jai Guru Dev !
 
 Back To Top ^`,
+    quote: `If you have always been the center of attention, and are suddenly sidelined, you may feel out of place.`,
+    tarot_back: `A very busy person with nothing to do, or a laid back person who is faced with a lot of responsibilities may experience restlessness. Very often, feeling out of place blocks the reason and distorts the logic. If the situation you are in is inevitable, tolerate it.`,
   },
   {
     week_number: 347,
@@ -12004,6 +12701,8 @@ He is now in Rishikesh …..
 Jai Gurudev !
 
 Back To Top ^`,
+    quote: `Self Knowledge and Devotion alone can free you from this vicious cycle.`,
+    tarot_back: `And reaction leads to regret. Regret causes frustration. Frustration clouds the reason.`,
   },
   {
     week_number: 348,
@@ -12032,6 +12731,8 @@ Shivaratri celebrations in Rishikesh truly took us to the peak of bliss and to s
 Jai Guru Dev !
 
 Back To Top ^`,
+    quote: `And Shiva is peace, infinity, beauty and the non-dual One.`,
+    tarot_back: `Contentment is your nature, yet you continue to reel in desires. Benevolence is your nature, yet you don’t reach out. Going towards your nature is Sadhana.`,
   },
   {
     week_number: 349,
@@ -12065,6 +12766,8 @@ The third advanced course participants are soaking in bliss on the banks of the 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `So your praise is meaningful when it is directed towards a fool!`,
+    tarot_back: `So your praise is meaningful when it is directed towards a fool! A wise man by his very nature will keep doing good work. His attitude does not depend on someone’s praise or blame.`,
   },
   {
     week_number: 350,
@@ -12097,6 +12800,8 @@ Guruji is traveling through north eastern India.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A real holiday is that which energizes and does not wear you out.`,
+    tarot_back: `-   Doubts and complaints are impediments for rest. -  The moment you set out on your holiday, know that it has begun. Often people expect to find a pinnacle of happiness.`,
   },
   {
     week_number: 351,
@@ -12129,6 +12834,8 @@ Siliguri, West Bengal, had thousands attending a Satsang as Guruji traveled nort
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `You can never be close to the Truth when you are in a rush because your perception, observation and expression become distorted.`,
+    tarot_back: `All the rush that you have in your life only denies the joy and freedom of here and now. Often one does not even know why one is in a hurry. It almost becomes a biological phenomenon to be in a rush.`,
   },
   {
     week_number: 352,
@@ -12164,6 +12871,8 @@ For the first time, 700 people boarded the Enlightenment Express from Mumbai to 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Only spirituality can check greed and open up the hearts of the rich to help the needy.`,
+    tarot_back: `Only spirituality can bring fulfillment to communism. Only spirituality can check greed and open up the hearts of the rich to help the needy. Only spirituality can check the fanaticism and fundamentalism of religious groups and create a sense of belongingness in the whole world.`,
   },
   {
     week_number: 353,
@@ -12184,6 +12893,8 @@ Sri Sri: If only all present day atheists could be Buddhas…
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `An atheist is one who does not believe in anything that is not concrete and tangible.`,
+    tarot_back: `Whether it is business, science or art, they all involve a certain amount of guesswork, assumptions, imagination and intuition. All of them are ethereal in nature and are not tangible. The moment an atheist accepts, even remotely a field that is unexplainable, he ceases to be an atheist.`,
   },
   {
     week_number: 354,
@@ -12213,6 +12924,8 @@ Guruji's visit to Saarbruken and Stutgaart was extensively covered by the media.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `If you are committed to your family then your family supports you, if you are committed to your society, you enjoy the support of society.`,
+    tarot_back: `If you are committed to Truth, Truth brings you strength. Often one is not aware of this idea and that is why one is hesitant to commit to a greater cause. Also there is a fear that commitment would weaken one or take away one's freedom.`,
   },
   {
     week_number: 355,
@@ -12247,6 +12960,8 @@ An Advanced Course is being held now in the San Francisco Bay Area.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `The first one is pure knowledge and the second one is applied knowledge.`,
+    tarot_back: `Sometime in the future, if you do not discard the knowledge you have as impractical, it will be of use to you. Often people discard the pure knowledge for its lack of immediate application. In fact these two types of knowledge compliment each other.`,
   },
   {
     week_number: 356,
@@ -12272,6 +12987,10 @@ On May 13, seva projects and satsangs were held all over the world. Thousands of
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `Brave are those who nurture friendships for only friendship’s sake.`,
+    tarot_back: `You talk about your problems and become friends. For example, sickness, job dissatisfaction, etc…
+    People get together because they have common interests. For example, through business or a profession (doctors, architects, social workers, etc…)
+    You make friends because you have common tastes.`,
   },
   {
     week_number: 357,
@@ -12290,6 +13009,8 @@ Divine love does not let the dispassion manifest. The attainment of love brings 
 This is the problem with Art of Living members. Many feel they have attained the highest and remain blissed out! (laughter!)
 
 Back To Top ^`,
+    quote: `The attainment of love brings such bliss and such intoxication, it not only takes away your passion, but dispassion as well.`,
+    tarot_back: `If you renounce something here you gain something out there. Those who are seeking enlightenment practice austerities and take vows for a better place in heaven. The third type of dispassion comes out of wisdom or knowledge.`,
   },
   {
     week_number: 358,
@@ -12320,6 +13041,8 @@ The YLTP (Youth Leadership Training Program) trainer’s meeting concluded last 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are alert, usually there is no faith and you feel restless and insecure.`,
+    tarot_back: `Satvic faith is innocent and is born out of fullness of consciousness. Faith and alertness, though apparently opposite in nature, are actually complementary to each other. In the absence of faith there can be no growth, and without alertness there can be no correct understanding.`,
   },
   {
     week_number: 359,
@@ -12366,6 +13089,8 @@ If you are flying into Montreal Dorval, and need transport to the ashram, please
 Please call us at 819 532 3328 or email: artofliving.northamerica.sympatico.ca for the Basic Course form.
 
 Back To Top ^`,
+    quote: `When you are with your source, you can only be enthusiastic.`,
+    tarot_back: `You cannot be but enthusiastic when your mind is totally in the present moment. You should know that dispassion is not apathy. It is simply a broader perspective of reality.`,
   },
   {
     week_number: 360,
@@ -12400,6 +13125,8 @@ Off to Germany – people came in large numbers to attend talks and satsangs in 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When things are interesting you do not need commitment at all.`,
+    tarot_back: `From every situation, from everybody, you learn either what to do or what not to do. Either by mistakes or by doing things correctly, you cannot but learn. It is only when you sleep that you do not learn.`,
   },
   {
     week_number: 361,
@@ -12430,6 +13157,8 @@ Guruji’s North American tour began in Chicago where he was the keynote speaker
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `These four will give you progress when practiced for a limited period of time.`,
+    tarot_back: `They give limited results, positive or negative. But if they stay on for a longer period, they eat away the potential of life. One has to transcend all these four to attain peace.`,
   },
   {
     week_number: 362,
@@ -12462,6 +13191,8 @@ Breath Water Sound teachers traveling in Belize and Mexico offering this
 fantastic course to people in impoverished villages and barrios
 
 Back To Top ^`,
+    quote: `When you transcend the intellect you allow yourself to be used by the spirit.`,
+    tarot_back: `An intelligent one uses the material world to rise high in the spirit. When you transcend the intellect you allow yourself to be used by the spirit. One who is awake neither uses anything nor loses anything.`,
   },
   {
     week_number: 363,
@@ -12484,6 +13215,8 @@ Guru Purnima was celebrated at the North American Ashram with over 2,000 people 
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `When you are enthusiastic you are closer to the creative principle of existence.`,
+    tarot_back: `Creativity brings along with it a new round of enthusiasm. Both creative and procreative impulses in nature are associated with enthusiasm. When you are enthusiastic you are closer to the creative principle of existence.`,
   },
   {
     week_number: 364,
@@ -12508,6 +13241,8 @@ Guruji traveled to the Canadian North American Ashram to greet a joyous TTC.
 Jai Guru Dev
 
 Back To Top ^`,
+    quote: `A frustrated person cannot be with someone happy because the other is not dancing to their tune.`,
+    tarot_back: `Intelligent people do not feel at home with foolish people. Foolish people feel that intelligent ones are not humane. One with wisdom feels at home with the disgruntled as well as the happy, foolish and intelligent.`,
   },
   {
     week_number: 365,
@@ -12585,5 +13320,7 @@ Keep your tone friendly, helpful, and encouraging!]
 - If  there is large file like Page.tsx which has multiple components break it into single component files and you can Write them all paralelly using the Write tool.
 - When you have multiple single file components inside a folder, and their total length is manageable, use regex like Bash(cat src/**/*.tsx) to read them very quickly with a single tool call.
 </reminder>`,
+    quote: `A wise person will consider the past as destiny and the future as free will.`,
+    tarot_back: `A wise person will consider the past as destiny and the future as free will. When you consider the past as destiny, no more questions are raised and the mind is at ease. And when you consider the future as free will you are filled with enthusiasm and dynamism.`,
   },
 ]

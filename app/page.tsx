@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
-import { callAIAgent } from '@/lib/aiAgent'
+import React, { useState, useMemo, useCallback } from 'react'
 import { KNOWLEDGE_SHEETS } from '@/lib/knowledgeData'
 import HeroHeader from './sections/HeroHeader'
 import KnowledgeCardsTab from './sections/KnowledgeCardsTab'
@@ -9,9 +8,6 @@ import TarotCardsTab from './sections/TarotCardsTab'
 import QuotesTab from './sections/QuotesTab'
 import PdfThemeModal from './sections/PdfThemeModal'
 import { Badge } from '@/components/ui/badge'
-
-const AGENT_ID = '69c919d3a534bb15fd3fc879'
-const RAG_ID = '69c919bb58da8006ab0d8d49'
 
 const TOTAL_WEEKS = KNOWLEDGE_SHEETS.length
 
@@ -43,9 +39,87 @@ interface CardItem {
   theme?: string
 }
 
-function extractQuote(content: string): string {
-  const sentences = content.split(/[.!?]+/).map(s => s.trim()).filter(s => s.length > 20 && s.length < 200)
-  return sentences.length > 0 ? sentences[0] + '.' : ''
+const PDF_THEMES: Record<string, { bg: string; text: string; accent: string; border: string; muted: string; cardBg: string }> = {
+  light: { bg: '#FDFCFB', text: '#2D2A26', accent: '#8C7A5E', border: '#E0DAD0', muted: '#7A7060', cardBg: '#FFFFFF' },
+  dark: { bg: '#1A1A2E', text: '#E8E4DC', accent: '#C9A96E', border: '#2D2D44', muted: '#9A9488', cardBg: '#16213E' },
+  neon: { bg: '#0A0A0A', text: '#00FFD0', accent: '#FF006E', border: '#00FFD033', muted: '#00FFD088', cardBg: '#111111' },
+}
+
+function generatePdfHtml(cards: CardItem[], activeTab: string, theme: string): string {
+  const t = PDF_THEMES[theme] || PDF_THEMES.light
+  const tabTitles: Record<string, string> = { knowledge: 'Knowledge Cards', tarot: 'Tarot Cards', quotes: 'Quotes' }
+  const title = tabTitles[activeTab] || 'Knowledge Cards'
+
+  let contentHtml = ''
+
+  if (activeTab === 'knowledge') {
+    contentHtml = cards.map(card => `
+      <div style="border: 1px solid ${t.border}; background: ${t.cardBg}; padding: 28px 32px; margin-bottom: 20px; page-break-inside: avoid;">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+          <div style="width: 40px; height: 40px; border: 1px solid ${t.accent}; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; color: ${t.accent}; flex-shrink: 0;">
+            ${card.week_number ?? '?'}
+          </div>
+          <div>
+            <h3 style="margin: 0; font-size: 14px; letter-spacing: 2px; color: ${t.text};">${card.title ?? ''}</h3>
+            <p style="margin: 4px 0 0; font-size: 10px; letter-spacing: 2px; color: ${t.muted}; text-transform: uppercase;">${card.theme ?? ''}</p>
+          </div>
+        </div>
+        <div style="font-size: 13px; line-height: 1.8; color: ${t.text}; white-space: pre-line; font-weight: 300;">${(card.content ?? '').slice(0, 1500)}</div>
+        ${card.quote ? `<div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid ${t.border}; font-style: italic; font-size: 12px; color: ${t.accent};">"${card.quote}"</div>` : ''}
+      </div>
+    `).join('')
+  } else if (activeTab === 'tarot') {
+    contentHtml = cards.map(card => `
+      <div style="border: 1px solid ${t.border}; background: ${t.cardBg}; padding: 28px 32px; margin-bottom: 20px; page-break-inside: avoid; text-align: center;">
+        <div style="border: 2px solid ${t.accent}33; padding: 24px; margin-bottom: 0;">
+          <div style="width: 48px; height: 48px; border: 1px solid ${t.accent}; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; color: ${t.accent}; margin-bottom: 12px;">
+            ${card.week_number ?? '?'}
+          </div>
+          <h3 style="margin: 8px 0; font-size: 15px; letter-spacing: 3px; color: ${t.text};">${card.tarot_front ?? card.title ?? ''}</h3>
+          <div style="width: 40px; height: 1px; background: ${t.accent}66; margin: 12px auto;"></div>
+          <p style="font-size: 13px; font-style: italic; color: ${t.accent}; margin: 12px 0;">"${card.quote ?? ''}"</p>
+          <div style="width: 40px; height: 1px; background: ${t.border}; margin: 16px auto;"></div>
+          <p style="font-size: 12px; line-height: 1.8; color: ${t.text}; font-weight: 300; text-align: left;">${card.tarot_back ?? ''}</p>
+        </div>
+      </div>
+    `).join('')
+  } else {
+    const withQuotes = cards.filter(c => c.quote && c.quote.trim().length > 0)
+    contentHtml = withQuotes.map((card, i) => `
+      <div style="text-align: center; padding: 32px 16px; page-break-inside: avoid;">
+        <p style="font-size: 10px; letter-spacing: 3px; color: ${t.accent}; text-transform: uppercase; margin-bottom: 12px;">Week ${card.week_number ?? '?'}</p>
+        <blockquote style="font-size: 17px; font-style: italic; line-height: 1.7; color: ${t.text}; max-width: 500px; margin: 0 auto; font-weight: 300;">"${card.quote}"</blockquote>
+        ${card.title ? `<p style="margin-top: 12px; font-size: 10px; letter-spacing: 2px; color: ${t.muted}; text-transform: uppercase;">${card.title}</p>` : ''}
+      </div>
+      ${i < withQuotes.length - 1 ? `<div style="text-align: center; margin: 8px 0;"><span style="display: inline-block; width: 4px; height: 4px; border: 1px solid ${t.accent}44; transform: rotate(45deg);"></span></div>` : ''}
+    `).join('')
+  }
+
+  return `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>${title} — Sri Sri Ravi Shankar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: ${t.bg}; color: ${t.text}; font-family: 'Inter', sans-serif; padding: 40px; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    @media print { body { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid ${t.border};">
+    <p style="font-size: 10px; letter-spacing: 4px; color: ${t.muted}; text-transform: uppercase; margin-bottom: 8px;">Sri Sri Ravi Shankar</p>
+    <h1 style="font-size: 28px; letter-spacing: 4px; color: ${t.text}; font-weight: 500;">${title}</h1>
+    <p style="font-size: 11px; color: ${t.muted}; margin-top: 8px; letter-spacing: 2px;">365 Points of Wisdom</p>
+  </div>
+  ${contentHtml}
+  <div style="text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid ${t.border};">
+    <p style="font-size: 9px; letter-spacing: 3px; color: ${t.muted}; text-transform: uppercase;">Generated from Weekly Knowledge Sheets</p>
+  </div>
+</body>
+</html>`
 }
 
 class ErrorBoundary extends React.Component<
@@ -80,43 +154,51 @@ export default function Page() {
   const [pdfModalOpen, setPdfModalOpen] = useState(false)
   const [pdfTheme, setPdfTheme] = useState<string | null>(null)
   const [downloading, setDownloading] = useState(false)
-  const [activeAgentId, setActiveAgentId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
-  // Static knowledge cards - loaded directly, no agent needed
+  // Static knowledge cards - loaded directly from embedded data
   const cards: CardItem[] = useMemo(() => KNOWLEDGE_SHEETS.map(sheet => ({
     week_number: sheet.week_number,
     title: sheet.title,
     content: sheet.content,
     theme: sheet.country,
-    quote: extractQuote(sheet.content),
+    quote: sheet.quote,
     tarot_front: sheet.title,
-    tarot_back: sheet.content.slice(0, 200),
+    tarot_back: sheet.tarot_back,
   })), [])
 
-  const handleDownloadPdf = async () => {
+  const handleDownloadPdf = useCallback(() => {
     if (!pdfTheme) return
     setDownloading(true)
-    setActiveAgentId(AGENT_ID)
-    const tabLabels: Record<string, string> = { knowledge: 'Knowledge Cards', tarot: 'Tarot Cards', quotes: 'Quotes' }
-    const tabName = tabLabels[activeTab] ?? 'content'
+
     try {
-      const result = await callAIAgent(`Compile ${tabName} content in ${pdfTheme} visual theme as PDF`, AGENT_ID)
-      const files = Array.isArray(result?.module_outputs?.artifact_files) ? result.module_outputs.artifact_files : []
-      const fileUrl = files?.[0]?.file_url
-      if (fileUrl) {
-        window.open(fileUrl, '_blank')
-      } else {
-        setError('PDF generation completed but no file was returned.')
+      const html = generatePdfHtml(cards, activeTab, pdfTheme)
+      const printWindow = window.open('', '_blank')
+      if (!printWindow) {
+        setError('Please allow popups to download the PDF.')
+        setDownloading(false)
+        return
       }
-    } catch (err) {
-      setError('Failed to generate PDF.')
+      printWindow.document.write(html)
+      printWindow.document.close()
+
+      // Give fonts time to load, then trigger print
+      printWindow.onload = () => {
+        setTimeout(() => {
+          printWindow.print()
+        }, 500)
+      }
+      // Fallback if onload doesn't fire
+      setTimeout(() => {
+        try { printWindow.print() } catch {}
+      }, 2000)
+    } catch {
+      setError('Failed to generate PDF. Please try again.')
     } finally {
       setDownloading(false)
-      setActiveAgentId(null)
       setPdfModalOpen(false)
     }
-  }
+  }, [pdfTheme, cards, activeTab])
 
   return (
     <ErrorBoundary>
@@ -148,16 +230,15 @@ export default function Page() {
 
         <PdfThemeModal open={pdfModalOpen} onOpenChange={setPdfModalOpen} selectedTheme={pdfTheme} onSelectTheme={setPdfTheme} onDownload={handleDownloadPdf} downloading={downloading} activeTab={activeTab} />
 
-        {/* Agent Status */}
+        {/* Status */}
         <div className="fixed bottom-8 left-8 z-40">
           <div className="border border-border bg-card p-4 shadow-sm max-w-xs">
-            <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Agent Status</p>
+            <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Status</p>
             <div className="flex items-center gap-2">
-              <div className={`w-2 h-2 rounded-full ${activeAgentId ? 'bg-primary animate-pulse' : 'bg-green-500'}`} />
-              <span className="text-xs font-light tracking-wider text-foreground">Knowledge Wisdom Agent</span>
-              {activeAgentId && <Badge variant="outline" className="text-xs font-light tracking-wider rounded-none ml-auto">Active</Badge>}
+              <div className="w-2 h-2 rounded-full bg-green-500" />
+              <span className="text-xs font-light tracking-wider text-foreground">All Data Loaded</span>
             </div>
-            <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets loaded</p>
+            <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets</p>
           </div>
         </div>
       </div>
