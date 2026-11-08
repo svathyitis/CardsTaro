@@ -8,8 +8,8 @@ import ClientProviders from '@/components/ClientProviders'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next.js App',
-  description: 'Built with Next.js, React, and Tailwind CSS',
+  title: 'Knowledge Cards - Sri Sri Ravi Shankar',
+  description: '365 points of wisdom, distilled into cards, tarot interpretations, and quotes.',
   icons: {
     icon: '/lyzr.png',
   },
