@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // Default stays the full server build (standalone) so API routes keep working.
+  // STATIC_EXPORT=1 opts into a static export for static hosting (API routes excluded).
+  output: process.env.STATIC_EXPORT === '1' ? 'export' : 'standalone',
 
   // Keep compiled pages in memory longer in dev (default: 15s → 1 hour)
   onDemandEntries: {
