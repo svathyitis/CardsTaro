@@ -241,6 +241,7 @@ export default function Page() {
 
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false)
+  const [statusOpen, setStatusOpen] = useState(false)
   const [showPasscodePrompt, setShowPasscodePrompt] = useState(false)
   const [passcodeInput, setPasscodeInput] = useState('')
   const [passcodeError, setPasscodeError] = useState(false)
@@ -395,22 +396,42 @@ export default function Page() {
           </div>
         )}
 
-        {/* Status + Admin Toggle */}
-        <div className="fixed bottom-8 left-8 z-40">
-          <div className="border border-border bg-card p-4 shadow-sm max-w-xs">
-            <p className="text-xs tracking-widest text-muted-foreground uppercase mb-2">Status</p>
-            <div className="flex items-center gap-2">
-              <div className={`w-2 h-2 rounded-full ${isAdmin ? 'bg-amber-500' : 'bg-green-500'}`} />
-              <span className="text-xs font-light tracking-wider text-foreground">{isAdmin ? 'Admin Mode' : 'All Data Loaded'}</span>
+        {/* Status + Admin Toggle - collapsed by default so it never covers cards */}
+        <div className="fixed bottom-4 left-4 z-40">
+          {statusOpen ? (
+            <div className="border border-border bg-card p-4 shadow-sm max-w-xs">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs tracking-widest text-muted-foreground uppercase">Status</p>
+                <button
+                  onClick={() => setStatusOpen(false)}
+                  aria-label="Hide status"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm leading-none px-1"
+                >
+                  ×
+                </button>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className={`w-2 h-2 rounded-full ${isAdmin ? 'bg-amber-500' : 'bg-green-500'}`} />
+                <span className="text-xs font-light tracking-wider text-foreground">{isAdmin ? 'Admin Mode' : 'All Data Loaded'}</span>
+              </div>
+              <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets</p>
+              <button
+                onClick={handleAdminToggle}
+                className="mt-3 text-[10px] tracking-widest uppercase font-light text-muted-foreground hover:text-foreground transition-colors border-t border-border pt-2 w-full text-left"
+              >
+                {isAdmin ? 'Exit Admin Mode' : 'Admin'}
+              </button>
             </div>
-            <p className="text-xs font-light text-muted-foreground mt-2 tracking-wider">{cards.length} knowledge sheets</p>
+          ) : (
             <button
-              onClick={handleAdminToggle}
-              className="mt-3 text-[10px] tracking-widest uppercase font-light text-muted-foreground hover:text-foreground transition-colors border-t border-border pt-2 w-full text-left"
+              onClick={() => setStatusOpen(true)}
+              aria-label="Show status"
+              className="flex items-center gap-2 border border-border bg-card px-3 py-2 shadow-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              {isAdmin ? 'Exit Admin Mode' : 'Admin'}
+              <span className={`w-2 h-2 rounded-full ${isAdmin ? 'bg-amber-500' : 'bg-green-500'}`} />
+              <span className="text-[10px] tracking-widest uppercase font-light">{isAdmin ? 'Admin' : 'Status'}</span>
             </button>
-          </div>
+          )}
         </div>
       </div>
     </ErrorBoundary>
